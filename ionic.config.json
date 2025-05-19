@@ -1,5 +1,7 @@
 {
-  "name": "mounts-menagerie-app",
-  "integrations": {},
-  "type": "angular"
+  "name": "mounts-menagerie-app-ui",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
 }
