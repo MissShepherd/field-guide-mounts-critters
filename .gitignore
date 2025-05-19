@@ -1,40 +1,52 @@
-# Specifies intentionally untracked files to ignore when using Git
-# http://git-scm.com/docs/gitignore
+# ===== SYSTEM FILES =====
+.DS_Store
+Thumbs.db
+$RECYCLE.BIN/
 
+# ===== NODE / ANGULAR / IONIC =====
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Angular build artifacts
+/dist
+/tmp
+/out-tsc
+/.angular
+/.angular/cache
+/.sourcemaps
+/.versions
+
+# Ionic build output
+/www
+/.ionic
+
+# Bazel
+/bazel-out
+
+# Nx (optional)
+/.nx
+/.nx/cache
+
+# Coverage & test logs
+/coverage
+testem.log
+/libpeerconnection.log
+log.txt
+*.log
+
+# Environment files (keep secrets safe!)
+**/.env
+
+# Editor backups
 *~
 *.sw[mnpcod]
 .tmp
 *.tmp
 *.tmp.*
-UserInterfaceState.xcuserstate
-$RECYCLE.BIN/
 
-*.log
-log.txt
-
-
-/.sourcemaps
-/.versions
-/coverage
-
-# Ionic
-/.ionic
-/www
-/platforms
-/plugins
-
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
-
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
+# IDE & Editor files
 .idea/
 .project
 .classpath
@@ -44,27 +56,20 @@ yarn-error.log
 *.sublime-project
 *.sublime-workspace
 
-# Visual Studio Code
+# VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
 
+# GitHub history plugin
+.history/
 
-# Miscellaneous
-/.angular
-/.angular/cache
-.sass-cache/
-/.nx
-/.nx/cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+# ===== OPTIONAL: Mac-specific folders =====
+.AppleDouble
+.LSOverride
 
-# System files
-.DS_Store
-Thumbs.db
+# Optional backup files
+*.bak
+*.old
