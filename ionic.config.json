@@ -1,7 +1,0 @@
-{
-  "name": "mounts-menagerie-app",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
