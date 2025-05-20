@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [IonicModule, RouterOutlet],
+  imports: [IonicModule],
   templateUrl: './app.component.html'
 })
 export class AppComponent {}
