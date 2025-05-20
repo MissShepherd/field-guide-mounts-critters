@@ -25,13 +25,67 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
-
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+/* Dark Mode (System preference) */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* ------------------------------------------
+ * WoW-Inspired Fonts
+ * ------------------------------------------ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=PT+Sans+Narrow&family=Roboto+Condensed&display=swap');
+
+/* Local Fantasy Font: LifeCraft */
+@font-face {
+  font-family: 'LifeCraft';
+  src: url('/assets/fonts/LifeCraft.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ------------------------------------------
+ * Font Variables and Utility Classes
+ * ------------------------------------------ */
+
+:root {
+  --font-title: 'Cinzel', serif;
+  --font-display: 'LifeCraft', serif;
+  --font-ui: 'PT Sans Narrow', sans-serif;
+  --font-description: 'Roboto Condensed', sans-serif;
+}
+
+/* Apply global font to base */
+body {
+  font-family: var(--font-ui);
+  background: #000;
+  color: #fff;
+}
+
+/* Titles (e.g., splash screen) */
+.app-title {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 0 8px gold;
+}
+
+/* Section headers */
+.section-header {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: #EDE944;
+  margin-top: 1.5rem;
+}
+
+/* Item labels / UI */
+.item-label {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+}
+
+/* Descriptive text */
+.description {
+  font-family: var(--font-description);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
