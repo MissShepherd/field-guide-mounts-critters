@@ -11,7 +11,6 @@ export const routes: Routes = [
         path: '',
         component: HomePage,
       }
-      // add more pages here later
     ]
   }
 ];
