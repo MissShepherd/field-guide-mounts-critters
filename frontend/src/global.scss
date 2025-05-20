@@ -29,6 +29,18 @@
 @import '@ionic/angular/css/palettes/dark.system.css';
 
 /* ------------------------------------------
+ * Layout Fixes
+ * ------------------------------------------ */
+html, body, ion-app, ion-router-outlet {
+  height: 100%;
+}
+
+ion-content {
+  overflow-y: auto;
+}
+
+
+/* ------------------------------------------
  * WoW-Inspired Fonts
  * ------------------------------------------ */
 
