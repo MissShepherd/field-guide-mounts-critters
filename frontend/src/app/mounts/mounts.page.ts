@@ -10,7 +10,15 @@ import { CommonModule } from '@angular/common';
 })
 export class MountsPage {
   mounts = [
-    { name: 'Acherus Deathcharger', image: '/assets/mounts/deathcharger.png' },
-    { name: 'Armored Brown Bear', image: '/assets/mounts/brownbear.png' }
+    {
+      name: 'Acherus Deathcharger',
+      image: '/assets/mounts/deathcharger.png',
+      collected: true
+    },
+    {
+      name: 'Armored Brown Bear',
+      image: '/assets/mounts/brownbear.png',
+      collected: false
+    }
   ];
 }
