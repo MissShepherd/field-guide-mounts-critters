@@ -33,7 +33,9 @@
  * ------------------------------------------ */
 html, body, ion-app, ion-router-outlet {
   height: 100%;
+  display: block;
 }
+
 
 ion-content {
   overflow-y: auto;
@@ -50,7 +52,7 @@ ion-content {
 /* Local Fantasy Font: LifeCraft */
 @font-face {
   font-family: 'LifeCraft';
-  src: url('/assets/fonts/LifeCraft.ttf') format('truetype');
+  src: url('/assets/fonts/LifeCraft_Font.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
