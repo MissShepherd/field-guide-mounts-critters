@@ -17,11 +17,23 @@ html, body, ion-app, ion-router-outlet {
   display: block;
 }
 
-ion-content {
+ion-app {
   background: #1a1a1a url('/assets/bg/parchment.png') repeat;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+ion-content {
+  background: transparent !important;
   color: #ede944;
   font-family: var(--font-ui);
 }
+
+ion-router-outlet {
+  background: transparent !important;
+}
+
+
 
 .section-header {
   font-family: var(--font-title);
