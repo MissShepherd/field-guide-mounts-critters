@@ -1,7 +1,7 @@
 import {
   createAnimation,
   getIonPageElement
-} from "./chunk-S6DFUGSB.js";
+} from "./chunk-7V2MWCHA.js";
 
 // node_modules/@ionic/core/components/md.transition.js
 var mdTransitionAnimation = (_, opts) => {
@@ -48,4 +48,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=chunk-5I6JSU7M.js.map
+//# sourceMappingURL=chunk-UKBH7XFU.js.map

@@ -5,15 +5,16 @@ ion-toolbar {
 
 ion-card-title {
   color: #cd650e;
-  font-family: 'Belwe', serif; // Optional WoW-style font if loaded
+  font-family: 'Belwe', serif; // Use only if Belwe is loaded
 }
 
 ion-content {
-  background: #1a1a1a;
+  --background: #1a1a1a;
   color: #ede944;
 }
 
 ion-card {
   background: #2e2e2e;
   border: 1px solid #4e284f;
+  color: #ede944;
 }

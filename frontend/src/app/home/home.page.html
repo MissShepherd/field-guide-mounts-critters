@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title class="ion-text-center">Mounts & Menagerie</ion-title>
+    <ion-title class="ion-text-center">Field Guide to Mounts & Critters</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content class="ion-padding">
 
   <!-- Collection Summary -->
   <ion-card>
@@ -14,9 +14,15 @@
     <ion-card-content>
       <ion-grid>
         <ion-row>
-          <ion-col><ion-chip color="tertiary">🐉 Mounts: 120 / 412</ion-chip></ion-col>
-          <ion-col><ion-chip color="tertiary">🐾 Pets: 250 / 1532</ion-chip></ion-col>
-          <ion-col><ion-chip color="tertiary">🎁 Toys: 78 / 500</ion-chip></ion-col>
+          <ion-col size="12" size-md="4">
+            <ion-chip color="tertiary">🐉 Mounts: 120 / 412</ion-chip>
+          </ion-col>
+          <ion-col size="12" size-md="4">
+            <ion-chip color="tertiary">🐾 Pets: 250 / 1532</ion-chip>
+          </ion-col>
+          <ion-col size="12" size-md="4">
+            <ion-chip color="tertiary">🎁 Toys: 78 / 500</ion-chip>
+          </ion-col>
         </ion-row>
       </ion-grid>
     </ion-card-content>
@@ -27,20 +33,22 @@
     <ion-card-header>
       <ion-card-title>Upcoming Events</ion-card-title>
     </ion-card-header>
-    <ion-list>
-      <ion-item>
-        <ion-label>🕒 Timewalking: Burning Crusade</ion-label>
-        <ion-note slot="end">Ends in 2d</ion-note>
-      </ion-item>
-      <ion-item>
-        <ion-label>🎪 Darkmoon Faire</ion-label>
-        <ion-note slot="end">Active!</ion-note>
-      </ion-item>
-      <ion-item>
-        <ion-label>🔥 Midsummer Festival</ion-label>
-        <ion-note slot="end">5d left</ion-note>
-      </ion-item>
-    </ion-list>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label>🕒 Timewalking: Burning Crusade</ion-label>
+          <ion-note slot="end">Ends in 2d</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>🎪 Darkmoon Faire</ion-label>
+          <ion-note slot="end">Active!</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>🔥 Midsummer Festival</ion-label>
+          <ion-note slot="end">5d left</ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
   </ion-card>
 
   <!-- Quick Access -->
@@ -51,12 +59,20 @@
     <ion-card-content>
       <ion-grid>
         <ion-row>
-          <ion-col><ion-button expand="block" color="medium" routerLink="/collections">📘 Collections</ion-button></ion-col>
-          <ion-col><ion-button expand="block" color="medium" routerLink="/map">🗺️ Map</ion-button></ion-col>
+          <ion-col size="12" size-md="6">
+            <ion-button expand="block" color="medium" routerLink="/collections" aria-label="Open Collections">📘 Collections</ion-button>
+          </ion-col>
+          <ion-col size="12" size-md="6">
+            <ion-button expand="block" color="medium" routerLink="/map" aria-label="Open Map">🗺️ Map</ion-button>
+          </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col><ion-button expand="block" color="medium" routerLink="/calendar">📆 Calendar</ion-button></ion-col>
-          <ion-col><ion-button expand="block" color="medium" routerLink="/achievements">🏅 Achievements</ion-button></ion-col>
+          <ion-col size="12" size-md="6">
+            <ion-button expand="block" color="medium" routerLink="/calendar" aria-label="Open Calendar">📆 Calendar</ion-button>
+          </ion-col>
+          <ion-col size="12" size-md="6">
+            <ion-button expand="block" color="medium" routerLink="/achievements" aria-label="Open Achievements">🏅 Achievements</ion-button>
+          </ion-col>
         </ion-row>
       </ion-grid>
     </ion-card-content>
@@ -86,6 +102,10 @@
   </ion-card>
 
   <!-- Search -->
-  <ion-searchbar placeholder="Search Mounts, Pets, Toys..." showClearButton="focus"></ion-searchbar>
+  <ion-searchbar
+    placeholder="Search Mounts, Pets, Toys..."
+    showClearButton="focus"
+    aria-label="Search through your collection"
+  ></ion-searchbar>
 
 </ion-content>
