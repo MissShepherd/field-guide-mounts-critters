@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title class="ion-text-center">Field Guide to Mounts & Critters</ion-title>
+    <ion-title class="ion-text-center app-title">Field Guide to Mounts & Critters</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,19 +9,19 @@
   <!-- Collection Summary -->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Collection Summary</ion-card-title>
+      <ion-card-title class="section-header">Collection Summary</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-grid>
         <ion-row>
           <ion-col size="12" size-md="4">
-            <ion-chip color="tertiary">🐉 Mounts: 120 / 412</ion-chip>
+            <ion-chip>🐉 Mounts: 120 / 412</ion-chip>
           </ion-col>
           <ion-col size="12" size-md="4">
-            <ion-chip color="tertiary">🐾 Pets: 250 / 1532</ion-chip>
+            <ion-chip>🐾 Pets: 250 / 1532</ion-chip>
           </ion-col>
           <ion-col size="12" size-md="4">
-            <ion-chip color="tertiary">🎁 Toys: 78 / 500</ion-chip>
+            <ion-chip>🎁 Toys: 78 / 500</ion-chip>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -31,20 +31,20 @@
   <!-- Upcoming Events -->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Upcoming Events</ion-card-title>
+      <ion-card-title class="section-header">Upcoming Events</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-list lines="none">
         <ion-item>
-          <ion-label>🕒 Timewalking: Burning Crusade</ion-label>
+          <ion-label class="item-label">🕒 Timewalking: Burning Crusade</ion-label>
           <ion-note slot="end">Ends in 2d</ion-note>
         </ion-item>
         <ion-item>
-          <ion-label>🎪 Darkmoon Faire</ion-label>
+          <ion-label class="item-label">🎪 Darkmoon Faire</ion-label>
           <ion-note slot="end">Active!</ion-note>
         </ion-item>
         <ion-item>
-          <ion-label>🔥 Midsummer Festival</ion-label>
+          <ion-label class="item-label">🔥 Midsummer Festival</ion-label>
           <ion-note slot="end">5d left</ion-note>
         </ion-item>
       </ion-list>
@@ -54,24 +54,24 @@
   <!-- Quick Access -->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Quick Access</ion-card-title>
+      <ion-card-title class="section-header">Quick Access</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-grid>
         <ion-row>
           <ion-col size="12" size-md="6">
-            <ion-button expand="block" color="medium" routerLink="/collections" aria-label="Open Collections">📘 Collections</ion-button>
+            <ion-button expand="block" routerLink="/collections" aria-label="Open Collections">📘 Collections</ion-button>
           </ion-col>
           <ion-col size="12" size-md="6">
-            <ion-button expand="block" color="medium" routerLink="/map" aria-label="Open Map">🗺️ Map</ion-button>
+            <ion-button expand="block" routerLink="/map" aria-label="Open Map">🗺️ Map</ion-button>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col size="12" size-md="6">
-            <ion-button expand="block" color="medium" routerLink="/calendar" aria-label="Open Calendar">📆 Calendar</ion-button>
+            <ion-button expand="block" routerLink="/calendar" aria-label="Open Calendar">📆 Calendar</ion-button>
           </ion-col>
           <ion-col size="12" size-md="6">
-            <ion-button expand="block" color="medium" routerLink="/achievements" aria-label="Open Achievements">🏅 Achievements</ion-button>
+            <ion-button expand="block" routerLink="/achievements" aria-label="Open Achievements">🏅 Achievements</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -81,12 +81,12 @@
   <!-- Featured Mount -->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Featured Mount</ion-card-title>
+      <ion-card-title class="section-header">Featured Mount</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p><strong>🦄 Swift Spectral Tiger</strong></p>
-      <p>Drop: TCG Loot</p>
-      <p>Status: ❌ Not Collected</p>
+      <p class="item-label"><strong>🦄 Swift Spectral Tiger</strong></p>
+      <p class="description">Drop: TCG Loot</p>
+      <p class="description">Status: ❌ Not Collected</p>
       <ion-button expand="block" color="primary" routerLink="/collections/mounts/featured">View More</ion-button>
     </ion-card-content>
   </ion-card>
@@ -94,10 +94,10 @@
   <!-- Tip of the Day -->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Tip of the Day</ion-card-title>
+      <ion-card-title class="section-header">Tip of the Day</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <em>"Try Argent Tournament dailies for rare pets and mounts!"</em>
+      <p class="description"><em>"Try Argent Tournament dailies for rare pets and mounts!"</em></p>
     </ion-card-content>
   </ion-card>
 
