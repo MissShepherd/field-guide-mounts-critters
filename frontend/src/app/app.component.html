@@ -1,13 +1,17 @@
 <ion-app>
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title>Mounts & Menagerie</ion-title>
+      <!-- App title using Cinzel (fantasy serif) -->
+      <ion-title class="app-title">Mounts & Menagerie</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content class="ion-padding">
-    <h2>Welcome, Champion!</h2>
-    <p>Browse your favorite mounts below:</p>
+    <!-- Section header using LifeCraft -->
+    <h2 class="section-header">Welcome, Champion!</h2>
+
+    <!-- Body text using Roboto Condensed -->
+    <p class="description">Browse your favorite mounts below:</p>
 
     <ion-grid>
       <ion-row>
@@ -15,10 +19,12 @@
           <ion-card>
             <img [src]="mount.image" [alt]="mount.name" />
             <ion-card-header>
-              <ion-card-title>{{ mount.name }}</ion-card-title>
+              <!-- Item label using PT Sans Narrow -->
+              <ion-card-title class="item-label">{{ mount.name }}</ion-card-title>
             </ion-card-header>
             <ion-card-content>
-              <p>{{ mount.description }}</p>
+              <!-- Description using Roboto Condensed -->
+              <p class="description">{{ mount.description }}</p>
             </ion-card-content>
           </ion-card>
         </ion-col>
