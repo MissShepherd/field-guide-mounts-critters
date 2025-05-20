@@ -105,9 +105,11 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/assets",
-                "output": "assets"
-              }
+                "input": "src/assets/icons",
+                "output": "/assets/icons/"
+              },
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": ["src/global.scss", "src/theme/variables.scss"],
             "scripts": []
