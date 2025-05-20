@@ -1,9 +1,4 @@
 import {
-  MENU_BACK_BUTTON_PRIORITY,
-  OVERLAY_BACK_BUTTON_PRIORITY,
-  shouldUseCloseWatcher
-} from "./chunk-USATX7BD.js";
-import {
   isRTL
 } from "./chunk-EUT5B6DW.js";
 import {
@@ -29,123 +24,77 @@ import {
   startFocusVisible
 } from "./chunk-7Q5HCUSL.js";
 import {
-  ActivatedRoute,
-  ChildrenOutletContexts,
-  NavigationStart,
-  PRIMARY_OUTLET,
-  Router,
-  RouterLink,
-  UrlSerializer
-} from "./chunk-AQB2GVQB.js";
-import {
-  CommonModule,
-  DOCUMENT,
-  Location,
-  LocationStrategy,
-  NgIf,
-  NgTemplateOutlet,
-  getDOM
-} from "./chunk-WWE7J4CW.js";
-import {
-  APP_INITIALIZER,
-  ApplicationRef,
-  Attribute,
-  BehaviorSubject,
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Component,
-  ContentChild,
-  ContentChildren,
-  Directive,
-  ElementRef,
-  EnvironmentInjector,
-  EventEmitter,
-  Host,
-  HostListener,
-  Inject,
-  Injectable,
-  InjectionToken,
-  Injector,
-  Input,
-  NgModule,
-  NgZone,
-  Optional,
-  Output,
-  Renderer2,
-  RuntimeError,
-  Self,
-  SkipSelf,
-  Subject,
-  TemplateRef,
-  Version,
-  ViewChild,
-  ViewContainerRef,
-  __decorate,
-  booleanAttribute,
-  combineLatest,
-  computed,
-  createComponent,
-  distinctUntilChanged,
-  filter,
-  forkJoin,
-  forwardRef,
-  from,
-  fromEvent,
-  inject,
-  isPromise,
-  isSubscribable,
-  makeEnvironmentProviders,
-  map,
-  of,
-  reflectComponentType,
-  setClassMetadata,
-  signal,
-  switchMap,
-  untracked,
-  ɵɵInheritDefinitionFeature,
-  ɵɵNgOnChangesFeature,
-  ɵɵProvidersFeature,
-  ɵɵadvance,
-  ɵɵattribute,
-  ɵɵclassProp,
-  ɵɵcontentQuery,
-  ɵɵdefineComponent,
-  ɵɵdefineDirective,
-  ɵɵdefineInjectable,
-  ɵɵdefineInjector,
-  ɵɵdefineNgModule,
-  ɵɵdirectiveInject,
-  ɵɵelementContainer,
-  ɵɵelementContainerEnd,
-  ɵɵelementContainerStart,
-  ɵɵelementEnd,
-  ɵɵelementStart,
-  ɵɵgetCurrentView,
-  ɵɵgetInheritedFactory,
-  ɵɵinject,
-  ɵɵinjectAttribute,
-  ɵɵlistener,
-  ɵɵloadQuery,
-  ɵɵnextContext,
-  ɵɵprojection,
-  ɵɵprojectionDef,
-  ɵɵproperty,
-  ɵɵqueryRefresh,
-  ɵɵresetView,
-  ɵɵrestoreView,
-  ɵɵtemplate,
-  ɵɵviewQuery
-} from "./chunk-ABELNBAC.js";
+  AngularDelegate,
+  BACKDROP,
+  Config,
+  ConfigToken,
+  CoreDelegate,
+  DomController,
+  ENABLE_HTML_CONTENT_DEFAULT,
+  FOCUS_TRAP_DISABLE_CLASS,
+  GESTURE,
+  IonBackButton,
+  IonModal,
+  IonNav,
+  IonPopover,
+  IonRouterOutlet,
+  IonTabs,
+  IonicRouteStrategy,
+  IonicSafeString,
+  IonicSlides,
+  MenuController,
+  NavController,
+  NavParams,
+  OVERLAY_GESTURE_PRIORITY,
+  OverlayBaseController,
+  Platform,
+  ProxyCmp,
+  RouterLinkDelegateDirective,
+  RouterLinkWithHrefDelegateDirective,
+  ValueAccessor,
+  actionSheetController,
+  alertController,
+  attachComponent,
+  createColorClasses,
+  createDelegateController,
+  createTriggerController,
+  detachComponent,
+  dismiss,
+  eventMethod,
+  focusFirstDescendant,
+  focusLastDescendant,
+  getClassMap,
+  getIonMode,
+  getPlatforms,
+  getPresentedOverlay,
+  getTimeGivenProgression,
+  hostContext,
+  initialize,
+  isCancel,
+  isPlatform,
+  loadingController,
+  menuController,
+  modalController,
+  openURL,
+  pickerController,
+  popoverController,
+  prepareOverlay,
+  present,
+  provideComponentInputBinding,
+  safeCall,
+  sanitizeDOMString,
+  setIonicClasses,
+  setOverlayId,
+  toastController
+} from "./chunk-M2M5SJIT.js";
 import {
   iosTransitionAnimation
-} from "./chunk-QD27LZLP.js";
+} from "./chunk-GJ4SWXUR.js";
 import {
   mdTransitionAnimation
-} from "./chunk-3QDSMSM6.js";
+} from "./chunk-2AZ63G5W.js";
 import {
-  LIFECYCLE_DID_ENTER,
   LIFECYCLE_DID_LEAVE,
-  LIFECYCLE_WILL_ENTER,
   LIFECYCLE_WILL_LEAVE,
   LIFECYCLE_WILL_UNLOAD,
   createAnimation,
@@ -154,25 +103,19 @@ import {
   setPageHidden,
   transition,
   waitForMount
-} from "./chunk-EP4WO3JD.js";
+} from "./chunk-I6Q7YG6M.js";
 import {
   Build,
   H,
-  Host as Host2,
+  Host,
   createEvent,
   forceUpdate,
   getAssetPath,
-  getMode,
   h,
   proxyCustomElement,
   readTask,
-  setMode,
   writeTask
 } from "./chunk-MGPHXSG2.js";
-import {
-  doc,
-  win
-} from "./chunk-CJ5MJUPJ.js";
 import {
   addEventListener,
   assert,
@@ -194,10486 +137,102 @@ import {
   transitionEndAsync
 } from "./chunk-L6BHBXTE.js";
 import {
-  config,
-  configFromSession,
-  configFromURL,
-  printIonError,
-  printIonWarning,
-  saveConfig
-} from "./chunk-ZWBDDU4U.js";
-import {
-  BACKDROP_NO_SCROLL,
   GESTURE_CONTROLLER,
   createGesture
 } from "./chunk-6HCD6MJG.js";
 import {
+  shouldUseCloseWatcher
+} from "./chunk-USATX7BD.js";
+import {
+  doc,
+  win
+} from "./chunk-CJ5MJUPJ.js";
+import {
+  config,
+  printIonError,
+  printIonWarning
+} from "./chunk-ZWBDDU4U.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-RD4WJ4KX.js";
+import {
+  ActivatedRoute,
+  Router
+} from "./chunk-Y2IAMTXX.js";
+import "./chunk-SQIWQ6LD.js";
+import "./chunk-MU7PTNEV.js";
+import {
+  CommonModule,
+  Location,
+  NgIf,
+  NgTemplateOutlet
+} from "./chunk-2NCG5MPK.js";
+import "./chunk-FAXQQWXG.js";
+import {
+  DOCUMENT
+} from "./chunk-Y4XM2DEG.js";
+import {
+  APP_INITIALIZER,
+  Attribute,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  ContentChild,
+  ContentChildren,
+  Directive,
+  ElementRef,
+  EnvironmentInjector,
+  HostListener,
+  Injectable,
+  Injector,
+  NgZone,
+  Optional,
+  SkipSelf,
+  ViewChild,
+  ViewContainerRef,
+  forwardRef,
+  fromEvent,
+  inject,
+  makeEnvironmentProviders,
+  setClassMetadata,
+  ɵɵInheritDefinitionFeature,
+  ɵɵProvidersFeature,
+  ɵɵadvance,
+  ɵɵcontentQuery,
+  ɵɵdefineComponent,
+  ɵɵdefineDirective,
+  ɵɵdefineInjectable,
+  ɵɵdirectiveInject,
+  ɵɵelementContainer,
+  ɵɵelementContainerEnd,
+  ɵɵelementContainerStart,
+  ɵɵelementEnd,
+  ɵɵelementStart,
+  ɵɵgetCurrentView,
+  ɵɵgetInheritedFactory,
+  ɵɵinject,
+  ɵɵinjectAttribute,
+  ɵɵlistener,
+  ɵɵloadQuery,
+  ɵɵnextContext,
+  ɵɵprojection,
+  ɵɵprojectionDef,
+  ɵɵproperty,
+  ɵɵqueryRefresh,
+  ɵɵresetView,
+  ɵɵrestoreView,
+  ɵɵtemplate,
+  ɵɵviewQuery
+} from "./chunk-DMVQLT2H.js";
+import {
+  __decorate
+} from "./chunk-7IZRYL2Z.js";
+import {
   __async,
-  __objRest,
   __publicField,
   __spreadProps,
   __spreadValues
 } from "./chunk-ZVATTXSA.js";
-
-// node_modules/@ionic/core/components/cubic-bezier.js
-var getTimeGivenProgression = (p0, p1, p2, p3, progression) => {
-  return solveCubicBezier(p0[1], p1[1], p2[1], p3[1], progression).map((tValue) => {
-    return solveCubicParametricEquation(p0[0], p1[0], p2[0], p3[0], tValue);
-  });
-};
-var solveCubicParametricEquation = (p0, p1, p2, p3, t) => {
-  const partA = 3 * p1 * Math.pow(t - 1, 2);
-  const partB = -3 * p2 * t + 3 * p2 + p3 * t;
-  const partC = p0 * Math.pow(t - 1, 3);
-  return t * (partA + t * partB) - partC;
-};
-var solveCubicBezier = (p0, p1, p2, p3, refPoint) => {
-  p0 -= refPoint;
-  p1 -= refPoint;
-  p2 -= refPoint;
-  p3 -= refPoint;
-  const roots = solveCubicEquation(p3 - 3 * p2 + 3 * p1 - p0, 3 * p2 - 6 * p1 + 3 * p0, 3 * p1 - 3 * p0, p0);
-  return roots.filter((root) => root >= 0 && root <= 1);
-};
-var solveQuadraticEquation = (a, b, c) => {
-  const discriminant = b * b - 4 * a * c;
-  if (discriminant < 0) {
-    return [];
-  } else {
-    return [(-b + Math.sqrt(discriminant)) / (2 * a), (-b - Math.sqrt(discriminant)) / (2 * a)];
-  }
-};
-var solveCubicEquation = (a, b, c, d) => {
-  if (a === 0) {
-    return solveQuadraticEquation(b, c, d);
-  }
-  b /= a;
-  c /= a;
-  d /= a;
-  const p = (3 * c - b * b) / 3;
-  const q = (2 * b * b * b - 9 * b * c + 27 * d) / 27;
-  if (p === 0) {
-    return [Math.pow(-q, 1 / 3)];
-  } else if (q === 0) {
-    return [Math.sqrt(-p), -Math.sqrt(-p)];
-  }
-  const discriminant = Math.pow(q / 2, 2) + Math.pow(p / 3, 3);
-  if (discriminant === 0) {
-    return [Math.pow(q / 2, 1 / 2) - b / 3];
-  } else if (discriminant > 0) {
-    return [Math.pow(-(q / 2) + Math.sqrt(discriminant), 1 / 3) - Math.pow(q / 2 + Math.sqrt(discriminant), 1 / 3) - b / 3];
-  }
-  const r = Math.sqrt(Math.pow(-(p / 3), 3));
-  const phi = Math.acos(-(q / (2 * Math.sqrt(Math.pow(-(p / 3), 3)))));
-  const s = 2 * Math.pow(r, 1 / 3);
-  return [s * Math.cos(phi / 3) - b / 3, s * Math.cos((phi + 2 * Math.PI) / 3) - b / 3, s * Math.cos((phi + 4 * Math.PI) / 3) - b / 3];
-};
-
-// node_modules/@ionic/core/components/ionic-global.js
-var getPlatforms = (win3) => setupPlatforms(win3);
-var isPlatform = (winOrPlatform, platform) => {
-  if (typeof winOrPlatform === "string") {
-    platform = winOrPlatform;
-    winOrPlatform = void 0;
-  }
-  return getPlatforms(winOrPlatform).includes(platform);
-};
-var setupPlatforms = (win3 = window) => {
-  if (typeof win3 === "undefined") {
-    return [];
-  }
-  win3.Ionic = win3.Ionic || {};
-  let platforms = win3.Ionic.platforms;
-  if (platforms == null) {
-    platforms = win3.Ionic.platforms = detectPlatforms(win3);
-    platforms.forEach((p) => win3.document.documentElement.classList.add(`plt-${p}`));
-  }
-  return platforms;
-};
-var detectPlatforms = (win3) => {
-  const customPlatformMethods = config.get("platform");
-  return Object.keys(PLATFORMS_MAP).filter((p) => {
-    const customMethod = customPlatformMethods === null || customPlatformMethods === void 0 ? void 0 : customPlatformMethods[p];
-    return typeof customMethod === "function" ? customMethod(win3) : PLATFORMS_MAP[p](win3);
-  });
-};
-var isMobileWeb = (win3) => isMobile(win3) && !isHybrid(win3);
-var isIpad = (win3) => {
-  if (testUserAgent(win3, /iPad/i)) {
-    return true;
-  }
-  if (testUserAgent(win3, /Macintosh/i) && isMobile(win3)) {
-    return true;
-  }
-  return false;
-};
-var isIphone = (win3) => testUserAgent(win3, /iPhone/i);
-var isIOS = (win3) => testUserAgent(win3, /iPhone|iPod/i) || isIpad(win3);
-var isAndroid = (win3) => testUserAgent(win3, /android|sink/i);
-var isAndroidTablet = (win3) => {
-  return isAndroid(win3) && !testUserAgent(win3, /mobile/i);
-};
-var isPhablet = (win3) => {
-  const width = win3.innerWidth;
-  const height = win3.innerHeight;
-  const smallest = Math.min(width, height);
-  const largest = Math.max(width, height);
-  return smallest > 390 && smallest < 520 && largest > 620 && largest < 800;
-};
-var isTablet = (win3) => {
-  const width = win3.innerWidth;
-  const height = win3.innerHeight;
-  const smallest = Math.min(width, height);
-  const largest = Math.max(width, height);
-  return isIpad(win3) || isAndroidTablet(win3) || smallest > 460 && smallest < 820 && largest > 780 && largest < 1400;
-};
-var isMobile = (win3) => matchMedia2(win3, "(any-pointer:coarse)");
-var isDesktop = (win3) => !isMobile(win3);
-var isHybrid = (win3) => isCordova(win3) || isCapacitorNative(win3);
-var isCordova = (win3) => !!(win3["cordova"] || win3["phonegap"] || win3["PhoneGap"]);
-var isCapacitorNative = (win3) => {
-  const capacitor = win3["Capacitor"];
-  return !!((capacitor === null || capacitor === void 0 ? void 0 : capacitor.isNative) || (capacitor === null || capacitor === void 0 ? void 0 : capacitor.isNativePlatform) && !!capacitor.isNativePlatform());
-};
-var isElectron = (win3) => testUserAgent(win3, /electron/i);
-var isPWA = (win3) => {
-  var _a96;
-  return !!(((_a96 = win3.matchMedia) === null || _a96 === void 0 ? void 0 : _a96.call(win3, "(display-mode: standalone)").matches) || win3.navigator.standalone);
-};
-var testUserAgent = (win3, expr) => expr.test(win3.navigator.userAgent);
-var matchMedia2 = (win3, query) => {
-  var _a96;
-  return (_a96 = win3.matchMedia) === null || _a96 === void 0 ? void 0 : _a96.call(win3, query).matches;
-};
-var PLATFORMS_MAP = {
-  ipad: isIpad,
-  iphone: isIphone,
-  ios: isIOS,
-  android: isAndroid,
-  phablet: isPhablet,
-  tablet: isTablet,
-  cordova: isCordova,
-  capacitor: isCapacitorNative,
-  electron: isElectron,
-  pwa: isPWA,
-  mobile: isMobile,
-  mobileweb: isMobileWeb,
-  desktop: isDesktop,
-  hybrid: isHybrid
-};
-var defaultMode;
-var getIonMode = (ref) => {
-  return ref && getMode(ref) || defaultMode;
-};
-var initialize = (userConfig = {}) => {
-  if (typeof window === "undefined") {
-    return;
-  }
-  const doc2 = window.document;
-  const win3 = window;
-  const Ionic = win3.Ionic = win3.Ionic || {};
-  const configObj = Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, configFromSession(win3)), {
-    persistConfig: false
-  }), Ionic.config), configFromURL(win3)), userConfig);
-  config.reset(configObj);
-  if (config.getBoolean("persistConfig")) {
-    saveConfig(win3, configObj);
-  }
-  setupPlatforms(win3);
-  Ionic.config = config;
-  Ionic.mode = defaultMode = config.get("mode", doc2.documentElement.getAttribute("mode") || (isPlatform(win3, "ios") ? "ios" : "md"));
-  config.set("mode", defaultMode);
-  doc2.documentElement.setAttribute("mode", defaultMode);
-  doc2.documentElement.classList.add(defaultMode);
-  if (config.getBoolean("_testing")) {
-    config.set("animated", false);
-  }
-  const isIonicElement = (elm) => {
-    var _a96;
-    return (_a96 = elm.tagName) === null || _a96 === void 0 ? void 0 : _a96.startsWith("ION-");
-  };
-  const isAllowedIonicModeValue = (elmMode) => ["ios", "md"].includes(elmMode);
-  setMode((elm) => {
-    while (elm) {
-      const elmMode = elm.mode || elm.getAttribute("mode");
-      if (elmMode) {
-        if (isAllowedIonicModeValue(elmMode)) {
-          return elmMode;
-        } else if (isIonicElement(elm)) {
-          printIonWarning('Invalid ionic mode: "' + elmMode + '", expected: "ios" or "md"');
-        }
-      }
-      elm = elm.parentElement;
-    }
-    return defaultMode;
-  });
-};
-
-// node_modules/@ionic/core/components/config.js
-var sanitizeDOMString = (untrustedString) => {
-  try {
-    if (untrustedString instanceof IonicSafeString) {
-      return untrustedString.value;
-    }
-    if (!isSanitizerEnabled() || typeof untrustedString !== "string" || untrustedString === "") {
-      return untrustedString;
-    }
-    if (untrustedString.includes("onload=")) {
-      return "";
-    }
-    const documentFragment = document.createDocumentFragment();
-    const workingDiv = document.createElement("div");
-    documentFragment.appendChild(workingDiv);
-    workingDiv.innerHTML = untrustedString;
-    blockedTags.forEach((blockedTag) => {
-      const getElementsToRemove = documentFragment.querySelectorAll(blockedTag);
-      for (let elementIndex = getElementsToRemove.length - 1; elementIndex >= 0; elementIndex--) {
-        const element = getElementsToRemove[elementIndex];
-        if (element.parentNode) {
-          element.parentNode.removeChild(element);
-        } else {
-          documentFragment.removeChild(element);
-        }
-        const childElements = getElementChildren(element);
-        for (let childIndex = 0; childIndex < childElements.length; childIndex++) {
-          sanitizeElement(childElements[childIndex]);
-        }
-      }
-    });
-    const dfChildren = getElementChildren(documentFragment);
-    for (let childIndex = 0; childIndex < dfChildren.length; childIndex++) {
-      sanitizeElement(dfChildren[childIndex]);
-    }
-    const fragmentDiv = document.createElement("div");
-    fragmentDiv.appendChild(documentFragment);
-    const getInnerDiv = fragmentDiv.querySelector("div");
-    return getInnerDiv !== null ? getInnerDiv.innerHTML : fragmentDiv.innerHTML;
-  } catch (err) {
-    printIonError("sanitizeDOMString", err);
-    return "";
-  }
-};
-var sanitizeElement = (element) => {
-  if (element.nodeType && element.nodeType !== 1) {
-    return;
-  }
-  if (typeof NamedNodeMap !== "undefined" && !(element.attributes instanceof NamedNodeMap)) {
-    element.remove();
-    return;
-  }
-  for (let i = element.attributes.length - 1; i >= 0; i--) {
-    const attribute = element.attributes.item(i);
-    const attributeName = attribute.name;
-    if (!allowedAttributes.includes(attributeName.toLowerCase())) {
-      element.removeAttribute(attributeName);
-      continue;
-    }
-    const attributeValue = attribute.value;
-    const propertyValue = element[attributeName];
-    if (attributeValue != null && attributeValue.toLowerCase().includes("javascript:") || propertyValue != null && propertyValue.toLowerCase().includes("javascript:")) {
-      element.removeAttribute(attributeName);
-    }
-  }
-  const childElements = getElementChildren(element);
-  for (let i = 0; i < childElements.length; i++) {
-    sanitizeElement(childElements[i]);
-  }
-};
-var getElementChildren = (el) => {
-  return el.children != null ? el.children : el.childNodes;
-};
-var isSanitizerEnabled = () => {
-  var _a96;
-  const win3 = window;
-  const config2 = (_a96 = win3 === null || win3 === void 0 ? void 0 : win3.Ionic) === null || _a96 === void 0 ? void 0 : _a96.config;
-  if (config2) {
-    if (config2.get) {
-      return config2.get("sanitizerEnabled", true);
-    } else {
-      return config2.sanitizerEnabled === true || config2.sanitizerEnabled === void 0;
-    }
-  }
-  return true;
-};
-var allowedAttributes = ["class", "id", "href", "src", "name", "slot"];
-var blockedTags = ["script", "style", "iframe", "meta", "link", "object", "embed"];
-var IonicSafeString = class {
-  constructor(value) {
-    this.value = value;
-  }
-};
-var ENABLE_HTML_CONTENT_DEFAULT = false;
-
-// node_modules/@ionic/core/components/theme.js
-var hostContext = (selector, el) => {
-  return el.closest(selector) !== null;
-};
-var createColorClasses = (color, cssClassMap) => {
-  return typeof color === "string" && color.length > 0 ? Object.assign({
-    "ion-color": true,
-    [`ion-color-${color}`]: true
-  }, cssClassMap) : cssClassMap;
-};
-var getClassList = (classes) => {
-  if (classes !== void 0) {
-    const array = Array.isArray(classes) ? classes : classes.split(" ");
-    return array.filter((c) => c != null).map((c) => c.trim()).filter((c) => c !== "");
-  }
-  return [];
-};
-var getClassMap = (classes) => {
-  const map2 = {};
-  getClassList(classes).forEach((c) => map2[c] = true);
-  return map2;
-};
-var SCHEME = /^[a-z][a-z0-9+\-.]*:/;
-var openURL = (url, ev, direction, animation) => __async(null, null, function* () {
-  if (url != null && url[0] !== "#" && !SCHEME.test(url)) {
-    const router = document.querySelector("ion-router");
-    if (router) {
-      if (ev != null) {
-        ev.preventDefault();
-      }
-      return router.push(url, direction, animation);
-    }
-  }
-  return false;
-});
-
-// node_modules/@ionic/core/components/index5.js
-var baseAnimation = (isIos) => {
-  return createAnimation().duration(isIos ? 400 : 300);
-};
-var menuOverlayAnimation = (menu) => {
-  let closedX;
-  let openedX;
-  const width = menu.width + 8;
-  const menuAnimation = createAnimation();
-  const backdropAnimation = createAnimation();
-  if (menu.isEndSide) {
-    closedX = width + "px";
-    openedX = "0px";
-  } else {
-    closedX = -width + "px";
-    openedX = "0px";
-  }
-  menuAnimation.addElement(menu.menuInnerEl).fromTo("transform", `translateX(${closedX})`, `translateX(${openedX})`);
-  const mode = getIonMode(menu);
-  const isIos = mode === "ios";
-  const opacity = isIos ? 0.2 : 0.25;
-  backdropAnimation.addElement(menu.backdropEl).fromTo("opacity", 0.01, opacity);
-  return baseAnimation(isIos).addAnimation([menuAnimation, backdropAnimation]);
-};
-var menuPushAnimation = (menu) => {
-  let contentOpenedX;
-  let menuClosedX;
-  const mode = getIonMode(menu);
-  const width = menu.width;
-  if (menu.isEndSide) {
-    contentOpenedX = -width + "px";
-    menuClosedX = width + "px";
-  } else {
-    contentOpenedX = width + "px";
-    menuClosedX = -width + "px";
-  }
-  const menuAnimation = createAnimation().addElement(menu.menuInnerEl).fromTo("transform", `translateX(${menuClosedX})`, "translateX(0px)");
-  const contentAnimation = createAnimation().addElement(menu.contentEl).fromTo("transform", "translateX(0px)", `translateX(${contentOpenedX})`);
-  const backdropAnimation = createAnimation().addElement(menu.backdropEl).fromTo("opacity", 0.01, 0.32);
-  return baseAnimation(mode === "ios").addAnimation([menuAnimation, contentAnimation, backdropAnimation]);
-};
-var menuRevealAnimation = (menu) => {
-  const mode = getIonMode(menu);
-  const openedX = menu.width * (menu.isEndSide ? -1 : 1) + "px";
-  const contentOpen = createAnimation().addElement(menu.contentEl).fromTo("transform", "translateX(0px)", `translateX(${openedX})`);
-  return baseAnimation(mode === "ios").addAnimation(contentOpen);
-};
-var createMenuController = () => {
-  const menuAnimations = /* @__PURE__ */ new Map();
-  const menus = [];
-  const open = (menu) => __async(null, null, function* () {
-    const menuEl = yield get(menu, true);
-    if (menuEl) {
-      return menuEl.open();
-    }
-    return false;
-  });
-  const close2 = (menu) => __async(null, null, function* () {
-    const menuEl = yield menu !== void 0 ? get(menu, true) : getOpen();
-    if (menuEl !== void 0) {
-      return menuEl.close();
-    }
-    return false;
-  });
-  const toggle = (menu) => __async(null, null, function* () {
-    const menuEl = yield get(menu, true);
-    if (menuEl) {
-      return menuEl.toggle();
-    }
-    return false;
-  });
-  const enable = (shouldEnable, menu) => __async(null, null, function* () {
-    const menuEl = yield get(menu);
-    if (menuEl) {
-      menuEl.disabled = !shouldEnable;
-    }
-    return menuEl;
-  });
-  const swipeGesture = (shouldEnable, menu) => __async(null, null, function* () {
-    const menuEl = yield get(menu);
-    if (menuEl) {
-      menuEl.swipeGesture = shouldEnable;
-    }
-    return menuEl;
-  });
-  const isOpen = (menu) => __async(null, null, function* () {
-    if (menu != null) {
-      const menuEl = yield get(menu);
-      return menuEl !== void 0 && menuEl.isOpen();
-    } else {
-      const menuEl = yield getOpen();
-      return menuEl !== void 0;
-    }
-  });
-  const isEnabled = (menu) => __async(null, null, function* () {
-    const menuEl = yield get(menu);
-    if (menuEl) {
-      return !menuEl.disabled;
-    }
-    return false;
-  });
-  const get = (menu, logOnMultipleSideMenus = false) => __async(null, null, function* () {
-    yield waitUntilReady();
-    if (menu === "start" || menu === "end") {
-      const menuRefs = menus.filter((m) => m.side === menu && !m.disabled);
-      if (menuRefs.length >= 1) {
-        if (menuRefs.length > 1 && logOnMultipleSideMenus) {
-          printIonWarning(`menuController queried for a menu on the "${menu}" side, but ${menuRefs.length} menus were found. The first menu reference will be used. If this is not the behavior you want then pass the ID of the menu instead of its side.`, menuRefs.map((m) => m.el));
-        }
-        return menuRefs[0].el;
-      }
-      const sideMenuRefs = menus.filter((m) => m.side === menu);
-      if (sideMenuRefs.length >= 1) {
-        if (sideMenuRefs.length > 1 && logOnMultipleSideMenus) {
-          printIonWarning(`menuController queried for a menu on the "${menu}" side, but ${sideMenuRefs.length} menus were found. The first menu reference will be used. If this is not the behavior you want then pass the ID of the menu instead of its side.`, sideMenuRefs.map((m) => m.el));
-        }
-        return sideMenuRefs[0].el;
-      }
-    } else if (menu != null) {
-      return find((m) => m.menuId === menu);
-    }
-    const menuEl = find((m) => !m.disabled);
-    if (menuEl) {
-      return menuEl;
-    }
-    return menus.length > 0 ? menus[0].el : void 0;
-  });
-  const getOpen = () => __async(null, null, function* () {
-    yield waitUntilReady();
-    return _getOpenSync();
-  });
-  const getMenus = () => __async(null, null, function* () {
-    yield waitUntilReady();
-    return getMenusSync();
-  });
-  const isAnimating = () => __async(null, null, function* () {
-    yield waitUntilReady();
-    return isAnimatingSync();
-  });
-  const registerAnimation = (name, animation) => {
-    menuAnimations.set(name, animation);
-  };
-  const _register = (menu) => {
-    if (menus.indexOf(menu) < 0) {
-      menus.push(menu);
-    }
-  };
-  const _unregister = (menu) => {
-    const index = menus.indexOf(menu);
-    if (index > -1) {
-      menus.splice(index, 1);
-    }
-  };
-  const _setOpen = (menu, shouldOpen, animated, role) => __async(null, null, function* () {
-    if (isAnimatingSync()) {
-      return false;
-    }
-    if (shouldOpen) {
-      const openedMenu = yield getOpen();
-      if (openedMenu && menu.el !== openedMenu) {
-        yield openedMenu.setOpen(false, false);
-      }
-    }
-    return menu._setOpen(shouldOpen, animated, role);
-  });
-  const _createAnimation = (type, menuCmp) => {
-    const animationBuilder = menuAnimations.get(type);
-    if (!animationBuilder) {
-      throw new Error("animation not registered");
-    }
-    const animation = animationBuilder(menuCmp);
-    return animation;
-  };
-  const _getOpenSync = () => {
-    return find((m) => m._isOpen);
-  };
-  const getMenusSync = () => {
-    return menus.map((menu) => menu.el);
-  };
-  const isAnimatingSync = () => {
-    return menus.some((menu) => menu.isAnimating);
-  };
-  const find = (predicate) => {
-    const instance = menus.find(predicate);
-    if (instance !== void 0) {
-      return instance.el;
-    }
-    return void 0;
-  };
-  const waitUntilReady = () => {
-    return Promise.all(Array.from(document.querySelectorAll("ion-menu")).map((menu) => new Promise((resolve) => componentOnReady(menu, resolve))));
-  };
-  registerAnimation("reveal", menuRevealAnimation);
-  registerAnimation("push", menuPushAnimation);
-  registerAnimation("overlay", menuOverlayAnimation);
-  doc === null || doc === void 0 ? void 0 : doc.addEventListener("ionBackButton", (ev) => {
-    const openMenu = _getOpenSync();
-    if (openMenu) {
-      ev.detail.register(MENU_BACK_BUTTON_PRIORITY, () => {
-        return openMenu.close();
-      });
-    }
-  });
-  return {
-    registerAnimation,
-    get,
-    getMenus,
-    getOpen,
-    isEnabled,
-    swipeGesture,
-    isAnimating,
-    isOpen,
-    enable,
-    toggle,
-    close: close2,
-    open,
-    _getOpenSync,
-    _createAnimation,
-    _register,
-    _unregister,
-    _setOpen
-  };
-};
-var menuController = createMenuController();
-
-// node_modules/@ionic/core/components/framework-delegate.js
-var attachComponent = (delegate, container, component, cssClasses, componentProps, inline) => __async(null, null, function* () {
-  var _a96;
-  if (delegate) {
-    return delegate.attachViewToDom(container, component, componentProps, cssClasses);
-  }
-  if (!inline && typeof component !== "string" && !(component instanceof HTMLElement)) {
-    throw new Error("framework delegate is missing");
-  }
-  const el = typeof component === "string" ? (_a96 = container.ownerDocument) === null || _a96 === void 0 ? void 0 : _a96.createElement(component) : component;
-  if (cssClasses) {
-    cssClasses.forEach((c) => el.classList.add(c));
-  }
-  if (componentProps) {
-    Object.assign(el, componentProps);
-  }
-  container.appendChild(el);
-  yield new Promise((resolve) => componentOnReady(el, resolve));
-  return el;
-});
-var detachComponent = (delegate, element) => {
-  if (element) {
-    if (delegate) {
-      const container = element.parentElement;
-      return delegate.removeViewFromDom(container, element);
-    }
-    element.remove();
-  }
-  return Promise.resolve();
-};
-var CoreDelegate = () => {
-  let BaseComponent;
-  let Reference;
-  const attachViewToDom = (_0, _1, ..._2) => __async(null, [_0, _1, ..._2], function* (parentElement, userComponent, userComponentProps = {}, cssClasses = []) {
-    var _a96, _b;
-    BaseComponent = parentElement;
-    let ChildComponent;
-    if (userComponent) {
-      const el = typeof userComponent === "string" ? (_a96 = BaseComponent.ownerDocument) === null || _a96 === void 0 ? void 0 : _a96.createElement(userComponent) : userComponent;
-      cssClasses.forEach((c) => el.classList.add(c));
-      Object.assign(el, userComponentProps);
-      BaseComponent.appendChild(el);
-      ChildComponent = el;
-      yield new Promise((resolve) => componentOnReady(el, resolve));
-    } else if (BaseComponent.children.length > 0 && (BaseComponent.tagName === "ION-MODAL" || BaseComponent.tagName === "ION-POPOVER")) {
-      const root = ChildComponent = BaseComponent.children[0];
-      if (!root.classList.contains("ion-delegate-host")) {
-        const el = (_b = BaseComponent.ownerDocument) === null || _b === void 0 ? void 0 : _b.createElement("div");
-        el.classList.add("ion-delegate-host");
-        cssClasses.forEach((c) => el.classList.add(c));
-        el.append(...BaseComponent.children);
-        BaseComponent.appendChild(el);
-        ChildComponent = el;
-      }
-    }
-    const app = document.querySelector("ion-app") || document.body;
-    Reference = document.createComment("ionic teleport");
-    BaseComponent.parentNode.insertBefore(Reference, BaseComponent);
-    app.appendChild(BaseComponent);
-    return ChildComponent !== null && ChildComponent !== void 0 ? ChildComponent : BaseComponent;
-  });
-  const removeViewFromDom = () => {
-    if (BaseComponent && Reference) {
-      Reference.parentNode.insertBefore(BaseComponent, Reference);
-      Reference.remove();
-    }
-    return Promise.resolve();
-  };
-  return {
-    attachViewToDom,
-    removeViewFromDom
-  };
-};
-
-// node_modules/@ionic/core/components/overlays.js
-var focusableQueryString = '[tabindex]:not([tabindex^="-"]):not([hidden]):not([disabled]), input:not([type=hidden]):not([tabindex^="-"]):not([hidden]):not([disabled]), textarea:not([tabindex^="-"]):not([hidden]):not([disabled]), button:not([tabindex^="-"]):not([hidden]):not([disabled]), select:not([tabindex^="-"]):not([hidden]):not([disabled]), ion-checkbox:not([tabindex^="-"]):not([hidden]):not([disabled]), ion-radio:not([tabindex^="-"]):not([hidden]):not([disabled]), .ion-focusable:not([tabindex^="-"]):not([hidden]):not([disabled]), .ion-focusable[disabled="false"]:not([tabindex^="-"]):not([hidden])';
-var focusFirstDescendant = (ref, fallbackElement) => {
-  const firstInput = ref.querySelector(focusableQueryString);
-  focusElementInContext(firstInput, fallbackElement !== null && fallbackElement !== void 0 ? fallbackElement : ref);
-};
-var focusLastDescendant = (ref, fallbackElement) => {
-  const inputs = Array.from(ref.querySelectorAll(focusableQueryString));
-  const lastInput = inputs.length > 0 ? inputs[inputs.length - 1] : null;
-  focusElementInContext(lastInput, fallbackElement !== null && fallbackElement !== void 0 ? fallbackElement : ref);
-};
-var focusElementInContext = (hostToFocus, fallbackElement) => {
-  let elementToFocus = hostToFocus;
-  const shadowRoot = hostToFocus === null || hostToFocus === void 0 ? void 0 : hostToFocus.shadowRoot;
-  if (shadowRoot) {
-    elementToFocus = shadowRoot.querySelector(focusableQueryString) || hostToFocus;
-  }
-  if (elementToFocus) {
-    const radioGroup = elementToFocus.closest("ion-radio-group");
-    if (radioGroup) {
-      radioGroup.setFocus();
-    } else {
-      focusVisibleElement(elementToFocus);
-    }
-  } else {
-    fallbackElement.focus();
-  }
-};
-var lastOverlayIndex = 0;
-var lastId = 0;
-var activeAnimations = /* @__PURE__ */ new WeakMap();
-var createController = (tagName) => {
-  return {
-    create(options) {
-      return createOverlay(tagName, options);
-    },
-    dismiss(data, role, id) {
-      return dismissOverlay(document, data, role, tagName, id);
-    },
-    getTop() {
-      return __async(this, null, function* () {
-        return getPresentedOverlay(document, tagName);
-      });
-    }
-  };
-};
-var alertController = createController("ion-alert");
-var actionSheetController = createController("ion-action-sheet");
-var loadingController = createController("ion-loading");
-var modalController = createController("ion-modal");
-var pickerController = createController("ion-picker-legacy");
-var popoverController = createController("ion-popover");
-var toastController = createController("ion-toast");
-var prepareOverlay = (el) => {
-  if (typeof document !== "undefined") {
-    connectListeners(document);
-  }
-  const overlayIndex = lastOverlayIndex++;
-  el.overlayIndex = overlayIndex;
-};
-var setOverlayId = (el) => {
-  if (!el.hasAttribute("id")) {
-    el.id = `ion-overlay-${++lastId}`;
-  }
-  return el.id;
-};
-var createOverlay = (tagName, opts) => {
-  if (typeof window !== "undefined" && typeof window.customElements !== "undefined") {
-    return window.customElements.whenDefined(tagName).then(() => {
-      const element = document.createElement(tagName);
-      element.classList.add("overlay-hidden");
-      Object.assign(element, Object.assign(Object.assign({}, opts), {
-        hasController: true
-      }));
-      getAppRoot(document).appendChild(element);
-      return new Promise((resolve) => componentOnReady(element, resolve));
-    });
-  }
-  return Promise.resolve();
-};
-var isOverlayHidden = (overlay) => overlay.classList.contains("overlay-hidden");
-var focusElementInOverlay = (hostToFocus, overlay) => {
-  let elementToFocus = hostToFocus;
-  const shadowRoot = hostToFocus === null || hostToFocus === void 0 ? void 0 : hostToFocus.shadowRoot;
-  if (shadowRoot) {
-    elementToFocus = shadowRoot.querySelector(focusableQueryString) || hostToFocus;
-  }
-  if (elementToFocus) {
-    focusVisibleElement(elementToFocus);
-  } else {
-    overlay.focus();
-  }
-};
-var trapKeyboardFocus = (ev, doc2) => {
-  const lastOverlay = getPresentedOverlay(doc2, "ion-alert,ion-action-sheet,ion-loading,ion-modal,ion-picker-legacy,ion-popover");
-  const target = ev.target;
-  if (!lastOverlay || !target) {
-    return;
-  }
-  if (lastOverlay.classList.contains(FOCUS_TRAP_DISABLE_CLASS)) {
-    return;
-  }
-  const trapScopedFocus = () => {
-    if (lastOverlay === target) {
-      lastOverlay.lastFocus = void 0;
-    } else if (target.tagName === "ION-TOAST") {
-      focusElementInOverlay(lastOverlay.lastFocus, lastOverlay);
-    } else {
-      const overlayRoot = getElementRoot(lastOverlay);
-      if (!overlayRoot.contains(target)) {
-        return;
-      }
-      const overlayWrapper = overlayRoot.querySelector(".ion-overlay-wrapper");
-      if (!overlayWrapper) {
-        return;
-      }
-      if (overlayWrapper.contains(target) || target === overlayRoot.querySelector("ion-backdrop")) {
-        lastOverlay.lastFocus = target;
-      } else {
-        const lastFocus = lastOverlay.lastFocus;
-        focusFirstDescendant(overlayWrapper, lastOverlay);
-        if (lastFocus === doc2.activeElement) {
-          focusLastDescendant(overlayWrapper, lastOverlay);
-        }
-        lastOverlay.lastFocus = doc2.activeElement;
-      }
-    }
-  };
-  const trapShadowFocus = () => {
-    if (lastOverlay.contains(target)) {
-      lastOverlay.lastFocus = target;
-    } else if (target.tagName === "ION-TOAST") {
-      focusElementInOverlay(lastOverlay.lastFocus, lastOverlay);
-    } else {
-      const lastFocus = lastOverlay.lastFocus;
-      focusFirstDescendant(lastOverlay);
-      if (lastFocus === doc2.activeElement) {
-        focusLastDescendant(lastOverlay);
-      }
-      lastOverlay.lastFocus = doc2.activeElement;
-    }
-  };
-  if (lastOverlay.shadowRoot) {
-    trapShadowFocus();
-  } else {
-    trapScopedFocus();
-  }
-};
-var connectListeners = (doc2) => {
-  if (lastOverlayIndex === 0) {
-    lastOverlayIndex = 1;
-    doc2.addEventListener("focus", (ev) => {
-      trapKeyboardFocus(ev, doc2);
-    }, true);
-    doc2.addEventListener("ionBackButton", (ev) => {
-      const lastOverlay = getPresentedOverlay(doc2);
-      if (lastOverlay === null || lastOverlay === void 0 ? void 0 : lastOverlay.backdropDismiss) {
-        ev.detail.register(OVERLAY_BACK_BUTTON_PRIORITY, () => {
-          lastOverlay.dismiss(void 0, BACKDROP);
-        });
-      }
-    });
-    if (!shouldUseCloseWatcher()) {
-      doc2.addEventListener("keydown", (ev) => {
-        if (ev.key === "Escape") {
-          const lastOverlay = getPresentedOverlay(doc2);
-          if (lastOverlay === null || lastOverlay === void 0 ? void 0 : lastOverlay.backdropDismiss) {
-            lastOverlay.dismiss(void 0, BACKDROP);
-          }
-        }
-      });
-    }
-  }
-};
-var dismissOverlay = (doc2, data, role, overlayTag, id) => {
-  const overlay = getPresentedOverlay(doc2, overlayTag, id);
-  if (!overlay) {
-    return Promise.reject("overlay does not exist");
-  }
-  return overlay.dismiss(data, role);
-};
-var getOverlays = (doc2, selector) => {
-  if (selector === void 0) {
-    selector = "ion-alert,ion-action-sheet,ion-loading,ion-modal,ion-picker-legacy,ion-popover,ion-toast";
-  }
-  return Array.from(doc2.querySelectorAll(selector)).filter((c) => c.overlayIndex > 0);
-};
-var getPresentedOverlays = (doc2, overlayTag) => {
-  return getOverlays(doc2, overlayTag).filter((o) => !isOverlayHidden(o));
-};
-var getPresentedOverlay = (doc2, overlayTag, id) => {
-  const overlays = getPresentedOverlays(doc2, overlayTag);
-  return id === void 0 ? overlays[overlays.length - 1] : overlays.find((o) => o.id === id);
-};
-var setRootAriaHidden = (hidden = false) => {
-  const root = getAppRoot(document);
-  const viewContainer = root.querySelector("ion-router-outlet, ion-nav, #ion-view-container-root");
-  if (!viewContainer) {
-    return;
-  }
-  if (hidden) {
-    viewContainer.setAttribute("aria-hidden", "true");
-  } else {
-    viewContainer.removeAttribute("aria-hidden");
-  }
-};
-var present = (overlay, name, iosEnterAnimation8, mdEnterAnimation7, opts) => __async(null, null, function* () {
-  var _a96, _b;
-  if (overlay.presented) {
-    return;
-  }
-  if (overlay.el.tagName !== "ION-TOAST") {
-    setRootAriaHidden(true);
-    document.body.classList.add(BACKDROP_NO_SCROLL);
-  }
-  hideUnderlyingOverlaysFromScreenReaders(overlay.el);
-  hideAnimatingOverlayFromScreenReaders(overlay.el);
-  overlay.presented = true;
-  overlay.willPresent.emit();
-  (_a96 = overlay.willPresentShorthand) === null || _a96 === void 0 ? void 0 : _a96.emit();
-  const mode = getIonMode(overlay);
-  const animationBuilder = overlay.enterAnimation ? overlay.enterAnimation : config.get(name, mode === "ios" ? iosEnterAnimation8 : mdEnterAnimation7);
-  const completed = yield overlayAnimation(overlay, animationBuilder, overlay.el, opts);
-  if (completed) {
-    overlay.didPresent.emit();
-    (_b = overlay.didPresentShorthand) === null || _b === void 0 ? void 0 : _b.emit();
-  }
-  if (overlay.el.tagName !== "ION-TOAST") {
-    restoreElementFocus(overlay.el);
-  }
-  if (overlay.keyboardClose && (document.activeElement === null || !overlay.el.contains(document.activeElement))) {
-    overlay.el.focus();
-  }
-  overlay.el.removeAttribute("aria-hidden");
-});
-var restoreElementFocus = (overlayEl) => __async(null, null, function* () {
-  let previousElement = document.activeElement;
-  if (!previousElement) {
-    return;
-  }
-  const shadowRoot = previousElement === null || previousElement === void 0 ? void 0 : previousElement.shadowRoot;
-  if (shadowRoot) {
-    previousElement = shadowRoot.querySelector(focusableQueryString) || previousElement;
-  }
-  yield overlayEl.onDidDismiss();
-  if (document.activeElement === null || document.activeElement === document.body) {
-    previousElement.focus();
-  }
-});
-var dismiss = (overlay, data, role, name, iosLeaveAnimation8, mdLeaveAnimation7, opts) => __async(null, null, function* () {
-  var _a96, _b;
-  if (!overlay.presented) {
-    return false;
-  }
-  const presentedOverlays = doc !== void 0 ? getPresentedOverlays(doc) : [];
-  const overlaysNotToast = presentedOverlays.filter((o) => o.tagName !== "ION-TOAST");
-  const lastOverlayNotToast = overlaysNotToast.length === 1 && overlaysNotToast[0].id === overlay.el.id;
-  if (lastOverlayNotToast) {
-    setRootAriaHidden(false);
-    document.body.classList.remove(BACKDROP_NO_SCROLL);
-  }
-  overlay.presented = false;
-  try {
-    hideAnimatingOverlayFromScreenReaders(overlay.el);
-    overlay.el.style.setProperty("pointer-events", "none");
-    overlay.willDismiss.emit({
-      data,
-      role
-    });
-    (_a96 = overlay.willDismissShorthand) === null || _a96 === void 0 ? void 0 : _a96.emit({
-      data,
-      role
-    });
-    const mode = getIonMode(overlay);
-    const animationBuilder = overlay.leaveAnimation ? overlay.leaveAnimation : config.get(name, mode === "ios" ? iosLeaveAnimation8 : mdLeaveAnimation7);
-    if (role !== GESTURE) {
-      yield overlayAnimation(overlay, animationBuilder, overlay.el, opts);
-    }
-    overlay.didDismiss.emit({
-      data,
-      role
-    });
-    (_b = overlay.didDismissShorthand) === null || _b === void 0 ? void 0 : _b.emit({
-      data,
-      role
-    });
-    const animations = activeAnimations.get(overlay) || [];
-    animations.forEach((ani) => ani.destroy());
-    activeAnimations.delete(overlay);
-    overlay.el.classList.add("overlay-hidden");
-    overlay.el.style.removeProperty("pointer-events");
-    if (overlay.el.lastFocus !== void 0) {
-      overlay.el.lastFocus = void 0;
-    }
-  } catch (err) {
-    printIonError(`[${overlay.el.tagName.toLowerCase()}] - `, err);
-  }
-  overlay.el.remove();
-  revealOverlaysToScreenReaders();
-  return true;
-});
-var getAppRoot = (doc2) => {
-  return doc2.querySelector("ion-app") || doc2.body;
-};
-var overlayAnimation = (overlay, animationBuilder, baseEl, opts) => __async(null, null, function* () {
-  baseEl.classList.remove("overlay-hidden");
-  const aniRoot = overlay.el;
-  const animation = animationBuilder(aniRoot, opts);
-  if (!overlay.animated || !config.getBoolean("animated", true)) {
-    animation.duration(0);
-  }
-  if (overlay.keyboardClose) {
-    animation.beforeAddWrite(() => {
-      const activeElement = baseEl.ownerDocument.activeElement;
-      if (activeElement === null || activeElement === void 0 ? void 0 : activeElement.matches("input,ion-input, ion-textarea")) {
-        activeElement.blur();
-      }
-    });
-  }
-  const activeAni = activeAnimations.get(overlay) || [];
-  activeAnimations.set(overlay, [...activeAni, animation]);
-  yield animation.play();
-  return true;
-});
-var eventMethod = (element, eventName) => {
-  let resolve;
-  const promise = new Promise((r) => resolve = r);
-  onceEvent(element, eventName, (event) => {
-    resolve(event.detail);
-  });
-  return promise;
-};
-var onceEvent = (element, eventName, callback) => {
-  const handler = (ev) => {
-    removeEventListener(element, eventName, handler);
-    callback(ev);
-  };
-  addEventListener(element, eventName, handler);
-};
-var isCancel = (role) => {
-  return role === "cancel" || role === BACKDROP;
-};
-var defaultGate = (h2) => h2();
-var safeCall = (handler, arg) => {
-  if (typeof handler === "function") {
-    const jmp = config.get("_zoneGate", defaultGate);
-    return jmp(() => {
-      try {
-        return handler(arg);
-      } catch (e) {
-        throw e;
-      }
-    });
-  }
-  return void 0;
-};
-var BACKDROP = "backdrop";
-var GESTURE = "gesture";
-var OVERLAY_GESTURE_PRIORITY = 39;
-var createDelegateController = (ref) => {
-  let inline = false;
-  let workingDelegate;
-  const coreDelegate = CoreDelegate();
-  const getDelegate = (force = false) => {
-    if (workingDelegate && !force) {
-      return {
-        delegate: workingDelegate,
-        inline
-      };
-    }
-    const {
-      el,
-      hasController,
-      delegate
-    } = ref;
-    const parentEl = el.parentNode;
-    inline = parentEl !== null && !hasController;
-    workingDelegate = inline ? delegate || coreDelegate : delegate;
-    return {
-      inline,
-      delegate: workingDelegate
-    };
-  };
-  const attachViewToDom = (component) => __async(null, null, function* () {
-    const {
-      delegate
-    } = getDelegate(true);
-    if (delegate) {
-      return yield delegate.attachViewToDom(ref.el, component);
-    }
-    const {
-      hasController
-    } = ref;
-    if (hasController && component !== void 0) {
-      throw new Error("framework delegate is missing");
-    }
-    return null;
-  });
-  const removeViewFromDom = () => {
-    const {
-      delegate
-    } = getDelegate();
-    if (delegate && ref.el !== void 0) {
-      delegate.removeViewFromDom(ref.el.parentElement, ref.el);
-    }
-  };
-  return {
-    attachViewToDom,
-    removeViewFromDom
-  };
-};
-var createTriggerController = () => {
-  let destroyTriggerInteraction;
-  const removeClickListener = () => {
-    if (destroyTriggerInteraction) {
-      destroyTriggerInteraction();
-      destroyTriggerInteraction = void 0;
-    }
-  };
-  const addClickListener = (el, trigger) => {
-    removeClickListener();
-    const triggerEl = trigger !== void 0 ? document.getElementById(trigger) : null;
-    if (!triggerEl) {
-      printIonWarning(`[${el.tagName.toLowerCase()}] - A trigger element with the ID "${trigger}" was not found in the DOM. The trigger element must be in the DOM when the "trigger" property is set on an overlay component.`, el);
-      return;
-    }
-    const configureTriggerInteraction2 = (targetEl, overlayEl) => {
-      const openOverlay = () => {
-        overlayEl.present();
-      };
-      targetEl.addEventListener("click", openOverlay);
-      return () => {
-        targetEl.removeEventListener("click", openOverlay);
-      };
-    };
-    destroyTriggerInteraction = configureTriggerInteraction2(triggerEl, el);
-  };
-  return {
-    addClickListener,
-    removeClickListener
-  };
-};
-var hideAnimatingOverlayFromScreenReaders = (overlay) => {
-  if (doc === void 0) return;
-  if (isPlatform("android")) {
-    overlay.setAttribute("aria-hidden", "true");
-  }
-};
-var hideUnderlyingOverlaysFromScreenReaders = (newTopMostOverlay) => {
-  var _a96;
-  if (doc === void 0) return;
-  const overlays = getPresentedOverlays(doc);
-  for (let i = overlays.length - 1; i >= 0; i--) {
-    const presentedOverlay = overlays[i];
-    const nextPresentedOverlay = (_a96 = overlays[i + 1]) !== null && _a96 !== void 0 ? _a96 : newTopMostOverlay;
-    if (nextPresentedOverlay.hasAttribute("aria-hidden") || nextPresentedOverlay.tagName !== "ION-TOAST") {
-      presentedOverlay.setAttribute("aria-hidden", "true");
-    }
-  }
-};
-var revealOverlaysToScreenReaders = () => {
-  if (doc === void 0) return;
-  const overlays = getPresentedOverlays(doc);
-  for (let i = overlays.length - 1; i >= 0; i--) {
-    const currentOverlay = overlays[i];
-    currentOverlay.removeAttribute("aria-hidden");
-    if (currentOverlay.tagName !== "ION-TOAST") {
-      break;
-    }
-  }
-};
-var FOCUS_TRAP_DISABLE_CLASS = "ion-disable-focus-trap";
-
-// node_modules/@ionic/core/components/index.js
-var IonicSlides = (opts) => {
-  const {
-    swiper,
-    extendParams
-  } = opts;
-  const slidesParams = {
-    effect: void 0,
-    direction: "horizontal",
-    initialSlide: 0,
-    loop: false,
-    parallax: false,
-    slidesPerView: 1,
-    spaceBetween: 0,
-    speed: 300,
-    slidesPerColumn: 1,
-    slidesPerColumnFill: "column",
-    slidesPerGroup: 1,
-    centeredSlides: false,
-    slidesOffsetBefore: 0,
-    slidesOffsetAfter: 0,
-    touchEventsTarget: "container",
-    freeMode: false,
-    freeModeMomentum: true,
-    freeModeMomentumRatio: 1,
-    freeModeMomentumBounce: true,
-    freeModeMomentumBounceRatio: 1,
-    freeModeMomentumVelocityRatio: 1,
-    freeModeSticky: false,
-    freeModeMinimumVelocity: 0.02,
-    autoHeight: false,
-    setWrapperSize: false,
-    zoom: {
-      maxRatio: 3,
-      minRatio: 1,
-      toggle: false
-    },
-    touchRatio: 1,
-    touchAngle: 45,
-    simulateTouch: true,
-    touchStartPreventDefault: false,
-    shortSwipes: true,
-    longSwipes: true,
-    longSwipesRatio: 0.5,
-    longSwipesMs: 300,
-    followFinger: true,
-    threshold: 0,
-    touchMoveStopPropagation: true,
-    touchReleaseOnEdges: false,
-    iOSEdgeSwipeDetection: false,
-    iOSEdgeSwipeThreshold: 20,
-    resistance: true,
-    resistanceRatio: 0.85,
-    watchSlidesProgress: false,
-    watchSlidesVisibility: false,
-    preventClicks: true,
-    preventClicksPropagation: true,
-    slideToClickedSlide: false,
-    loopAdditionalSlides: 0,
-    noSwiping: true,
-    runCallbacksOnInit: true,
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true
-    },
-    flipEffect: {
-      slideShadows: true,
-      limitRotation: true
-    },
-    cubeEffect: {
-      slideShadows: true,
-      shadow: true,
-      shadowOffset: 20,
-      shadowScale: 0.94
-    },
-    fadeEffect: {
-      crossFade: false
-    },
-    a11y: {
-      prevSlideMessage: "Previous slide",
-      nextSlideMessage: "Next slide",
-      firstSlideMessage: "This is the first slide",
-      lastSlideMessage: "This is the last slide"
-    }
-  };
-  if (swiper.pagination) {
-    slidesParams.pagination = {
-      type: "bullets",
-      clickable: false,
-      hideOnClick: false
-    };
-  }
-  if (swiper.scrollbar) {
-    slidesParams.scrollbar = {
-      hide: true
-    };
-  }
-  extendParams(slidesParams);
-};
-
-// node_modules/@angular/forms/fesm2022/forms.mjs
-var _BaseControlValueAccessor = class _BaseControlValueAccessor {
-  _renderer;
-  _elementRef;
-  /**
-   * The registered callback function called when a change or input event occurs on the input
-   * element.
-   * @docs-private
-   */
-  onChange = (_) => {
-  };
-  /**
-   * The registered callback function called when a blur event occurs on the input element.
-   * @docs-private
-   */
-  onTouched = () => {
-  };
-  constructor(_renderer, _elementRef) {
-    this._renderer = _renderer;
-    this._elementRef = _elementRef;
-  }
-  /**
-   * Helper method that sets a property on a target element using the current Renderer
-   * implementation.
-   * @docs-private
-   */
-  setProperty(key, value) {
-    this._renderer.setProperty(this._elementRef.nativeElement, key, value);
-  }
-  /**
-   * Registers a function called when the control is touched.
-   * @docs-private
-   */
-  registerOnTouched(fn) {
-    this.onTouched = fn;
-  }
-  /**
-   * Registers a function called when the control value changes.
-   * @docs-private
-   */
-  registerOnChange(fn) {
-    this.onChange = fn;
-  }
-  /**
-   * Sets the "disabled" property on the range input element.
-   * @docs-private
-   */
-  setDisabledState(isDisabled) {
-    this.setProperty("disabled", isDisabled);
-  }
-};
-__publicField(_BaseControlValueAccessor, "ɵfac", function BaseControlValueAccessor_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _BaseControlValueAccessor)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef));
-});
-__publicField(_BaseControlValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _BaseControlValueAccessor
-}));
-var BaseControlValueAccessor = _BaseControlValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BaseControlValueAccessor, [{
-    type: Directive
-  }], () => [{
-    type: Renderer2
-  }, {
-    type: ElementRef
-  }], null);
-})();
-var _BuiltInControlValueAccessor = class _BuiltInControlValueAccessor extends BaseControlValueAccessor {
-};
-__publicField(_BuiltInControlValueAccessor, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵBuiltInControlValueAccessor_BaseFactory;
-  return function BuiltInControlValueAccessor_Factory(__ngFactoryType__) {
-    return (ɵBuiltInControlValueAccessor_BaseFactory || (ɵBuiltInControlValueAccessor_BaseFactory = ɵɵgetInheritedFactory(_BuiltInControlValueAccessor)))(__ngFactoryType__ || _BuiltInControlValueAccessor);
-  };
-})());
-__publicField(_BuiltInControlValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _BuiltInControlValueAccessor,
-  features: [ɵɵInheritDefinitionFeature]
-}));
-var BuiltInControlValueAccessor = _BuiltInControlValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BuiltInControlValueAccessor, [{
-    type: Directive
-  }], null, null);
-})();
-var NG_VALUE_ACCESSOR = new InjectionToken(ngDevMode ? "NgValueAccessor" : "");
-var CHECKBOX_VALUE_ACCESSOR = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => CheckboxControlValueAccessor),
-  multi: true
-};
-var _CheckboxControlValueAccessor = class _CheckboxControlValueAccessor extends BuiltInControlValueAccessor {
-  /**
-   * Sets the "checked" property on the input element.
-   * @docs-private
-   */
-  writeValue(value) {
-    this.setProperty("checked", value);
-  }
-};
-__publicField(_CheckboxControlValueAccessor, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵCheckboxControlValueAccessor_BaseFactory;
-  return function CheckboxControlValueAccessor_Factory(__ngFactoryType__) {
-    return (ɵCheckboxControlValueAccessor_BaseFactory || (ɵCheckboxControlValueAccessor_BaseFactory = ɵɵgetInheritedFactory(_CheckboxControlValueAccessor)))(__ngFactoryType__ || _CheckboxControlValueAccessor);
-  };
-})());
-__publicField(_CheckboxControlValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _CheckboxControlValueAccessor,
-  selectors: [["input", "type", "checkbox", "formControlName", ""], ["input", "type", "checkbox", "formControl", ""], ["input", "type", "checkbox", "ngModel", ""]],
-  hostBindings: function CheckboxControlValueAccessor_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("change", function CheckboxControlValueAccessor_change_HostBindingHandler($event) {
-        return ctx.onChange($event.target.checked);
-      })("blur", function CheckboxControlValueAccessor_blur_HostBindingHandler() {
-        return ctx.onTouched();
-      });
-    }
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([CHECKBOX_VALUE_ACCESSOR]), ɵɵInheritDefinitionFeature]
-}));
-var CheckboxControlValueAccessor = _CheckboxControlValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CheckboxControlValueAccessor, [{
-    type: Directive,
-    args: [{
-      selector: "input[type=checkbox][formControlName],input[type=checkbox][formControl],input[type=checkbox][ngModel]",
-      host: {
-        "(change)": "onChange($event.target.checked)",
-        "(blur)": "onTouched()"
-      },
-      providers: [CHECKBOX_VALUE_ACCESSOR],
-      standalone: false
-    }]
-  }], null, null);
-})();
-var DEFAULT_VALUE_ACCESSOR = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => DefaultValueAccessor),
-  multi: true
-};
-function _isAndroid() {
-  const userAgent = getDOM() ? getDOM().getUserAgent() : "";
-  return /android (\d+)/.test(userAgent.toLowerCase());
-}
-var COMPOSITION_BUFFER_MODE = new InjectionToken(ngDevMode ? "CompositionEventMode" : "");
-var _DefaultValueAccessor = class _DefaultValueAccessor extends BaseControlValueAccessor {
-  _compositionMode;
-  /** Whether the user is creating a composition string (IME events). */
-  _composing = false;
-  constructor(renderer, elementRef, _compositionMode) {
-    super(renderer, elementRef);
-    this._compositionMode = _compositionMode;
-    if (this._compositionMode == null) {
-      this._compositionMode = !_isAndroid();
-    }
-  }
-  /**
-   * Sets the "value" property on the input element.
-   * @docs-private
-   */
-  writeValue(value) {
-    const normalizedValue = value == null ? "" : value;
-    this.setProperty("value", normalizedValue);
-  }
-  /** @internal */
-  _handleInput(value) {
-    if (!this._compositionMode || this._compositionMode && !this._composing) {
-      this.onChange(value);
-    }
-  }
-  /** @internal */
-  _compositionStart() {
-    this._composing = true;
-  }
-  /** @internal */
-  _compositionEnd(value) {
-    this._composing = false;
-    this._compositionMode && this.onChange(value);
-  }
-};
-__publicField(_DefaultValueAccessor, "ɵfac", function DefaultValueAccessor_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _DefaultValueAccessor)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(COMPOSITION_BUFFER_MODE, 8));
-});
-__publicField(_DefaultValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _DefaultValueAccessor,
-  selectors: [["input", "formControlName", "", 3, "type", "checkbox"], ["textarea", "formControlName", ""], ["input", "formControl", "", 3, "type", "checkbox"], ["textarea", "formControl", ""], ["input", "ngModel", "", 3, "type", "checkbox"], ["textarea", "ngModel", ""], ["", "ngDefaultControl", ""]],
-  hostBindings: function DefaultValueAccessor_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("input", function DefaultValueAccessor_input_HostBindingHandler($event) {
-        return ctx._handleInput($event.target.value);
-      })("blur", function DefaultValueAccessor_blur_HostBindingHandler() {
-        return ctx.onTouched();
-      })("compositionstart", function DefaultValueAccessor_compositionstart_HostBindingHandler() {
-        return ctx._compositionStart();
-      })("compositionend", function DefaultValueAccessor_compositionend_HostBindingHandler($event) {
-        return ctx._compositionEnd($event.target.value);
-      });
-    }
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([DEFAULT_VALUE_ACCESSOR]), ɵɵInheritDefinitionFeature]
-}));
-var DefaultValueAccessor = _DefaultValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DefaultValueAccessor, [{
-    type: Directive,
-    args: [{
-      selector: "input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]",
-      // TODO: vsavkin replace the above selector with the one below it once
-      // https://github.com/angular/angular/issues/3011 is implemented
-      // selector: '[ngModel],[formControl],[formControlName]',
-      host: {
-        "(input)": "$any(this)._handleInput($event.target.value)",
-        "(blur)": "onTouched()",
-        "(compositionstart)": "$any(this)._compositionStart()",
-        "(compositionend)": "$any(this)._compositionEnd($event.target.value)"
-      },
-      providers: [DEFAULT_VALUE_ACCESSOR],
-      standalone: false
-    }]
-  }], () => [{
-    type: Renderer2
-  }, {
-    type: ElementRef
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [COMPOSITION_BUFFER_MODE]
-    }]
-  }], null);
-})();
-function isEmptyInputValue(value) {
-  return value == null || lengthOrSize(value) === 0;
-}
-function lengthOrSize(value) {
-  if (value == null) {
-    return null;
-  } else if (Array.isArray(value) || typeof value === "string") {
-    return value.length;
-  } else if (value instanceof Set) {
-    return value.size;
-  }
-  return null;
-}
-var NG_VALIDATORS = new InjectionToken(ngDevMode ? "NgValidators" : "");
-var NG_ASYNC_VALIDATORS = new InjectionToken(ngDevMode ? "NgAsyncValidators" : "");
-var EMAIL_REGEXP = /^(?=.{1,254}$)(?=.{1,64}@)[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-function minValidator(min) {
-  return (control) => {
-    if (control.value == null || min == null) {
-      return null;
-    }
-    const value = parseFloat(control.value);
-    return !isNaN(value) && value < min ? {
-      "min": {
-        "min": min,
-        "actual": control.value
-      }
-    } : null;
-  };
-}
-function maxValidator(max) {
-  return (control) => {
-    if (control.value == null || max == null) {
-      return null;
-    }
-    const value = parseFloat(control.value);
-    return !isNaN(value) && value > max ? {
-      "max": {
-        "max": max,
-        "actual": control.value
-      }
-    } : null;
-  };
-}
-function requiredValidator(control) {
-  return isEmptyInputValue(control.value) ? {
-    "required": true
-  } : null;
-}
-function requiredTrueValidator(control) {
-  return control.value === true ? null : {
-    "required": true
-  };
-}
-function emailValidator(control) {
-  if (isEmptyInputValue(control.value)) {
-    return null;
-  }
-  return EMAIL_REGEXP.test(control.value) ? null : {
-    "email": true
-  };
-}
-function minLengthValidator(minLength) {
-  return (control) => {
-    var _a96, _b;
-    const length = (_b = (_a96 = control.value) == null ? void 0 : _a96.length) != null ? _b : lengthOrSize(control.value);
-    if (length === null || length === 0) {
-      return null;
-    }
-    return length < minLength ? {
-      "minlength": {
-        "requiredLength": minLength,
-        "actualLength": length
-      }
-    } : null;
-  };
-}
-function maxLengthValidator(maxLength) {
-  return (control) => {
-    var _a96, _b;
-    const length = (_b = (_a96 = control.value) == null ? void 0 : _a96.length) != null ? _b : lengthOrSize(control.value);
-    if (length !== null && length > maxLength) {
-      return {
-        "maxlength": {
-          "requiredLength": maxLength,
-          "actualLength": length
-        }
-      };
-    }
-    return null;
-  };
-}
-function patternValidator(pattern) {
-  if (!pattern) return nullValidator;
-  let regex;
-  let regexStr;
-  if (typeof pattern === "string") {
-    regexStr = "";
-    if (pattern.charAt(0) !== "^") regexStr += "^";
-    regexStr += pattern;
-    if (pattern.charAt(pattern.length - 1) !== "$") regexStr += "$";
-    regex = new RegExp(regexStr);
-  } else {
-    regexStr = pattern.toString();
-    regex = pattern;
-  }
-  return (control) => {
-    if (isEmptyInputValue(control.value)) {
-      return null;
-    }
-    const value = control.value;
-    return regex.test(value) ? null : {
-      "pattern": {
-        "requiredPattern": regexStr,
-        "actualValue": value
-      }
-    };
-  };
-}
-function nullValidator(control) {
-  return null;
-}
-function isPresent(o) {
-  return o != null;
-}
-function toObservable(value) {
-  const obs = isPromise(value) ? from(value) : value;
-  if ((typeof ngDevMode === "undefined" || ngDevMode) && !isSubscribable(obs)) {
-    let errorMessage = `Expected async validator to return Promise or Observable.`;
-    if (typeof value === "object") {
-      errorMessage += " Are you using a synchronous validator where an async validator is expected?";
-    }
-    throw new RuntimeError(-1101, errorMessage);
-  }
-  return obs;
-}
-function mergeErrors(arrayOfErrors) {
-  let res = {};
-  arrayOfErrors.forEach((errors) => {
-    res = errors != null ? __spreadValues(__spreadValues({}, res), errors) : res;
-  });
-  return Object.keys(res).length === 0 ? null : res;
-}
-function executeValidators(control, validators) {
-  return validators.map((validator) => validator(control));
-}
-function isValidatorFn(validator) {
-  return !validator.validate;
-}
-function normalizeValidators(validators) {
-  return validators.map((validator) => {
-    return isValidatorFn(validator) ? validator : (c) => validator.validate(c);
-  });
-}
-function compose(validators) {
-  if (!validators) return null;
-  const presentValidators = validators.filter(isPresent);
-  if (presentValidators.length == 0) return null;
-  return function(control) {
-    return mergeErrors(executeValidators(control, presentValidators));
-  };
-}
-function composeValidators(validators) {
-  return validators != null ? compose(normalizeValidators(validators)) : null;
-}
-function composeAsync(validators) {
-  if (!validators) return null;
-  const presentValidators = validators.filter(isPresent);
-  if (presentValidators.length == 0) return null;
-  return function(control) {
-    const observables = executeValidators(control, presentValidators).map(toObservable);
-    return forkJoin(observables).pipe(map(mergeErrors));
-  };
-}
-function composeAsyncValidators(validators) {
-  return validators != null ? composeAsync(normalizeValidators(validators)) : null;
-}
-function mergeValidators(controlValidators, dirValidator) {
-  if (controlValidators === null) return [dirValidator];
-  return Array.isArray(controlValidators) ? [...controlValidators, dirValidator] : [controlValidators, dirValidator];
-}
-function getControlValidators(control) {
-  return control._rawValidators;
-}
-function getControlAsyncValidators(control) {
-  return control._rawAsyncValidators;
-}
-function makeValidatorsArray(validators) {
-  if (!validators) return [];
-  return Array.isArray(validators) ? validators : [validators];
-}
-function hasValidator(validators, validator) {
-  return Array.isArray(validators) ? validators.includes(validator) : validators === validator;
-}
-function addValidators(validators, currentValidators) {
-  const current = makeValidatorsArray(currentValidators);
-  const validatorsToAdd = makeValidatorsArray(validators);
-  validatorsToAdd.forEach((v) => {
-    if (!hasValidator(current, v)) {
-      current.push(v);
-    }
-  });
-  return current;
-}
-function removeValidators(validators, currentValidators) {
-  return makeValidatorsArray(currentValidators).filter((v) => !hasValidator(validators, v));
-}
-var AbstractControlDirective = class {
-  /**
-   * @description
-   * Reports the value of the control if it is present, otherwise null.
-   */
-  get value() {
-    return this.control ? this.control.value : null;
-  }
-  /**
-   * @description
-   * Reports whether the control is valid. A control is considered valid if no
-   * validation errors exist with the current value.
-   * If the control is not present, null is returned.
-   */
-  get valid() {
-    return this.control ? this.control.valid : null;
-  }
-  /**
-   * @description
-   * Reports whether the control is invalid, meaning that an error exists in the input value.
-   * If the control is not present, null is returned.
-   */
-  get invalid() {
-    return this.control ? this.control.invalid : null;
-  }
-  /**
-   * @description
-   * Reports whether a control is pending, meaning that async validation is occurring and
-   * errors are not yet available for the input value. If the control is not present, null is
-   * returned.
-   */
-  get pending() {
-    return this.control ? this.control.pending : null;
-  }
-  /**
-   * @description
-   * Reports whether the control is disabled, meaning that the control is disabled
-   * in the UI and is exempt from validation checks and excluded from aggregate
-   * values of ancestor controls. If the control is not present, null is returned.
-   */
-  get disabled() {
-    return this.control ? this.control.disabled : null;
-  }
-  /**
-   * @description
-   * Reports whether the control is enabled, meaning that the control is included in ancestor
-   * calculations of validity or value. If the control is not present, null is returned.
-   */
-  get enabled() {
-    return this.control ? this.control.enabled : null;
-  }
-  /**
-   * @description
-   * Reports the control's validation errors. If the control is not present, null is returned.
-   */
-  get errors() {
-    return this.control ? this.control.errors : null;
-  }
-  /**
-   * @description
-   * Reports whether the control is pristine, meaning that the user has not yet changed
-   * the value in the UI. If the control is not present, null is returned.
-   */
-  get pristine() {
-    return this.control ? this.control.pristine : null;
-  }
-  /**
-   * @description
-   * Reports whether the control is dirty, meaning that the user has changed
-   * the value in the UI. If the control is not present, null is returned.
-   */
-  get dirty() {
-    return this.control ? this.control.dirty : null;
-  }
-  /**
-   * @description
-   * Reports whether the control is touched, meaning that the user has triggered
-   * a `blur` event on it. If the control is not present, null is returned.
-   */
-  get touched() {
-    return this.control ? this.control.touched : null;
-  }
-  /**
-   * @description
-   * Reports the validation status of the control. Possible values include:
-   * 'VALID', 'INVALID', 'DISABLED', and 'PENDING'.
-   * If the control is not present, null is returned.
-   */
-  get status() {
-    return this.control ? this.control.status : null;
-  }
-  /**
-   * @description
-   * Reports whether the control is untouched, meaning that the user has not yet triggered
-   * a `blur` event on it. If the control is not present, null is returned.
-   */
-  get untouched() {
-    return this.control ? this.control.untouched : null;
-  }
-  /**
-   * @description
-   * Returns a multicasting observable that emits a validation status whenever it is
-   * calculated for the control. If the control is not present, null is returned.
-   */
-  get statusChanges() {
-    return this.control ? this.control.statusChanges : null;
-  }
-  /**
-   * @description
-   * Returns a multicasting observable of value changes for the control that emits every time the
-   * value of the control changes in the UI or programmatically.
-   * If the control is not present, null is returned.
-   */
-  get valueChanges() {
-    return this.control ? this.control.valueChanges : null;
-  }
-  /**
-   * @description
-   * Returns an array that represents the path from the top-level form to this control.
-   * Each index is the string name of the control on that level.
-   */
-  get path() {
-    return null;
-  }
-  /**
-   * Contains the result of merging synchronous validators into a single validator function
-   * (combined using `Validators.compose`).
-   */
-  _composedValidatorFn;
-  /**
-   * Contains the result of merging asynchronous validators into a single validator function
-   * (combined using `Validators.composeAsync`).
-   */
-  _composedAsyncValidatorFn;
-  /**
-   * Set of synchronous validators as they were provided while calling `setValidators` function.
-   * @internal
-   */
-  _rawValidators = [];
-  /**
-   * Set of asynchronous validators as they were provided while calling `setAsyncValidators`
-   * function.
-   * @internal
-   */
-  _rawAsyncValidators = [];
-  /**
-   * Sets synchronous validators for this directive.
-   * @internal
-   */
-  _setValidators(validators) {
-    this._rawValidators = validators || [];
-    this._composedValidatorFn = composeValidators(this._rawValidators);
-  }
-  /**
-   * Sets asynchronous validators for this directive.
-   * @internal
-   */
-  _setAsyncValidators(validators) {
-    this._rawAsyncValidators = validators || [];
-    this._composedAsyncValidatorFn = composeAsyncValidators(this._rawAsyncValidators);
-  }
-  /**
-   * @description
-   * Synchronous validator function composed of all the synchronous validators registered with this
-   * directive.
-   */
-  get validator() {
-    return this._composedValidatorFn || null;
-  }
-  /**
-   * @description
-   * Asynchronous validator function composed of all the asynchronous validators registered with
-   * this directive.
-   */
-  get asyncValidator() {
-    return this._composedAsyncValidatorFn || null;
-  }
-  /*
-   * The set of callbacks to be invoked when directive instance is being destroyed.
-   */
-  _onDestroyCallbacks = [];
-  /**
-   * Internal function to register callbacks that should be invoked
-   * when directive instance is being destroyed.
-   * @internal
-   */
-  _registerOnDestroy(fn) {
-    this._onDestroyCallbacks.push(fn);
-  }
-  /**
-   * Internal function to invoke all registered "on destroy" callbacks.
-   * Note: calling this function also clears the list of callbacks.
-   * @internal
-   */
-  _invokeOnDestroyCallbacks() {
-    this._onDestroyCallbacks.forEach((fn) => fn());
-    this._onDestroyCallbacks = [];
-  }
-  /**
-   * @description
-   * Resets the control with the provided value if the control is present.
-   */
-  reset(value = void 0) {
-    if (this.control) this.control.reset(value);
-  }
-  /**
-   * @description
-   * Reports whether the control with the given path has the error specified.
-   *
-   * @param errorCode The code of the error to check
-   * @param path A list of control names that designates how to move from the current control
-   * to the control that should be queried for errors.
-   *
-   * @usageNotes
-   * For example, for the following `FormGroup`:
-   *
-   * ```ts
-   * form = new FormGroup({
-   *   address: new FormGroup({ street: new FormControl() })
-   * });
-   * ```
-   *
-   * The path to the 'street' control from the root form would be 'address' -> 'street'.
-   *
-   * It can be provided to this method in one of two formats:
-   *
-   * 1. An array of string control names, e.g. `['address', 'street']`
-   * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
-   *
-   * If no path is given, this method checks for the error on the current control.
-   *
-   * @returns whether the given error is present in the control at the given path.
-   *
-   * If the control is not present, false is returned.
-   */
-  hasError(errorCode, path) {
-    return this.control ? this.control.hasError(errorCode, path) : false;
-  }
-  /**
-   * @description
-   * Reports error data for the control with the given path.
-   *
-   * @param errorCode The code of the error to check
-   * @param path A list of control names that designates how to move from the current control
-   * to the control that should be queried for errors.
-   *
-   * @usageNotes
-   * For example, for the following `FormGroup`:
-   *
-   * ```ts
-   * form = new FormGroup({
-   *   address: new FormGroup({ street: new FormControl() })
-   * });
-   * ```
-   *
-   * The path to the 'street' control from the root form would be 'address' -> 'street'.
-   *
-   * It can be provided to this method in one of two formats:
-   *
-   * 1. An array of string control names, e.g. `['address', 'street']`
-   * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
-   *
-   * @returns error data for that particular error. If the control or error is not present,
-   * null is returned.
-   */
-  getError(errorCode, path) {
-    return this.control ? this.control.getError(errorCode, path) : null;
-  }
-};
-var ControlContainer = class extends AbstractControlDirective {
-  /**
-   * @description
-   * The name for the control
-   */
-  name;
-  /**
-   * @description
-   * The top-level form directive for the control.
-   */
-  get formDirective() {
-    return null;
-  }
-  /**
-   * @description
-   * The path to this group.
-   */
-  get path() {
-    return null;
-  }
-};
-var NgControl = class extends AbstractControlDirective {
-  /**
-   * @description
-   * The parent form for the control.
-   *
-   * @internal
-   */
-  _parent = null;
-  /**
-   * @description
-   * The name for the control
-   */
-  name = null;
-  /**
-   * @description
-   * The value accessor for the control
-   */
-  valueAccessor = null;
-};
-var AbstractControlStatus = class {
-  _cd;
-  constructor(cd) {
-    this._cd = cd;
-  }
-  get isTouched() {
-    var _a96, _b, _c, _d, _e;
-    (_c = (_b = (_a96 = this._cd) == null ? void 0 : _a96.control) == null ? void 0 : _b._touched) == null ? void 0 : _c.call(_b);
-    return !!((_e = (_d = this._cd) == null ? void 0 : _d.control) == null ? void 0 : _e.touched);
-  }
-  get isUntouched() {
-    var _a96, _b;
-    return !!((_b = (_a96 = this._cd) == null ? void 0 : _a96.control) == null ? void 0 : _b.untouched);
-  }
-  get isPristine() {
-    var _a96, _b, _c, _d, _e;
-    (_c = (_b = (_a96 = this._cd) == null ? void 0 : _a96.control) == null ? void 0 : _b._pristine) == null ? void 0 : _c.call(_b);
-    return !!((_e = (_d = this._cd) == null ? void 0 : _d.control) == null ? void 0 : _e.pristine);
-  }
-  get isDirty() {
-    var _a96, _b;
-    return !!((_b = (_a96 = this._cd) == null ? void 0 : _a96.control) == null ? void 0 : _b.dirty);
-  }
-  get isValid() {
-    var _a96, _b, _c, _d, _e;
-    (_c = (_b = (_a96 = this._cd) == null ? void 0 : _a96.control) == null ? void 0 : _b._status) == null ? void 0 : _c.call(_b);
-    return !!((_e = (_d = this._cd) == null ? void 0 : _d.control) == null ? void 0 : _e.valid);
-  }
-  get isInvalid() {
-    var _a96, _b;
-    return !!((_b = (_a96 = this._cd) == null ? void 0 : _a96.control) == null ? void 0 : _b.invalid);
-  }
-  get isPending() {
-    var _a96, _b;
-    return !!((_b = (_a96 = this._cd) == null ? void 0 : _a96.control) == null ? void 0 : _b.pending);
-  }
-  get isSubmitted() {
-    var _a96, _b, _c;
-    (_b = (_a96 = this._cd) == null ? void 0 : _a96._submitted) == null ? void 0 : _b.call(_a96);
-    return !!((_c = this._cd) == null ? void 0 : _c.submitted);
-  }
-};
-var ngControlStatusHost = {
-  "[class.ng-untouched]": "isUntouched",
-  "[class.ng-touched]": "isTouched",
-  "[class.ng-pristine]": "isPristine",
-  "[class.ng-dirty]": "isDirty",
-  "[class.ng-valid]": "isValid",
-  "[class.ng-invalid]": "isInvalid",
-  "[class.ng-pending]": "isPending"
-};
-var ngGroupStatusHost = __spreadProps(__spreadValues({}, ngControlStatusHost), {
-  "[class.ng-submitted]": "isSubmitted"
-});
-var _NgControlStatus = class _NgControlStatus extends AbstractControlStatus {
-  constructor(cd) {
-    super(cd);
-  }
-};
-__publicField(_NgControlStatus, "ɵfac", function NgControlStatus_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _NgControlStatus)(ɵɵdirectiveInject(NgControl, 2));
-});
-__publicField(_NgControlStatus, "ɵdir", ɵɵdefineDirective({
-  type: _NgControlStatus,
-  selectors: [["", "formControlName", ""], ["", "ngModel", ""], ["", "formControl", ""]],
-  hostVars: 14,
-  hostBindings: function NgControlStatus_HostBindings(rf, ctx) {
-    if (rf & 2) {
-      ɵɵclassProp("ng-untouched", ctx.isUntouched)("ng-touched", ctx.isTouched)("ng-pristine", ctx.isPristine)("ng-dirty", ctx.isDirty)("ng-valid", ctx.isValid)("ng-invalid", ctx.isInvalid)("ng-pending", ctx.isPending);
-    }
-  },
-  standalone: false,
-  features: [ɵɵInheritDefinitionFeature]
-}));
-var NgControlStatus = _NgControlStatus;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgControlStatus, [{
-    type: Directive,
-    args: [{
-      selector: "[formControlName],[ngModel],[formControl]",
-      host: ngControlStatusHost,
-      standalone: false
-    }]
-  }], () => [{
-    type: NgControl,
-    decorators: [{
-      type: Self
-    }]
-  }], null);
-})();
-var _NgControlStatusGroup = class _NgControlStatusGroup extends AbstractControlStatus {
-  constructor(cd) {
-    super(cd);
-  }
-};
-__publicField(_NgControlStatusGroup, "ɵfac", function NgControlStatusGroup_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _NgControlStatusGroup)(ɵɵdirectiveInject(ControlContainer, 10));
-});
-__publicField(_NgControlStatusGroup, "ɵdir", ɵɵdefineDirective({
-  type: _NgControlStatusGroup,
-  selectors: [["", "formGroupName", ""], ["", "formArrayName", ""], ["", "ngModelGroup", ""], ["", "formGroup", ""], ["form", 3, "ngNoForm", ""], ["", "ngForm", ""]],
-  hostVars: 16,
-  hostBindings: function NgControlStatusGroup_HostBindings(rf, ctx) {
-    if (rf & 2) {
-      ɵɵclassProp("ng-untouched", ctx.isUntouched)("ng-touched", ctx.isTouched)("ng-pristine", ctx.isPristine)("ng-dirty", ctx.isDirty)("ng-valid", ctx.isValid)("ng-invalid", ctx.isInvalid)("ng-pending", ctx.isPending)("ng-submitted", ctx.isSubmitted);
-    }
-  },
-  standalone: false,
-  features: [ɵɵInheritDefinitionFeature]
-}));
-var NgControlStatusGroup = _NgControlStatusGroup;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgControlStatusGroup, [{
-    type: Directive,
-    args: [{
-      selector: "[formGroupName],[formArrayName],[ngModelGroup],[formGroup],form:not([ngNoForm]),[ngForm]",
-      host: ngGroupStatusHost,
-      standalone: false
-    }]
-  }], () => [{
-    type: ControlContainer,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }]
-  }], null);
-})();
-var formControlNameExample = `
-  <div [formGroup]="myGroup">
-    <input formControlName="firstName">
-  </div>
-
-  In your class:
-
-  this.myGroup = new FormGroup({
-      firstName: new FormControl()
-  });`;
-var formGroupNameExample = `
-  <div [formGroup]="myGroup">
-      <div formGroupName="person">
-        <input formControlName="firstName">
-      </div>
-  </div>
-
-  In your class:
-
-  this.myGroup = new FormGroup({
-      person: new FormGroup({ firstName: new FormControl() })
-  });`;
-var formArrayNameExample = `
-  <div [formGroup]="myGroup">
-    <div formArrayName="cities">
-      <div *ngFor="let city of cityArray.controls; index as i">
-        <input [formControlName]="i">
-      </div>
-    </div>
-  </div>
-
-  In your class:
-
-  this.cityArray = new FormArray([new FormControl('SF')]);
-  this.myGroup = new FormGroup({
-    cities: this.cityArray
-  });`;
-var ngModelGroupExample = `
-  <form>
-      <div ngModelGroup="person">
-        <input [(ngModel)]="person.name" name="firstName">
-      </div>
-  </form>`;
-var ngModelWithFormGroupExample = `
-  <div [formGroup]="myGroup">
-      <input formControlName="firstName">
-      <input [(ngModel)]="showMoreControls" [ngModelOptions]="{standalone: true}">
-  </div>
-`;
-function controlParentException(nameOrIndex) {
-  return new RuntimeError(1050, `formControlName must be used with a parent formGroup directive. You'll want to add a formGroup
-      directive and pass it an existing FormGroup instance (you can create one in your class).
-
-      ${describeFormControl(nameOrIndex)}
-
-    Example:
-
-    ${formControlNameExample}`);
-}
-function describeFormControl(nameOrIndex) {
-  if (nameOrIndex == null || nameOrIndex === "") {
-    return "";
-  }
-  const valueType = typeof nameOrIndex === "string" ? "name" : "index";
-  return `Affected Form Control ${valueType}: "${nameOrIndex}"`;
-}
-function ngModelGroupException() {
-  return new RuntimeError(1051, `formControlName cannot be used with an ngModelGroup parent. It is only compatible with parents
-      that also have a "form" prefix: formGroupName, formArrayName, or formGroup.
-
-      Option 1:  Update the parent to be formGroupName (reactive form strategy)
-
-      ${formGroupNameExample}
-
-      Option 2: Use ngModel instead of formControlName (template-driven strategy)
-
-      ${ngModelGroupExample}`);
-}
-function missingFormException() {
-  return new RuntimeError(1052, `formGroup expects a FormGroup instance. Please pass one in.
-
-      Example:
-
-      ${formControlNameExample}`);
-}
-function groupParentException() {
-  return new RuntimeError(1053, `formGroupName must be used with a parent formGroup directive.  You'll want to add a formGroup
-    directive and pass it an existing FormGroup instance (you can create one in your class).
-
-    Example:
-
-    ${formGroupNameExample}`);
-}
-function arrayParentException() {
-  return new RuntimeError(1054, `formArrayName must be used with a parent formGroup directive.  You'll want to add a formGroup
-      directive and pass it an existing FormGroup instance (you can create one in your class).
-
-      Example:
-
-      ${formArrayNameExample}`);
-}
-var disabledAttrWarning = `
-  It looks like you're using the disabled attribute with a reactive form directive. If you set disabled to true
-  when you set up this control in your component class, the disabled attribute will actually be set in the DOM for
-  you. We recommend using this approach to avoid 'changed after checked' errors.
-
-  Example:
-  // Specify the \`disabled\` property at control creation time:
-  form = new FormGroup({
-    first: new FormControl({value: 'Nancy', disabled: true}, Validators.required),
-    last: new FormControl('Drew', Validators.required)
-  });
-
-  // Controls can also be enabled/disabled after creation:
-  form.get('first')?.enable();
-  form.get('last')?.disable();
-`;
-var asyncValidatorsDroppedWithOptsWarning = `
-  It looks like you're constructing using a FormControl with both an options argument and an
-  async validators argument. Mixing these arguments will cause your async validators to be dropped.
-  You should either put all your validators in the options object, or in separate validators
-  arguments. For example:
-
-  // Using validators arguments
-  fc = new FormControl(42, Validators.required, myAsyncValidator);
-
-  // Using AbstractControlOptions
-  fc = new FormControl(42, {validators: Validators.required, asyncValidators: myAV});
-
-  // Do NOT mix them: async validators will be dropped!
-  fc = new FormControl(42, {validators: Validators.required}, /* Oops! */ myAsyncValidator);
-`;
-function ngModelWarning(directiveName) {
-  return `
-  It looks like you're using ngModel on the same form field as ${directiveName}.
-  Support for using the ngModel input property and ngModelChange event with
-  reactive form directives has been deprecated in Angular v6 and will be removed
-  in a future version of Angular.
-
-  For more information on this, see our API docs here:
-  https://angular.io/api/forms/${directiveName === "formControl" ? "FormControlDirective" : "FormControlName"}#use-with-ngmodel
-  `;
-}
-function describeKey(isFormGroup, key) {
-  return isFormGroup ? `with name: '${key}'` : `at index: ${key}`;
-}
-function noControlsError(isFormGroup) {
-  return `
-    There are no form controls registered with this ${isFormGroup ? "group" : "array"} yet. If you're using ngModel,
-    you may want to check next tick (e.g. use setTimeout).
-  `;
-}
-function missingControlError(isFormGroup, key) {
-  return `Cannot find form control ${describeKey(isFormGroup, key)}`;
-}
-function missingControlValueError(isFormGroup, key) {
-  return `Must supply a value for form control ${describeKey(isFormGroup, key)}`;
-}
-var VALID = "VALID";
-var INVALID = "INVALID";
-var PENDING = "PENDING";
-var DISABLED = "DISABLED";
-var ControlEvent = class {
-};
-var ValueChangeEvent = class extends ControlEvent {
-  value;
-  source;
-  constructor(value, source) {
-    super();
-    this.value = value;
-    this.source = source;
-  }
-};
-var PristineChangeEvent = class extends ControlEvent {
-  pristine;
-  source;
-  constructor(pristine, source) {
-    super();
-    this.pristine = pristine;
-    this.source = source;
-  }
-};
-var TouchedChangeEvent = class extends ControlEvent {
-  touched;
-  source;
-  constructor(touched, source) {
-    super();
-    this.touched = touched;
-    this.source = source;
-  }
-};
-var StatusChangeEvent = class extends ControlEvent {
-  status;
-  source;
-  constructor(status, source) {
-    super();
-    this.status = status;
-    this.source = source;
-  }
-};
-var FormSubmittedEvent = class extends ControlEvent {
-  source;
-  constructor(source) {
-    super();
-    this.source = source;
-  }
-};
-var FormResetEvent = class extends ControlEvent {
-  source;
-  constructor(source) {
-    super();
-    this.source = source;
-  }
-};
-function pickValidators(validatorOrOpts) {
-  return (isOptionsObj(validatorOrOpts) ? validatorOrOpts.validators : validatorOrOpts) || null;
-}
-function coerceToValidator(validator) {
-  return Array.isArray(validator) ? composeValidators(validator) : validator || null;
-}
-function pickAsyncValidators(asyncValidator, validatorOrOpts) {
-  if (typeof ngDevMode === "undefined" || ngDevMode) {
-    if (isOptionsObj(validatorOrOpts) && asyncValidator) {
-      console.warn(asyncValidatorsDroppedWithOptsWarning);
-    }
-  }
-  return (isOptionsObj(validatorOrOpts) ? validatorOrOpts.asyncValidators : asyncValidator) || null;
-}
-function coerceToAsyncValidator(asyncValidator) {
-  return Array.isArray(asyncValidator) ? composeAsyncValidators(asyncValidator) : asyncValidator || null;
-}
-function isOptionsObj(validatorOrOpts) {
-  return validatorOrOpts != null && !Array.isArray(validatorOrOpts) && typeof validatorOrOpts === "object";
-}
-function assertControlPresent(parent, isGroup, key) {
-  const controls = parent.controls;
-  const collection = isGroup ? Object.keys(controls) : controls;
-  if (!collection.length) {
-    throw new RuntimeError(1e3, typeof ngDevMode === "undefined" || ngDevMode ? noControlsError(isGroup) : "");
-  }
-  if (!controls[key]) {
-    throw new RuntimeError(1001, typeof ngDevMode === "undefined" || ngDevMode ? missingControlError(isGroup, key) : "");
-  }
-}
-function assertAllValuesPresent(control, isGroup, value) {
-  control._forEachChild((_, key) => {
-    if (value[key] === void 0) {
-      throw new RuntimeError(1002, typeof ngDevMode === "undefined" || ngDevMode ? missingControlValueError(isGroup, key) : "");
-    }
-  });
-}
-var AbstractControl = class {
-  /** @internal */
-  _pendingDirty = false;
-  /**
-   * Indicates that a control has its own pending asynchronous validation in progress.
-   * It also stores if the control should emit events when the validation status changes.
-   *
-   * @internal
-   */
-  _hasOwnPendingAsyncValidator = null;
-  /** @internal */
-  _pendingTouched = false;
-  /** @internal */
-  _onCollectionChange = () => {
-  };
-  /** @internal */
-  _updateOn;
-  _parent = null;
-  _asyncValidationSubscription;
-  /**
-   * Contains the result of merging synchronous validators into a single validator function
-   * (combined using `Validators.compose`).
-   *
-   * @internal
-   */
-  _composedValidatorFn;
-  /**
-   * Contains the result of merging asynchronous validators into a single validator function
-   * (combined using `Validators.composeAsync`).
-   *
-   * @internal
-   */
-  _composedAsyncValidatorFn;
-  /**
-   * Synchronous validators as they were provided:
-   *  - in `AbstractControl` constructor
-   *  - as an argument while calling `setValidators` function
-   *  - while calling the setter on the `validator` field (e.g. `control.validator = validatorFn`)
-   *
-   * @internal
-   */
-  _rawValidators;
-  /**
-   * Asynchronous validators as they were provided:
-   *  - in `AbstractControl` constructor
-   *  - as an argument while calling `setAsyncValidators` function
-   *  - while calling the setter on the `asyncValidator` field (e.g. `control.asyncValidator =
-   * asyncValidatorFn`)
-   *
-   * @internal
-   */
-  _rawAsyncValidators;
-  /**
-   * The current value of the control.
-   *
-   * * For a `FormControl`, the current value.
-   * * For an enabled `FormGroup`, the values of enabled controls as an object
-   * with a key-value pair for each member of the group.
-   * * For a disabled `FormGroup`, the values of all controls as an object
-   * with a key-value pair for each member of the group.
-   * * For a `FormArray`, the values of enabled controls as an array.
-   *
-   */
-  value;
-  /**
-   * Initialize the AbstractControl instance.
-   *
-   * @param validators The function or array of functions that is used to determine the validity of
-   *     this control synchronously.
-   * @param asyncValidators The function or array of functions that is used to determine validity of
-   *     this control asynchronously.
-   */
-  constructor(validators, asyncValidators) {
-    this._assignValidators(validators);
-    this._assignAsyncValidators(asyncValidators);
-  }
-  /**
-   * Returns the function that is used to determine the validity of this control synchronously.
-   * If multiple validators have been added, this will be a single composed function.
-   * See `Validators.compose()` for additional information.
-   */
-  get validator() {
-    return this._composedValidatorFn;
-  }
-  set validator(validatorFn) {
-    this._rawValidators = this._composedValidatorFn = validatorFn;
-  }
-  /**
-   * Returns the function that is used to determine the validity of this control asynchronously.
-   * If multiple validators have been added, this will be a single composed function.
-   * See `Validators.compose()` for additional information.
-   */
-  get asyncValidator() {
-    return this._composedAsyncValidatorFn;
-  }
-  set asyncValidator(asyncValidatorFn) {
-    this._rawAsyncValidators = this._composedAsyncValidatorFn = asyncValidatorFn;
-  }
-  /**
-   * The parent control.
-   */
-  get parent() {
-    return this._parent;
-  }
-  /**
-   * The validation status of the control.
-   *
-   * @see {@link FormControlStatus}
-   *
-   * These status values are mutually exclusive, so a control cannot be
-   * both valid AND invalid or invalid AND disabled.
-   */
-  get status() {
-    return untracked(this.statusReactive);
-  }
-  set status(v) {
-    untracked(() => this.statusReactive.set(v));
-  }
-  /** @internal */
-  _status = computed(() => this.statusReactive());
-  statusReactive = signal(void 0);
-  /**
-   * A control is `valid` when its `status` is `VALID`.
-   *
-   * @see {@link AbstractControl.status}
-   *
-   * @returns True if the control has passed all of its validation tests,
-   * false otherwise.
-   */
-  get valid() {
-    return this.status === VALID;
-  }
-  /**
-   * A control is `invalid` when its `status` is `INVALID`.
-   *
-   * @see {@link AbstractControl.status}
-   *
-   * @returns True if this control has failed one or more of its validation checks,
-   * false otherwise.
-   */
-  get invalid() {
-    return this.status === INVALID;
-  }
-  /**
-   * A control is `pending` when its `status` is `PENDING`.
-   *
-   * @see {@link AbstractControl.status}
-   *
-   * @returns True if this control is in the process of conducting a validation check,
-   * false otherwise.
-   */
-  get pending() {
-    return this.status == PENDING;
-  }
-  /**
-   * A control is `disabled` when its `status` is `DISABLED`.
-   *
-   * Disabled controls are exempt from validation checks and
-   * are not included in the aggregate value of their ancestor
-   * controls.
-   *
-   * @see {@link AbstractControl.status}
-   *
-   * @returns True if the control is disabled, false otherwise.
-   */
-  get disabled() {
-    return this.status === DISABLED;
-  }
-  /**
-   * A control is `enabled` as long as its `status` is not `DISABLED`.
-   *
-   * @returns True if the control has any status other than 'DISABLED',
-   * false if the status is 'DISABLED'.
-   *
-   * @see {@link AbstractControl.status}
-   *
-   */
-  get enabled() {
-    return this.status !== DISABLED;
-  }
-  /**
-   * An object containing any errors generated by failing validation,
-   * or null if there are no errors.
-   */
-  errors;
-  /**
-   * A control is `pristine` if the user has not yet changed
-   * the value in the UI.
-   *
-   * @returns True if the user has not yet changed the value in the UI; compare `dirty`.
-   * Programmatic changes to a control's value do not mark it dirty.
-   */
-  get pristine() {
-    return untracked(this.pristineReactive);
-  }
-  set pristine(v) {
-    untracked(() => this.pristineReactive.set(v));
-  }
-  /** @internal */
-  _pristine = computed(() => this.pristineReactive());
-  pristineReactive = signal(true);
-  /**
-   * A control is `dirty` if the user has changed the value
-   * in the UI.
-   *
-   * @returns True if the user has changed the value of this control in the UI; compare `pristine`.
-   * Programmatic changes to a control's value do not mark it dirty.
-   */
-  get dirty() {
-    return !this.pristine;
-  }
-  /**
-   * True if the control is marked as `touched`.
-   *
-   * A control is marked `touched` once the user has triggered
-   * a `blur` event on it.
-   */
-  get touched() {
-    return untracked(this.touchedReactive);
-  }
-  set touched(v) {
-    untracked(() => this.touchedReactive.set(v));
-  }
-  /** @internal */
-  _touched = computed(() => this.touchedReactive());
-  touchedReactive = signal(false);
-  /**
-   * True if the control has not been marked as touched
-   *
-   * A control is `untouched` if the user has not yet triggered
-   * a `blur` event on it.
-   */
-  get untouched() {
-    return !this.touched;
-  }
-  /**
-   * Exposed as observable, see below.
-   *
-   * @internal
-   */
-  _events = new Subject();
-  /**
-   * A multicasting observable that emits an event every time the state of the control changes.
-   * It emits for value, status, pristine or touched changes.
-   *
-   * **Note**: On value change, the emit happens right after a value of this control is updated. The
-   * value of a parent control (for example if this FormControl is a part of a FormGroup) is updated
-   * later, so accessing a value of a parent control (using the `value` property) from the callback
-   * of this event might result in getting a value that has not been updated yet. Subscribe to the
-   * `events` of the parent control instead.
-   * For other event types, the events are emitted after the parent control has been updated.
-   *
-   */
-  events = this._events.asObservable();
-  /**
-   * A multicasting observable that emits an event every time the value of the control changes, in
-   * the UI or programmatically. It also emits an event each time you call enable() or disable()
-   * without passing along {emitEvent: false} as a function argument.
-   *
-   * **Note**: the emit happens right after a value of this control is updated. The value of a
-   * parent control (for example if this FormControl is a part of a FormGroup) is updated later, so
-   * accessing a value of a parent control (using the `value` property) from the callback of this
-   * event might result in getting a value that has not been updated yet. Subscribe to the
-   * `valueChanges` event of the parent control instead.
-   */
-  valueChanges;
-  /**
-   * A multicasting observable that emits an event every time the validation `status` of the control
-   * recalculates.
-   *
-   * @see {@link FormControlStatus}
-   * @see {@link AbstractControl.status}
-   */
-  statusChanges;
-  /**
-   * Reports the update strategy of the `AbstractControl` (meaning
-   * the event on which the control updates itself).
-   * Possible values: `'change'` | `'blur'` | `'submit'`
-   * Default value: `'change'`
-   */
-  get updateOn() {
-    return this._updateOn ? this._updateOn : this.parent ? this.parent.updateOn : "change";
-  }
-  /**
-   * Sets the synchronous validators that are active on this control.  Calling
-   * this overwrites any existing synchronous validators.
-   *
-   * When you add or remove a validator at run time, you must call
-   * `updateValueAndValidity()` for the new validation to take effect.
-   *
-   * If you want to add a new validator without affecting existing ones, consider
-   * using `addValidators()` method instead.
-   */
-  setValidators(validators) {
-    this._assignValidators(validators);
-  }
-  /**
-   * Sets the asynchronous validators that are active on this control. Calling this
-   * overwrites any existing asynchronous validators.
-   *
-   * When you add or remove a validator at run time, you must call
-   * `updateValueAndValidity()` for the new validation to take effect.
-   *
-   * If you want to add a new validator without affecting existing ones, consider
-   * using `addAsyncValidators()` method instead.
-   */
-  setAsyncValidators(validators) {
-    this._assignAsyncValidators(validators);
-  }
-  /**
-   * Add a synchronous validator or validators to this control, without affecting other validators.
-   *
-   * When you add or remove a validator at run time, you must call
-   * `updateValueAndValidity()` for the new validation to take effect.
-   *
-   * Adding a validator that already exists will have no effect. If duplicate validator functions
-   * are present in the `validators` array, only the first instance would be added to a form
-   * control.
-   *
-   * @param validators The new validator function or functions to add to this control.
-   */
-  addValidators(validators) {
-    this.setValidators(addValidators(validators, this._rawValidators));
-  }
-  /**
-   * Add an asynchronous validator or validators to this control, without affecting other
-   * validators.
-   *
-   * When you add or remove a validator at run time, you must call
-   * `updateValueAndValidity()` for the new validation to take effect.
-   *
-   * Adding a validator that already exists will have no effect.
-   *
-   * @param validators The new asynchronous validator function or functions to add to this control.
-   */
-  addAsyncValidators(validators) {
-    this.setAsyncValidators(addValidators(validators, this._rawAsyncValidators));
-  }
-  /**
-   * Remove a synchronous validator from this control, without affecting other validators.
-   * Validators are compared by function reference; you must pass a reference to the exact same
-   * validator function as the one that was originally set. If a provided validator is not found,
-   * it is ignored.
-   *
-   * @usageNotes
-   *
-   * ### Reference to a ValidatorFn
-   *
-   * ```
-   * // Reference to the RequiredValidator
-   * const ctrl = new FormControl<string | null>('', Validators.required);
-   * ctrl.removeValidators(Validators.required);
-   *
-   * // Reference to anonymous function inside MinValidator
-   * const minValidator = Validators.min(3);
-   * const ctrl = new FormControl<string | null>('', minValidator);
-   * expect(ctrl.hasValidator(minValidator)).toEqual(true)
-   * expect(ctrl.hasValidator(Validators.min(3))).toEqual(false)
-   *
-   * ctrl.removeValidators(minValidator);
-   * ```
-   *
-   * When you add or remove a validator at run time, you must call
-   * `updateValueAndValidity()` for the new validation to take effect.
-   *
-   * @param validators The validator or validators to remove.
-   */
-  removeValidators(validators) {
-    this.setValidators(removeValidators(validators, this._rawValidators));
-  }
-  /**
-   * Remove an asynchronous validator from this control, without affecting other validators.
-   * Validators are compared by function reference; you must pass a reference to the exact same
-   * validator function as the one that was originally set. If a provided validator is not found, it
-   * is ignored.
-   *
-   * When you add or remove a validator at run time, you must call
-   * `updateValueAndValidity()` for the new validation to take effect.
-   *
-   * @param validators The asynchronous validator or validators to remove.
-   */
-  removeAsyncValidators(validators) {
-    this.setAsyncValidators(removeValidators(validators, this._rawAsyncValidators));
-  }
-  /**
-   * Check whether a synchronous validator function is present on this control. The provided
-   * validator must be a reference to the exact same function that was provided.
-   *
-   * @usageNotes
-   *
-   * ### Reference to a ValidatorFn
-   *
-   * ```
-   * // Reference to the RequiredValidator
-   * const ctrl = new FormControl<number | null>(0, Validators.required);
-   * expect(ctrl.hasValidator(Validators.required)).toEqual(true)
-   *
-   * // Reference to anonymous function inside MinValidator
-   * const minValidator = Validators.min(3);
-   * const ctrl = new FormControl<number | null>(0, minValidator);
-   * expect(ctrl.hasValidator(minValidator)).toEqual(true)
-   * expect(ctrl.hasValidator(Validators.min(3))).toEqual(false)
-   * ```
-   *
-   * @param validator The validator to check for presence. Compared by function reference.
-   * @returns Whether the provided validator was found on this control.
-   */
-  hasValidator(validator) {
-    return hasValidator(this._rawValidators, validator);
-  }
-  /**
-   * Check whether an asynchronous validator function is present on this control. The provided
-   * validator must be a reference to the exact same function that was provided.
-   *
-   * @param validator The asynchronous validator to check for presence. Compared by function
-   *     reference.
-   * @returns Whether the provided asynchronous validator was found on this control.
-   */
-  hasAsyncValidator(validator) {
-    return hasValidator(this._rawAsyncValidators, validator);
-  }
-  /**
-   * Empties out the synchronous validator list.
-   *
-   * When you add or remove a validator at run time, you must call
-   * `updateValueAndValidity()` for the new validation to take effect.
-   *
-   */
-  clearValidators() {
-    this.validator = null;
-  }
-  /**
-   * Empties out the async validator list.
-   *
-   * When you add or remove a validator at run time, you must call
-   * `updateValueAndValidity()` for the new validation to take effect.
-   *
-   */
-  clearAsyncValidators() {
-    this.asyncValidator = null;
-  }
-  markAsTouched(opts = {}) {
-    var _a96;
-    const changed = this.touched === false;
-    this.touched = true;
-    const sourceControl = (_a96 = opts.sourceControl) != null ? _a96 : this;
-    if (this._parent && !opts.onlySelf) {
-      this._parent.markAsTouched(__spreadProps(__spreadValues({}, opts), {
-        sourceControl
-      }));
-    }
-    if (changed && opts.emitEvent !== false) {
-      this._events.next(new TouchedChangeEvent(true, sourceControl));
-    }
-  }
-  /**
-   * Marks the control and all its descendant controls as `touched`.
-   * @see {@link markAsTouched()}
-   *
-   * @param opts Configuration options that determine how the control propagates changes
-   * and emits events after marking is applied.
-   * * `emitEvent`: When true or not supplied (the default), the `events`
-   * observable emits a `TouchedChangeEvent` with the `touched` property being `true`.
-   * When false, no events are emitted.
-   */
-  markAllAsTouched(opts = {}) {
-    this.markAsTouched({
-      onlySelf: true,
-      emitEvent: opts.emitEvent,
-      sourceControl: this
-    });
-    this._forEachChild((control) => control.markAllAsTouched(opts));
-  }
-  markAsUntouched(opts = {}) {
-    var _a96;
-    const changed = this.touched === true;
-    this.touched = false;
-    this._pendingTouched = false;
-    const sourceControl = (_a96 = opts.sourceControl) != null ? _a96 : this;
-    this._forEachChild((control) => {
-      control.markAsUntouched({
-        onlySelf: true,
-        emitEvent: opts.emitEvent,
-        sourceControl
-      });
-    });
-    if (this._parent && !opts.onlySelf) {
-      this._parent._updateTouched(opts, sourceControl);
-    }
-    if (changed && opts.emitEvent !== false) {
-      this._events.next(new TouchedChangeEvent(false, sourceControl));
-    }
-  }
-  markAsDirty(opts = {}) {
-    var _a96;
-    const changed = this.pristine === true;
-    this.pristine = false;
-    const sourceControl = (_a96 = opts.sourceControl) != null ? _a96 : this;
-    if (this._parent && !opts.onlySelf) {
-      this._parent.markAsDirty(__spreadProps(__spreadValues({}, opts), {
-        sourceControl
-      }));
-    }
-    if (changed && opts.emitEvent !== false) {
-      this._events.next(new PristineChangeEvent(false, sourceControl));
-    }
-  }
-  markAsPristine(opts = {}) {
-    var _a96;
-    const changed = this.pristine === false;
-    this.pristine = true;
-    this._pendingDirty = false;
-    const sourceControl = (_a96 = opts.sourceControl) != null ? _a96 : this;
-    this._forEachChild((control) => {
-      control.markAsPristine({
-        onlySelf: true,
-        emitEvent: opts.emitEvent
-      });
-    });
-    if (this._parent && !opts.onlySelf) {
-      this._parent._updatePristine(opts, sourceControl);
-    }
-    if (changed && opts.emitEvent !== false) {
-      this._events.next(new PristineChangeEvent(true, sourceControl));
-    }
-  }
-  markAsPending(opts = {}) {
-    var _a96;
-    this.status = PENDING;
-    const sourceControl = (_a96 = opts.sourceControl) != null ? _a96 : this;
-    if (opts.emitEvent !== false) {
-      this._events.next(new StatusChangeEvent(this.status, sourceControl));
-      this.statusChanges.emit(this.status);
-    }
-    if (this._parent && !opts.onlySelf) {
-      this._parent.markAsPending(__spreadProps(__spreadValues({}, opts), {
-        sourceControl
-      }));
-    }
-  }
-  disable(opts = {}) {
-    var _a96;
-    const skipPristineCheck = this._parentMarkedDirty(opts.onlySelf);
-    this.status = DISABLED;
-    this.errors = null;
-    this._forEachChild((control) => {
-      control.disable(__spreadProps(__spreadValues({}, opts), {
-        onlySelf: true
-      }));
-    });
-    this._updateValue();
-    const sourceControl = (_a96 = opts.sourceControl) != null ? _a96 : this;
-    if (opts.emitEvent !== false) {
-      this._events.next(new ValueChangeEvent(this.value, sourceControl));
-      this._events.next(new StatusChangeEvent(this.status, sourceControl));
-      this.valueChanges.emit(this.value);
-      this.statusChanges.emit(this.status);
-    }
-    this._updateAncestors(__spreadProps(__spreadValues({}, opts), {
-      skipPristineCheck
-    }), this);
-    this._onDisabledChange.forEach((changeFn) => changeFn(true));
-  }
-  /**
-   * Enables the control. This means the control is included in validation checks and
-   * the aggregate value of its parent. Its status recalculates based on its value and
-   * its validators.
-   *
-   * By default, if the control has children, all children are enabled.
-   *
-   * @see {@link AbstractControl.status}
-   *
-   * @param opts Configure options that control how the control propagates changes and
-   * emits events when marked as untouched
-   * * `onlySelf`: When true, mark only this control. When false or not supplied,
-   * marks all direct ancestors. Default is false.
-   * * `emitEvent`: When true or not supplied (the default), the `statusChanges`,
-   * `valueChanges` and `events`
-   * observables emit events with the latest status and value when the control is enabled.
-   * When false, no events are emitted.
-   */
-  enable(opts = {}) {
-    const skipPristineCheck = this._parentMarkedDirty(opts.onlySelf);
-    this.status = VALID;
-    this._forEachChild((control) => {
-      control.enable(__spreadProps(__spreadValues({}, opts), {
-        onlySelf: true
-      }));
-    });
-    this.updateValueAndValidity({
-      onlySelf: true,
-      emitEvent: opts.emitEvent
-    });
-    this._updateAncestors(__spreadProps(__spreadValues({}, opts), {
-      skipPristineCheck
-    }), this);
-    this._onDisabledChange.forEach((changeFn) => changeFn(false));
-  }
-  _updateAncestors(opts, sourceControl) {
-    if (this._parent && !opts.onlySelf) {
-      this._parent.updateValueAndValidity(opts);
-      if (!opts.skipPristineCheck) {
-        this._parent._updatePristine({}, sourceControl);
-      }
-      this._parent._updateTouched({}, sourceControl);
-    }
-  }
-  /**
-   * Sets the parent of the control
-   *
-   * @param parent The new parent.
-   */
-  setParent(parent) {
-    this._parent = parent;
-  }
-  /**
-   * The raw value of this control. For most control implementations, the raw value will include
-   * disabled children.
-   */
-  getRawValue() {
-    return this.value;
-  }
-  updateValueAndValidity(opts = {}) {
-    var _a96;
-    this._setInitialStatus();
-    this._updateValue();
-    if (this.enabled) {
-      const shouldHaveEmitted = this._cancelExistingSubscription();
-      this.errors = this._runValidator();
-      this.status = this._calculateStatus();
-      if (this.status === VALID || this.status === PENDING) {
-        this._runAsyncValidator(shouldHaveEmitted, opts.emitEvent);
-      }
-    }
-    const sourceControl = (_a96 = opts.sourceControl) != null ? _a96 : this;
-    if (opts.emitEvent !== false) {
-      this._events.next(new ValueChangeEvent(this.value, sourceControl));
-      this._events.next(new StatusChangeEvent(this.status, sourceControl));
-      this.valueChanges.emit(this.value);
-      this.statusChanges.emit(this.status);
-    }
-    if (this._parent && !opts.onlySelf) {
-      this._parent.updateValueAndValidity(__spreadProps(__spreadValues({}, opts), {
-        sourceControl
-      }));
-    }
-  }
-  /** @internal */
-  _updateTreeValidity(opts = {
-    emitEvent: true
-  }) {
-    this._forEachChild((ctrl) => ctrl._updateTreeValidity(opts));
-    this.updateValueAndValidity({
-      onlySelf: true,
-      emitEvent: opts.emitEvent
-    });
-  }
-  _setInitialStatus() {
-    this.status = this._allControlsDisabled() ? DISABLED : VALID;
-  }
-  _runValidator() {
-    return this.validator ? this.validator(this) : null;
-  }
-  _runAsyncValidator(shouldHaveEmitted, emitEvent) {
-    if (this.asyncValidator) {
-      this.status = PENDING;
-      this._hasOwnPendingAsyncValidator = {
-        emitEvent: emitEvent !== false
-      };
-      const obs = toObservable(this.asyncValidator(this));
-      this._asyncValidationSubscription = obs.subscribe((errors) => {
-        this._hasOwnPendingAsyncValidator = null;
-        this.setErrors(errors, {
-          emitEvent,
-          shouldHaveEmitted
-        });
-      });
-    }
-  }
-  _cancelExistingSubscription() {
-    var _a96, _b;
-    if (this._asyncValidationSubscription) {
-      this._asyncValidationSubscription.unsubscribe();
-      const shouldHaveEmitted = (_b = (_a96 = this._hasOwnPendingAsyncValidator) == null ? void 0 : _a96.emitEvent) != null ? _b : false;
-      this._hasOwnPendingAsyncValidator = null;
-      return shouldHaveEmitted;
-    }
-    return false;
-  }
-  setErrors(errors, opts = {}) {
-    this.errors = errors;
-    this._updateControlsErrors(opts.emitEvent !== false, this, opts.shouldHaveEmitted);
-  }
-  /**
-   * Retrieves a child control given the control's name or path.
-   *
-   * @param path A dot-delimited string or array of string/number values that define the path to the
-   * control. If a string is provided, passing it as a string literal will result in improved type
-   * information. Likewise, if an array is provided, passing it `as const` will cause improved type
-   * information to be available.
-   *
-   * @usageNotes
-   * ### Retrieve a nested control
-   *
-   * For example, to get a `name` control nested within a `person` sub-group:
-   *
-   * * `this.form.get('person.name');`
-   *
-   * -OR-
-   *
-   * * `this.form.get(['person', 'name'] as const);` // `as const` gives improved typings
-   *
-   * ### Retrieve a control in a FormArray
-   *
-   * When accessing an element inside a FormArray, you can use an element index.
-   * For example, to get a `price` control from the first element in an `items` array you can use:
-   *
-   * * `this.form.get('items.0.price');`
-   *
-   * -OR-
-   *
-   * * `this.form.get(['items', 0, 'price']);`
-   */
-  get(path) {
-    let currPath = path;
-    if (currPath == null) return null;
-    if (!Array.isArray(currPath)) currPath = currPath.split(".");
-    if (currPath.length === 0) return null;
-    return currPath.reduce((control, name) => control && control._find(name), this);
-  }
-  /**
-   * @description
-   * Reports error data for the control with the given path.
-   *
-   * @param errorCode The code of the error to check
-   * @param path A list of control names that designates how to move from the current control
-   * to the control that should be queried for errors.
-   *
-   * @usageNotes
-   * For example, for the following `FormGroup`:
-   *
-   * ```ts
-   * form = new FormGroup({
-   *   address: new FormGroup({ street: new FormControl() })
-   * });
-   * ```
-   *
-   * The path to the 'street' control from the root form would be 'address' -> 'street'.
-   *
-   * It can be provided to this method in one of two formats:
-   *
-   * 1. An array of string control names, e.g. `['address', 'street']`
-   * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
-   *
-   * @returns error data for that particular error. If the control or error is not present,
-   * null is returned.
-   */
-  getError(errorCode, path) {
-    const control = path ? this.get(path) : this;
-    return control && control.errors ? control.errors[errorCode] : null;
-  }
-  /**
-   * @description
-   * Reports whether the control with the given path has the error specified.
-   *
-   * @param errorCode The code of the error to check
-   * @param path A list of control names that designates how to move from the current control
-   * to the control that should be queried for errors.
-   *
-   * @usageNotes
-   * For example, for the following `FormGroup`:
-   *
-   * ```ts
-   * form = new FormGroup({
-   *   address: new FormGroup({ street: new FormControl() })
-   * });
-   * ```
-   *
-   * The path to the 'street' control from the root form would be 'address' -> 'street'.
-   *
-   * It can be provided to this method in one of two formats:
-   *
-   * 1. An array of string control names, e.g. `['address', 'street']`
-   * 1. A period-delimited list of control names in one string, e.g. `'address.street'`
-   *
-   * If no path is given, this method checks for the error on the current control.
-   *
-   * @returns whether the given error is present in the control at the given path.
-   *
-   * If the control is not present, false is returned.
-   */
-  hasError(errorCode, path) {
-    return !!this.getError(errorCode, path);
-  }
-  /**
-   * Retrieves the top-level ancestor of this control.
-   */
-  get root() {
-    let x = this;
-    while (x._parent) {
-      x = x._parent;
-    }
-    return x;
-  }
-  /** @internal */
-  _updateControlsErrors(emitEvent, changedControl, shouldHaveEmitted) {
-    this.status = this._calculateStatus();
-    if (emitEvent) {
-      this.statusChanges.emit(this.status);
-    }
-    if (emitEvent || shouldHaveEmitted) {
-      this._events.next(new StatusChangeEvent(this.status, changedControl));
-    }
-    if (this._parent) {
-      this._parent._updateControlsErrors(emitEvent, changedControl, shouldHaveEmitted);
-    }
-  }
-  /** @internal */
-  _initObservables() {
-    this.valueChanges = new EventEmitter();
-    this.statusChanges = new EventEmitter();
-  }
-  _calculateStatus() {
-    if (this._allControlsDisabled()) return DISABLED;
-    if (this.errors) return INVALID;
-    if (this._hasOwnPendingAsyncValidator || this._anyControlsHaveStatus(PENDING)) return PENDING;
-    if (this._anyControlsHaveStatus(INVALID)) return INVALID;
-    return VALID;
-  }
-  /** @internal */
-  _anyControlsHaveStatus(status) {
-    return this._anyControls((control) => control.status === status);
-  }
-  /** @internal */
-  _anyControlsDirty() {
-    return this._anyControls((control) => control.dirty);
-  }
-  /** @internal */
-  _anyControlsTouched() {
-    return this._anyControls((control) => control.touched);
-  }
-  /** @internal */
-  _updatePristine(opts, changedControl) {
-    const newPristine = !this._anyControlsDirty();
-    const changed = this.pristine !== newPristine;
-    this.pristine = newPristine;
-    if (this._parent && !opts.onlySelf) {
-      this._parent._updatePristine(opts, changedControl);
-    }
-    if (changed) {
-      this._events.next(new PristineChangeEvent(this.pristine, changedControl));
-    }
-  }
-  /** @internal */
-  _updateTouched(opts = {}, changedControl) {
-    this.touched = this._anyControlsTouched();
-    this._events.next(new TouchedChangeEvent(this.touched, changedControl));
-    if (this._parent && !opts.onlySelf) {
-      this._parent._updateTouched(opts, changedControl);
-    }
-  }
-  /** @internal */
-  _onDisabledChange = [];
-  /** @internal */
-  _registerOnCollectionChange(fn) {
-    this._onCollectionChange = fn;
-  }
-  /** @internal */
-  _setUpdateStrategy(opts) {
-    if (isOptionsObj(opts) && opts.updateOn != null) {
-      this._updateOn = opts.updateOn;
-    }
-  }
-  /**
-   * Check to see if parent has been marked artificially dirty.
-   *
-   * @internal
-   */
-  _parentMarkedDirty(onlySelf) {
-    const parentDirty = this._parent && this._parent.dirty;
-    return !onlySelf && !!parentDirty && !this._parent._anyControlsDirty();
-  }
-  /** @internal */
-  _find(name) {
-    return null;
-  }
-  /**
-   * Internal implementation of the `setValidators` method. Needs to be separated out into a
-   * different method, because it is called in the constructor and it can break cases where
-   * a control is extended.
-   */
-  _assignValidators(validators) {
-    this._rawValidators = Array.isArray(validators) ? validators.slice() : validators;
-    this._composedValidatorFn = coerceToValidator(this._rawValidators);
-  }
-  /**
-   * Internal implementation of the `setAsyncValidators` method. Needs to be separated out into a
-   * different method, because it is called in the constructor and it can break cases where
-   * a control is extended.
-   */
-  _assignAsyncValidators(validators) {
-    this._rawAsyncValidators = Array.isArray(validators) ? validators.slice() : validators;
-    this._composedAsyncValidatorFn = coerceToAsyncValidator(this._rawAsyncValidators);
-  }
-};
-var FormGroup = class extends AbstractControl {
-  /**
-   * Creates a new `FormGroup` instance.
-   *
-   * @param controls A collection of child controls. The key for each child is the name
-   * under which it is registered.
-   *
-   * @param validatorOrOpts A synchronous validator function, or an array of
-   * such functions, or an `AbstractControlOptions` object that contains validation functions
-   * and a validation trigger.
-   *
-   * @param asyncValidator A single async validator or array of async validator functions
-   *
-   */
-  constructor(controls, validatorOrOpts, asyncValidator) {
-    super(pickValidators(validatorOrOpts), pickAsyncValidators(asyncValidator, validatorOrOpts));
-    (typeof ngDevMode === "undefined" || ngDevMode) && validateFormGroupControls(controls);
-    this.controls = controls;
-    this._initObservables();
-    this._setUpdateStrategy(validatorOrOpts);
-    this._setUpControls();
-    this.updateValueAndValidity({
-      onlySelf: true,
-      // If `asyncValidator` is present, it will trigger control status change from `PENDING` to
-      // `VALID` or `INVALID`. The status should be broadcasted via the `statusChanges` observable,
-      // so we set `emitEvent` to `true` to allow that during the control creation process.
-      emitEvent: !!this.asyncValidator
-    });
-  }
-  controls;
-  registerControl(name, control) {
-    if (this.controls[name]) return this.controls[name];
-    this.controls[name] = control;
-    control.setParent(this);
-    control._registerOnCollectionChange(this._onCollectionChange);
-    return control;
-  }
-  addControl(name, control, options = {}) {
-    this.registerControl(name, control);
-    this.updateValueAndValidity({
-      emitEvent: options.emitEvent
-    });
-    this._onCollectionChange();
-  }
-  /**
-   * Remove a control from this group. In a strongly-typed group, required controls cannot be
-   * removed.
-   *
-   * This method also updates the value and validity of the control.
-   *
-   * @param name The control name to remove from the collection
-   * @param options Specifies whether this FormGroup instance should emit events after a
-   *     control is removed.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges` observables emit events with the latest status and value when the control is
-   * removed. When false, no events are emitted.
-   */
-  removeControl(name, options = {}) {
-    if (this.controls[name]) this.controls[name]._registerOnCollectionChange(() => {
-    });
-    delete this.controls[name];
-    this.updateValueAndValidity({
-      emitEvent: options.emitEvent
-    });
-    this._onCollectionChange();
-  }
-  setControl(name, control, options = {}) {
-    if (this.controls[name]) this.controls[name]._registerOnCollectionChange(() => {
-    });
-    delete this.controls[name];
-    if (control) this.registerControl(name, control);
-    this.updateValueAndValidity({
-      emitEvent: options.emitEvent
-    });
-    this._onCollectionChange();
-  }
-  contains(controlName) {
-    return this.controls.hasOwnProperty(controlName) && this.controls[controlName].enabled;
-  }
-  /**
-   * Sets the value of the `FormGroup`. It accepts an object that matches
-   * the structure of the group, with control names as keys.
-   *
-   * @usageNotes
-   * ### Set the complete value for the form group
-   *
-   * ```ts
-   * const form = new FormGroup({
-   *   first: new FormControl(),
-   *   last: new FormControl()
-   * });
-   *
-   * console.log(form.value);   // {first: null, last: null}
-   *
-   * form.setValue({first: 'Nancy', last: 'Drew'});
-   * console.log(form.value);   // {first: 'Nancy', last: 'Drew'}
-   * ```
-   *
-   * @throws When strict checks fail, such as setting the value of a control
-   * that doesn't exist or if you exclude a value of a control that does exist.
-   *
-   * @param value The new value for the control that matches the structure of the group.
-   * @param options Configuration options that determine how the control propagates changes
-   * and emits events after the value changes.
-   * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
-   * updateValueAndValidity} method.
-   *
-   * * `onlySelf`: When true, each change only affects this control, and not its parent. Default is
-   * false.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges`
-   * observables emit events with the latest status and value when the control value is updated.
-   * When false, no events are emitted.
-   */
-  setValue(value, options = {}) {
-    assertAllValuesPresent(this, true, value);
-    Object.keys(value).forEach((name) => {
-      assertControlPresent(this, true, name);
-      this.controls[name].setValue(value[name], {
-        onlySelf: true,
-        emitEvent: options.emitEvent
-      });
-    });
-    this.updateValueAndValidity(options);
-  }
-  /**
-   * Patches the value of the `FormGroup`. It accepts an object with control
-   * names as keys, and does its best to match the values to the correct controls
-   * in the group.
-   *
-   * It accepts both super-sets and sub-sets of the group without throwing an error.
-   *
-   * @usageNotes
-   * ### Patch the value for a form group
-   *
-   * ```ts
-   * const form = new FormGroup({
-   *    first: new FormControl(),
-   *    last: new FormControl()
-   * });
-   * console.log(form.value);   // {first: null, last: null}
-   *
-   * form.patchValue({first: 'Nancy'});
-   * console.log(form.value);   // {first: 'Nancy', last: null}
-   * ```
-   *
-   * @param value The object that matches the structure of the group.
-   * @param options Configuration options that determine how the control propagates changes and
-   * emits events after the value is patched.
-   * * `onlySelf`: When true, each change only affects this control and not its parent. Default is
-   * true.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges` observables emit events with the latest status and value when the control value
-   * is updated. When false, no events are emitted. The configuration options are passed to
-   * the {@link AbstractControl#updateValueAndValidity updateValueAndValidity} method.
-   */
-  patchValue(value, options = {}) {
-    if (value == null) return;
-    Object.keys(value).forEach((name) => {
-      const control = this.controls[name];
-      if (control) {
-        control.patchValue(
-          /* Guaranteed to be present, due to the outer forEach. */
-          value[name],
-          {
-            onlySelf: true,
-            emitEvent: options.emitEvent
-          }
-        );
-      }
-    });
-    this.updateValueAndValidity(options);
-  }
-  /**
-   * Resets the `FormGroup`, marks all descendants `pristine` and `untouched` and sets
-   * the value of all descendants to their default values, or null if no defaults were provided.
-   *
-   * You reset to a specific form state by passing in a map of states
-   * that matches the structure of your form, with control names as keys. The state
-   * is a standalone value or a form state object with both a value and a disabled
-   * status.
-   *
-   * @param value Resets the control with an initial value,
-   * or an object that defines the initial value and disabled state.
-   *
-   * @param options Configuration options that determine how the control propagates changes
-   * and emits events when the group is reset.
-   * * `onlySelf`: When true, each change only affects this control, and not its parent. Default is
-   * false.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges`
-   * observables emit events with the latest status and value when the control is reset.
-   * When false, no events are emitted.
-   * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
-   * updateValueAndValidity} method.
-   *
-   * @usageNotes
-   *
-   * ### Reset the form group values
-   *
-   * ```ts
-   * const form = new FormGroup({
-   *   first: new FormControl('first name'),
-   *   last: new FormControl('last name')
-   * });
-   *
-   * console.log(form.value);  // {first: 'first name', last: 'last name'}
-   *
-   * form.reset({ first: 'name', last: 'last name' });
-   *
-   * console.log(form.value);  // {first: 'name', last: 'last name'}
-   * ```
-   *
-   * ### Reset the form group values and disabled status
-   *
-   * ```ts
-   * const form = new FormGroup({
-   *   first: new FormControl('first name'),
-   *   last: new FormControl('last name')
-   * });
-   *
-   * form.reset({
-   *   first: {value: 'name', disabled: true},
-   *   last: 'last'
-   * });
-   *
-   * console.log(form.value);  // {last: 'last'}
-   * console.log(form.get('first').status);  // 'DISABLED'
-   * ```
-   */
-  reset(value = {}, options = {}) {
-    this._forEachChild((control, name) => {
-      control.reset(value ? value[name] : null, {
-        onlySelf: true,
-        emitEvent: options.emitEvent
-      });
-    });
-    this._updatePristine(options, this);
-    this._updateTouched(options, this);
-    this.updateValueAndValidity(options);
-  }
-  /**
-   * The aggregate value of the `FormGroup`, including any disabled controls.
-   *
-   * Retrieves all values regardless of disabled status.
-   */
-  getRawValue() {
-    return this._reduceChildren({}, (acc, control, name) => {
-      acc[name] = control.getRawValue();
-      return acc;
-    });
-  }
-  /** @internal */
-  _syncPendingControls() {
-    let subtreeUpdated = this._reduceChildren(false, (updated, child) => {
-      return child._syncPendingControls() ? true : updated;
-    });
-    if (subtreeUpdated) this.updateValueAndValidity({
-      onlySelf: true
-    });
-    return subtreeUpdated;
-  }
-  /** @internal */
-  _forEachChild(cb) {
-    Object.keys(this.controls).forEach((key) => {
-      const control = this.controls[key];
-      control && cb(control, key);
-    });
-  }
-  /** @internal */
-  _setUpControls() {
-    this._forEachChild((control) => {
-      control.setParent(this);
-      control._registerOnCollectionChange(this._onCollectionChange);
-    });
-  }
-  /** @internal */
-  _updateValue() {
-    this.value = this._reduceValue();
-  }
-  /** @internal */
-  _anyControls(condition) {
-    for (const [controlName, control] of Object.entries(this.controls)) {
-      if (this.contains(controlName) && condition(control)) {
-        return true;
-      }
-    }
-    return false;
-  }
-  /** @internal */
-  _reduceValue() {
-    let acc = {};
-    return this._reduceChildren(acc, (acc2, control, name) => {
-      if (control.enabled || this.disabled) {
-        acc2[name] = control.value;
-      }
-      return acc2;
-    });
-  }
-  /** @internal */
-  _reduceChildren(initValue, fn) {
-    let res = initValue;
-    this._forEachChild((control, name) => {
-      res = fn(res, control, name);
-    });
-    return res;
-  }
-  /** @internal */
-  _allControlsDisabled() {
-    for (const controlName of Object.keys(this.controls)) {
-      if (this.controls[controlName].enabled) {
-        return false;
-      }
-    }
-    return Object.keys(this.controls).length > 0 || this.disabled;
-  }
-  /** @internal */
-  _find(name) {
-    return this.controls.hasOwnProperty(name) ? this.controls[name] : null;
-  }
-};
-function validateFormGroupControls(controls) {
-  const invalidKeys = Object.keys(controls).filter((key) => key.includes("."));
-  if (invalidKeys.length > 0) {
-    console.warn(`FormGroup keys cannot include \`.\`, please replace the keys for: ${invalidKeys.join(",")}.`);
-  }
-}
-var FormRecord = class extends FormGroup {
-};
-var CALL_SET_DISABLED_STATE = new InjectionToken(typeof ngDevMode === "undefined" || ngDevMode ? "CallSetDisabledState" : "", {
-  providedIn: "root",
-  factory: () => setDisabledStateDefault
-});
-var setDisabledStateDefault = "always";
-function controlPath(name, parent) {
-  return [...parent.path, name];
-}
-function setUpControl(control, dir, callSetDisabledState = setDisabledStateDefault) {
-  var _a96, _b;
-  if (typeof ngDevMode === "undefined" || ngDevMode) {
-    if (!control) _throwError(dir, "Cannot find control with");
-    if (!dir.valueAccessor) _throwMissingValueAccessorError(dir);
-  }
-  setUpValidators(control, dir);
-  dir.valueAccessor.writeValue(control.value);
-  if (control.disabled || callSetDisabledState === "always") {
-    (_b = (_a96 = dir.valueAccessor).setDisabledState) == null ? void 0 : _b.call(_a96, control.disabled);
-  }
-  setUpViewChangePipeline(control, dir);
-  setUpModelChangePipeline(control, dir);
-  setUpBlurPipeline(control, dir);
-  setUpDisabledChangeHandler(control, dir);
-}
-function cleanUpControl(control, dir, validateControlPresenceOnChange = true) {
-  const noop = () => {
-    if (validateControlPresenceOnChange && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      _noControlError(dir);
-    }
-  };
-  if (dir.valueAccessor) {
-    dir.valueAccessor.registerOnChange(noop);
-    dir.valueAccessor.registerOnTouched(noop);
-  }
-  cleanUpValidators(control, dir);
-  if (control) {
-    dir._invokeOnDestroyCallbacks();
-    control._registerOnCollectionChange(() => {
-    });
-  }
-}
-function registerOnValidatorChange(validators, onChange) {
-  validators.forEach((validator) => {
-    if (validator.registerOnValidatorChange) validator.registerOnValidatorChange(onChange);
-  });
-}
-function setUpDisabledChangeHandler(control, dir) {
-  if (dir.valueAccessor.setDisabledState) {
-    const onDisabledChange = (isDisabled) => {
-      dir.valueAccessor.setDisabledState(isDisabled);
-    };
-    control.registerOnDisabledChange(onDisabledChange);
-    dir._registerOnDestroy(() => {
-      control._unregisterOnDisabledChange(onDisabledChange);
-    });
-  }
-}
-function setUpValidators(control, dir) {
-  const validators = getControlValidators(control);
-  if (dir.validator !== null) {
-    control.setValidators(mergeValidators(validators, dir.validator));
-  } else if (typeof validators === "function") {
-    control.setValidators([validators]);
-  }
-  const asyncValidators = getControlAsyncValidators(control);
-  if (dir.asyncValidator !== null) {
-    control.setAsyncValidators(mergeValidators(asyncValidators, dir.asyncValidator));
-  } else if (typeof asyncValidators === "function") {
-    control.setAsyncValidators([asyncValidators]);
-  }
-  const onValidatorChange = () => control.updateValueAndValidity();
-  registerOnValidatorChange(dir._rawValidators, onValidatorChange);
-  registerOnValidatorChange(dir._rawAsyncValidators, onValidatorChange);
-}
-function cleanUpValidators(control, dir) {
-  let isControlUpdated = false;
-  if (control !== null) {
-    if (dir.validator !== null) {
-      const validators = getControlValidators(control);
-      if (Array.isArray(validators) && validators.length > 0) {
-        const updatedValidators = validators.filter((validator) => validator !== dir.validator);
-        if (updatedValidators.length !== validators.length) {
-          isControlUpdated = true;
-          control.setValidators(updatedValidators);
-        }
-      }
-    }
-    if (dir.asyncValidator !== null) {
-      const asyncValidators = getControlAsyncValidators(control);
-      if (Array.isArray(asyncValidators) && asyncValidators.length > 0) {
-        const updatedAsyncValidators = asyncValidators.filter((asyncValidator) => asyncValidator !== dir.asyncValidator);
-        if (updatedAsyncValidators.length !== asyncValidators.length) {
-          isControlUpdated = true;
-          control.setAsyncValidators(updatedAsyncValidators);
-        }
-      }
-    }
-  }
-  const noop = () => {
-  };
-  registerOnValidatorChange(dir._rawValidators, noop);
-  registerOnValidatorChange(dir._rawAsyncValidators, noop);
-  return isControlUpdated;
-}
-function setUpViewChangePipeline(control, dir) {
-  dir.valueAccessor.registerOnChange((newValue) => {
-    control._pendingValue = newValue;
-    control._pendingChange = true;
-    control._pendingDirty = true;
-    if (control.updateOn === "change") updateControl(control, dir);
-  });
-}
-function setUpBlurPipeline(control, dir) {
-  dir.valueAccessor.registerOnTouched(() => {
-    control._pendingTouched = true;
-    if (control.updateOn === "blur" && control._pendingChange) updateControl(control, dir);
-    if (control.updateOn !== "submit") control.markAsTouched();
-  });
-}
-function updateControl(control, dir) {
-  if (control._pendingDirty) control.markAsDirty();
-  control.setValue(control._pendingValue, {
-    emitModelToViewChange: false
-  });
-  dir.viewToModelUpdate(control._pendingValue);
-  control._pendingChange = false;
-}
-function setUpModelChangePipeline(control, dir) {
-  const onChange = (newValue, emitModelEvent) => {
-    dir.valueAccessor.writeValue(newValue);
-    if (emitModelEvent) dir.viewToModelUpdate(newValue);
-  };
-  control.registerOnChange(onChange);
-  dir._registerOnDestroy(() => {
-    control._unregisterOnChange(onChange);
-  });
-}
-function setUpFormContainer(control, dir) {
-  if (control == null && (typeof ngDevMode === "undefined" || ngDevMode)) _throwError(dir, "Cannot find control with");
-  setUpValidators(control, dir);
-}
-function cleanUpFormContainer(control, dir) {
-  return cleanUpValidators(control, dir);
-}
-function _noControlError(dir) {
-  return _throwError(dir, "There is no FormControl instance attached to form control element with");
-}
-function _throwError(dir, message) {
-  const messageEnd = _describeControlLocation(dir);
-  throw new Error(`${message} ${messageEnd}`);
-}
-function _describeControlLocation(dir) {
-  const path = dir.path;
-  if (path && path.length > 1) return `path: '${path.join(" -> ")}'`;
-  if (path == null ? void 0 : path[0]) return `name: '${path}'`;
-  return "unspecified name attribute";
-}
-function _throwMissingValueAccessorError(dir) {
-  const loc = _describeControlLocation(dir);
-  throw new RuntimeError(-1203, `No value accessor for form control ${loc}.`);
-}
-function _throwInvalidValueAccessorError(dir) {
-  const loc = _describeControlLocation(dir);
-  throw new RuntimeError(1200, `Value accessor was not provided as an array for form control with ${loc}. Check that the \`NG_VALUE_ACCESSOR\` token is configured as a \`multi: true\` provider.`);
-}
-function isPropertyUpdated(changes, viewModel) {
-  if (!changes.hasOwnProperty("model")) return false;
-  const change = changes["model"];
-  if (change.isFirstChange()) return true;
-  return !Object.is(viewModel, change.currentValue);
-}
-function isBuiltInAccessor(valueAccessor) {
-  return Object.getPrototypeOf(valueAccessor.constructor) === BuiltInControlValueAccessor;
-}
-function syncPendingControls(form, directives) {
-  form._syncPendingControls();
-  directives.forEach((dir) => {
-    const control = dir.control;
-    if (control.updateOn === "submit" && control._pendingChange) {
-      dir.viewToModelUpdate(control._pendingValue);
-      control._pendingChange = false;
-    }
-  });
-}
-function selectValueAccessor(dir, valueAccessors) {
-  if (!valueAccessors) return null;
-  if (!Array.isArray(valueAccessors) && (typeof ngDevMode === "undefined" || ngDevMode)) _throwInvalidValueAccessorError(dir);
-  let defaultAccessor = void 0;
-  let builtinAccessor = void 0;
-  let customAccessor = void 0;
-  valueAccessors.forEach((v) => {
-    if (v.constructor === DefaultValueAccessor) {
-      defaultAccessor = v;
-    } else if (isBuiltInAccessor(v)) {
-      if (builtinAccessor && (typeof ngDevMode === "undefined" || ngDevMode)) _throwError(dir, "More than one built-in value accessor matches form control with");
-      builtinAccessor = v;
-    } else {
-      if (customAccessor && (typeof ngDevMode === "undefined" || ngDevMode)) _throwError(dir, "More than one custom value accessor matches form control with");
-      customAccessor = v;
-    }
-  });
-  if (customAccessor) return customAccessor;
-  if (builtinAccessor) return builtinAccessor;
-  if (defaultAccessor) return defaultAccessor;
-  if (typeof ngDevMode === "undefined" || ngDevMode) {
-    _throwError(dir, "No valid value accessor for form control with");
-  }
-  return null;
-}
-function removeListItem$1(list, el) {
-  const index = list.indexOf(el);
-  if (index > -1) list.splice(index, 1);
-}
-function _ngModelWarning(name, type, instance, warningConfig) {
-  if (warningConfig === "never") return;
-  if ((warningConfig === null || warningConfig === "once") && !type._ngModelWarningSentOnce || warningConfig === "always" && !instance._ngModelWarningSent) {
-    console.warn(ngModelWarning(name));
-    type._ngModelWarningSentOnce = true;
-    instance._ngModelWarningSent = true;
-  }
-}
-var formDirectiveProvider$1 = {
-  provide: ControlContainer,
-  useExisting: forwardRef(() => NgForm)
-};
-var resolvedPromise$1 = (() => Promise.resolve())();
-var _NgForm = class _NgForm extends ControlContainer {
-  callSetDisabledState;
-  /**
-   * @description
-   * Returns whether the form submission has been triggered.
-   */
-  get submitted() {
-    return untracked(this.submittedReactive);
-  }
-  /** @internal */
-  _submitted = computed(() => this.submittedReactive());
-  submittedReactive = signal(false);
-  _directives = /* @__PURE__ */ new Set();
-  /**
-   * @description
-   * The `FormGroup` instance created for this form.
-   */
-  form;
-  /**
-   * @description
-   * Event emitter for the "ngSubmit" event
-   */
-  ngSubmit = new EventEmitter();
-  /**
-   * @description
-   * Tracks options for the `NgForm` instance.
-   *
-   * **updateOn**: Sets the default `updateOn` value for all child `NgModels` below it
-   * unless explicitly set by a child `NgModel` using `ngModelOptions`). Defaults to 'change'.
-   * Possible values: `'change'` | `'blur'` | `'submit'`.
-   *
-   */
-  options;
-  constructor(validators, asyncValidators, callSetDisabledState) {
-    super();
-    this.callSetDisabledState = callSetDisabledState;
-    this.form = new FormGroup({}, composeValidators(validators), composeAsyncValidators(asyncValidators));
-  }
-  /** @docs-private */
-  ngAfterViewInit() {
-    this._setUpdateStrategy();
-  }
-  /**
-   * @description
-   * The directive instance.
-   */
-  get formDirective() {
-    return this;
-  }
-  /**
-   * @description
-   * The internal `FormGroup` instance.
-   */
-  get control() {
-    return this.form;
-  }
-  /**
-   * @description
-   * Returns an array representing the path to this group. Because this directive
-   * always lives at the top level of a form, it is always an empty array.
-   */
-  get path() {
-    return [];
-  }
-  /**
-   * @description
-   * Returns a map of the controls in this group.
-   */
-  get controls() {
-    return this.form.controls;
-  }
-  /**
-   * @description
-   * Method that sets up the control directive in this group, re-calculates its value
-   * and validity, and adds the instance to the internal list of directives.
-   *
-   * @param dir The `NgModel` directive instance.
-   */
-  addControl(dir) {
-    resolvedPromise$1.then(() => {
-      const container = this._findContainer(dir.path);
-      dir.control = container.registerControl(dir.name, dir.control);
-      setUpControl(dir.control, dir, this.callSetDisabledState);
-      dir.control.updateValueAndValidity({
-        emitEvent: false
-      });
-      this._directives.add(dir);
-    });
-  }
-  /**
-   * @description
-   * Retrieves the `FormControl` instance from the provided `NgModel` directive.
-   *
-   * @param dir The `NgModel` directive instance.
-   */
-  getControl(dir) {
-    return this.form.get(dir.path);
-  }
-  /**
-   * @description
-   * Removes the `NgModel` instance from the internal list of directives
-   *
-   * @param dir The `NgModel` directive instance.
-   */
-  removeControl(dir) {
-    resolvedPromise$1.then(() => {
-      const container = this._findContainer(dir.path);
-      if (container) {
-        container.removeControl(dir.name);
-      }
-      this._directives.delete(dir);
-    });
-  }
-  /**
-   * @description
-   * Adds a new `NgModelGroup` directive instance to the form.
-   *
-   * @param dir The `NgModelGroup` directive instance.
-   */
-  addFormGroup(dir) {
-    resolvedPromise$1.then(() => {
-      const container = this._findContainer(dir.path);
-      const group = new FormGroup({});
-      setUpFormContainer(group, dir);
-      container.registerControl(dir.name, group);
-      group.updateValueAndValidity({
-        emitEvent: false
-      });
-    });
-  }
-  /**
-   * @description
-   * Removes the `NgModelGroup` directive instance from the form.
-   *
-   * @param dir The `NgModelGroup` directive instance.
-   */
-  removeFormGroup(dir) {
-    resolvedPromise$1.then(() => {
-      const container = this._findContainer(dir.path);
-      if (container) {
-        container.removeControl(dir.name);
-      }
-    });
-  }
-  /**
-   * @description
-   * Retrieves the `FormGroup` for a provided `NgModelGroup` directive instance
-   *
-   * @param dir The `NgModelGroup` directive instance.
-   */
-  getFormGroup(dir) {
-    return this.form.get(dir.path);
-  }
-  /**
-   * Sets the new value for the provided `NgControl` directive.
-   *
-   * @param dir The `NgControl` directive instance.
-   * @param value The new value for the directive's control.
-   */
-  updateModel(dir, value) {
-    resolvedPromise$1.then(() => {
-      const ctrl = this.form.get(dir.path);
-      ctrl.setValue(value);
-    });
-  }
-  /**
-   * @description
-   * Sets the value for this `FormGroup`.
-   *
-   * @param value The new value
-   */
-  setValue(value) {
-    this.control.setValue(value);
-  }
-  /**
-   * @description
-   * Method called when the "submit" event is triggered on the form.
-   * Triggers the `ngSubmit` emitter to emit the "submit" event as its payload.
-   *
-   * @param $event The "submit" event object
-   */
-  onSubmit($event) {
-    var _a96;
-    this.submittedReactive.set(true);
-    syncPendingControls(this.form, this._directives);
-    this.ngSubmit.emit($event);
-    this.form._events.next(new FormSubmittedEvent(this.control));
-    return ((_a96 = $event == null ? void 0 : $event.target) == null ? void 0 : _a96.method) === "dialog";
-  }
-  /**
-   * @description
-   * Method called when the "reset" event is triggered on the form.
-   */
-  onReset() {
-    this.resetForm();
-  }
-  /**
-   * @description
-   * Resets the form to an initial value and resets its submitted status.
-   *
-   * @param value The new value for the form.
-   */
-  resetForm(value = void 0) {
-    this.form.reset(value);
-    this.submittedReactive.set(false);
-    this.form._events.next(new FormResetEvent(this.form));
-  }
-  _setUpdateStrategy() {
-    if (this.options && this.options.updateOn != null) {
-      this.form._updateOn = this.options.updateOn;
-    }
-  }
-  _findContainer(path) {
-    path.pop();
-    return path.length ? this.form.get(path) : this.form;
-  }
-};
-__publicField(_NgForm, "ɵfac", function NgForm_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _NgForm)(ɵɵdirectiveInject(NG_VALIDATORS, 10), ɵɵdirectiveInject(NG_ASYNC_VALIDATORS, 10), ɵɵdirectiveInject(CALL_SET_DISABLED_STATE, 8));
-});
-__publicField(_NgForm, "ɵdir", ɵɵdefineDirective({
-  type: _NgForm,
-  selectors: [["form", 3, "ngNoForm", "", 3, "formGroup", ""], ["ng-form"], ["", "ngForm", ""]],
-  hostBindings: function NgForm_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("submit", function NgForm_submit_HostBindingHandler($event) {
-        return ctx.onSubmit($event);
-      })("reset", function NgForm_reset_HostBindingHandler() {
-        return ctx.onReset();
-      });
-    }
-  },
-  inputs: {
-    options: [0, "ngFormOptions", "options"]
-  },
-  outputs: {
-    ngSubmit: "ngSubmit"
-  },
-  exportAs: ["ngForm"],
-  standalone: false,
-  features: [ɵɵProvidersFeature([formDirectiveProvider$1]), ɵɵInheritDefinitionFeature]
-}));
-var NgForm = _NgForm;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgForm, [{
-    type: Directive,
-    args: [{
-      selector: "form:not([ngNoForm]):not([formGroup]),ng-form,[ngForm]",
-      providers: [formDirectiveProvider$1],
-      host: {
-        "(submit)": "onSubmit($event)",
-        "(reset)": "onReset()"
-      },
-      outputs: ["ngSubmit"],
-      exportAs: "ngForm",
-      standalone: false
-    }]
-  }], () => [{
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_ASYNC_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [CALL_SET_DISABLED_STATE]
-    }]
-  }], {
-    options: [{
-      type: Input,
-      args: ["ngFormOptions"]
-    }]
-  });
-})();
-function removeListItem(list, el) {
-  const index = list.indexOf(el);
-  if (index > -1) list.splice(index, 1);
-}
-function isFormControlState(formState) {
-  return typeof formState === "object" && formState !== null && Object.keys(formState).length === 2 && "value" in formState && "disabled" in formState;
-}
-var FormControl = class FormControl2 extends AbstractControl {
-  /** @publicApi */
-  defaultValue = null;
-  /** @internal */
-  _onChange = [];
-  /** @internal */
-  _pendingValue;
-  /** @internal */
-  _pendingChange = false;
-  constructor(formState = null, validatorOrOpts, asyncValidator) {
-    super(pickValidators(validatorOrOpts), pickAsyncValidators(asyncValidator, validatorOrOpts));
-    this._applyFormState(formState);
-    this._setUpdateStrategy(validatorOrOpts);
-    this._initObservables();
-    this.updateValueAndValidity({
-      onlySelf: true,
-      // If `asyncValidator` is present, it will trigger control status change from `PENDING` to
-      // `VALID` or `INVALID`.
-      // The status should be broadcasted via the `statusChanges` observable, so we set
-      // `emitEvent` to `true` to allow that during the control creation process.
-      emitEvent: !!this.asyncValidator
-    });
-    if (isOptionsObj(validatorOrOpts) && (validatorOrOpts.nonNullable || validatorOrOpts.initialValueIsDefault)) {
-      if (isFormControlState(formState)) {
-        this.defaultValue = formState.value;
-      } else {
-        this.defaultValue = formState;
-      }
-    }
-  }
-  setValue(value, options = {}) {
-    this.value = this._pendingValue = value;
-    if (this._onChange.length && options.emitModelToViewChange !== false) {
-      this._onChange.forEach((changeFn) => changeFn(this.value, options.emitViewToModelChange !== false));
-    }
-    this.updateValueAndValidity(options);
-  }
-  patchValue(value, options = {}) {
-    this.setValue(value, options);
-  }
-  reset(formState = this.defaultValue, options = {}) {
-    this._applyFormState(formState);
-    this.markAsPristine(options);
-    this.markAsUntouched(options);
-    this.setValue(this.value, options);
-    this._pendingChange = false;
-  }
-  /**  @internal */
-  _updateValue() {
-  }
-  /**  @internal */
-  _anyControls(condition) {
-    return false;
-  }
-  /**  @internal */
-  _allControlsDisabled() {
-    return this.disabled;
-  }
-  registerOnChange(fn) {
-    this._onChange.push(fn);
-  }
-  /** @internal */
-  _unregisterOnChange(fn) {
-    removeListItem(this._onChange, fn);
-  }
-  registerOnDisabledChange(fn) {
-    this._onDisabledChange.push(fn);
-  }
-  /** @internal */
-  _unregisterOnDisabledChange(fn) {
-    removeListItem(this._onDisabledChange, fn);
-  }
-  /** @internal */
-  _forEachChild(cb) {
-  }
-  /** @internal */
-  _syncPendingControls() {
-    if (this.updateOn === "submit") {
-      if (this._pendingDirty) this.markAsDirty();
-      if (this._pendingTouched) this.markAsTouched();
-      if (this._pendingChange) {
-        this.setValue(this._pendingValue, {
-          onlySelf: true,
-          emitModelToViewChange: false
-        });
-        return true;
-      }
-    }
-    return false;
-  }
-  _applyFormState(formState) {
-    if (isFormControlState(formState)) {
-      this.value = this._pendingValue = formState.value;
-      formState.disabled ? this.disable({
-        onlySelf: true,
-        emitEvent: false
-      }) : this.enable({
-        onlySelf: true,
-        emitEvent: false
-      });
-    } else {
-      this.value = this._pendingValue = formState;
-    }
-  }
-};
-var isFormControl = (control) => control instanceof FormControl;
-var _AbstractFormGroupDirective = class _AbstractFormGroupDirective extends ControlContainer {
-  /**
-   * @description
-   * The parent control for the group
-   *
-   * @internal
-   */
-  _parent;
-  /** @docs-private */
-  ngOnInit() {
-    this._checkParentType();
-    this.formDirective.addFormGroup(this);
-  }
-  /** @docs-private */
-  ngOnDestroy() {
-    if (this.formDirective) {
-      this.formDirective.removeFormGroup(this);
-    }
-  }
-  /**
-   * @description
-   * The `FormGroup` bound to this directive.
-   */
-  get control() {
-    return this.formDirective.getFormGroup(this);
-  }
-  /**
-   * @description
-   * The path to this group from the top-level directive.
-   */
-  get path() {
-    return controlPath(this.name == null ? this.name : this.name.toString(), this._parent);
-  }
-  /**
-   * @description
-   * The top-level directive for this group if present, otherwise null.
-   */
-  get formDirective() {
-    return this._parent ? this._parent.formDirective : null;
-  }
-  /** @internal */
-  _checkParentType() {
-  }
-};
-__publicField(_AbstractFormGroupDirective, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵAbstractFormGroupDirective_BaseFactory;
-  return function AbstractFormGroupDirective_Factory(__ngFactoryType__) {
-    return (ɵAbstractFormGroupDirective_BaseFactory || (ɵAbstractFormGroupDirective_BaseFactory = ɵɵgetInheritedFactory(_AbstractFormGroupDirective)))(__ngFactoryType__ || _AbstractFormGroupDirective);
-  };
-})());
-__publicField(_AbstractFormGroupDirective, "ɵdir", ɵɵdefineDirective({
-  type: _AbstractFormGroupDirective,
-  standalone: false,
-  features: [ɵɵInheritDefinitionFeature]
-}));
-var AbstractFormGroupDirective = _AbstractFormGroupDirective;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AbstractFormGroupDirective, [{
-    type: Directive,
-    args: [{
-      standalone: false
-    }]
-  }], null, null);
-})();
-function modelParentException() {
-  return new RuntimeError(1350, `
-    ngModel cannot be used to register form controls with a parent formGroup directive.  Try using
-    formGroup's partner directive "formControlName" instead.  Example:
-
-    ${formControlNameExample}
-
-    Or, if you'd like to avoid registering this form control, indicate that it's standalone in ngModelOptions:
-
-    Example:
-
-    ${ngModelWithFormGroupExample}`);
-}
-function formGroupNameException() {
-  return new RuntimeError(1351, `
-    ngModel cannot be used to register form controls with a parent formGroupName or formArrayName directive.
-
-    Option 1: Use formControlName instead of ngModel (reactive strategy):
-
-    ${formGroupNameExample}
-
-    Option 2:  Update ngModel's parent be ngModelGroup (template-driven strategy):
-
-    ${ngModelGroupExample}`);
-}
-function missingNameException() {
-  return new RuntimeError(1352, `If ngModel is used within a form tag, either the name attribute must be set or the form
-    control must be defined as 'standalone' in ngModelOptions.
-
-    Example 1: <input [(ngModel)]="person.firstName" name="first">
-    Example 2: <input [(ngModel)]="person.firstName" [ngModelOptions]="{standalone: true}">`);
-}
-function modelGroupParentException() {
-  return new RuntimeError(1353, `
-    ngModelGroup cannot be used with a parent formGroup directive.
-
-    Option 1: Use formGroupName instead of ngModelGroup (reactive strategy):
-
-    ${formGroupNameExample}
-
-    Option 2:  Use a regular form tag instead of the formGroup directive (template-driven strategy):
-
-    ${ngModelGroupExample}`);
-}
-var modelGroupProvider = {
-  provide: ControlContainer,
-  useExisting: forwardRef(() => NgModelGroup)
-};
-var _NgModelGroup = class _NgModelGroup extends AbstractFormGroupDirective {
-  /**
-   * @description
-   * Tracks the name of the `NgModelGroup` bound to the directive. The name corresponds
-   * to a key in the parent `NgForm`.
-   */
-  name = "";
-  constructor(parent, validators, asyncValidators) {
-    super();
-    this._parent = parent;
-    this._setValidators(validators);
-    this._setAsyncValidators(asyncValidators);
-  }
-  /** @internal */
-  _checkParentType() {
-    if (!(this._parent instanceof _NgModelGroup) && !(this._parent instanceof NgForm) && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw modelGroupParentException();
-    }
-  }
-};
-__publicField(_NgModelGroup, "ɵfac", function NgModelGroup_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _NgModelGroup)(ɵɵdirectiveInject(ControlContainer, 5), ɵɵdirectiveInject(NG_VALIDATORS, 10), ɵɵdirectiveInject(NG_ASYNC_VALIDATORS, 10));
-});
-__publicField(_NgModelGroup, "ɵdir", ɵɵdefineDirective({
-  type: _NgModelGroup,
-  selectors: [["", "ngModelGroup", ""]],
-  inputs: {
-    name: [0, "ngModelGroup", "name"]
-  },
-  exportAs: ["ngModelGroup"],
-  standalone: false,
-  features: [ɵɵProvidersFeature([modelGroupProvider]), ɵɵInheritDefinitionFeature]
-}));
-var NgModelGroup = _NgModelGroup;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgModelGroup, [{
-    type: Directive,
-    args: [{
-      selector: "[ngModelGroup]",
-      providers: [modelGroupProvider],
-      exportAs: "ngModelGroup",
-      standalone: false
-    }]
-  }], () => [{
-    type: ControlContainer,
-    decorators: [{
-      type: Host
-    }, {
-      type: SkipSelf
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_ASYNC_VALIDATORS]
-    }]
-  }], {
-    name: [{
-      type: Input,
-      args: ["ngModelGroup"]
-    }]
-  });
-})();
-var formControlBinding$1 = {
-  provide: NgControl,
-  useExisting: forwardRef(() => NgModel)
-};
-var resolvedPromise = (() => Promise.resolve())();
-var _NgModel = class _NgModel extends NgControl {
-  _changeDetectorRef;
-  callSetDisabledState;
-  control = new FormControl();
-  /** @internal */
-  _registered = false;
-  /**
-   * Internal reference to the view model value.
-   * @docs-private
-   */
-  viewModel;
-  /**
-   * @description
-   * Tracks the name bound to the directive. If a parent form exists, it
-   * uses this name as a key to retrieve this control's value.
-   */
-  name = "";
-  /**
-   * @description
-   * Tracks whether the control is disabled.
-   */
-  isDisabled;
-  /**
-   * @description
-   * Tracks the value bound to this directive.
-   */
-  model;
-  /**
-   * @description
-   * Tracks the configuration options for this `ngModel` instance.
-   *
-   * **name**: An alternative to setting the name attribute on the form control element. See
-   * the [example](api/forms/NgModel#using-ngmodel-on-a-standalone-control) for using `NgModel`
-   * as a standalone control.
-   *
-   * **standalone**: When set to true, the `ngModel` will not register itself with its parent form,
-   * and acts as if it's not in the form. Defaults to false. If no parent form exists, this option
-   * has no effect.
-   *
-   * **updateOn**: Defines the event upon which the form control value and validity update.
-   * Defaults to 'change'. Possible values: `'change'` | `'blur'` | `'submit'`.
-   *
-   */
-  options;
-  /**
-   * @description
-   * Event emitter for producing the `ngModelChange` event after
-   * the view model updates.
-   */
-  update = new EventEmitter();
-  constructor(parent, validators, asyncValidators, valueAccessors, _changeDetectorRef, callSetDisabledState) {
-    super();
-    this._changeDetectorRef = _changeDetectorRef;
-    this.callSetDisabledState = callSetDisabledState;
-    this._parent = parent;
-    this._setValidators(validators);
-    this._setAsyncValidators(asyncValidators);
-    this.valueAccessor = selectValueAccessor(this, valueAccessors);
-  }
-  /** @docs-private */
-  ngOnChanges(changes) {
-    this._checkForErrors();
-    if (!this._registered || "name" in changes) {
-      if (this._registered) {
-        this._checkName();
-        if (this.formDirective) {
-          const oldName = changes["name"].previousValue;
-          this.formDirective.removeControl({
-            name: oldName,
-            path: this._getPath(oldName)
-          });
-        }
-      }
-      this._setUpControl();
-    }
-    if ("isDisabled" in changes) {
-      this._updateDisabled(changes);
-    }
-    if (isPropertyUpdated(changes, this.viewModel)) {
-      this._updateValue(this.model);
-      this.viewModel = this.model;
-    }
-  }
-  /** @docs-private */
-  ngOnDestroy() {
-    this.formDirective && this.formDirective.removeControl(this);
-  }
-  /**
-   * @description
-   * Returns an array that represents the path from the top-level form to this control.
-   * Each index is the string name of the control on that level.
-   */
-  get path() {
-    return this._getPath(this.name);
-  }
-  /**
-   * @description
-   * The top-level directive for this control if present, otherwise null.
-   */
-  get formDirective() {
-    return this._parent ? this._parent.formDirective : null;
-  }
-  /**
-   * @description
-   * Sets the new value for the view model and emits an `ngModelChange` event.
-   *
-   * @param newValue The new value emitted by `ngModelChange`.
-   */
-  viewToModelUpdate(newValue) {
-    this.viewModel = newValue;
-    this.update.emit(newValue);
-  }
-  _setUpControl() {
-    this._setUpdateStrategy();
-    this._isStandalone() ? this._setUpStandalone() : this.formDirective.addControl(this);
-    this._registered = true;
-  }
-  _setUpdateStrategy() {
-    if (this.options && this.options.updateOn != null) {
-      this.control._updateOn = this.options.updateOn;
-    }
-  }
-  _isStandalone() {
-    return !this._parent || !!(this.options && this.options.standalone);
-  }
-  _setUpStandalone() {
-    setUpControl(this.control, this, this.callSetDisabledState);
-    this.control.updateValueAndValidity({
-      emitEvent: false
-    });
-  }
-  _checkForErrors() {
-    if ((typeof ngDevMode === "undefined" || ngDevMode) && !this._isStandalone()) {
-      checkParentType$1(this._parent);
-    }
-    this._checkName();
-  }
-  _checkName() {
-    if (this.options && this.options.name) this.name = this.options.name;
-    if (!this._isStandalone() && !this.name && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw missingNameException();
-    }
-  }
-  _updateValue(value) {
-    resolvedPromise.then(() => {
-      var _a96;
-      this.control.setValue(value, {
-        emitViewToModelChange: false
-      });
-      (_a96 = this._changeDetectorRef) == null ? void 0 : _a96.markForCheck();
-    });
-  }
-  _updateDisabled(changes) {
-    const disabledValue = changes["isDisabled"].currentValue;
-    const isDisabled = disabledValue !== 0 && booleanAttribute(disabledValue);
-    resolvedPromise.then(() => {
-      var _a96;
-      if (isDisabled && !this.control.disabled) {
-        this.control.disable();
-      } else if (!isDisabled && this.control.disabled) {
-        this.control.enable();
-      }
-      (_a96 = this._changeDetectorRef) == null ? void 0 : _a96.markForCheck();
-    });
-  }
-  _getPath(controlName) {
-    return this._parent ? controlPath(controlName, this._parent) : [controlName];
-  }
-};
-// At runtime we coerce arbitrary values assigned to the "disabled" input to a "boolean".
-// This is not reflected in the type of the property because outside of templates, consumers
-// should only deal with booleans. In templates, a string is allowed for convenience and to
-// match the native "disabled attribute" semantics which can be observed on input elements.
-// This static member tells the compiler that values of type "string" can also be assigned
-// to the input in a template.
-/** @docs-private */
-__publicField(_NgModel, "ngAcceptInputType_isDisabled");
-__publicField(_NgModel, "ɵfac", function NgModel_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _NgModel)(ɵɵdirectiveInject(ControlContainer, 9), ɵɵdirectiveInject(NG_VALIDATORS, 10), ɵɵdirectiveInject(NG_ASYNC_VALIDATORS, 10), ɵɵdirectiveInject(NG_VALUE_ACCESSOR, 10), ɵɵdirectiveInject(ChangeDetectorRef, 8), ɵɵdirectiveInject(CALL_SET_DISABLED_STATE, 8));
-});
-__publicField(_NgModel, "ɵdir", ɵɵdefineDirective({
-  type: _NgModel,
-  selectors: [["", "ngModel", "", 3, "formControlName", "", 3, "formControl", ""]],
-  inputs: {
-    name: "name",
-    isDisabled: [0, "disabled", "isDisabled"],
-    model: [0, "ngModel", "model"],
-    options: [0, "ngModelOptions", "options"]
-  },
-  outputs: {
-    update: "ngModelChange"
-  },
-  exportAs: ["ngModel"],
-  standalone: false,
-  features: [ɵɵProvidersFeature([formControlBinding$1]), ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature]
-}));
-var NgModel = _NgModel;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgModel, [{
-    type: Directive,
-    args: [{
-      selector: "[ngModel]:not([formControlName]):not([formControl])",
-      providers: [formControlBinding$1],
-      exportAs: "ngModel",
-      standalone: false
-    }]
-  }], () => [{
-    type: ControlContainer,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Host
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_ASYNC_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALUE_ACCESSOR]
-    }]
-  }, {
-    type: ChangeDetectorRef,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [ChangeDetectorRef]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [CALL_SET_DISABLED_STATE]
-    }]
-  }], {
-    name: [{
-      type: Input
-    }],
-    isDisabled: [{
-      type: Input,
-      args: ["disabled"]
-    }],
-    model: [{
-      type: Input,
-      args: ["ngModel"]
-    }],
-    options: [{
-      type: Input,
-      args: ["ngModelOptions"]
-    }],
-    update: [{
-      type: Output,
-      args: ["ngModelChange"]
-    }]
-  });
-})();
-function checkParentType$1(parent) {
-  if (!(parent instanceof NgModelGroup) && parent instanceof AbstractFormGroupDirective) {
-    throw formGroupNameException();
-  } else if (!(parent instanceof NgModelGroup) && !(parent instanceof NgForm)) {
-    throw modelParentException();
-  }
-}
-var _ɵNgNoValidate = class _ɵNgNoValidate {
-};
-__publicField(_ɵNgNoValidate, "ɵfac", function ɵNgNoValidate_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _ɵNgNoValidate)();
-});
-__publicField(_ɵNgNoValidate, "ɵdir", ɵɵdefineDirective({
-  type: _ɵNgNoValidate,
-  selectors: [["form", 3, "ngNoForm", "", 3, "ngNativeValidate", ""]],
-  hostAttrs: ["novalidate", ""],
-  standalone: false
-}));
-var ɵNgNoValidate = _ɵNgNoValidate;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ɵNgNoValidate, [{
-    type: Directive,
-    args: [{
-      selector: "form:not([ngNoForm]):not([ngNativeValidate])",
-      host: {
-        "novalidate": ""
-      },
-      standalone: false
-    }]
-  }], null, null);
-})();
-var NUMBER_VALUE_ACCESSOR = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => NumberValueAccessor),
-  multi: true
-};
-var _NumberValueAccessor = class _NumberValueAccessor extends BuiltInControlValueAccessor {
-  /**
-   * Sets the "value" property on the input element.
-   * @docs-private
-   */
-  writeValue(value) {
-    const normalizedValue = value == null ? "" : value;
-    this.setProperty("value", normalizedValue);
-  }
-  /**
-   * Registers a function called when the control value changes.
-   * @docs-private
-   */
-  registerOnChange(fn) {
-    this.onChange = (value) => {
-      fn(value == "" ? null : parseFloat(value));
-    };
-  }
-};
-__publicField(_NumberValueAccessor, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵNumberValueAccessor_BaseFactory;
-  return function NumberValueAccessor_Factory(__ngFactoryType__) {
-    return (ɵNumberValueAccessor_BaseFactory || (ɵNumberValueAccessor_BaseFactory = ɵɵgetInheritedFactory(_NumberValueAccessor)))(__ngFactoryType__ || _NumberValueAccessor);
-  };
-})());
-__publicField(_NumberValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _NumberValueAccessor,
-  selectors: [["input", "type", "number", "formControlName", ""], ["input", "type", "number", "formControl", ""], ["input", "type", "number", "ngModel", ""]],
-  hostBindings: function NumberValueAccessor_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("input", function NumberValueAccessor_input_HostBindingHandler($event) {
-        return ctx.onChange($event.target.value);
-      })("blur", function NumberValueAccessor_blur_HostBindingHandler() {
-        return ctx.onTouched();
-      });
-    }
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([NUMBER_VALUE_ACCESSOR]), ɵɵInheritDefinitionFeature]
-}));
-var NumberValueAccessor = _NumberValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NumberValueAccessor, [{
-    type: Directive,
-    args: [{
-      selector: "input[type=number][formControlName],input[type=number][formControl],input[type=number][ngModel]",
-      host: {
-        "(input)": "onChange($event.target.value)",
-        "(blur)": "onTouched()"
-      },
-      providers: [NUMBER_VALUE_ACCESSOR],
-      standalone: false
-    }]
-  }], null, null);
-})();
-var RADIO_VALUE_ACCESSOR = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => RadioControlValueAccessor),
-  multi: true
-};
-function throwNameError() {
-  throw new RuntimeError(1202, `
-      If you define both a name and a formControlName attribute on your radio button, their values
-      must match. Ex: <input type="radio" formControlName="food" name="food">
-    `);
-}
-var _RadioControlRegistry = class _RadioControlRegistry {
-  _accessors = [];
-  /**
-   * @description
-   * Adds a control to the internal registry. For internal use only.
-   */
-  add(control, accessor) {
-    this._accessors.push([control, accessor]);
-  }
-  /**
-   * @description
-   * Removes a control from the internal registry. For internal use only.
-   */
-  remove(accessor) {
-    for (let i = this._accessors.length - 1; i >= 0; --i) {
-      if (this._accessors[i][1] === accessor) {
-        this._accessors.splice(i, 1);
-        return;
-      }
-    }
-  }
-  /**
-   * @description
-   * Selects a radio button. For internal use only.
-   */
-  select(accessor) {
-    this._accessors.forEach((c) => {
-      if (this._isSameGroup(c, accessor) && c[1] !== accessor) {
-        c[1].fireUncheck(accessor.value);
-      }
-    });
-  }
-  _isSameGroup(controlPair, accessor) {
-    if (!controlPair[0].control) return false;
-    return controlPair[0]._parent === accessor._control._parent && controlPair[1].name === accessor.name;
-  }
-};
-__publicField(_RadioControlRegistry, "ɵfac", function RadioControlRegistry_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _RadioControlRegistry)();
-});
-__publicField(_RadioControlRegistry, "ɵprov", ɵɵdefineInjectable({
-  token: _RadioControlRegistry,
-  factory: _RadioControlRegistry.ɵfac,
-  providedIn: "root"
-}));
-var RadioControlRegistry = _RadioControlRegistry;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RadioControlRegistry, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
-})();
-var _a;
-var _RadioControlValueAccessor = class _RadioControlValueAccessor extends BuiltInControlValueAccessor {
-  _registry;
-  _injector;
-  /** @internal */
-  _state;
-  /** @internal */
-  _control;
-  /** @internal */
-  _fn;
-  setDisabledStateFired = false;
-  /**
-   * The registered callback function called when a change event occurs on the input element.
-   * Note: we declare `onChange` here (also used as host listener) as a function with no arguments
-   * to override the `onChange` function (which expects 1 argument) in the parent
-   * `BaseControlValueAccessor` class.
-   * @docs-private
-   */
-  onChange = () => {
-  };
-  /**
-   * @description
-   * Tracks the name of the radio input element.
-   */
-  name;
-  /**
-   * @description
-   * Tracks the name of the `FormControl` bound to the directive. The name corresponds
-   * to a key in the parent `FormGroup` or `FormArray`.
-   */
-  formControlName;
-  /**
-   * @description
-   * Tracks the value of the radio input element
-   */
-  value;
-  callSetDisabledState = (_a = inject(CALL_SET_DISABLED_STATE, {
-    optional: true
-  })) != null ? _a : setDisabledStateDefault;
-  constructor(renderer, elementRef, _registry, _injector) {
-    super(renderer, elementRef);
-    this._registry = _registry;
-    this._injector = _injector;
-  }
-  /** @docs-private */
-  ngOnInit() {
-    this._control = this._injector.get(NgControl);
-    this._checkName();
-    this._registry.add(this._control, this);
-  }
-  /** @docs-private */
-  ngOnDestroy() {
-    this._registry.remove(this);
-  }
-  /**
-   * Sets the "checked" property value on the radio input element.
-   * @docs-private
-   */
-  writeValue(value) {
-    this._state = value === this.value;
-    this.setProperty("checked", this._state);
-  }
-  /**
-   * Registers a function called when the control value changes.
-   * @docs-private
-   */
-  registerOnChange(fn) {
-    this._fn = fn;
-    this.onChange = () => {
-      fn(this.value);
-      this._registry.select(this);
-    };
-  }
-  /** @docs-private */
-  setDisabledState(isDisabled) {
-    if (this.setDisabledStateFired || isDisabled || this.callSetDisabledState === "whenDisabledForLegacyCode") {
-      this.setProperty("disabled", isDisabled);
-    }
-    this.setDisabledStateFired = true;
-  }
-  /**
-   * Sets the "value" on the radio input element and unchecks it.
-   *
-   * @param value
-   */
-  fireUncheck(value) {
-    this.writeValue(value);
-  }
-  _checkName() {
-    if (this.name && this.formControlName && this.name !== this.formControlName && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throwNameError();
-    }
-    if (!this.name && this.formControlName) this.name = this.formControlName;
-  }
-};
-__publicField(_RadioControlValueAccessor, "ɵfac", function RadioControlValueAccessor_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _RadioControlValueAccessor)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(RadioControlRegistry), ɵɵdirectiveInject(Injector));
-});
-__publicField(_RadioControlValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _RadioControlValueAccessor,
-  selectors: [["input", "type", "radio", "formControlName", ""], ["input", "type", "radio", "formControl", ""], ["input", "type", "radio", "ngModel", ""]],
-  hostBindings: function RadioControlValueAccessor_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("change", function RadioControlValueAccessor_change_HostBindingHandler() {
-        return ctx.onChange();
-      })("blur", function RadioControlValueAccessor_blur_HostBindingHandler() {
-        return ctx.onTouched();
-      });
-    }
-  },
-  inputs: {
-    name: "name",
-    formControlName: "formControlName",
-    value: "value"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([RADIO_VALUE_ACCESSOR]), ɵɵInheritDefinitionFeature]
-}));
-var RadioControlValueAccessor = _RadioControlValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RadioControlValueAccessor, [{
-    type: Directive,
-    args: [{
-      selector: "input[type=radio][formControlName],input[type=radio][formControl],input[type=radio][ngModel]",
-      host: {
-        "(change)": "onChange()",
-        "(blur)": "onTouched()"
-      },
-      providers: [RADIO_VALUE_ACCESSOR],
-      standalone: false
-    }]
-  }], () => [{
-    type: Renderer2
-  }, {
-    type: ElementRef
-  }, {
-    type: RadioControlRegistry
-  }, {
-    type: Injector
-  }], {
-    name: [{
-      type: Input
-    }],
-    formControlName: [{
-      type: Input
-    }],
-    value: [{
-      type: Input
-    }]
-  });
-})();
-var RANGE_VALUE_ACCESSOR = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => RangeValueAccessor),
-  multi: true
-};
-var _RangeValueAccessor = class _RangeValueAccessor extends BuiltInControlValueAccessor {
-  /**
-   * Sets the "value" property on the input element.
-   * @docs-private
-   */
-  writeValue(value) {
-    this.setProperty("value", parseFloat(value));
-  }
-  /**
-   * Registers a function called when the control value changes.
-   * @docs-private
-   */
-  registerOnChange(fn) {
-    this.onChange = (value) => {
-      fn(value == "" ? null : parseFloat(value));
-    };
-  }
-};
-__publicField(_RangeValueAccessor, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵRangeValueAccessor_BaseFactory;
-  return function RangeValueAccessor_Factory(__ngFactoryType__) {
-    return (ɵRangeValueAccessor_BaseFactory || (ɵRangeValueAccessor_BaseFactory = ɵɵgetInheritedFactory(_RangeValueAccessor)))(__ngFactoryType__ || _RangeValueAccessor);
-  };
-})());
-__publicField(_RangeValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _RangeValueAccessor,
-  selectors: [["input", "type", "range", "formControlName", ""], ["input", "type", "range", "formControl", ""], ["input", "type", "range", "ngModel", ""]],
-  hostBindings: function RangeValueAccessor_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("change", function RangeValueAccessor_change_HostBindingHandler($event) {
-        return ctx.onChange($event.target.value);
-      })("input", function RangeValueAccessor_input_HostBindingHandler($event) {
-        return ctx.onChange($event.target.value);
-      })("blur", function RangeValueAccessor_blur_HostBindingHandler() {
-        return ctx.onTouched();
-      });
-    }
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([RANGE_VALUE_ACCESSOR]), ɵɵInheritDefinitionFeature]
-}));
-var RangeValueAccessor = _RangeValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RangeValueAccessor, [{
-    type: Directive,
-    args: [{
-      selector: "input[type=range][formControlName],input[type=range][formControl],input[type=range][ngModel]",
-      host: {
-        "(change)": "onChange($event.target.value)",
-        "(input)": "onChange($event.target.value)",
-        "(blur)": "onTouched()"
-      },
-      providers: [RANGE_VALUE_ACCESSOR],
-      standalone: false
-    }]
-  }], null, null);
-})();
-var NG_MODEL_WITH_FORM_CONTROL_WARNING = new InjectionToken(ngDevMode ? "NgModelWithFormControlWarning" : "");
-var formControlBinding = {
-  provide: NgControl,
-  useExisting: forwardRef(() => FormControlDirective)
-};
-var _FormControlDirective = class _FormControlDirective extends NgControl {
-  _ngModelWarningConfig;
-  callSetDisabledState;
-  /**
-   * Internal reference to the view model value.
-   * @docs-private
-   */
-  viewModel;
-  /**
-   * @description
-   * Tracks the `FormControl` instance bound to the directive.
-   */
-  form;
-  /**
-   * @description
-   * Triggers a warning in dev mode that this input should not be used with reactive forms.
-   */
-  set isDisabled(isDisabled) {
-    if (typeof ngDevMode === "undefined" || ngDevMode) {
-      console.warn(disabledAttrWarning);
-    }
-  }
-  // TODO(kara): remove next 4 properties once deprecation period is over
-  /** @deprecated as of v6 */
-  model;
-  /** @deprecated as of v6 */
-  update = new EventEmitter();
-  /**
-   * @description
-   * Instance property used to track whether an ngModel warning has been sent out for this
-   * particular `FormControlDirective` instance. Used to support warning config of "always".
-   *
-   * @internal
-   */
-  _ngModelWarningSent = false;
-  constructor(validators, asyncValidators, valueAccessors, _ngModelWarningConfig, callSetDisabledState) {
-    super();
-    this._ngModelWarningConfig = _ngModelWarningConfig;
-    this.callSetDisabledState = callSetDisabledState;
-    this._setValidators(validators);
-    this._setAsyncValidators(asyncValidators);
-    this.valueAccessor = selectValueAccessor(this, valueAccessors);
-  }
-  /** @docs-private */
-  ngOnChanges(changes) {
-    if (this._isControlChanged(changes)) {
-      const previousForm = changes["form"].previousValue;
-      if (previousForm) {
-        cleanUpControl(
-          previousForm,
-          this,
-          /* validateControlPresenceOnChange */
-          false
-        );
-      }
-      setUpControl(this.form, this, this.callSetDisabledState);
-      this.form.updateValueAndValidity({
-        emitEvent: false
-      });
-    }
-    if (isPropertyUpdated(changes, this.viewModel)) {
-      if (typeof ngDevMode === "undefined" || ngDevMode) {
-        _ngModelWarning("formControl", _FormControlDirective, this, this._ngModelWarningConfig);
-      }
-      this.form.setValue(this.model);
-      this.viewModel = this.model;
-    }
-  }
-  /** @docs-private */
-  ngOnDestroy() {
-    if (this.form) {
-      cleanUpControl(
-        this.form,
-        this,
-        /* validateControlPresenceOnChange */
-        false
-      );
-    }
-  }
-  /**
-   * @description
-   * Returns an array that represents the path from the top-level form to this control.
-   * Each index is the string name of the control on that level.
-   */
-  get path() {
-    return [];
-  }
-  /**
-   * @description
-   * The `FormControl` bound to this directive.
-   */
-  get control() {
-    return this.form;
-  }
-  /**
-   * @description
-   * Sets the new value for the view model and emits an `ngModelChange` event.
-   *
-   * @param newValue The new value for the view model.
-   */
-  viewToModelUpdate(newValue) {
-    this.viewModel = newValue;
-    this.update.emit(newValue);
-  }
-  _isControlChanged(changes) {
-    return changes.hasOwnProperty("form");
-  }
-};
-/**
- * @description
- * Static property used to track whether any ngModel warnings have been sent across
- * all instances of FormControlDirective. Used to support warning config of "once".
- *
- * @internal
- */
-__publicField(_FormControlDirective, "_ngModelWarningSentOnce", false);
-__publicField(_FormControlDirective, "ɵfac", function FormControlDirective_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _FormControlDirective)(ɵɵdirectiveInject(NG_VALIDATORS, 10), ɵɵdirectiveInject(NG_ASYNC_VALIDATORS, 10), ɵɵdirectiveInject(NG_VALUE_ACCESSOR, 10), ɵɵdirectiveInject(NG_MODEL_WITH_FORM_CONTROL_WARNING, 8), ɵɵdirectiveInject(CALL_SET_DISABLED_STATE, 8));
-});
-__publicField(_FormControlDirective, "ɵdir", ɵɵdefineDirective({
-  type: _FormControlDirective,
-  selectors: [["", "formControl", ""]],
-  inputs: {
-    form: [0, "formControl", "form"],
-    isDisabled: [0, "disabled", "isDisabled"],
-    model: [0, "ngModel", "model"]
-  },
-  outputs: {
-    update: "ngModelChange"
-  },
-  exportAs: ["ngForm"],
-  standalone: false,
-  features: [ɵɵProvidersFeature([formControlBinding]), ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature]
-}));
-var FormControlDirective = _FormControlDirective;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FormControlDirective, [{
-    type: Directive,
-    args: [{
-      selector: "[formControl]",
-      providers: [formControlBinding],
-      exportAs: "ngForm",
-      standalone: false
-    }]
-  }], () => [{
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_ASYNC_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALUE_ACCESSOR]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [NG_MODEL_WITH_FORM_CONTROL_WARNING]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [CALL_SET_DISABLED_STATE]
-    }]
-  }], {
-    form: [{
-      type: Input,
-      args: ["formControl"]
-    }],
-    isDisabled: [{
-      type: Input,
-      args: ["disabled"]
-    }],
-    model: [{
-      type: Input,
-      args: ["ngModel"]
-    }],
-    update: [{
-      type: Output,
-      args: ["ngModelChange"]
-    }]
-  });
-})();
-var formDirectiveProvider = {
-  provide: ControlContainer,
-  useExisting: forwardRef(() => FormGroupDirective)
-};
-var _FormGroupDirective = class _FormGroupDirective extends ControlContainer {
-  callSetDisabledState;
-  /**
-   * @description
-   * Reports whether the form submission has been triggered.
-   */
-  get submitted() {
-    return untracked(this._submittedReactive);
-  }
-  // TODO(atscott): Remove once invalid API usage is cleaned up internally
-  set submitted(value) {
-    this._submittedReactive.set(value);
-  }
-  /** @internal */
-  _submitted = computed(() => this._submittedReactive());
-  _submittedReactive = signal(false);
-  /**
-   * Reference to an old form group input value, which is needed to cleanup
-   * old instance in case it was replaced with a new one.
-   */
-  _oldForm;
-  /**
-   * Callback that should be invoked when controls in FormGroup or FormArray collection change
-   * (added or removed). This callback triggers corresponding DOM updates.
-   */
-  _onCollectionChange = () => this._updateDomValue();
-  /**
-   * @description
-   * Tracks the list of added `FormControlName` instances
-   */
-  directives = [];
-  /**
-   * @description
-   * Tracks the `FormGroup` bound to this directive.
-   */
-  form = null;
-  /**
-   * @description
-   * Emits an event when the form submission has been triggered.
-   */
-  ngSubmit = new EventEmitter();
-  constructor(validators, asyncValidators, callSetDisabledState) {
-    super();
-    this.callSetDisabledState = callSetDisabledState;
-    this._setValidators(validators);
-    this._setAsyncValidators(asyncValidators);
-  }
-  /** @docs-private */
-  ngOnChanges(changes) {
-    if ((typeof ngDevMode === "undefined" || ngDevMode) && !this.form) {
-      throw missingFormException();
-    }
-    if (changes.hasOwnProperty("form")) {
-      this._updateValidators();
-      this._updateDomValue();
-      this._updateRegistrations();
-      this._oldForm = this.form;
-    }
-  }
-  /** @docs-private */
-  ngOnDestroy() {
-    if (this.form) {
-      cleanUpValidators(this.form, this);
-      if (this.form._onCollectionChange === this._onCollectionChange) {
-        this.form._registerOnCollectionChange(() => {
-        });
-      }
-    }
-  }
-  /**
-   * @description
-   * Returns this directive's instance.
-   */
-  get formDirective() {
-    return this;
-  }
-  /**
-   * @description
-   * Returns the `FormGroup` bound to this directive.
-   */
-  get control() {
-    return this.form;
-  }
-  /**
-   * @description
-   * Returns an array representing the path to this group. Because this directive
-   * always lives at the top level of a form, it always an empty array.
-   */
-  get path() {
-    return [];
-  }
-  /**
-   * @description
-   * Method that sets up the control directive in this group, re-calculates its value
-   * and validity, and adds the instance to the internal list of directives.
-   *
-   * @param dir The `FormControlName` directive instance.
-   */
-  addControl(dir) {
-    const ctrl = this.form.get(dir.path);
-    setUpControl(ctrl, dir, this.callSetDisabledState);
-    ctrl.updateValueAndValidity({
-      emitEvent: false
-    });
-    this.directives.push(dir);
-    return ctrl;
-  }
-  /**
-   * @description
-   * Retrieves the `FormControl` instance from the provided `FormControlName` directive
-   *
-   * @param dir The `FormControlName` directive instance.
-   */
-  getControl(dir) {
-    return this.form.get(dir.path);
-  }
-  /**
-   * @description
-   * Removes the `FormControlName` instance from the internal list of directives
-   *
-   * @param dir The `FormControlName` directive instance.
-   */
-  removeControl(dir) {
-    cleanUpControl(
-      dir.control || null,
-      dir,
-      /* validateControlPresenceOnChange */
-      false
-    );
-    removeListItem$1(this.directives, dir);
-  }
-  /**
-   * Adds a new `FormGroupName` directive instance to the form.
-   *
-   * @param dir The `FormGroupName` directive instance.
-   */
-  addFormGroup(dir) {
-    this._setUpFormContainer(dir);
-  }
-  /**
-   * Performs the necessary cleanup when a `FormGroupName` directive instance is removed from the
-   * view.
-   *
-   * @param dir The `FormGroupName` directive instance.
-   */
-  removeFormGroup(dir) {
-    this._cleanUpFormContainer(dir);
-  }
-  /**
-   * @description
-   * Retrieves the `FormGroup` for a provided `FormGroupName` directive instance
-   *
-   * @param dir The `FormGroupName` directive instance.
-   */
-  getFormGroup(dir) {
-    return this.form.get(dir.path);
-  }
-  /**
-   * Performs the necessary setup when a `FormArrayName` directive instance is added to the view.
-   *
-   * @param dir The `FormArrayName` directive instance.
-   */
-  addFormArray(dir) {
-    this._setUpFormContainer(dir);
-  }
-  /**
-   * Performs the necessary cleanup when a `FormArrayName` directive instance is removed from the
-   * view.
-   *
-   * @param dir The `FormArrayName` directive instance.
-   */
-  removeFormArray(dir) {
-    this._cleanUpFormContainer(dir);
-  }
-  /**
-   * @description
-   * Retrieves the `FormArray` for a provided `FormArrayName` directive instance.
-   *
-   * @param dir The `FormArrayName` directive instance.
-   */
-  getFormArray(dir) {
-    return this.form.get(dir.path);
-  }
-  /**
-   * Sets the new value for the provided `FormControlName` directive.
-   *
-   * @param dir The `FormControlName` directive instance.
-   * @param value The new value for the directive's control.
-   */
-  updateModel(dir, value) {
-    const ctrl = this.form.get(dir.path);
-    ctrl.setValue(value);
-  }
-  /**
-   * @description
-   * Method called with the "submit" event is triggered on the form.
-   * Triggers the `ngSubmit` emitter to emit the "submit" event as its payload.
-   *
-   * @param $event The "submit" event object
-   */
-  onSubmit($event) {
-    var _a96;
-    this._submittedReactive.set(true);
-    syncPendingControls(this.form, this.directives);
-    this.ngSubmit.emit($event);
-    this.form._events.next(new FormSubmittedEvent(this.control));
-    return ((_a96 = $event == null ? void 0 : $event.target) == null ? void 0 : _a96.method) === "dialog";
-  }
-  /**
-   * @description
-   * Method called when the "reset" event is triggered on the form.
-   */
-  onReset() {
-    this.resetForm();
-  }
-  /**
-   * @description
-   * Resets the form to an initial value and resets its submitted status.
-   *
-   * @param value The new value for the form.
-   */
-  resetForm(value = void 0) {
-    this.form.reset(value);
-    this._submittedReactive.set(false);
-    this.form._events.next(new FormResetEvent(this.form));
-  }
-  /** @internal */
-  _updateDomValue() {
-    this.directives.forEach((dir) => {
-      const oldCtrl = dir.control;
-      const newCtrl = this.form.get(dir.path);
-      if (oldCtrl !== newCtrl) {
-        cleanUpControl(oldCtrl || null, dir);
-        if (isFormControl(newCtrl)) {
-          setUpControl(newCtrl, dir, this.callSetDisabledState);
-          dir.control = newCtrl;
-        }
-      }
-    });
-    this.form._updateTreeValidity({
-      emitEvent: false
-    });
-  }
-  _setUpFormContainer(dir) {
-    const ctrl = this.form.get(dir.path);
-    setUpFormContainer(ctrl, dir);
-    ctrl.updateValueAndValidity({
-      emitEvent: false
-    });
-  }
-  _cleanUpFormContainer(dir) {
-    if (this.form) {
-      const ctrl = this.form.get(dir.path);
-      if (ctrl) {
-        const isControlUpdated = cleanUpFormContainer(ctrl, dir);
-        if (isControlUpdated) {
-          ctrl.updateValueAndValidity({
-            emitEvent: false
-          });
-        }
-      }
-    }
-  }
-  _updateRegistrations() {
-    this.form._registerOnCollectionChange(this._onCollectionChange);
-    if (this._oldForm) {
-      this._oldForm._registerOnCollectionChange(() => {
-      });
-    }
-  }
-  _updateValidators() {
-    setUpValidators(this.form, this);
-    if (this._oldForm) {
-      cleanUpValidators(this._oldForm, this);
-    }
-  }
-};
-__publicField(_FormGroupDirective, "ɵfac", function FormGroupDirective_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _FormGroupDirective)(ɵɵdirectiveInject(NG_VALIDATORS, 10), ɵɵdirectiveInject(NG_ASYNC_VALIDATORS, 10), ɵɵdirectiveInject(CALL_SET_DISABLED_STATE, 8));
-});
-__publicField(_FormGroupDirective, "ɵdir", ɵɵdefineDirective({
-  type: _FormGroupDirective,
-  selectors: [["", "formGroup", ""]],
-  hostBindings: function FormGroupDirective_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("submit", function FormGroupDirective_submit_HostBindingHandler($event) {
-        return ctx.onSubmit($event);
-      })("reset", function FormGroupDirective_reset_HostBindingHandler() {
-        return ctx.onReset();
-      });
-    }
-  },
-  inputs: {
-    form: [0, "formGroup", "form"]
-  },
-  outputs: {
-    ngSubmit: "ngSubmit"
-  },
-  exportAs: ["ngForm"],
-  standalone: false,
-  features: [ɵɵProvidersFeature([formDirectiveProvider]), ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature]
-}));
-var FormGroupDirective = _FormGroupDirective;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FormGroupDirective, [{
-    type: Directive,
-    args: [{
-      selector: "[formGroup]",
-      providers: [formDirectiveProvider],
-      host: {
-        "(submit)": "onSubmit($event)",
-        "(reset)": "onReset()"
-      },
-      exportAs: "ngForm",
-      standalone: false
-    }]
-  }], () => [{
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_ASYNC_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [CALL_SET_DISABLED_STATE]
-    }]
-  }], {
-    form: [{
-      type: Input,
-      args: ["formGroup"]
-    }],
-    ngSubmit: [{
-      type: Output
-    }]
-  });
-})();
-var formGroupNameProvider = {
-  provide: ControlContainer,
-  useExisting: forwardRef(() => FormGroupName)
-};
-var _FormGroupName = class _FormGroupName extends AbstractFormGroupDirective {
-  /**
-   * @description
-   * Tracks the name of the `FormGroup` bound to the directive. The name corresponds
-   * to a key in the parent `FormGroup` or `FormArray`.
-   * Accepts a name as a string or a number.
-   * The name in the form of a string is useful for individual forms,
-   * while the numerical form allows for form groups to be bound
-   * to indices when iterating over groups in a `FormArray`.
-   */
-  name = null;
-  constructor(parent, validators, asyncValidators) {
-    super();
-    this._parent = parent;
-    this._setValidators(validators);
-    this._setAsyncValidators(asyncValidators);
-  }
-  /** @internal */
-  _checkParentType() {
-    if (hasInvalidParent(this._parent) && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw groupParentException();
-    }
-  }
-};
-__publicField(_FormGroupName, "ɵfac", function FormGroupName_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _FormGroupName)(ɵɵdirectiveInject(ControlContainer, 13), ɵɵdirectiveInject(NG_VALIDATORS, 10), ɵɵdirectiveInject(NG_ASYNC_VALIDATORS, 10));
-});
-__publicField(_FormGroupName, "ɵdir", ɵɵdefineDirective({
-  type: _FormGroupName,
-  selectors: [["", "formGroupName", ""]],
-  inputs: {
-    name: [0, "formGroupName", "name"]
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([formGroupNameProvider]), ɵɵInheritDefinitionFeature]
-}));
-var FormGroupName = _FormGroupName;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FormGroupName, [{
-    type: Directive,
-    args: [{
-      selector: "[formGroupName]",
-      providers: [formGroupNameProvider],
-      standalone: false
-    }]
-  }], () => [{
-    type: ControlContainer,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Host
-    }, {
-      type: SkipSelf
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_ASYNC_VALIDATORS]
-    }]
-  }], {
-    name: [{
-      type: Input,
-      args: ["formGroupName"]
-    }]
-  });
-})();
-var formArrayNameProvider = {
-  provide: ControlContainer,
-  useExisting: forwardRef(() => FormArrayName)
-};
-var _FormArrayName = class _FormArrayName extends ControlContainer {
-  /** @internal */
-  _parent;
-  /**
-   * @description
-   * Tracks the name of the `FormArray` bound to the directive. The name corresponds
-   * to a key in the parent `FormGroup` or `FormArray`.
-   * Accepts a name as a string or a number.
-   * The name in the form of a string is useful for individual forms,
-   * while the numerical form allows for form arrays to be bound
-   * to indices when iterating over arrays in a `FormArray`.
-   */
-  name = null;
-  constructor(parent, validators, asyncValidators) {
-    super();
-    this._parent = parent;
-    this._setValidators(validators);
-    this._setAsyncValidators(asyncValidators);
-  }
-  /**
-   * A lifecycle method called when the directive's inputs are initialized. For internal use only.
-   * @throws If the directive does not have a valid parent.
-   * @docs-private
-   */
-  ngOnInit() {
-    if (hasInvalidParent(this._parent) && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw arrayParentException();
-    }
-    this.formDirective.addFormArray(this);
-  }
-  /**
-   * A lifecycle method called before the directive's instance is destroyed. For internal use only.
-   * @docs-private
-   */
-  ngOnDestroy() {
-    var _a96;
-    (_a96 = this.formDirective) == null ? void 0 : _a96.removeFormArray(this);
-  }
-  /**
-   * @description
-   * The `FormArray` bound to this directive.
-   */
-  get control() {
-    return this.formDirective.getFormArray(this);
-  }
-  /**
-   * @description
-   * The top-level directive for this group if present, otherwise null.
-   */
-  get formDirective() {
-    return this._parent ? this._parent.formDirective : null;
-  }
-  /**
-   * @description
-   * Returns an array that represents the path from the top-level form to this control.
-   * Each index is the string name of the control on that level.
-   */
-  get path() {
-    return controlPath(this.name == null ? this.name : this.name.toString(), this._parent);
-  }
-};
-__publicField(_FormArrayName, "ɵfac", function FormArrayName_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _FormArrayName)(ɵɵdirectiveInject(ControlContainer, 13), ɵɵdirectiveInject(NG_VALIDATORS, 10), ɵɵdirectiveInject(NG_ASYNC_VALIDATORS, 10));
-});
-__publicField(_FormArrayName, "ɵdir", ɵɵdefineDirective({
-  type: _FormArrayName,
-  selectors: [["", "formArrayName", ""]],
-  inputs: {
-    name: [0, "formArrayName", "name"]
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([formArrayNameProvider]), ɵɵInheritDefinitionFeature]
-}));
-var FormArrayName = _FormArrayName;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FormArrayName, [{
-    type: Directive,
-    args: [{
-      selector: "[formArrayName]",
-      providers: [formArrayNameProvider],
-      standalone: false
-    }]
-  }], () => [{
-    type: ControlContainer,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Host
-    }, {
-      type: SkipSelf
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_ASYNC_VALIDATORS]
-    }]
-  }], {
-    name: [{
-      type: Input,
-      args: ["formArrayName"]
-    }]
-  });
-})();
-function hasInvalidParent(parent) {
-  return !(parent instanceof FormGroupName) && !(parent instanceof FormGroupDirective) && !(parent instanceof FormArrayName);
-}
-var controlNameBinding = {
-  provide: NgControl,
-  useExisting: forwardRef(() => FormControlName)
-};
-var _FormControlName = class _FormControlName extends NgControl {
-  _ngModelWarningConfig;
-  _added = false;
-  /**
-   * Internal reference to the view model value.
-   * @internal
-   */
-  viewModel;
-  /**
-   * @description
-   * Tracks the `FormControl` instance bound to the directive.
-   */
-  control;
-  /**
-   * @description
-   * Tracks the name of the `FormControl` bound to the directive. The name corresponds
-   * to a key in the parent `FormGroup` or `FormArray`.
-   * Accepts a name as a string or a number.
-   * The name in the form of a string is useful for individual forms,
-   * while the numerical form allows for form controls to be bound
-   * to indices when iterating over controls in a `FormArray`.
-   */
-  name = null;
-  /**
-   * @description
-   * Triggers a warning in dev mode that this input should not be used with reactive forms.
-   */
-  set isDisabled(isDisabled) {
-    if (typeof ngDevMode === "undefined" || ngDevMode) {
-      console.warn(disabledAttrWarning);
-    }
-  }
-  // TODO(kara): remove next 4 properties once deprecation period is over
-  /** @deprecated as of v6 */
-  model;
-  /** @deprecated as of v6 */
-  update = new EventEmitter();
-  /**
-   * @description
-   * Instance property used to track whether an ngModel warning has been sent out for this
-   * particular FormControlName instance. Used to support warning config of "always".
-   *
-   * @internal
-   */
-  _ngModelWarningSent = false;
-  constructor(parent, validators, asyncValidators, valueAccessors, _ngModelWarningConfig) {
-    super();
-    this._ngModelWarningConfig = _ngModelWarningConfig;
-    this._parent = parent;
-    this._setValidators(validators);
-    this._setAsyncValidators(asyncValidators);
-    this.valueAccessor = selectValueAccessor(this, valueAccessors);
-  }
-  /** @docs-private */
-  ngOnChanges(changes) {
-    if (!this._added) this._setUpControl();
-    if (isPropertyUpdated(changes, this.viewModel)) {
-      if (typeof ngDevMode === "undefined" || ngDevMode) {
-        _ngModelWarning("formControlName", _FormControlName, this, this._ngModelWarningConfig);
-      }
-      this.viewModel = this.model;
-      this.formDirective.updateModel(this, this.model);
-    }
-  }
-  /** @docs-private */
-  ngOnDestroy() {
-    if (this.formDirective) {
-      this.formDirective.removeControl(this);
-    }
-  }
-  /**
-   * @description
-   * Sets the new value for the view model and emits an `ngModelChange` event.
-   *
-   * @param newValue The new value for the view model.
-   */
-  viewToModelUpdate(newValue) {
-    this.viewModel = newValue;
-    this.update.emit(newValue);
-  }
-  /**
-   * @description
-   * Returns an array that represents the path from the top-level form to this control.
-   * Each index is the string name of the control on that level.
-   */
-  get path() {
-    return controlPath(this.name == null ? this.name : this.name.toString(), this._parent);
-  }
-  /**
-   * @description
-   * The top-level directive for this group if present, otherwise null.
-   */
-  get formDirective() {
-    return this._parent ? this._parent.formDirective : null;
-  }
-  _setUpControl() {
-    if (typeof ngDevMode === "undefined" || ngDevMode) {
-      checkParentType(this._parent, this.name);
-    }
-    this.control = this.formDirective.addControl(this);
-    this._added = true;
-  }
-};
-/**
- * @description
- * Static property used to track whether any ngModel warnings have been sent across
- * all instances of FormControlName. Used to support warning config of "once".
- *
- * @internal
- */
-__publicField(_FormControlName, "_ngModelWarningSentOnce", false);
-__publicField(_FormControlName, "ɵfac", function FormControlName_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _FormControlName)(ɵɵdirectiveInject(ControlContainer, 13), ɵɵdirectiveInject(NG_VALIDATORS, 10), ɵɵdirectiveInject(NG_ASYNC_VALIDATORS, 10), ɵɵdirectiveInject(NG_VALUE_ACCESSOR, 10), ɵɵdirectiveInject(NG_MODEL_WITH_FORM_CONTROL_WARNING, 8));
-});
-__publicField(_FormControlName, "ɵdir", ɵɵdefineDirective({
-  type: _FormControlName,
-  selectors: [["", "formControlName", ""]],
-  inputs: {
-    name: [0, "formControlName", "name"],
-    isDisabled: [0, "disabled", "isDisabled"],
-    model: [0, "ngModel", "model"]
-  },
-  outputs: {
-    update: "ngModelChange"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([controlNameBinding]), ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature]
-}));
-var FormControlName = _FormControlName;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FormControlName, [{
-    type: Directive,
-    args: [{
-      selector: "[formControlName]",
-      providers: [controlNameBinding],
-      standalone: false
-    }]
-  }], () => [{
-    type: ControlContainer,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Host
-    }, {
-      type: SkipSelf
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_ASYNC_VALIDATORS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Self
-    }, {
-      type: Inject,
-      args: [NG_VALUE_ACCESSOR]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [NG_MODEL_WITH_FORM_CONTROL_WARNING]
-    }]
-  }], {
-    name: [{
-      type: Input,
-      args: ["formControlName"]
-    }],
-    isDisabled: [{
-      type: Input,
-      args: ["disabled"]
-    }],
-    model: [{
-      type: Input,
-      args: ["ngModel"]
-    }],
-    update: [{
-      type: Output,
-      args: ["ngModelChange"]
-    }]
-  });
-})();
-function checkParentType(parent, name) {
-  if (!(parent instanceof FormGroupName) && parent instanceof AbstractFormGroupDirective) {
-    throw ngModelGroupException();
-  } else if (!(parent instanceof FormGroupName) && !(parent instanceof FormGroupDirective) && !(parent instanceof FormArrayName)) {
-    throw controlParentException(name);
-  }
-}
-var SELECT_VALUE_ACCESSOR = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => SelectControlValueAccessor),
-  multi: true
-};
-function _buildValueString$1(id, value) {
-  if (id == null) return `${value}`;
-  if (value && typeof value === "object") value = "Object";
-  return `${id}: ${value}`.slice(0, 50);
-}
-function _extractId$1(valueString) {
-  return valueString.split(":")[0];
-}
-var _SelectControlValueAccessor = class _SelectControlValueAccessor extends BuiltInControlValueAccessor {
-  /** @docs-private */
-  value;
-  /** @internal */
-  _optionMap = /* @__PURE__ */ new Map();
-  /** @internal */
-  _idCounter = 0;
-  /**
-   * @description
-   * Tracks the option comparison algorithm for tracking identities when
-   * checking for changes.
-   */
-  set compareWith(fn) {
-    if (typeof fn !== "function" && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw new RuntimeError(1201, `compareWith must be a function, but received ${JSON.stringify(fn)}`);
-    }
-    this._compareWith = fn;
-  }
-  _compareWith = Object.is;
-  /**
-   * Sets the "value" property on the select element.
-   * @docs-private
-   */
-  writeValue(value) {
-    this.value = value;
-    const id = this._getOptionId(value);
-    const valueString = _buildValueString$1(id, value);
-    this.setProperty("value", valueString);
-  }
-  /**
-   * Registers a function called when the control value changes.
-   * @docs-private
-   */
-  registerOnChange(fn) {
-    this.onChange = (valueString) => {
-      this.value = this._getOptionValue(valueString);
-      fn(this.value);
-    };
-  }
-  /** @internal */
-  _registerOption() {
-    return (this._idCounter++).toString();
-  }
-  /** @internal */
-  _getOptionId(value) {
-    for (const id of this._optionMap.keys()) {
-      if (this._compareWith(this._optionMap.get(id), value)) return id;
-    }
-    return null;
-  }
-  /** @internal */
-  _getOptionValue(valueString) {
-    const id = _extractId$1(valueString);
-    return this._optionMap.has(id) ? this._optionMap.get(id) : valueString;
-  }
-};
-__publicField(_SelectControlValueAccessor, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵSelectControlValueAccessor_BaseFactory;
-  return function SelectControlValueAccessor_Factory(__ngFactoryType__) {
-    return (ɵSelectControlValueAccessor_BaseFactory || (ɵSelectControlValueAccessor_BaseFactory = ɵɵgetInheritedFactory(_SelectControlValueAccessor)))(__ngFactoryType__ || _SelectControlValueAccessor);
-  };
-})());
-__publicField(_SelectControlValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _SelectControlValueAccessor,
-  selectors: [["select", "formControlName", "", 3, "multiple", ""], ["select", "formControl", "", 3, "multiple", ""], ["select", "ngModel", "", 3, "multiple", ""]],
-  hostBindings: function SelectControlValueAccessor_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("change", function SelectControlValueAccessor_change_HostBindingHandler($event) {
-        return ctx.onChange($event.target.value);
-      })("blur", function SelectControlValueAccessor_blur_HostBindingHandler() {
-        return ctx.onTouched();
-      });
-    }
-  },
-  inputs: {
-    compareWith: "compareWith"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([SELECT_VALUE_ACCESSOR]), ɵɵInheritDefinitionFeature]
-}));
-var SelectControlValueAccessor = _SelectControlValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SelectControlValueAccessor, [{
-    type: Directive,
-    args: [{
-      selector: "select:not([multiple])[formControlName],select:not([multiple])[formControl],select:not([multiple])[ngModel]",
-      host: {
-        "(change)": "onChange($event.target.value)",
-        "(blur)": "onTouched()"
-      },
-      providers: [SELECT_VALUE_ACCESSOR],
-      standalone: false
-    }]
-  }], null, {
-    compareWith: [{
-      type: Input
-    }]
-  });
-})();
-var _NgSelectOption = class _NgSelectOption {
-  _element;
-  _renderer;
-  _select;
-  /**
-   * @description
-   * ID of the option element
-   */
-  id;
-  constructor(_element, _renderer, _select) {
-    this._element = _element;
-    this._renderer = _renderer;
-    this._select = _select;
-    if (this._select) this.id = this._select._registerOption();
-  }
-  /**
-   * @description
-   * Tracks the value bound to the option element. Unlike the value binding,
-   * ngValue supports binding to objects.
-   */
-  set ngValue(value) {
-    if (this._select == null) return;
-    this._select._optionMap.set(this.id, value);
-    this._setElementValue(_buildValueString$1(this.id, value));
-    this._select.writeValue(this._select.value);
-  }
-  /**
-   * @description
-   * Tracks simple string values bound to the option element.
-   * For objects, use the `ngValue` input binding.
-   */
-  set value(value) {
-    this._setElementValue(value);
-    if (this._select) this._select.writeValue(this._select.value);
-  }
-  /** @internal */
-  _setElementValue(value) {
-    this._renderer.setProperty(this._element.nativeElement, "value", value);
-  }
-  /** @docs-private */
-  ngOnDestroy() {
-    if (this._select) {
-      this._select._optionMap.delete(this.id);
-      this._select.writeValue(this._select.value);
-    }
-  }
-};
-__publicField(_NgSelectOption, "ɵfac", function NgSelectOption_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _NgSelectOption)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(SelectControlValueAccessor, 9));
-});
-__publicField(_NgSelectOption, "ɵdir", ɵɵdefineDirective({
-  type: _NgSelectOption,
-  selectors: [["option"]],
-  inputs: {
-    ngValue: "ngValue",
-    value: "value"
-  },
-  standalone: false
-}));
-var NgSelectOption = _NgSelectOption;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgSelectOption, [{
-    type: Directive,
-    args: [{
-      selector: "option",
-      standalone: false
-    }]
-  }], () => [{
-    type: ElementRef
-  }, {
-    type: Renderer2
-  }, {
-    type: SelectControlValueAccessor,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Host
-    }]
-  }], {
-    ngValue: [{
-      type: Input,
-      args: ["ngValue"]
-    }],
-    value: [{
-      type: Input,
-      args: ["value"]
-    }]
-  });
-})();
-var SELECT_MULTIPLE_VALUE_ACCESSOR = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => SelectMultipleControlValueAccessor),
-  multi: true
-};
-function _buildValueString(id, value) {
-  if (id == null) return `${value}`;
-  if (typeof value === "string") value = `'${value}'`;
-  if (value && typeof value === "object") value = "Object";
-  return `${id}: ${value}`.slice(0, 50);
-}
-function _extractId(valueString) {
-  return valueString.split(":")[0];
-}
-var _SelectMultipleControlValueAccessor = class _SelectMultipleControlValueAccessor extends BuiltInControlValueAccessor {
-  /**
-   * The current value.
-   * @docs-private
-   */
-  value;
-  /** @internal */
-  _optionMap = /* @__PURE__ */ new Map();
-  /** @internal */
-  _idCounter = 0;
-  /**
-   * @description
-   * Tracks the option comparison algorithm for tracking identities when
-   * checking for changes.
-   */
-  set compareWith(fn) {
-    if (typeof fn !== "function" && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw new RuntimeError(1201, `compareWith must be a function, but received ${JSON.stringify(fn)}`);
-    }
-    this._compareWith = fn;
-  }
-  _compareWith = Object.is;
-  /**
-   * Sets the "value" property on one or of more of the select's options.
-   * @docs-private
-   */
-  writeValue(value) {
-    this.value = value;
-    let optionSelectedStateSetter;
-    if (Array.isArray(value)) {
-      const ids2 = value.map((v) => this._getOptionId(v));
-      optionSelectedStateSetter = (opt, o) => {
-        opt._setSelected(ids2.indexOf(o.toString()) > -1);
-      };
-    } else {
-      optionSelectedStateSetter = (opt, o) => {
-        opt._setSelected(false);
-      };
-    }
-    this._optionMap.forEach(optionSelectedStateSetter);
-  }
-  /**
-   * Registers a function called when the control value changes
-   * and writes an array of the selected options.
-   * @docs-private
-   */
-  registerOnChange(fn) {
-    this.onChange = (element) => {
-      const selected = [];
-      const selectedOptions = element.selectedOptions;
-      if (selectedOptions !== void 0) {
-        const options = selectedOptions;
-        for (let i = 0; i < options.length; i++) {
-          const opt = options[i];
-          const val = this._getOptionValue(opt.value);
-          selected.push(val);
-        }
-      } else {
-        const options = element.options;
-        for (let i = 0; i < options.length; i++) {
-          const opt = options[i];
-          if (opt.selected) {
-            const val = this._getOptionValue(opt.value);
-            selected.push(val);
-          }
-        }
-      }
-      this.value = selected;
-      fn(selected);
-    };
-  }
-  /** @internal */
-  _registerOption(value) {
-    const id = (this._idCounter++).toString();
-    this._optionMap.set(id, value);
-    return id;
-  }
-  /** @internal */
-  _getOptionId(value) {
-    for (const id of this._optionMap.keys()) {
-      if (this._compareWith(this._optionMap.get(id)._value, value)) return id;
-    }
-    return null;
-  }
-  /** @internal */
-  _getOptionValue(valueString) {
-    const id = _extractId(valueString);
-    return this._optionMap.has(id) ? this._optionMap.get(id)._value : valueString;
-  }
-};
-__publicField(_SelectMultipleControlValueAccessor, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵSelectMultipleControlValueAccessor_BaseFactory;
-  return function SelectMultipleControlValueAccessor_Factory(__ngFactoryType__) {
-    return (ɵSelectMultipleControlValueAccessor_BaseFactory || (ɵSelectMultipleControlValueAccessor_BaseFactory = ɵɵgetInheritedFactory(_SelectMultipleControlValueAccessor)))(__ngFactoryType__ || _SelectMultipleControlValueAccessor);
-  };
-})());
-__publicField(_SelectMultipleControlValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _SelectMultipleControlValueAccessor,
-  selectors: [["select", "multiple", "", "formControlName", ""], ["select", "multiple", "", "formControl", ""], ["select", "multiple", "", "ngModel", ""]],
-  hostBindings: function SelectMultipleControlValueAccessor_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("change", function SelectMultipleControlValueAccessor_change_HostBindingHandler($event) {
-        return ctx.onChange($event.target);
-      })("blur", function SelectMultipleControlValueAccessor_blur_HostBindingHandler() {
-        return ctx.onTouched();
-      });
-    }
-  },
-  inputs: {
-    compareWith: "compareWith"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([SELECT_MULTIPLE_VALUE_ACCESSOR]), ɵɵInheritDefinitionFeature]
-}));
-var SelectMultipleControlValueAccessor = _SelectMultipleControlValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SelectMultipleControlValueAccessor, [{
-    type: Directive,
-    args: [{
-      selector: "select[multiple][formControlName],select[multiple][formControl],select[multiple][ngModel]",
-      host: {
-        "(change)": "onChange($event.target)",
-        "(blur)": "onTouched()"
-      },
-      providers: [SELECT_MULTIPLE_VALUE_ACCESSOR],
-      standalone: false
-    }]
-  }], null, {
-    compareWith: [{
-      type: Input
-    }]
-  });
-})();
-var _ɵNgSelectMultipleOption = class _ɵNgSelectMultipleOption {
-  _element;
-  _renderer;
-  _select;
-  id;
-  /** @internal */
-  _value;
-  constructor(_element, _renderer, _select) {
-    this._element = _element;
-    this._renderer = _renderer;
-    this._select = _select;
-    if (this._select) {
-      this.id = this._select._registerOption(this);
-    }
-  }
-  /**
-   * @description
-   * Tracks the value bound to the option element. Unlike the value binding,
-   * ngValue supports binding to objects.
-   */
-  set ngValue(value) {
-    if (this._select == null) return;
-    this._value = value;
-    this._setElementValue(_buildValueString(this.id, value));
-    this._select.writeValue(this._select.value);
-  }
-  /**
-   * @description
-   * Tracks simple string values bound to the option element.
-   * For objects, use the `ngValue` input binding.
-   */
-  set value(value) {
-    if (this._select) {
-      this._value = value;
-      this._setElementValue(_buildValueString(this.id, value));
-      this._select.writeValue(this._select.value);
-    } else {
-      this._setElementValue(value);
-    }
-  }
-  /** @internal */
-  _setElementValue(value) {
-    this._renderer.setProperty(this._element.nativeElement, "value", value);
-  }
-  /** @internal */
-  _setSelected(selected) {
-    this._renderer.setProperty(this._element.nativeElement, "selected", selected);
-  }
-  /** @docs-private */
-  ngOnDestroy() {
-    if (this._select) {
-      this._select._optionMap.delete(this.id);
-      this._select.writeValue(this._select.value);
-    }
-  }
-};
-__publicField(_ɵNgSelectMultipleOption, "ɵfac", function ɵNgSelectMultipleOption_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _ɵNgSelectMultipleOption)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(SelectMultipleControlValueAccessor, 9));
-});
-__publicField(_ɵNgSelectMultipleOption, "ɵdir", ɵɵdefineDirective({
-  type: _ɵNgSelectMultipleOption,
-  selectors: [["option"]],
-  inputs: {
-    ngValue: "ngValue",
-    value: "value"
-  },
-  standalone: false
-}));
-var ɵNgSelectMultipleOption = _ɵNgSelectMultipleOption;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ɵNgSelectMultipleOption, [{
-    type: Directive,
-    args: [{
-      selector: "option",
-      standalone: false
-    }]
-  }], () => [{
-    type: ElementRef
-  }, {
-    type: Renderer2
-  }, {
-    type: SelectMultipleControlValueAccessor,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Host
-    }]
-  }], {
-    ngValue: [{
-      type: Input,
-      args: ["ngValue"]
-    }],
-    value: [{
-      type: Input,
-      args: ["value"]
-    }]
-  });
-})();
-function toInteger(value) {
-  return typeof value === "number" ? value : parseInt(value, 10);
-}
-function toFloat(value) {
-  return typeof value === "number" ? value : parseFloat(value);
-}
-var _AbstractValidatorDirective = class _AbstractValidatorDirective {
-  _validator = nullValidator;
-  _onChange;
-  /**
-   * A flag that tracks whether this validator is enabled.
-   *
-   * Marking it `internal` (vs `protected`), so that this flag can be used in host bindings of
-   * directive classes that extend this base class.
-   * @internal
-   */
-  _enabled;
-  /** @docs-private */
-  ngOnChanges(changes) {
-    if (this.inputName in changes) {
-      const input = this.normalizeInput(changes[this.inputName].currentValue);
-      this._enabled = this.enabled(input);
-      this._validator = this._enabled ? this.createValidator(input) : nullValidator;
-      if (this._onChange) {
-        this._onChange();
-      }
-    }
-  }
-  /** @docs-private */
-  validate(control) {
-    return this._validator(control);
-  }
-  /** @docs-private */
-  registerOnValidatorChange(fn) {
-    this._onChange = fn;
-  }
-  /**
-   * @description
-   * Determines whether this validator should be active or not based on an input.
-   * Base class implementation checks whether an input is defined (if the value is different from
-   * `null` and `undefined`). Validator classes that extend this base class can override this
-   * function with the logic specific to a particular validator directive.
-   */
-  enabled(input) {
-    return input != null;
-  }
-};
-__publicField(_AbstractValidatorDirective, "ɵfac", function AbstractValidatorDirective_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _AbstractValidatorDirective)();
-});
-__publicField(_AbstractValidatorDirective, "ɵdir", ɵɵdefineDirective({
-  type: _AbstractValidatorDirective,
-  features: [ɵɵNgOnChangesFeature]
-}));
-var AbstractValidatorDirective = _AbstractValidatorDirective;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AbstractValidatorDirective, [{
-    type: Directive
-  }], null, null);
-})();
-var MAX_VALIDATOR = {
-  provide: NG_VALIDATORS,
-  useExisting: forwardRef(() => MaxValidator),
-  multi: true
-};
-var _MaxValidator = class _MaxValidator extends AbstractValidatorDirective {
-  /**
-   * @description
-   * Tracks changes to the max bound to this directive.
-   */
-  max;
-  /** @internal */
-  inputName = "max";
-  /** @internal */
-  normalizeInput = (input) => toFloat(input);
-  /** @internal */
-  createValidator = (max) => maxValidator(max);
-};
-__publicField(_MaxValidator, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵMaxValidator_BaseFactory;
-  return function MaxValidator_Factory(__ngFactoryType__) {
-    return (ɵMaxValidator_BaseFactory || (ɵMaxValidator_BaseFactory = ɵɵgetInheritedFactory(_MaxValidator)))(__ngFactoryType__ || _MaxValidator);
-  };
-})());
-__publicField(_MaxValidator, "ɵdir", ɵɵdefineDirective({
-  type: _MaxValidator,
-  selectors: [["input", "type", "number", "max", "", "formControlName", ""], ["input", "type", "number", "max", "", "formControl", ""], ["input", "type", "number", "max", "", "ngModel", ""]],
-  hostVars: 1,
-  hostBindings: function MaxValidator_HostBindings(rf, ctx) {
-    if (rf & 2) {
-      ɵɵattribute("max", ctx._enabled ? ctx.max : null);
-    }
-  },
-  inputs: {
-    max: "max"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([MAX_VALIDATOR]), ɵɵInheritDefinitionFeature]
-}));
-var MaxValidator = _MaxValidator;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MaxValidator, [{
-    type: Directive,
-    args: [{
-      selector: "input[type=number][max][formControlName],input[type=number][max][formControl],input[type=number][max][ngModel]",
-      providers: [MAX_VALIDATOR],
-      host: {
-        "[attr.max]": "_enabled ? max : null"
-      },
-      standalone: false
-    }]
-  }], null, {
-    max: [{
-      type: Input
-    }]
-  });
-})();
-var MIN_VALIDATOR = {
-  provide: NG_VALIDATORS,
-  useExisting: forwardRef(() => MinValidator),
-  multi: true
-};
-var _MinValidator = class _MinValidator extends AbstractValidatorDirective {
-  /**
-   * @description
-   * Tracks changes to the min bound to this directive.
-   */
-  min;
-  /** @internal */
-  inputName = "min";
-  /** @internal */
-  normalizeInput = (input) => toFloat(input);
-  /** @internal */
-  createValidator = (min) => minValidator(min);
-};
-__publicField(_MinValidator, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵMinValidator_BaseFactory;
-  return function MinValidator_Factory(__ngFactoryType__) {
-    return (ɵMinValidator_BaseFactory || (ɵMinValidator_BaseFactory = ɵɵgetInheritedFactory(_MinValidator)))(__ngFactoryType__ || _MinValidator);
-  };
-})());
-__publicField(_MinValidator, "ɵdir", ɵɵdefineDirective({
-  type: _MinValidator,
-  selectors: [["input", "type", "number", "min", "", "formControlName", ""], ["input", "type", "number", "min", "", "formControl", ""], ["input", "type", "number", "min", "", "ngModel", ""]],
-  hostVars: 1,
-  hostBindings: function MinValidator_HostBindings(rf, ctx) {
-    if (rf & 2) {
-      ɵɵattribute("min", ctx._enabled ? ctx.min : null);
-    }
-  },
-  inputs: {
-    min: "min"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([MIN_VALIDATOR]), ɵɵInheritDefinitionFeature]
-}));
-var MinValidator = _MinValidator;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MinValidator, [{
-    type: Directive,
-    args: [{
-      selector: "input[type=number][min][formControlName],input[type=number][min][formControl],input[type=number][min][ngModel]",
-      providers: [MIN_VALIDATOR],
-      host: {
-        "[attr.min]": "_enabled ? min : null"
-      },
-      standalone: false
-    }]
-  }], null, {
-    min: [{
-      type: Input
-    }]
-  });
-})();
-var REQUIRED_VALIDATOR = {
-  provide: NG_VALIDATORS,
-  useExisting: forwardRef(() => RequiredValidator),
-  multi: true
-};
-var CHECKBOX_REQUIRED_VALIDATOR = {
-  provide: NG_VALIDATORS,
-  useExisting: forwardRef(() => CheckboxRequiredValidator),
-  multi: true
-};
-var _RequiredValidator = class _RequiredValidator extends AbstractValidatorDirective {
-  /**
-   * @description
-   * Tracks changes to the required attribute bound to this directive.
-   */
-  required;
-  /** @internal */
-  inputName = "required";
-  /** @internal */
-  normalizeInput = booleanAttribute;
-  /** @internal */
-  createValidator = (input) => requiredValidator;
-  /** @docs-private */
-  enabled(input) {
-    return input;
-  }
-};
-__publicField(_RequiredValidator, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵRequiredValidator_BaseFactory;
-  return function RequiredValidator_Factory(__ngFactoryType__) {
-    return (ɵRequiredValidator_BaseFactory || (ɵRequiredValidator_BaseFactory = ɵɵgetInheritedFactory(_RequiredValidator)))(__ngFactoryType__ || _RequiredValidator);
-  };
-})());
-__publicField(_RequiredValidator, "ɵdir", ɵɵdefineDirective({
-  type: _RequiredValidator,
-  selectors: [["", "required", "", "formControlName", "", 3, "type", "checkbox"], ["", "required", "", "formControl", "", 3, "type", "checkbox"], ["", "required", "", "ngModel", "", 3, "type", "checkbox"]],
-  hostVars: 1,
-  hostBindings: function RequiredValidator_HostBindings(rf, ctx) {
-    if (rf & 2) {
-      ɵɵattribute("required", ctx._enabled ? "" : null);
-    }
-  },
-  inputs: {
-    required: "required"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([REQUIRED_VALIDATOR]), ɵɵInheritDefinitionFeature]
-}));
-var RequiredValidator = _RequiredValidator;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RequiredValidator, [{
-    type: Directive,
-    args: [{
-      selector: ":not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel]",
-      providers: [REQUIRED_VALIDATOR],
-      host: {
-        "[attr.required]": '_enabled ? "" : null'
-      },
-      standalone: false
-    }]
-  }], null, {
-    required: [{
-      type: Input
-    }]
-  });
-})();
-var _CheckboxRequiredValidator = class _CheckboxRequiredValidator extends RequiredValidator {
-  /** @internal */
-  createValidator = (input) => requiredTrueValidator;
-};
-__publicField(_CheckboxRequiredValidator, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵCheckboxRequiredValidator_BaseFactory;
-  return function CheckboxRequiredValidator_Factory(__ngFactoryType__) {
-    return (ɵCheckboxRequiredValidator_BaseFactory || (ɵCheckboxRequiredValidator_BaseFactory = ɵɵgetInheritedFactory(_CheckboxRequiredValidator)))(__ngFactoryType__ || _CheckboxRequiredValidator);
-  };
-})());
-__publicField(_CheckboxRequiredValidator, "ɵdir", ɵɵdefineDirective({
-  type: _CheckboxRequiredValidator,
-  selectors: [["input", "type", "checkbox", "required", "", "formControlName", ""], ["input", "type", "checkbox", "required", "", "formControl", ""], ["input", "type", "checkbox", "required", "", "ngModel", ""]],
-  hostVars: 1,
-  hostBindings: function CheckboxRequiredValidator_HostBindings(rf, ctx) {
-    if (rf & 2) {
-      ɵɵattribute("required", ctx._enabled ? "" : null);
-    }
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([CHECKBOX_REQUIRED_VALIDATOR]), ɵɵInheritDefinitionFeature]
-}));
-var CheckboxRequiredValidator = _CheckboxRequiredValidator;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CheckboxRequiredValidator, [{
-    type: Directive,
-    args: [{
-      selector: "input[type=checkbox][required][formControlName],input[type=checkbox][required][formControl],input[type=checkbox][required][ngModel]",
-      providers: [CHECKBOX_REQUIRED_VALIDATOR],
-      host: {
-        "[attr.required]": '_enabled ? "" : null'
-      },
-      standalone: false
-    }]
-  }], null, null);
-})();
-var EMAIL_VALIDATOR = {
-  provide: NG_VALIDATORS,
-  useExisting: forwardRef(() => EmailValidator),
-  multi: true
-};
-var _EmailValidator = class _EmailValidator extends AbstractValidatorDirective {
-  /**
-   * @description
-   * Tracks changes to the email attribute bound to this directive.
-   */
-  email;
-  /** @internal */
-  inputName = "email";
-  /** @internal */
-  normalizeInput = booleanAttribute;
-  /** @internal */
-  createValidator = (input) => emailValidator;
-  /** @docs-private */
-  enabled(input) {
-    return input;
-  }
-};
-__publicField(_EmailValidator, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵEmailValidator_BaseFactory;
-  return function EmailValidator_Factory(__ngFactoryType__) {
-    return (ɵEmailValidator_BaseFactory || (ɵEmailValidator_BaseFactory = ɵɵgetInheritedFactory(_EmailValidator)))(__ngFactoryType__ || _EmailValidator);
-  };
-})());
-__publicField(_EmailValidator, "ɵdir", ɵɵdefineDirective({
-  type: _EmailValidator,
-  selectors: [["", "email", "", "formControlName", ""], ["", "email", "", "formControl", ""], ["", "email", "", "ngModel", ""]],
-  inputs: {
-    email: "email"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([EMAIL_VALIDATOR]), ɵɵInheritDefinitionFeature]
-}));
-var EmailValidator = _EmailValidator;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(EmailValidator, [{
-    type: Directive,
-    args: [{
-      selector: "[email][formControlName],[email][formControl],[email][ngModel]",
-      providers: [EMAIL_VALIDATOR],
-      standalone: false
-    }]
-  }], null, {
-    email: [{
-      type: Input
-    }]
-  });
-})();
-var MIN_LENGTH_VALIDATOR = {
-  provide: NG_VALIDATORS,
-  useExisting: forwardRef(() => MinLengthValidator),
-  multi: true
-};
-var _MinLengthValidator = class _MinLengthValidator extends AbstractValidatorDirective {
-  /**
-   * @description
-   * Tracks changes to the minimum length bound to this directive.
-   */
-  minlength;
-  /** @internal */
-  inputName = "minlength";
-  /** @internal */
-  normalizeInput = (input) => toInteger(input);
-  /** @internal */
-  createValidator = (minlength) => minLengthValidator(minlength);
-};
-__publicField(_MinLengthValidator, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵMinLengthValidator_BaseFactory;
-  return function MinLengthValidator_Factory(__ngFactoryType__) {
-    return (ɵMinLengthValidator_BaseFactory || (ɵMinLengthValidator_BaseFactory = ɵɵgetInheritedFactory(_MinLengthValidator)))(__ngFactoryType__ || _MinLengthValidator);
-  };
-})());
-__publicField(_MinLengthValidator, "ɵdir", ɵɵdefineDirective({
-  type: _MinLengthValidator,
-  selectors: [["", "minlength", "", "formControlName", ""], ["", "minlength", "", "formControl", ""], ["", "minlength", "", "ngModel", ""]],
-  hostVars: 1,
-  hostBindings: function MinLengthValidator_HostBindings(rf, ctx) {
-    if (rf & 2) {
-      ɵɵattribute("minlength", ctx._enabled ? ctx.minlength : null);
-    }
-  },
-  inputs: {
-    minlength: "minlength"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([MIN_LENGTH_VALIDATOR]), ɵɵInheritDefinitionFeature]
-}));
-var MinLengthValidator = _MinLengthValidator;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MinLengthValidator, [{
-    type: Directive,
-    args: [{
-      selector: "[minlength][formControlName],[minlength][formControl],[minlength][ngModel]",
-      providers: [MIN_LENGTH_VALIDATOR],
-      host: {
-        "[attr.minlength]": "_enabled ? minlength : null"
-      },
-      standalone: false
-    }]
-  }], null, {
-    minlength: [{
-      type: Input
-    }]
-  });
-})();
-var MAX_LENGTH_VALIDATOR = {
-  provide: NG_VALIDATORS,
-  useExisting: forwardRef(() => MaxLengthValidator),
-  multi: true
-};
-var _MaxLengthValidator = class _MaxLengthValidator extends AbstractValidatorDirective {
-  /**
-   * @description
-   * Tracks changes to the maximum length bound to this directive.
-   */
-  maxlength;
-  /** @internal */
-  inputName = "maxlength";
-  /** @internal */
-  normalizeInput = (input) => toInteger(input);
-  /** @internal */
-  createValidator = (maxlength) => maxLengthValidator(maxlength);
-};
-__publicField(_MaxLengthValidator, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵMaxLengthValidator_BaseFactory;
-  return function MaxLengthValidator_Factory(__ngFactoryType__) {
-    return (ɵMaxLengthValidator_BaseFactory || (ɵMaxLengthValidator_BaseFactory = ɵɵgetInheritedFactory(_MaxLengthValidator)))(__ngFactoryType__ || _MaxLengthValidator);
-  };
-})());
-__publicField(_MaxLengthValidator, "ɵdir", ɵɵdefineDirective({
-  type: _MaxLengthValidator,
-  selectors: [["", "maxlength", "", "formControlName", ""], ["", "maxlength", "", "formControl", ""], ["", "maxlength", "", "ngModel", ""]],
-  hostVars: 1,
-  hostBindings: function MaxLengthValidator_HostBindings(rf, ctx) {
-    if (rf & 2) {
-      ɵɵattribute("maxlength", ctx._enabled ? ctx.maxlength : null);
-    }
-  },
-  inputs: {
-    maxlength: "maxlength"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([MAX_LENGTH_VALIDATOR]), ɵɵInheritDefinitionFeature]
-}));
-var MaxLengthValidator = _MaxLengthValidator;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MaxLengthValidator, [{
-    type: Directive,
-    args: [{
-      selector: "[maxlength][formControlName],[maxlength][formControl],[maxlength][ngModel]",
-      providers: [MAX_LENGTH_VALIDATOR],
-      host: {
-        "[attr.maxlength]": "_enabled ? maxlength : null"
-      },
-      standalone: false
-    }]
-  }], null, {
-    maxlength: [{
-      type: Input
-    }]
-  });
-})();
-var PATTERN_VALIDATOR = {
-  provide: NG_VALIDATORS,
-  useExisting: forwardRef(() => PatternValidator),
-  multi: true
-};
-var _PatternValidator = class _PatternValidator extends AbstractValidatorDirective {
-  /**
-   * @description
-   * Tracks changes to the pattern bound to this directive.
-   */
-  pattern;
-  // This input is always defined, since the name matches selector.
-  /** @internal */
-  inputName = "pattern";
-  /** @internal */
-  normalizeInput = (input) => input;
-  /** @internal */
-  createValidator = (input) => patternValidator(input);
-};
-__publicField(_PatternValidator, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵPatternValidator_BaseFactory;
-  return function PatternValidator_Factory(__ngFactoryType__) {
-    return (ɵPatternValidator_BaseFactory || (ɵPatternValidator_BaseFactory = ɵɵgetInheritedFactory(_PatternValidator)))(__ngFactoryType__ || _PatternValidator);
-  };
-})());
-__publicField(_PatternValidator, "ɵdir", ɵɵdefineDirective({
-  type: _PatternValidator,
-  selectors: [["", "pattern", "", "formControlName", ""], ["", "pattern", "", "formControl", ""], ["", "pattern", "", "ngModel", ""]],
-  hostVars: 1,
-  hostBindings: function PatternValidator_HostBindings(rf, ctx) {
-    if (rf & 2) {
-      ɵɵattribute("pattern", ctx._enabled ? ctx.pattern : null);
-    }
-  },
-  inputs: {
-    pattern: "pattern"
-  },
-  standalone: false,
-  features: [ɵɵProvidersFeature([PATTERN_VALIDATOR]), ɵɵInheritDefinitionFeature]
-}));
-var PatternValidator = _PatternValidator;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PatternValidator, [{
-    type: Directive,
-    args: [{
-      selector: "[pattern][formControlName],[pattern][formControl],[pattern][ngModel]",
-      providers: [PATTERN_VALIDATOR],
-      host: {
-        "[attr.pattern]": "_enabled ? pattern : null"
-      },
-      standalone: false
-    }]
-  }], null, {
-    pattern: [{
-      type: Input
-    }]
-  });
-})();
-var SHARED_FORM_DIRECTIVES = [ɵNgNoValidate, NgSelectOption, ɵNgSelectMultipleOption, DefaultValueAccessor, NumberValueAccessor, RangeValueAccessor, CheckboxControlValueAccessor, SelectControlValueAccessor, SelectMultipleControlValueAccessor, RadioControlValueAccessor, NgControlStatus, NgControlStatusGroup, RequiredValidator, MinLengthValidator, MaxLengthValidator, PatternValidator, CheckboxRequiredValidator, EmailValidator, MinValidator, MaxValidator];
-var TEMPLATE_DRIVEN_DIRECTIVES = [NgModel, NgModelGroup, NgForm];
-var REACTIVE_DRIVEN_DIRECTIVES = [FormControlDirective, FormGroupDirective, FormControlName, FormGroupName, FormArrayName];
-var _ɵInternalFormsSharedModule = class _ɵInternalFormsSharedModule {
-};
-__publicField(_ɵInternalFormsSharedModule, "ɵfac", function ɵInternalFormsSharedModule_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _ɵInternalFormsSharedModule)();
-});
-__publicField(_ɵInternalFormsSharedModule, "ɵmod", ɵɵdefineNgModule({
-  type: _ɵInternalFormsSharedModule,
-  declarations: [ɵNgNoValidate, NgSelectOption, ɵNgSelectMultipleOption, DefaultValueAccessor, NumberValueAccessor, RangeValueAccessor, CheckboxControlValueAccessor, SelectControlValueAccessor, SelectMultipleControlValueAccessor, RadioControlValueAccessor, NgControlStatus, NgControlStatusGroup, RequiredValidator, MinLengthValidator, MaxLengthValidator, PatternValidator, CheckboxRequiredValidator, EmailValidator, MinValidator, MaxValidator],
-  exports: [ɵNgNoValidate, NgSelectOption, ɵNgSelectMultipleOption, DefaultValueAccessor, NumberValueAccessor, RangeValueAccessor, CheckboxControlValueAccessor, SelectControlValueAccessor, SelectMultipleControlValueAccessor, RadioControlValueAccessor, NgControlStatus, NgControlStatusGroup, RequiredValidator, MinLengthValidator, MaxLengthValidator, PatternValidator, CheckboxRequiredValidator, EmailValidator, MinValidator, MaxValidator]
-}));
-__publicField(_ɵInternalFormsSharedModule, "ɵinj", ɵɵdefineInjector({}));
-var ɵInternalFormsSharedModule = _ɵInternalFormsSharedModule;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ɵInternalFormsSharedModule, [{
-    type: NgModule,
-    args: [{
-      declarations: SHARED_FORM_DIRECTIVES,
-      exports: SHARED_FORM_DIRECTIVES
-    }]
-  }], null, null);
-})();
-var FormArray = class extends AbstractControl {
-  /**
-   * Creates a new `FormArray` instance.
-   *
-   * @param controls An array of child controls. Each child control is given an index
-   * where it is registered.
-   *
-   * @param validatorOrOpts A synchronous validator function, or an array of
-   * such functions, or an `AbstractControlOptions` object that contains validation functions
-   * and a validation trigger.
-   *
-   * @param asyncValidator A single async validator or array of async validator functions
-   *
-   */
-  constructor(controls, validatorOrOpts, asyncValidator) {
-    super(pickValidators(validatorOrOpts), pickAsyncValidators(asyncValidator, validatorOrOpts));
-    this.controls = controls;
-    this._initObservables();
-    this._setUpdateStrategy(validatorOrOpts);
-    this._setUpControls();
-    this.updateValueAndValidity({
-      onlySelf: true,
-      // If `asyncValidator` is present, it will trigger control status change from `PENDING` to
-      // `VALID` or `INVALID`.
-      // The status should be broadcasted via the `statusChanges` observable, so we set `emitEvent`
-      // to `true` to allow that during the control creation process.
-      emitEvent: !!this.asyncValidator
-    });
-  }
-  controls;
-  /**
-   * Get the `AbstractControl` at the given `index` in the array.
-   *
-   * @param index Index in the array to retrieve the control. If `index` is negative, it will wrap
-   *     around from the back, and if index is greatly negative (less than `-length`), the result is
-   * undefined. This behavior is the same as `Array.at(index)`.
-   */
-  at(index) {
-    return this.controls[this._adjustIndex(index)];
-  }
-  /**
-   * Insert a new `AbstractControl` at the end of the array.
-   *
-   * @param control Form control to be inserted
-   * @param options Specifies whether this FormArray instance should emit events after a new
-   *     control is added.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges` observables emit events with the latest status and value when the control is
-   * inserted. When false, no events are emitted.
-   */
-  push(control, options = {}) {
-    this.controls.push(control);
-    this._registerControl(control);
-    this.updateValueAndValidity({
-      emitEvent: options.emitEvent
-    });
-    this._onCollectionChange();
-  }
-  /**
-   * Insert a new `AbstractControl` at the given `index` in the array.
-   *
-   * @param index Index in the array to insert the control. If `index` is negative, wraps around
-   *     from the back. If `index` is greatly negative (less than `-length`), prepends to the array.
-   * This behavior is the same as `Array.splice(index, 0, control)`.
-   * @param control Form control to be inserted
-   * @param options Specifies whether this FormArray instance should emit events after a new
-   *     control is inserted.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges` observables emit events with the latest status and value when the control is
-   * inserted. When false, no events are emitted.
-   */
-  insert(index, control, options = {}) {
-    this.controls.splice(index, 0, control);
-    this._registerControl(control);
-    this.updateValueAndValidity({
-      emitEvent: options.emitEvent
-    });
-  }
-  /**
-   * Remove the control at the given `index` in the array.
-   *
-   * @param index Index in the array to remove the control.  If `index` is negative, wraps around
-   *     from the back. If `index` is greatly negative (less than `-length`), removes the first
-   *     element. This behavior is the same as `Array.splice(index, 1)`.
-   * @param options Specifies whether this FormArray instance should emit events after a
-   *     control is removed.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges` observables emit events with the latest status and value when the control is
-   * removed. When false, no events are emitted.
-   */
-  removeAt(index, options = {}) {
-    let adjustedIndex = this._adjustIndex(index);
-    if (adjustedIndex < 0) adjustedIndex = 0;
-    if (this.controls[adjustedIndex]) this.controls[adjustedIndex]._registerOnCollectionChange(() => {
-    });
-    this.controls.splice(adjustedIndex, 1);
-    this.updateValueAndValidity({
-      emitEvent: options.emitEvent
-    });
-  }
-  /**
-   * Replace an existing control.
-   *
-   * @param index Index in the array to replace the control. If `index` is negative, wraps around
-   *     from the back. If `index` is greatly negative (less than `-length`), replaces the first
-   *     element. This behavior is the same as `Array.splice(index, 1, control)`.
-   * @param control The `AbstractControl` control to replace the existing control
-   * @param options Specifies whether this FormArray instance should emit events after an
-   *     existing control is replaced with a new one.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges` observables emit events with the latest status and value when the control is
-   * replaced with a new one. When false, no events are emitted.
-   */
-  setControl(index, control, options = {}) {
-    let adjustedIndex = this._adjustIndex(index);
-    if (adjustedIndex < 0) adjustedIndex = 0;
-    if (this.controls[adjustedIndex]) this.controls[adjustedIndex]._registerOnCollectionChange(() => {
-    });
-    this.controls.splice(adjustedIndex, 1);
-    if (control) {
-      this.controls.splice(adjustedIndex, 0, control);
-      this._registerControl(control);
-    }
-    this.updateValueAndValidity({
-      emitEvent: options.emitEvent
-    });
-    this._onCollectionChange();
-  }
-  /**
-   * Length of the control array.
-   */
-  get length() {
-    return this.controls.length;
-  }
-  /**
-   * Sets the value of the `FormArray`. It accepts an array that matches
-   * the structure of the control.
-   *
-   * This method performs strict checks, and throws an error if you try
-   * to set the value of a control that doesn't exist or if you exclude the
-   * value of a control.
-   *
-   * @usageNotes
-   * ### Set the values for the controls in the form array
-   *
-   * ```ts
-   * const arr = new FormArray([
-   *   new FormControl(),
-   *   new FormControl()
-   * ]);
-   * console.log(arr.value);   // [null, null]
-   *
-   * arr.setValue(['Nancy', 'Drew']);
-   * console.log(arr.value);   // ['Nancy', 'Drew']
-   * ```
-   *
-   * @param value Array of values for the controls
-   * @param options Configure options that determine how the control propagates changes and
-   * emits events after the value changes
-   *
-   * * `onlySelf`: When true, each change only affects this control, and not its parent. Default
-   * is false.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges`
-   * observables emit events with the latest status and value when the control value is updated.
-   * When false, no events are emitted.
-   * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
-   * updateValueAndValidity} method.
-   */
-  setValue(value, options = {}) {
-    assertAllValuesPresent(this, false, value);
-    value.forEach((newValue, index) => {
-      assertControlPresent(this, false, index);
-      this.at(index).setValue(newValue, {
-        onlySelf: true,
-        emitEvent: options.emitEvent
-      });
-    });
-    this.updateValueAndValidity(options);
-  }
-  /**
-   * Patches the value of the `FormArray`. It accepts an array that matches the
-   * structure of the control, and does its best to match the values to the correct
-   * controls in the group.
-   *
-   * It accepts both super-sets and sub-sets of the array without throwing an error.
-   *
-   * @usageNotes
-   * ### Patch the values for controls in a form array
-   *
-   * ```ts
-   * const arr = new FormArray([
-   *    new FormControl(),
-   *    new FormControl()
-   * ]);
-   * console.log(arr.value);   // [null, null]
-   *
-   * arr.patchValue(['Nancy']);
-   * console.log(arr.value);   // ['Nancy', null]
-   * ```
-   *
-   * @param value Array of latest values for the controls
-   * @param options Configure options that determine how the control propagates changes and
-   * emits events after the value changes
-   *
-   * * `onlySelf`: When true, each change only affects this control, and not its parent. Default
-   * is false.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges` observables emit events with the latest status and value when the control
-   * value is updated. When false, no events are emitted. The configuration options are passed to
-   * the {@link AbstractControl#updateValueAndValidity updateValueAndValidity} method.
-   */
-  patchValue(value, options = {}) {
-    if (value == null) return;
-    value.forEach((newValue, index) => {
-      if (this.at(index)) {
-        this.at(index).patchValue(newValue, {
-          onlySelf: true,
-          emitEvent: options.emitEvent
-        });
-      }
-    });
-    this.updateValueAndValidity(options);
-  }
-  /**
-   * Resets the `FormArray` and all descendants are marked `pristine` and `untouched`, and the
-   * value of all descendants to null or null maps.
-   *
-   * You reset to a specific form state by passing in an array of states
-   * that matches the structure of the control. The state is a standalone value
-   * or a form state object with both a value and a disabled status.
-   *
-   * @usageNotes
-   * ### Reset the values in a form array
-   *
-   * ```ts
-   * const arr = new FormArray([
-   *    new FormControl(),
-   *    new FormControl()
-   * ]);
-   * arr.reset(['name', 'last name']);
-   *
-   * console.log(arr.value);  // ['name', 'last name']
-   * ```
-   *
-   * ### Reset the values in a form array and the disabled status for the first control
-   *
-   * ```ts
-   * arr.reset([
-   *   {value: 'name', disabled: true},
-   *   'last'
-   * ]);
-   *
-   * console.log(arr.value);  // ['last']
-   * console.log(arr.at(0).status);  // 'DISABLED'
-   * ```
-   *
-   * @param value Array of values for the controls
-   * @param options Configure options that determine how the control propagates changes and
-   * emits events after the value changes
-   *
-   * * `onlySelf`: When true, each change only affects this control, and not its parent. Default
-   * is false.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges`
-   * observables emit events with the latest status and value when the control is reset.
-   * When false, no events are emitted.
-   * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
-   * updateValueAndValidity} method.
-   */
-  reset(value = [], options = {}) {
-    this._forEachChild((control, index) => {
-      control.reset(value[index], {
-        onlySelf: true,
-        emitEvent: options.emitEvent
-      });
-    });
-    this._updatePristine(options, this);
-    this._updateTouched(options, this);
-    this.updateValueAndValidity(options);
-  }
-  /**
-   * The aggregate value of the array, including any disabled controls.
-   *
-   * Reports all values regardless of disabled status.
-   */
-  getRawValue() {
-    return this.controls.map((control) => control.getRawValue());
-  }
-  /**
-   * Remove all controls in the `FormArray`.
-   *
-   * @param options Specifies whether this FormArray instance should emit events after all
-   *     controls are removed.
-   * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-   * `valueChanges` observables emit events with the latest status and value when all controls
-   * in this FormArray instance are removed. When false, no events are emitted.
-   *
-   * @usageNotes
-   * ### Remove all elements from a FormArray
-   *
-   * ```ts
-   * const arr = new FormArray([
-   *    new FormControl(),
-   *    new FormControl()
-   * ]);
-   * console.log(arr.length);  // 2
-   *
-   * arr.clear();
-   * console.log(arr.length);  // 0
-   * ```
-   *
-   * It's a simpler and more efficient alternative to removing all elements one by one:
-   *
-   * ```ts
-   * const arr = new FormArray([
-   *    new FormControl(),
-   *    new FormControl()
-   * ]);
-   *
-   * while (arr.length) {
-   *    arr.removeAt(0);
-   * }
-   * ```
-   */
-  clear(options = {}) {
-    if (this.controls.length < 1) return;
-    this._forEachChild((control) => control._registerOnCollectionChange(() => {
-    }));
-    this.controls.splice(0);
-    this.updateValueAndValidity({
-      emitEvent: options.emitEvent
-    });
-  }
-  /**
-   * Adjusts a negative index by summing it with the length of the array. For very negative
-   * indices, the result may remain negative.
-   * @internal
-   */
-  _adjustIndex(index) {
-    return index < 0 ? index + this.length : index;
-  }
-  /** @internal */
-  _syncPendingControls() {
-    let subtreeUpdated = this.controls.reduce((updated, child) => {
-      return child._syncPendingControls() ? true : updated;
-    }, false);
-    if (subtreeUpdated) this.updateValueAndValidity({
-      onlySelf: true
-    });
-    return subtreeUpdated;
-  }
-  /** @internal */
-  _forEachChild(cb) {
-    this.controls.forEach((control, index) => {
-      cb(control, index);
-    });
-  }
-  /** @internal */
-  _updateValue() {
-    this.value = this.controls.filter((control) => control.enabled || this.disabled).map((control) => control.value);
-  }
-  /** @internal */
-  _anyControls(condition) {
-    return this.controls.some((control) => control.enabled && condition(control));
-  }
-  /** @internal */
-  _setUpControls() {
-    this._forEachChild((control) => this._registerControl(control));
-  }
-  /** @internal */
-  _allControlsDisabled() {
-    for (const control of this.controls) {
-      if (control.enabled) return false;
-    }
-    return this.controls.length > 0 || this.disabled;
-  }
-  _registerControl(control) {
-    control.setParent(this);
-    control._registerOnCollectionChange(this._onCollectionChange);
-  }
-  /** @internal */
-  _find(name) {
-    var _a96;
-    return (_a96 = this.at(name)) != null ? _a96 : null;
-  }
-};
-function isAbstractControlOptions(options) {
-  return !!options && (options.asyncValidators !== void 0 || options.validators !== void 0 || options.updateOn !== void 0);
-}
-var _FormBuilder = class _FormBuilder {
-  useNonNullable = false;
-  /**
-   * @description
-   * Returns a FormBuilder in which automatically constructed `FormControl` elements
-   * have `{nonNullable: true}` and are non-nullable.
-   *
-   * **Constructing non-nullable controls**
-   *
-   * When constructing a control, it will be non-nullable, and will reset to its initial value.
-   *
-   * ```ts
-   * let nnfb = new FormBuilder().nonNullable;
-   * let name = nnfb.control('Alex'); // FormControl<string>
-   * name.reset();
-   * console.log(name); // 'Alex'
-   * ```
-   *
-   * **Constructing non-nullable groups or arrays**
-   *
-   * When constructing a group or array, all automatically created inner controls will be
-   * non-nullable, and will reset to their initial values.
-   *
-   * ```ts
-   * let nnfb = new FormBuilder().nonNullable;
-   * let name = nnfb.group({who: 'Alex'}); // FormGroup<{who: FormControl<string>}>
-   * name.reset();
-   * console.log(name); // {who: 'Alex'}
-   * ```
-   * **Constructing *nullable* fields on groups or arrays**
-   *
-   * It is still possible to have a nullable field. In particular, any `FormControl` which is
-   * *already* constructed will not be altered. For example:
-   *
-   * ```ts
-   * let nnfb = new FormBuilder().nonNullable;
-   * // FormGroup<{who: FormControl<string|null>}>
-   * let name = nnfb.group({who: new FormControl('Alex')});
-   * name.reset(); console.log(name); // {who: null}
-   * ```
-   *
-   * Because the inner control is constructed explicitly by the caller, the builder has
-   * no control over how it is created, and cannot exclude the `null`.
-   */
-  get nonNullable() {
-    const nnfb = new _FormBuilder();
-    nnfb.useNonNullable = true;
-    return nnfb;
-  }
-  group(controls, options = null) {
-    const reducedControls = this._reduceControls(controls);
-    let newOptions = {};
-    if (isAbstractControlOptions(options)) {
-      newOptions = options;
-    } else if (options !== null) {
-      newOptions.validators = options.validator;
-      newOptions.asyncValidators = options.asyncValidator;
-    }
-    return new FormGroup(reducedControls, newOptions);
-  }
-  /**
-   * @description
-   * Constructs a new `FormRecord` instance. Accepts a single generic argument, which is an object
-   * containing all the keys and corresponding inner control types.
-   *
-   * @param controls A collection of child controls. The key for each child is the name
-   * under which it is registered.
-   *
-   * @param options Configuration options object for the `FormRecord`. The object should have the
-   * `AbstractControlOptions` type and might contain the following fields:
-   * * `validators`: A synchronous validator function, or an array of validator functions.
-   * * `asyncValidators`: A single async validator or array of async validator functions.
-   * * `updateOn`: The event upon which the control should be updated (options: 'change' | 'blur'
-   * | submit').
-   */
-  record(controls, options = null) {
-    const reducedControls = this._reduceControls(controls);
-    return new FormRecord(reducedControls, options);
-  }
-  /**
-   * @description
-   * Constructs a new `FormControl` with the given state, validators and options. Sets
-   * `{nonNullable: true}` in the options to get a non-nullable control. Otherwise, the
-   * control will be nullable. Accepts a single generic argument, which is the type  of the
-   * control's value.
-   *
-   * @param formState Initializes the control with an initial state value, or
-   * with an object that contains both a value and a disabled status.
-   *
-   * @param validatorOrOpts A synchronous validator function, or an array of
-   * such functions, or a `FormControlOptions` object that contains
-   * validation functions and a validation trigger.
-   *
-   * @param asyncValidator A single async validator or array of async validator
-   * functions.
-   *
-   * @usageNotes
-   *
-   * ### Initialize a control as disabled
-   *
-   * The following example returns a control with an initial value in a disabled state.
-   *
-   * {@example forms/ts/formBuilder/form_builder_example.ts region='disabled-control'}
-   */
-  control(formState, validatorOrOpts, asyncValidator) {
-    let newOptions = {};
-    if (!this.useNonNullable) {
-      return new FormControl(formState, validatorOrOpts, asyncValidator);
-    }
-    if (isAbstractControlOptions(validatorOrOpts)) {
-      newOptions = validatorOrOpts;
-    } else {
-      newOptions.validators = validatorOrOpts;
-      newOptions.asyncValidators = asyncValidator;
-    }
-    return new FormControl(formState, __spreadProps(__spreadValues({}, newOptions), {
-      nonNullable: true
-    }));
-  }
-  /**
-   * Constructs a new `FormArray` from the given array of configurations,
-   * validators and options. Accepts a single generic argument, which is the type of each control
-   * inside the array.
-   *
-   * @param controls An array of child controls or control configs. Each child control is given an
-   *     index when it is registered.
-   *
-   * @param validatorOrOpts A synchronous validator function, or an array of such functions, or an
-   *     `AbstractControlOptions` object that contains
-   * validation functions and a validation trigger.
-   *
-   * @param asyncValidator A single async validator or array of async validator functions.
-   */
-  array(controls, validatorOrOpts, asyncValidator) {
-    const createdControls = controls.map((c) => this._createControl(c));
-    return new FormArray(createdControls, validatorOrOpts, asyncValidator);
-  }
-  /** @internal */
-  _reduceControls(controls) {
-    const createdControls = {};
-    Object.keys(controls).forEach((controlName) => {
-      createdControls[controlName] = this._createControl(controls[controlName]);
-    });
-    return createdControls;
-  }
-  /** @internal */
-  _createControl(controls) {
-    if (controls instanceof FormControl) {
-      return controls;
-    } else if (controls instanceof AbstractControl) {
-      return controls;
-    } else if (Array.isArray(controls)) {
-      const value = controls[0];
-      const validator = controls.length > 1 ? controls[1] : null;
-      const asyncValidator = controls.length > 2 ? controls[2] : null;
-      return this.control(value, validator, asyncValidator);
-    } else {
-      return this.control(controls);
-    }
-  }
-};
-__publicField(_FormBuilder, "ɵfac", function FormBuilder_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _FormBuilder)();
-});
-__publicField(_FormBuilder, "ɵprov", ɵɵdefineInjectable({
-  token: _FormBuilder,
-  factory: _FormBuilder.ɵfac,
-  providedIn: "root"
-}));
-var FormBuilder = _FormBuilder;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FormBuilder, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
-})();
-var _NonNullableFormBuilder = class _NonNullableFormBuilder {
-};
-__publicField(_NonNullableFormBuilder, "ɵfac", function NonNullableFormBuilder_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _NonNullableFormBuilder)();
-});
-__publicField(_NonNullableFormBuilder, "ɵprov", ɵɵdefineInjectable({
-  token: _NonNullableFormBuilder,
-  factory: () => (() => inject(FormBuilder).nonNullable)(),
-  providedIn: "root"
-}));
-var NonNullableFormBuilder = _NonNullableFormBuilder;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NonNullableFormBuilder, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root",
-      useFactory: () => inject(FormBuilder).nonNullable
-    }]
-  }], null, null);
-})();
-var _UntypedFormBuilder = class _UntypedFormBuilder extends FormBuilder {
-  group(controlsConfig, options = null) {
-    return super.group(controlsConfig, options);
-  }
-  /**
-   * Like `FormBuilder#control`, except the resulting control is untyped.
-   */
-  control(formState, validatorOrOpts, asyncValidator) {
-    return super.control(formState, validatorOrOpts, asyncValidator);
-  }
-  /**
-   * Like `FormBuilder#array`, except the resulting array is untyped.
-   */
-  array(controlsConfig, validatorOrOpts, asyncValidator) {
-    return super.array(controlsConfig, validatorOrOpts, asyncValidator);
-  }
-};
-__publicField(_UntypedFormBuilder, "ɵfac", /* @__PURE__ */ (() => {
-  let ɵUntypedFormBuilder_BaseFactory;
-  return function UntypedFormBuilder_Factory(__ngFactoryType__) {
-    return (ɵUntypedFormBuilder_BaseFactory || (ɵUntypedFormBuilder_BaseFactory = ɵɵgetInheritedFactory(_UntypedFormBuilder)))(__ngFactoryType__ || _UntypedFormBuilder);
-  };
-})());
-__publicField(_UntypedFormBuilder, "ɵprov", ɵɵdefineInjectable({
-  token: _UntypedFormBuilder,
-  factory: _UntypedFormBuilder.ɵfac,
-  providedIn: "root"
-}));
-var UntypedFormBuilder = _UntypedFormBuilder;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(UntypedFormBuilder, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
-})();
-var VERSION = new Version("19.2.11");
-var _FormsModule = class _FormsModule {
-  /**
-   * @description
-   * Provides options for configuring the forms module.
-   *
-   * @param opts An object of configuration options
-   * * `callSetDisabledState` Configures whether to `always` call `setDisabledState`, which is more
-   * correct, or to only call it `whenDisabled`, which is the legacy behavior.
-   */
-  static withConfig(opts) {
-    var _a96;
-    return {
-      ngModule: _FormsModule,
-      providers: [{
-        provide: CALL_SET_DISABLED_STATE,
-        useValue: (_a96 = opts.callSetDisabledState) != null ? _a96 : setDisabledStateDefault
-      }]
-    };
-  }
-};
-__publicField(_FormsModule, "ɵfac", function FormsModule_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _FormsModule)();
-});
-__publicField(_FormsModule, "ɵmod", ɵɵdefineNgModule({
-  type: _FormsModule,
-  declarations: [NgModel, NgModelGroup, NgForm],
-  exports: [ɵInternalFormsSharedModule, NgModel, NgModelGroup, NgForm]
-}));
-__publicField(_FormsModule, "ɵinj", ɵɵdefineInjector({
-  imports: [ɵInternalFormsSharedModule]
-}));
-var FormsModule = _FormsModule;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FormsModule, [{
-    type: NgModule,
-    args: [{
-      declarations: TEMPLATE_DRIVEN_DIRECTIVES,
-      exports: [ɵInternalFormsSharedModule, TEMPLATE_DRIVEN_DIRECTIVES]
-    }]
-  }], null, null);
-})();
-var _ReactiveFormsModule = class _ReactiveFormsModule {
-  /**
-   * @description
-   * Provides options for configuring the reactive forms module.
-   *
-   * @param opts An object of configuration options
-   * * `warnOnNgModelWithFormControl` Configures when to emit a warning when an `ngModel`
-   * binding is used with reactive form directives.
-   * * `callSetDisabledState` Configures whether to `always` call `setDisabledState`, which is more
-   * correct, or to only call it `whenDisabled`, which is the legacy behavior.
-   */
-  static withConfig(opts) {
-    var _a96, _b;
-    return {
-      ngModule: _ReactiveFormsModule,
-      providers: [{
-        provide: NG_MODEL_WITH_FORM_CONTROL_WARNING,
-        useValue: (_a96 = opts.warnOnNgModelWithFormControl) != null ? _a96 : "always"
-      }, {
-        provide: CALL_SET_DISABLED_STATE,
-        useValue: (_b = opts.callSetDisabledState) != null ? _b : setDisabledStateDefault
-      }]
-    };
-  }
-};
-__publicField(_ReactiveFormsModule, "ɵfac", function ReactiveFormsModule_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _ReactiveFormsModule)();
-});
-__publicField(_ReactiveFormsModule, "ɵmod", ɵɵdefineNgModule({
-  type: _ReactiveFormsModule,
-  declarations: [FormControlDirective, FormGroupDirective, FormControlName, FormGroupName, FormArrayName],
-  exports: [ɵInternalFormsSharedModule, FormControlDirective, FormGroupDirective, FormControlName, FormGroupName, FormArrayName]
-}));
-__publicField(_ReactiveFormsModule, "ɵinj", ɵɵdefineInjector({
-  imports: [ɵInternalFormsSharedModule]
-}));
-var ReactiveFormsModule = _ReactiveFormsModule;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ReactiveFormsModule, [{
-    type: NgModule,
-    args: [{
-      declarations: [REACTIVE_DRIVEN_DIRECTIVES],
-      exports: [ɵInternalFormsSharedModule, REACTIVE_DRIVEN_DIRECTIVES]
-    }]
-  }], null, null);
-})();
-
-// node_modules/@ionic/angular/fesm2022/ionic-angular-common.mjs
-var _c0 = ["tabsInner"];
-var MenuController = class {
-  menuController;
-  constructor(menuController2) {
-    this.menuController = menuController2;
-  }
-  /**
-   * Programmatically open the Menu.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return returns a promise when the menu is fully opened
-   */
-  open(menuId) {
-    return this.menuController.open(menuId);
-  }
-  /**
-   * Programmatically close the Menu. If no `menuId` is given as the first
-   * argument then it'll close any menu which is open. If a `menuId`
-   * is given then it'll close that exact menu.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return returns a promise when the menu is fully closed
-   */
-  close(menuId) {
-    return this.menuController.close(menuId);
-  }
-  /**
-   * Toggle the menu. If it's closed, it will open, and if opened, it
-   * will close.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return returns a promise when the menu has been toggled
-   */
-  toggle(menuId) {
-    return this.menuController.toggle(menuId);
-  }
-  /**
-   * Used to enable or disable a menu. For example, there could be multiple
-   * left menus, but only one of them should be able to be opened at the same
-   * time. If there are multiple menus on the same side, then enabling one menu
-   * will also automatically disable all the others that are on the same side.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return Returns the instance of the menu, which is useful for chaining.
-   */
-  enable(shouldEnable, menuId) {
-    return this.menuController.enable(shouldEnable, menuId);
-  }
-  /**
-   * Used to enable or disable the ability to swipe open the menu.
-   * @param shouldEnable  True if it should be swipe-able, false if not.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return Returns the instance of the menu, which is useful for chaining.
-   */
-  swipeGesture(shouldEnable, menuId) {
-    return this.menuController.swipeGesture(shouldEnable, menuId);
-  }
-  /**
-   * @param [menuId] Optionally get the menu by its id, or side.
-   * @return Returns true if the specified menu is currently open, otherwise false.
-   * If the menuId is not specified, it returns true if ANY menu is currenly open.
-   */
-  isOpen(menuId) {
-    return this.menuController.isOpen(menuId);
-  }
-  /**
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return Returns true if the menu is currently enabled, otherwise false.
-   */
-  isEnabled(menuId) {
-    return this.menuController.isEnabled(menuId);
-  }
-  /**
-   * Used to get a menu instance. If a `menuId` is not provided then it'll
-   * return the first menu found. If a `menuId` is `left` or `right`, then
-   * it'll return the enabled menu on that side. Otherwise, if a `menuId` is
-   * provided, then it'll try to find the menu using the menu's `id`
-   * property. If a menu is not found then it'll return `null`.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return Returns the instance of the menu if found, otherwise `null`.
-   */
-  get(menuId) {
-    return this.menuController.get(menuId);
-  }
-  /**
-   * @return Returns the instance of the menu already opened, otherwise `null`.
-   */
-  getOpen() {
-    return this.menuController.getOpen();
-  }
-  /**
-   * @return Returns an array of all menu instances.
-   */
-  getMenus() {
-    return this.menuController.getMenus();
-  }
-  registerAnimation(name, animation) {
-    return this.menuController.registerAnimation(name, animation);
-  }
-  isAnimating() {
-    return this.menuController.isAnimating();
-  }
-  _getOpenSync() {
-    return this.menuController._getOpenSync();
-  }
-  _createAnimation(type, menuCmp) {
-    return this.menuController._createAnimation(type, menuCmp);
-  }
-  _register(menu) {
-    return this.menuController._register(menu);
-  }
-  _unregister(menu) {
-    return this.menuController._unregister(menu);
-  }
-  _setOpen(menu, shouldOpen, animated) {
-    return this.menuController._setOpen(menu, shouldOpen, animated);
-  }
-};
-var _DomController = class _DomController {
-  /**
-   * Schedules a task to run during the READ phase of the next frame.
-   * This task should only read the DOM, but never modify it.
-   */
-  read(cb) {
-    getQueue().read(cb);
-  }
-  /**
-   * Schedules a task to run during the WRITE phase of the next frame.
-   * This task should write the DOM, but never READ it.
-   */
-  write(cb) {
-    getQueue().write(cb);
-  }
-};
-/** @nocollapse */
-__publicField(_DomController, "ɵfac", function DomController_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _DomController)();
-});
-/** @nocollapse */
-__publicField(_DomController, "ɵprov", ɵɵdefineInjectable({
-  token: _DomController,
-  factory: _DomController.ɵfac,
-  providedIn: "root"
-}));
-var DomController = _DomController;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DomController, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
-})();
-var getQueue = () => {
-  const win3 = typeof window !== "undefined" ? window : null;
-  if (win3 != null) {
-    const Ionic = win3.Ionic;
-    if (Ionic == null ? void 0 : Ionic.queue) {
-      return Ionic.queue;
-    }
-    return {
-      read: (cb) => win3.requestAnimationFrame(cb),
-      write: (cb) => win3.requestAnimationFrame(cb)
-    };
-  }
-  return {
-    read: (cb) => cb(),
-    write: (cb) => cb()
-  };
-};
-var _Platform = class _Platform {
-  doc;
-  _readyPromise;
-  win;
-  /**
-   * @hidden
-   */
-  backButton = new Subject();
-  /**
-   * The keyboardDidShow event emits when the
-   * on-screen keyboard is presented.
-   */
-  keyboardDidShow = new Subject();
-  /**
-   * The keyboardDidHide event emits when the
-   * on-screen keyboard is hidden.
-   */
-  keyboardDidHide = new Subject();
-  /**
-   * The pause event emits when the native platform puts the application
-   * into the background, typically when the user switches to a different
-   * application. This event would emit when a Cordova app is put into
-   * the background, however, it would not fire on a standard web browser.
-   */
-  pause = new Subject();
-  /**
-   * The resume event emits when the native platform pulls the application
-   * out from the background. This event would emit when a Cordova app comes
-   * out from the background, however, it would not fire on a standard web browser.
-   */
-  resume = new Subject();
-  /**
-   * The resize event emits when the browser window has changed dimensions. This
-   * could be from a browser window being physically resized, or from a device
-   * changing orientation.
-   */
-  resize = new Subject();
-  constructor(doc2, zone) {
-    this.doc = doc2;
-    zone.run(() => {
-      var _a96;
-      this.win = doc2.defaultView;
-      this.backButton.subscribeWithPriority = function(priority, callback) {
-        return this.subscribe((ev) => {
-          return ev.register(priority, (processNextHandler) => zone.run(() => callback(processNextHandler)));
-        });
-      };
-      proxyEvent(this.pause, doc2, "pause", zone);
-      proxyEvent(this.resume, doc2, "resume", zone);
-      proxyEvent(this.backButton, doc2, "ionBackButton", zone);
-      proxyEvent(this.resize, this.win, "resize", zone);
-      proxyEvent(this.keyboardDidShow, this.win, "ionKeyboardDidShow", zone);
-      proxyEvent(this.keyboardDidHide, this.win, "ionKeyboardDidHide", zone);
-      let readyResolve;
-      this._readyPromise = new Promise((res) => {
-        readyResolve = res;
-      });
-      if ((_a96 = this.win) == null ? void 0 : _a96["cordova"]) {
-        doc2.addEventListener("deviceready", () => {
-          readyResolve("cordova");
-        }, {
-          once: true
-        });
-      } else {
-        readyResolve("dom");
-      }
-    });
-  }
-  /**
-   * @returns returns true/false based on platform.
-   * @description
-   * Depending on the platform the user is on, `is(platformName)` will
-   * return `true` or `false`. Note that the same app can return `true`
-   * for more than one platform name. For example, an app running from
-   * an iPad would return `true` for the platform names: `mobile`,
-   * `ios`, `ipad`, and `tablet`. Additionally, if the app was running
-   * from Cordova then `cordova` would be true, and if it was running
-   * from a web browser on the iPad then `mobileweb` would be `true`.
-   *
-   * ```
-   * import { Platform } from 'ionic-angular';
-   *
-   * @Component({...})
-   * export MyPage {
-   *   constructor(public platform: Platform) {
-   *     if (this.platform.is('ios')) {
-   *       // This will only print when on iOS
-   *       console.log('I am an iOS device!');
-   *     }
-   *   }
-   * }
-   * ```
-   *
-   * | Platform Name   | Description                        |
-   * |-----------------|------------------------------------|
-   * | android         | on a device running Android.       |
-   * | capacitor       | on a device running Capacitor.     |
-   * | cordova         | on a device running Cordova.       |
-   * | ios             | on a device running iOS.           |
-   * | ipad            | on an iPad device.                 |
-   * | iphone          | on an iPhone device.               |
-   * | phablet         | on a phablet device.               |
-   * | tablet          | on a tablet device.                |
-   * | electron        | in Electron on a desktop device.   |
-   * | pwa             | as a PWA app.                      |
-   * | mobile          | on a mobile device.                |
-   * | mobileweb       | on a mobile device in a browser.   |
-   * | desktop         | on a desktop device.               |
-   * | hybrid          | is a cordova or capacitor app.     |
-   *
-   */
-  is(platformName) {
-    return isPlatform(this.win, platformName);
-  }
-  /**
-   * @returns the array of platforms
-   * @description
-   * Depending on what device you are on, `platforms` can return multiple values.
-   * Each possible value is a hierarchy of platforms. For example, on an iPhone,
-   * it would return `mobile`, `ios`, and `iphone`.
-   *
-   * ```
-   * import { Platform } from 'ionic-angular';
-   *
-   * @Component({...})
-   * export MyPage {
-   *   constructor(public platform: Platform) {
-   *     // This will print an array of the current platforms
-   *     console.log(this.platform.platforms());
-   *   }
-   * }
-   * ```
-   */
-  platforms() {
-    return getPlatforms(this.win);
-  }
-  /**
-   * Returns a promise when the platform is ready and native functionality
-   * can be called. If the app is running from within a web browser, then
-   * the promise will resolve when the DOM is ready. When the app is running
-   * from an application engine such as Cordova, then the promise will
-   * resolve when Cordova triggers the `deviceready` event.
-   *
-   * The resolved value is the `readySource`, which states which platform
-   * ready was used. For example, when Cordova is ready, the resolved ready
-   * source is `cordova`. The default ready source value will be `dom`. The
-   * `readySource` is useful if different logic should run depending on the
-   * platform the app is running from. For example, only Cordova can execute
-   * the status bar plugin, so the web should not run status bar plugin logic.
-   *
-   * ```
-   * import { Component } from '@angular/core';
-   * import { Platform } from 'ionic-angular';
-   *
-   * @Component({...})
-   * export MyApp {
-   *   constructor(public platform: Platform) {
-   *     this.platform.ready().then((readySource) => {
-   *       console.log('Platform ready from', readySource);
-   *       // Platform now ready, execute any required native code
-   *     });
-   *   }
-   * }
-   * ```
-   */
-  ready() {
-    return this._readyPromise;
-  }
-  /**
-   * Returns if this app is using right-to-left language direction or not.
-   * We recommend the app's `index.html` file already has the correct `dir`
-   * attribute value set, such as `<html dir="ltr">` or `<html dir="rtl">`.
-   * [W3C: Structural markup and right-to-left text in HTML](http://www.w3.org/International/questions/qa-html-dir)
-   */
-  get isRTL() {
-    return this.doc.dir === "rtl";
-  }
-  /**
-   * Get the query string parameter
-   */
-  getQueryParam(key) {
-    return readQueryParam(this.win.location.href, key);
-  }
-  /**
-   * Returns `true` if the app is in landscape mode.
-   */
-  isLandscape() {
-    return !this.isPortrait();
-  }
-  /**
-   * Returns `true` if the app is in portrait mode.
-   */
-  isPortrait() {
-    var _a96, _b;
-    return (_b = (_a96 = this.win).matchMedia) == null ? void 0 : _b.call(_a96, "(orientation: portrait)").matches;
-  }
-  testUserAgent(expression) {
-    const nav = this.win.navigator;
-    return !!((nav == null ? void 0 : nav.userAgent) && nav.userAgent.indexOf(expression) >= 0);
-  }
-  /**
-   * Get the current url.
-   */
-  url() {
-    return this.win.location.href;
-  }
-  /**
-   * Gets the width of the platform's viewport using `window.innerWidth`.
-   */
-  width() {
-    return this.win.innerWidth;
-  }
-  /**
-   * Gets the height of the platform's viewport using `window.innerHeight`.
-   */
-  height() {
-    return this.win.innerHeight;
-  }
-};
-/** @nocollapse */
-__publicField(_Platform, "ɵfac", function Platform_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _Platform)(ɵɵinject(DOCUMENT), ɵɵinject(NgZone));
-});
-/** @nocollapse */
-__publicField(_Platform, "ɵprov", ɵɵdefineInjectable({
-  token: _Platform,
-  factory: _Platform.ɵfac,
-  providedIn: "root"
-}));
-var Platform = _Platform;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Platform, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], function() {
-    return [{
-      type: void 0,
-      decorators: [{
-        type: Inject,
-        args: [DOCUMENT]
-      }]
-    }, {
-      type: NgZone
-    }];
-  }, null);
-})();
-var readQueryParam = (url, key) => {
-  key = key.replace(/[[\]\\]/g, "\\$&");
-  const regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
-  const results = regex.exec(url);
-  return results ? decodeURIComponent(results[1].replace(/\+/g, " ")) : null;
-};
-var proxyEvent = (emitter, el, eventName, zone) => {
-  if (el) {
-    el.addEventListener(eventName, (ev) => {
-      zone.run(() => {
-        const value = ev != null ? ev.detail : void 0;
-        emitter.next(value);
-      });
-    });
-  }
-};
-var _NavController = class _NavController {
-  location;
-  serializer;
-  router;
-  topOutlet;
-  direction = DEFAULT_DIRECTION;
-  animated = DEFAULT_ANIMATED;
-  animationBuilder;
-  guessDirection = "forward";
-  guessAnimation;
-  lastNavId = -1;
-  constructor(platform, location, serializer, router) {
-    this.location = location;
-    this.serializer = serializer;
-    this.router = router;
-    if (router) {
-      router.events.subscribe((ev) => {
-        if (ev instanceof NavigationStart) {
-          const id = ev.restoredState ? ev.restoredState.navigationId : ev.id;
-          this.guessDirection = this.guessAnimation = id < this.lastNavId ? "back" : "forward";
-          this.lastNavId = this.guessDirection === "forward" ? ev.id : id;
-        }
-      });
-    }
-    platform.backButton.subscribeWithPriority(0, (processNextHandler) => {
-      this.pop();
-      processNextHandler();
-    });
-  }
-  /**
-   * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
-   * it's equivalent to calling `this.router.navigateByUrl()`, but it's explicit about the **direction** of the transition.
-   *
-   * Going **forward** means that a new page is going to be pushed to the stack of the outlet (ion-router-outlet),
-   * and that it will show a "forward" animation by default.
-   *
-   * Navigating forward can also be triggered in a declarative manner by using the `[routerDirection]` directive:
-   *
-   * ```html
-   * <a routerLink="/path/to/page" routerDirection="forward">Link</a>
-   * ```
-   */
-  navigateForward(url, options = {}) {
-    this.setDirection("forward", options.animated, options.animationDirection, options.animation);
-    return this.navigate(url, options);
-  }
-  /**
-   * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
-   * it's equivalent to calling:
-   *
-   * ```ts
-   * this.navController.setDirection('back');
-   * this.router.navigateByUrl(path);
-   * ```
-   *
-   * Going **back** means that all the pages in the stack until the navigated page is found will be popped,
-   * and that it will show a "back" animation by default.
-   *
-   * Navigating back can also be triggered in a declarative manner by using the `[routerDirection]` directive:
-   *
-   * ```html
-   * <a routerLink="/path/to/page" routerDirection="back">Link</a>
-   * ```
-   */
-  navigateBack(url, options = {}) {
-    this.setDirection("back", options.animated, options.animationDirection, options.animation);
-    return this.navigate(url, options);
-  }
-  /**
-   * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
-   * it's equivalent to calling:
-   *
-   * ```ts
-   * this.navController.setDirection('root');
-   * this.router.navigateByUrl(path);
-   * ```
-   *
-   * Going **root** means that all existing pages in the stack will be removed,
-   * and the navigated page will become the single page in the stack.
-   *
-   * Navigating root can also be triggered in a declarative manner by using the `[routerDirection]` directive:
-   *
-   * ```html
-   * <a routerLink="/path/to/page" routerDirection="root">Link</a>
-   * ```
-   */
-  navigateRoot(url, options = {}) {
-    this.setDirection("root", options.animated, options.animationDirection, options.animation);
-    return this.navigate(url, options);
-  }
-  /**
-   * Same as [Location](https://angular.io/api/common/Location)'s back() method.
-   * It will use the standard `window.history.back()` under the hood, but featuring a `back` animation
-   * by default.
-   */
-  back(options = {
-    animated: true,
-    animationDirection: "back"
-  }) {
-    this.setDirection("back", options.animated, options.animationDirection, options.animation);
-    return this.location.back();
-  }
-  /**
-   * This methods goes back in the context of Ionic's stack navigation.
-   *
-   * It recursively finds the top active `ion-router-outlet` and calls `pop()`.
-   * This is the recommended way to go back when you are using `ion-router-outlet`.
-   *
-   * Resolves to `true` if it was able to pop.
-   */
-  pop() {
-    return __async(this, null, function* () {
-      let outlet = this.topOutlet;
-      while (outlet) {
-        if (yield outlet.pop()) {
-          return true;
-        } else {
-          outlet = outlet.parentOutlet;
-        }
-      }
-      return false;
-    });
-  }
-  /**
-   * This methods specifies the direction of the next navigation performed by the Angular router.
-   *
-   * `setDirection()` does not trigger any transition, it just sets some flags to be consumed by `ion-router-outlet`.
-   *
-   * It's recommended to use `navigateForward()`, `navigateBack()` and `navigateRoot()` instead of `setDirection()`.
-   */
-  setDirection(direction, animated, animationDirection, animationBuilder) {
-    this.direction = direction;
-    this.animated = getAnimation(direction, animated, animationDirection);
-    this.animationBuilder = animationBuilder;
-  }
-  /**
-   * @internal
-   */
-  setTopOutlet(outlet) {
-    this.topOutlet = outlet;
-  }
-  /**
-   * @internal
-   */
-  consumeTransition() {
-    let direction = "root";
-    let animation;
-    const animationBuilder = this.animationBuilder;
-    if (this.direction === "auto") {
-      direction = this.guessDirection;
-      animation = this.guessAnimation;
-    } else {
-      animation = this.animated;
-      direction = this.direction;
-    }
-    this.direction = DEFAULT_DIRECTION;
-    this.animated = DEFAULT_ANIMATED;
-    this.animationBuilder = void 0;
-    return {
-      direction,
-      animation,
-      animationBuilder
-    };
-  }
-  navigate(url, options) {
-    if (Array.isArray(url)) {
-      return this.router.navigate(url, options);
-    } else {
-      const urlTree = this.serializer.parse(url.toString());
-      if (options.queryParams !== void 0) {
-        urlTree.queryParams = __spreadValues({}, options.queryParams);
-      }
-      if (options.fragment !== void 0) {
-        urlTree.fragment = options.fragment;
-      }
-      return this.router.navigateByUrl(urlTree, options);
-    }
-  }
-};
-/** @nocollapse */
-__publicField(_NavController, "ɵfac", function NavController_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _NavController)(ɵɵinject(Platform), ɵɵinject(Location), ɵɵinject(UrlSerializer), ɵɵinject(Router, 8));
-});
-/** @nocollapse */
-__publicField(_NavController, "ɵprov", ɵɵdefineInjectable({
-  token: _NavController,
-  factory: _NavController.ɵfac,
-  providedIn: "root"
-}));
-var NavController = _NavController;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NavController, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], function() {
-    return [{
-      type: Platform
-    }, {
-      type: Location
-    }, {
-      type: UrlSerializer
-    }, {
-      type: Router,
-      decorators: [{
-        type: Optional
-      }]
-    }];
-  }, null);
-})();
-var getAnimation = (direction, animated, animationDirection) => {
-  if (animated === false) {
-    return void 0;
-  }
-  if (animationDirection !== void 0) {
-    return animationDirection;
-  }
-  if (direction === "forward" || direction === "back") {
-    return direction;
-  } else if (direction === "root" && animated === true) {
-    return "forward";
-  }
-  return void 0;
-};
-var DEFAULT_DIRECTION = "auto";
-var DEFAULT_ANIMATED = void 0;
-var _Config = class _Config {
-  get(key, fallback) {
-    const c = getConfig();
-    if (c) {
-      return c.get(key, fallback);
-    }
-    return null;
-  }
-  getBoolean(key, fallback) {
-    const c = getConfig();
-    if (c) {
-      return c.getBoolean(key, fallback);
-    }
-    return false;
-  }
-  getNumber(key, fallback) {
-    const c = getConfig();
-    if (c) {
-      return c.getNumber(key, fallback);
-    }
-    return 0;
-  }
-};
-/** @nocollapse */
-__publicField(_Config, "ɵfac", function Config_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _Config)();
-});
-/** @nocollapse */
-__publicField(_Config, "ɵprov", ɵɵdefineInjectable({
-  token: _Config,
-  factory: _Config.ɵfac,
-  providedIn: "root"
-}));
-var Config = _Config;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Config, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
-})();
-var ConfigToken = new InjectionToken("USERCONFIG");
-var getConfig = () => {
-  if (typeof window !== "undefined") {
-    const Ionic = window.Ionic;
-    if (Ionic == null ? void 0 : Ionic.config) {
-      return Ionic.config;
-    }
-  }
-  return null;
-};
-var NavParams = class {
-  data;
-  constructor(data = {}) {
-    this.data = data;
-    console.warn(`[Ionic Warning]: NavParams has been deprecated in favor of using Angular's input API. Developers should migrate to either the @Input decorator or the Signals-based input API.`);
-  }
-  /**
-   * Get the value of a nav-parameter for the current view
-   *
-   * ```ts
-   * import { NavParams } from 'ionic-angular';
-   *
-   * export class MyClass{
-   *  constructor(public navParams: NavParams){
-   *    // userParams is an object we have in our nav-parameters
-   *    this.navParams.get('userParams');
-   *  }
-   * }
-   * ```
-   *
-   * @param param Which param you want to look up
-   */
-  get(param) {
-    return this.data[param];
-  }
-};
-var _AngularDelegate = class _AngularDelegate {
-  zone = inject(NgZone);
-  applicationRef = inject(ApplicationRef);
-  config = inject(ConfigToken);
-  create(environmentInjector, injector, elementReferenceKey) {
-    var _a96;
-    return new AngularFrameworkDelegate(environmentInjector, injector, this.applicationRef, this.zone, elementReferenceKey, (_a96 = this.config.useSetInputAPI) != null ? _a96 : false);
-  }
-};
-/** @nocollapse */
-__publicField(_AngularDelegate, "ɵfac", function AngularDelegate_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _AngularDelegate)();
-});
-/** @nocollapse */
-__publicField(_AngularDelegate, "ɵprov", ɵɵdefineInjectable({
-  token: _AngularDelegate,
-  factory: _AngularDelegate.ɵfac
-}));
-var AngularDelegate = _AngularDelegate;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AngularDelegate, [{
-    type: Injectable
-  }], null, null);
-})();
-var AngularFrameworkDelegate = class {
-  environmentInjector;
-  injector;
-  applicationRef;
-  zone;
-  elementReferenceKey;
-  enableSignalsSupport;
-  elRefMap = /* @__PURE__ */ new WeakMap();
-  elEventsMap = /* @__PURE__ */ new WeakMap();
-  constructor(environmentInjector, injector, applicationRef, zone, elementReferenceKey, enableSignalsSupport) {
-    this.environmentInjector = environmentInjector;
-    this.injector = injector;
-    this.applicationRef = applicationRef;
-    this.zone = zone;
-    this.elementReferenceKey = elementReferenceKey;
-    this.enableSignalsSupport = enableSignalsSupport;
-  }
-  attachViewToDom(container, component, params, cssClasses) {
-    return this.zone.run(() => {
-      return new Promise((resolve) => {
-        const componentProps = __spreadValues({}, params);
-        if (this.elementReferenceKey !== void 0) {
-          componentProps[this.elementReferenceKey] = container;
-        }
-        const el = attachView(this.zone, this.environmentInjector, this.injector, this.applicationRef, this.elRefMap, this.elEventsMap, container, component, componentProps, cssClasses, this.elementReferenceKey, this.enableSignalsSupport);
-        resolve(el);
-      });
-    });
-  }
-  removeViewFromDom(_container, component) {
-    return this.zone.run(() => {
-      return new Promise((resolve) => {
-        const componentRef = this.elRefMap.get(component);
-        if (componentRef) {
-          componentRef.destroy();
-          this.elRefMap.delete(component);
-          const unbindEvents = this.elEventsMap.get(component);
-          if (unbindEvents) {
-            unbindEvents();
-            this.elEventsMap.delete(component);
-          }
-        }
-        resolve();
-      });
-    });
-  }
-};
-var attachView = (zone, environmentInjector, injector, applicationRef, elRefMap, elEventsMap, container, component, params, cssClasses, elementReferenceKey, enableSignalsSupport) => {
-  const childInjector = Injector.create({
-    providers: getProviders(params),
-    parent: injector
-  });
-  const componentRef = createComponent(component, {
-    environmentInjector,
-    elementInjector: childInjector
-  });
-  const instance = componentRef.instance;
-  const hostElement = componentRef.location.nativeElement;
-  if (params) {
-    if (elementReferenceKey && instance[elementReferenceKey] !== void 0) {
-      console.error(`[Ionic Error]: ${elementReferenceKey} is a reserved property when using ${container.tagName.toLowerCase()}. Rename or remove the "${elementReferenceKey}" property from ${component.name}.`);
-    }
-    if (enableSignalsSupport === true && componentRef.setInput !== void 0) {
-      const _a96 = params, {
-        modal,
-        popover
-      } = _a96, otherParams = __objRest(_a96, [
-        "modal",
-        "popover"
-      ]);
-      for (const key in otherParams) {
-        componentRef.setInput(key, otherParams[key]);
-      }
-      if (modal !== void 0) {
-        Object.assign(instance, {
-          modal
-        });
-      }
-      if (popover !== void 0) {
-        Object.assign(instance, {
-          popover
-        });
-      }
-    } else {
-      Object.assign(instance, params);
-    }
-  }
-  if (cssClasses) {
-    for (const cssClass of cssClasses) {
-      hostElement.classList.add(cssClass);
-    }
-  }
-  const unbindEvents = bindLifecycleEvents(zone, instance, hostElement);
-  container.appendChild(hostElement);
-  applicationRef.attachView(componentRef.hostView);
-  elRefMap.set(hostElement, componentRef);
-  elEventsMap.set(hostElement, unbindEvents);
-  return hostElement;
-};
-var LIFECYCLES = [LIFECYCLE_WILL_ENTER, LIFECYCLE_DID_ENTER, LIFECYCLE_WILL_LEAVE, LIFECYCLE_DID_LEAVE, LIFECYCLE_WILL_UNLOAD];
-var bindLifecycleEvents = (zone, instance, element) => {
-  return zone.run(() => {
-    const unregisters = LIFECYCLES.filter((eventName) => typeof instance[eventName] === "function").map((eventName) => {
-      const handler = (ev) => instance[eventName](ev.detail);
-      element.addEventListener(eventName, handler);
-      return () => element.removeEventListener(eventName, handler);
-    });
-    return () => unregisters.forEach((fn) => fn());
-  });
-};
-var NavParamsToken = new InjectionToken("NavParamsToken");
-var getProviders = (params) => {
-  return [{
-    provide: NavParamsToken,
-    useValue: params
-  }, {
-    provide: NavParams,
-    useFactory: provideNavParamsInjectable,
-    deps: [NavParamsToken]
-  }];
-};
-var provideNavParamsInjectable = (params) => {
-  return new NavParams(params);
-};
-var proxyInputs = (Cmp, inputs) => {
-  const Prototype = Cmp.prototype;
-  inputs.forEach((item) => {
-    Object.defineProperty(Prototype, item, {
-      get() {
-        return this.el[item];
-      },
-      set(val) {
-        this.z.runOutsideAngular(() => this.el[item] = val);
-      }
-    });
-  });
-};
-var proxyMethods = (Cmp, methods) => {
-  const Prototype = Cmp.prototype;
-  methods.forEach((methodName) => {
-    Prototype[methodName] = function() {
-      const args = arguments;
-      return this.z.runOutsideAngular(() => this.el[methodName].apply(this.el, args));
-    };
-  });
-};
-var proxyOutputs = (instance, el, events) => {
-  events.forEach((eventName) => instance[eventName] = fromEvent(el, eventName));
-};
-function ProxyCmp(opts) {
-  const decorator = function(cls) {
-    const {
-      defineCustomElementFn,
-      inputs,
-      methods
-    } = opts;
-    if (defineCustomElementFn !== void 0) {
-      defineCustomElementFn();
-    }
-    if (inputs) {
-      proxyInputs(cls, inputs);
-    }
-    if (methods) {
-      proxyMethods(cls, methods);
-    }
-    return cls;
-  };
-  return decorator;
-}
-var POPOVER_INPUTS = ["alignment", "animated", "arrow", "keepContentsMounted", "backdropDismiss", "cssClass", "dismissOnSelect", "enterAnimation", "event", "focusTrap", "isOpen", "keyboardClose", "leaveAnimation", "mode", "showBackdrop", "translucent", "trigger", "triggerAction", "reference", "size", "side"];
-var POPOVER_METHODS = ["present", "dismiss", "onDidDismiss", "onWillDismiss"];
-var _a2;
-var IonPopover = (_a2 = class {
-  z;
-  // TODO(FW-2827): type
-  template;
-  isCmpOpen = false;
-  el;
-  constructor(c, r, z) {
-    this.z = z;
-    this.el = r.nativeElement;
-    this.el.addEventListener("ionMount", () => {
-      this.isCmpOpen = true;
-      c.detectChanges();
-    });
-    this.el.addEventListener("didDismiss", () => {
-      this.isCmpOpen = false;
-      c.detectChanges();
-    });
-    proxyOutputs(this, this.el, ["ionPopoverDidPresent", "ionPopoverWillPresent", "ionPopoverWillDismiss", "ionPopoverDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
-  }
-}, /** @nocollapse */
-__publicField(_a2, "ɵfac", function IonPopover_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-}), /** @nocollapse */
-__publicField(_a2, "ɵdir", ɵɵdefineDirective({
-  type: _a2,
-  selectors: [["ion-popover"]],
-  contentQueries: function IonPopover_ContentQueries(rf, ctx, dirIndex) {
-    if (rf & 1) {
-      ɵɵcontentQuery(dirIndex, TemplateRef, 5);
-    }
-    if (rf & 2) {
-      let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.template = _t.first);
-    }
-  },
-  inputs: {
-    alignment: "alignment",
-    animated: "animated",
-    arrow: "arrow",
-    keepContentsMounted: "keepContentsMounted",
-    backdropDismiss: "backdropDismiss",
-    cssClass: "cssClass",
-    dismissOnSelect: "dismissOnSelect",
-    enterAnimation: "enterAnimation",
-    event: "event",
-    focusTrap: "focusTrap",
-    isOpen: "isOpen",
-    keyboardClose: "keyboardClose",
-    leaveAnimation: "leaveAnimation",
-    mode: "mode",
-    showBackdrop: "showBackdrop",
-    translucent: "translucent",
-    trigger: "trigger",
-    triggerAction: "triggerAction",
-    reference: "reference",
-    size: "size",
-    side: "side"
-  },
-  standalone: false
-})), _a2);
-IonPopover = __decorate([
-  ProxyCmp({
-    inputs: POPOVER_INPUTS,
-    methods: POPOVER_METHODS
-  })
-  /**
-   * @Component extends from @Directive
-   * so by defining the inputs here we
-   * do not need to re-define them for the
-   * lazy loaded popover.
-   */
-], IonPopover);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonPopover, [{
-    type: Directive,
-    args: [{
-      selector: "ion-popover",
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: POPOVER_INPUTS
-    }]
-  }], function() {
-    return [{
-      type: ChangeDetectorRef
-    }, {
-      type: ElementRef
-    }, {
-      type: NgZone
-    }];
-  }, {
-    template: [{
-      type: ContentChild,
-      args: [TemplateRef, {
-        static: false
-      }]
-    }]
-  });
-})();
-var MODAL_INPUTS = ["animated", "keepContentsMounted", "backdropBreakpoint", "backdropDismiss", "breakpoints", "canDismiss", "cssClass", "enterAnimation", "expandToScroll", "event", "focusTrap", "handle", "handleBehavior", "initialBreakpoint", "isOpen", "keyboardClose", "leaveAnimation", "mode", "presentingElement", "showBackdrop", "translucent", "trigger"];
-var MODAL_METHODS = ["present", "dismiss", "onDidDismiss", "onWillDismiss", "setCurrentBreakpoint", "getCurrentBreakpoint"];
-var _a3;
-var IonModal = (_a3 = class {
-  z;
-  // TODO(FW-2827): type
-  template;
-  isCmpOpen = false;
-  el;
-  constructor(c, r, z) {
-    this.z = z;
-    this.el = r.nativeElement;
-    this.el.addEventListener("ionMount", () => {
-      this.isCmpOpen = true;
-      c.detectChanges();
-    });
-    this.el.addEventListener("didDismiss", () => {
-      this.isCmpOpen = false;
-      c.detectChanges();
-    });
-    proxyOutputs(this, this.el, ["ionModalDidPresent", "ionModalWillPresent", "ionModalWillDismiss", "ionModalDidDismiss", "ionBreakpointDidChange", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
-  }
-}, /** @nocollapse */
-__publicField(_a3, "ɵfac", function IonModal_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a3)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-}), /** @nocollapse */
-__publicField(_a3, "ɵdir", ɵɵdefineDirective({
-  type: _a3,
-  selectors: [["ion-modal"]],
-  contentQueries: function IonModal_ContentQueries(rf, ctx, dirIndex) {
-    if (rf & 1) {
-      ɵɵcontentQuery(dirIndex, TemplateRef, 5);
-    }
-    if (rf & 2) {
-      let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.template = _t.first);
-    }
-  },
-  inputs: {
-    animated: "animated",
-    keepContentsMounted: "keepContentsMounted",
-    backdropBreakpoint: "backdropBreakpoint",
-    backdropDismiss: "backdropDismiss",
-    breakpoints: "breakpoints",
-    canDismiss: "canDismiss",
-    cssClass: "cssClass",
-    enterAnimation: "enterAnimation",
-    expandToScroll: "expandToScroll",
-    event: "event",
-    focusTrap: "focusTrap",
-    handle: "handle",
-    handleBehavior: "handleBehavior",
-    initialBreakpoint: "initialBreakpoint",
-    isOpen: "isOpen",
-    keyboardClose: "keyboardClose",
-    leaveAnimation: "leaveAnimation",
-    mode: "mode",
-    presentingElement: "presentingElement",
-    showBackdrop: "showBackdrop",
-    translucent: "translucent",
-    trigger: "trigger"
-  },
-  standalone: false
-})), _a3);
-IonModal = __decorate([
-  ProxyCmp({
-    inputs: MODAL_INPUTS,
-    methods: MODAL_METHODS
-  })
-  /**
-   * @Component extends from @Directive
-   * so by defining the inputs here we
-   * do not need to re-define them for the
-   * lazy loaded popover.
-   */
-], IonModal);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonModal, [{
-    type: Directive,
-    args: [{
-      selector: "ion-modal",
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: MODAL_INPUTS
-    }]
-  }], function() {
-    return [{
-      type: ChangeDetectorRef
-    }, {
-      type: ElementRef
-    }, {
-      type: NgZone
-    }];
-  }, {
-    template: [{
-      type: ContentChild,
-      args: [TemplateRef, {
-        static: false
-      }]
-    }]
-  });
-})();
-var insertView = (views, view, direction) => {
-  if (direction === "root") {
-    return setRoot(views, view);
-  } else if (direction === "forward") {
-    return setForward(views, view);
-  } else {
-    return setBack(views, view);
-  }
-};
-var setRoot = (views, view) => {
-  views = views.filter((v) => v.stackId !== view.stackId);
-  views.push(view);
-  return views;
-};
-var setForward = (views, view) => {
-  const index = views.indexOf(view);
-  if (index >= 0) {
-    views = views.filter((v) => v.stackId !== view.stackId || v.id <= view.id);
-  } else {
-    views.push(view);
-  }
-  return views;
-};
-var setBack = (views, view) => {
-  const index = views.indexOf(view);
-  if (index >= 0) {
-    return views.filter((v) => v.stackId !== view.stackId || v.id <= view.id);
-  } else {
-    return setRoot(views, view);
-  }
-};
-var getUrl = (router, activatedRoute) => {
-  const urlTree = router.createUrlTree(["."], {
-    relativeTo: activatedRoute
-  });
-  return router.serializeUrl(urlTree);
-};
-var isTabSwitch = (enteringView, leavingView) => {
-  if (!leavingView) {
-    return true;
-  }
-  return enteringView.stackId !== leavingView.stackId;
-};
-var computeStackId = (prefixUrl, url) => {
-  if (!prefixUrl) {
-    return void 0;
-  }
-  const segments = toSegments(url);
-  for (let i = 0; i < segments.length; i++) {
-    if (i >= prefixUrl.length) {
-      return segments[i];
-    }
-    if (segments[i] !== prefixUrl[i]) {
-      return void 0;
-    }
-  }
-  return void 0;
-};
-var toSegments = (path) => {
-  return path.split("/").map((s) => s.trim()).filter((s) => s !== "");
-};
-var destroyView = (view) => {
-  if (view) {
-    view.ref.destroy();
-    view.unlistenEvents();
-  }
-};
-var StackController = class {
-  containerEl;
-  router;
-  navCtrl;
-  zone;
-  location;
-  views = [];
-  runningTask;
-  skipTransition = false;
-  tabsPrefix;
-  activeView;
-  nextId = 0;
-  constructor(tabsPrefix, containerEl, router, navCtrl, zone, location) {
-    this.containerEl = containerEl;
-    this.router = router;
-    this.navCtrl = navCtrl;
-    this.zone = zone;
-    this.location = location;
-    this.tabsPrefix = tabsPrefix !== void 0 ? toSegments(tabsPrefix) : void 0;
-  }
-  createView(ref, activatedRoute) {
-    var _a96;
-    const url = getUrl(this.router, activatedRoute);
-    const element = (_a96 = ref == null ? void 0 : ref.location) == null ? void 0 : _a96.nativeElement;
-    const unlistenEvents = bindLifecycleEvents(this.zone, ref.instance, element);
-    return {
-      id: this.nextId++,
-      stackId: computeStackId(this.tabsPrefix, url),
-      unlistenEvents,
-      element,
-      ref,
-      url
-    };
-  }
-  getExistingView(activatedRoute) {
-    const activatedUrlKey = getUrl(this.router, activatedRoute);
-    const view = this.views.find((vw) => vw.url === activatedUrlKey);
-    if (view) {
-      view.ref.changeDetectorRef.reattach();
-    }
-    return view;
-  }
-  setActive(enteringView) {
-    var _a96, _b;
-    const consumeResult = this.navCtrl.consumeTransition();
-    let {
-      direction,
-      animation,
-      animationBuilder
-    } = consumeResult;
-    const leavingView = this.activeView;
-    const tabSwitch = isTabSwitch(enteringView, leavingView);
-    if (tabSwitch) {
-      direction = "back";
-      animation = void 0;
-    }
-    const viewsSnapshot = this.views.slice();
-    let currentNavigation;
-    const router = this.router;
-    if (router.getCurrentNavigation) {
-      currentNavigation = router.getCurrentNavigation();
-    } else if ((_a96 = router.navigations) == null ? void 0 : _a96.value) {
-      currentNavigation = router.navigations.value;
-    }
-    if ((_b = currentNavigation == null ? void 0 : currentNavigation.extras) == null ? void 0 : _b.replaceUrl) {
-      if (this.views.length > 0) {
-        this.views.splice(-1, 1);
-      }
-    }
-    const reused = this.views.includes(enteringView);
-    const views = this.insertView(enteringView, direction);
-    if (!reused) {
-      enteringView.ref.changeDetectorRef.detectChanges();
-    }
-    const customAnimation = enteringView.animationBuilder;
-    if (animationBuilder === void 0 && direction === "back" && !tabSwitch && customAnimation !== void 0) {
-      animationBuilder = customAnimation;
-    }
-    if (leavingView) {
-      leavingView.animationBuilder = animationBuilder;
-    }
-    return this.zone.runOutsideAngular(() => {
-      return this.wait(() => {
-        if (leavingView) {
-          leavingView.ref.changeDetectorRef.detach();
-        }
-        enteringView.ref.changeDetectorRef.reattach();
-        return this.transition(enteringView, leavingView, animation, this.canGoBack(1), false, animationBuilder).then(() => cleanupAsync(enteringView, views, viewsSnapshot, this.location, this.zone)).then(() => ({
-          enteringView,
-          direction,
-          animation,
-          tabSwitch
-        }));
-      });
-    });
-  }
-  canGoBack(deep, stackId = this.getActiveStackId()) {
-    return this.getStack(stackId).length > deep;
-  }
-  pop(deep, stackId = this.getActiveStackId()) {
-    return this.zone.run(() => {
-      var _a96, _b;
-      const views = this.getStack(stackId);
-      if (views.length <= deep) {
-        return Promise.resolve(false);
-      }
-      const view = views[views.length - deep - 1];
-      let url = view.url;
-      const viewSavedData = view.savedData;
-      if (viewSavedData) {
-        const primaryOutlet = viewSavedData.get("primary");
-        if ((_b = (_a96 = primaryOutlet == null ? void 0 : primaryOutlet.route) == null ? void 0 : _a96._routerState) == null ? void 0 : _b.snapshot.url) {
-          url = primaryOutlet.route._routerState.snapshot.url;
-        }
-      }
-      const {
-        animationBuilder
-      } = this.navCtrl.consumeTransition();
-      return this.navCtrl.navigateBack(url, __spreadProps(__spreadValues({}, view.savedExtras), {
-        animation: animationBuilder
-      })).then(() => true);
-    });
-  }
-  startBackTransition() {
-    const leavingView = this.activeView;
-    if (leavingView) {
-      const views = this.getStack(leavingView.stackId);
-      const enteringView = views[views.length - 2];
-      const customAnimation = enteringView.animationBuilder;
-      return this.wait(() => {
-        return this.transition(
-          enteringView,
-          // entering view
-          leavingView,
-          // leaving view
-          "back",
-          this.canGoBack(2),
-          true,
-          customAnimation
-        );
-      });
-    }
-    return Promise.resolve();
-  }
-  endBackTransition(shouldComplete) {
-    if (shouldComplete) {
-      this.skipTransition = true;
-      this.pop(1);
-    } else if (this.activeView) {
-      cleanup(this.activeView, this.views, this.views, this.location, this.zone);
-    }
-  }
-  getLastUrl(stackId) {
-    const views = this.getStack(stackId);
-    return views.length > 0 ? views[views.length - 1] : void 0;
-  }
-  /**
-   * @internal
-   */
-  getRootUrl(stackId) {
-    const views = this.getStack(stackId);
-    return views.length > 0 ? views[0] : void 0;
-  }
-  getActiveStackId() {
-    return this.activeView ? this.activeView.stackId : void 0;
-  }
-  /**
-   * @internal
-   */
-  getActiveView() {
-    return this.activeView;
-  }
-  hasRunningTask() {
-    return this.runningTask !== void 0;
-  }
-  destroy() {
-    this.containerEl = void 0;
-    this.views.forEach(destroyView);
-    this.activeView = void 0;
-    this.views = [];
-  }
-  getStack(stackId) {
-    return this.views.filter((v) => v.stackId === stackId);
-  }
-  insertView(enteringView, direction) {
-    this.activeView = enteringView;
-    this.views = insertView(this.views, enteringView, direction);
-    return this.views.slice();
-  }
-  transition(enteringView, leavingView, direction, showGoBack, progressAnimation, animationBuilder) {
-    if (this.skipTransition) {
-      this.skipTransition = false;
-      return Promise.resolve(false);
-    }
-    if (leavingView === enteringView) {
-      return Promise.resolve(false);
-    }
-    const enteringEl = enteringView ? enteringView.element : void 0;
-    const leavingEl = leavingView ? leavingView.element : void 0;
-    const containerEl = this.containerEl;
-    if (enteringEl && enteringEl !== leavingEl) {
-      enteringEl.classList.add("ion-page");
-      enteringEl.classList.add("ion-page-invisible");
-      if (containerEl.commit) {
-        return containerEl.commit(enteringEl, leavingEl, {
-          duration: direction === void 0 ? 0 : void 0,
-          direction,
-          showGoBack,
-          progressAnimation,
-          animationBuilder
-        });
-      }
-    }
-    return Promise.resolve(false);
-  }
-  wait(task) {
-    return __async(this, null, function* () {
-      if (this.runningTask !== void 0) {
-        yield this.runningTask;
-        this.runningTask = void 0;
-      }
-      const promise = this.runningTask = task();
-      promise.finally(() => this.runningTask = void 0);
-      return promise;
-    });
-  }
-};
-var cleanupAsync = (activeRoute, views, viewsSnapshot, location, zone) => {
-  if (typeof requestAnimationFrame === "function") {
-    return new Promise((resolve) => {
-      requestAnimationFrame(() => {
-        cleanup(activeRoute, views, viewsSnapshot, location, zone);
-        resolve();
-      });
-    });
-  }
-  return Promise.resolve();
-};
-var cleanup = (activeRoute, views, viewsSnapshot, location, zone) => {
-  zone.run(() => viewsSnapshot.filter((view) => !views.includes(view)).forEach(destroyView));
-  views.forEach((view) => {
-    const locationWithoutParams = location.path().split("?")[0];
-    const locationWithoutFragment = locationWithoutParams.split("#")[0];
-    if (view !== activeRoute && view.url !== locationWithoutFragment) {
-      const element = view.element;
-      element.setAttribute("aria-hidden", "true");
-      element.classList.add("ion-page-hidden");
-      view.ref.changeDetectorRef.detach();
-    }
-  });
-};
-var _IonRouterOutlet = class _IonRouterOutlet {
-  parentOutlet;
-  nativeEl;
-  activatedView = null;
-  tabsPrefix;
-  _swipeGesture;
-  stackCtrl;
-  // Maintain map of activated route proxies for each component instance
-  proxyMap = /* @__PURE__ */ new WeakMap();
-  // Keep the latest activated route in a subject for the proxy routes to switch map to
-  currentActivatedRoute$ = new BehaviorSubject(null);
-  activated = null;
-  /** @internal */
-  get activatedComponentRef() {
-    return this.activated;
-  }
-  _activatedRoute = null;
-  /**
-   * The name of the outlet
-   */
-  name = PRIMARY_OUTLET;
-  /** @internal */
-  stackWillChange = new EventEmitter();
-  /** @internal */
-  stackDidChange = new EventEmitter();
-  // eslint-disable-next-line @angular-eslint/no-output-rename
-  activateEvents = new EventEmitter();
-  // eslint-disable-next-line @angular-eslint/no-output-rename
-  deactivateEvents = new EventEmitter();
-  parentContexts = inject(ChildrenOutletContexts);
-  location = inject(ViewContainerRef);
-  environmentInjector = inject(EnvironmentInjector);
-  inputBinder = inject(INPUT_BINDER, {
-    optional: true
-  });
-  /** @nodoc */
-  supportsBindingToComponentInputs = true;
-  // Ionic providers
-  config = inject(Config);
-  navCtrl = inject(NavController);
-  set animation(animation) {
-    this.nativeEl.animation = animation;
-  }
-  set animated(animated) {
-    this.nativeEl.animated = animated;
-  }
-  set swipeGesture(swipe) {
-    this._swipeGesture = swipe;
-    this.nativeEl.swipeHandler = swipe ? {
-      canStart: () => this.stackCtrl.canGoBack(1) && !this.stackCtrl.hasRunningTask(),
-      onStart: () => this.stackCtrl.startBackTransition(),
-      onEnd: (shouldContinue) => this.stackCtrl.endBackTransition(shouldContinue)
-    } : void 0;
-  }
-  constructor(name, tabs, commonLocation, elementRef, router, zone, activatedRoute, parentOutlet) {
-    this.parentOutlet = parentOutlet;
-    this.nativeEl = elementRef.nativeElement;
-    this.name = name || PRIMARY_OUTLET;
-    this.tabsPrefix = tabs === "true" ? getUrl(router, activatedRoute) : void 0;
-    this.stackCtrl = new StackController(this.tabsPrefix, this.nativeEl, router, this.navCtrl, zone, commonLocation);
-    this.parentContexts.onChildOutletCreated(this.name, this);
-  }
-  ngOnDestroy() {
-    var _a96;
-    this.stackCtrl.destroy();
-    (_a96 = this.inputBinder) == null ? void 0 : _a96.unsubscribeFromRouteData(this);
-  }
-  getContext() {
-    return this.parentContexts.getContext(this.name);
-  }
-  ngOnInit() {
-    this.initializeOutletWithName();
-  }
-  // Note: Ionic deviates from the Angular Router implementation here
-  initializeOutletWithName() {
-    if (!this.activated) {
-      const context = this.getContext();
-      if (context == null ? void 0 : context.route) {
-        this.activateWith(context.route, context.injector);
-      }
-    }
-    new Promise((resolve) => componentOnReady(this.nativeEl, resolve)).then(() => {
-      if (this._swipeGesture === void 0) {
-        this.swipeGesture = this.config.getBoolean("swipeBackEnabled", this.nativeEl.mode === "ios");
-      }
-    });
-  }
-  get isActivated() {
-    return !!this.activated;
-  }
-  get component() {
-    if (!this.activated) {
-      throw new Error("Outlet is not activated");
-    }
-    return this.activated.instance;
-  }
-  get activatedRoute() {
-    if (!this.activated) {
-      throw new Error("Outlet is not activated");
-    }
-    return this._activatedRoute;
-  }
-  get activatedRouteData() {
-    if (this._activatedRoute) {
-      return this._activatedRoute.snapshot.data;
-    }
-    return {};
-  }
-  /**
-   * Called when the `RouteReuseStrategy` instructs to detach the subtree
-   */
-  detach() {
-    throw new Error("incompatible reuse strategy");
-  }
-  /**
-   * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
-   */
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  attach(_ref, _activatedRoute) {
-    throw new Error("incompatible reuse strategy");
-  }
-  deactivate() {
-    if (this.activated) {
-      if (this.activatedView) {
-        const context = this.getContext();
-        this.activatedView.savedData = new Map(context.children["contexts"]);
-        const primaryOutlet = this.activatedView.savedData.get("primary");
-        if (primaryOutlet && context.route) {
-          primaryOutlet.route = __spreadValues({}, context.route);
-        }
-        this.activatedView.savedExtras = {};
-        if (context.route) {
-          const contextSnapshot = context.route.snapshot;
-          this.activatedView.savedExtras.queryParams = contextSnapshot.queryParams;
-          this.activatedView.savedExtras.fragment = contextSnapshot.fragment;
-        }
-      }
-      const c = this.component;
-      this.activatedView = null;
-      this.activated = null;
-      this._activatedRoute = null;
-      this.deactivateEvents.emit(c);
-    }
-  }
-  activateWith(activatedRoute, environmentInjector) {
-    var _a96, _b;
-    if (this.isActivated) {
-      throw new Error("Cannot activate an already activated outlet");
-    }
-    this._activatedRoute = activatedRoute;
-    let cmpRef;
-    let enteringView = this.stackCtrl.getExistingView(activatedRoute);
-    if (enteringView) {
-      cmpRef = this.activated = enteringView.ref;
-      const saved = enteringView.savedData;
-      if (saved) {
-        const context = this.getContext();
-        context.children["contexts"] = saved;
-      }
-      this.updateActivatedRouteProxy(cmpRef.instance, activatedRoute);
-    } else {
-      const snapshot = activatedRoute._futureSnapshot;
-      const childContexts = this.parentContexts.getOrCreateContext(this.name).children;
-      const component$ = new BehaviorSubject(null);
-      const activatedRouteProxy = this.createActivatedRouteProxy(component$, activatedRoute);
-      const injector = new OutletInjector(activatedRouteProxy, childContexts, this.location.injector);
-      const component = (_a96 = snapshot.routeConfig.component) != null ? _a96 : snapshot.component;
-      cmpRef = this.activated = this.outletContent.createComponent(component, {
-        index: this.outletContent.length,
-        injector,
-        environmentInjector: environmentInjector != null ? environmentInjector : this.environmentInjector
-      });
-      component$.next(cmpRef.instance);
-      enteringView = this.stackCtrl.createView(this.activated, activatedRoute);
-      this.proxyMap.set(cmpRef.instance, activatedRouteProxy);
-      this.currentActivatedRoute$.next({
-        component: cmpRef.instance,
-        activatedRoute
-      });
-    }
-    (_b = this.inputBinder) == null ? void 0 : _b.bindActivatedRouteToOutletComponent(this);
-    this.activatedView = enteringView;
-    this.navCtrl.setTopOutlet(this);
-    const leavingView = this.stackCtrl.getActiveView();
-    this.stackWillChange.emit({
-      enteringView,
-      tabSwitch: isTabSwitch(enteringView, leavingView)
-    });
-    this.stackCtrl.setActive(enteringView).then((data) => {
-      this.activateEvents.emit(cmpRef.instance);
-      this.stackDidChange.emit(data);
-    });
-  }
-  /**
-   * Returns `true` if there are pages in the stack to go back.
-   */
-  canGoBack(deep = 1, stackId) {
-    return this.stackCtrl.canGoBack(deep, stackId);
-  }
-  /**
-   * Resolves to `true` if it the outlet was able to sucessfully pop the last N pages.
-   */
-  pop(deep = 1, stackId) {
-    return this.stackCtrl.pop(deep, stackId);
-  }
-  /**
-   * Returns the URL of the active page of each stack.
-   */
-  getLastUrl(stackId) {
-    const active = this.stackCtrl.getLastUrl(stackId);
-    return active ? active.url : void 0;
-  }
-  /**
-   * Returns the RouteView of the active page of each stack.
-   * @internal
-   */
-  getLastRouteView(stackId) {
-    return this.stackCtrl.getLastUrl(stackId);
-  }
-  /**
-   * Returns the root view in the tab stack.
-   * @internal
-   */
-  getRootView(stackId) {
-    return this.stackCtrl.getRootUrl(stackId);
-  }
-  /**
-   * Returns the active stack ID. In the context of ion-tabs, it means the active tab.
-   */
-  getActiveStackId() {
-    return this.stackCtrl.getActiveStackId();
-  }
-  /**
-   * Since the activated route can change over the life time of a component in an ion router outlet, we create
-   * a proxy so that we can update the values over time as a user navigates back to components already in the stack.
-   */
-  createActivatedRouteProxy(component$, activatedRoute) {
-    const proxy = new ActivatedRoute();
-    proxy._futureSnapshot = activatedRoute._futureSnapshot;
-    proxy._routerState = activatedRoute._routerState;
-    proxy.snapshot = activatedRoute.snapshot;
-    proxy.outlet = activatedRoute.outlet;
-    proxy.component = activatedRoute.component;
-    proxy._paramMap = this.proxyObservable(component$, "paramMap");
-    proxy._queryParamMap = this.proxyObservable(component$, "queryParamMap");
-    proxy.url = this.proxyObservable(component$, "url");
-    proxy.params = this.proxyObservable(component$, "params");
-    proxy.queryParams = this.proxyObservable(component$, "queryParams");
-    proxy.fragment = this.proxyObservable(component$, "fragment");
-    proxy.data = this.proxyObservable(component$, "data");
-    return proxy;
-  }
-  /**
-   * Create a wrapped observable that will switch to the latest activated route matched by the given component
-   */
-  proxyObservable(component$, path) {
-    return component$.pipe(
-      // First wait until the component instance is pushed
-      filter((component) => !!component),
-      switchMap((component) => this.currentActivatedRoute$.pipe(filter((current) => current !== null && current.component === component), switchMap((current) => current && current.activatedRoute[path]), distinctUntilChanged()))
-    );
-  }
-  /**
-   * Updates the activated route proxy for the given component to the new incoming router state
-   */
-  updateActivatedRouteProxy(component, activatedRoute) {
-    const proxy = this.proxyMap.get(component);
-    if (!proxy) {
-      throw new Error(`Could not find activated route proxy for view`);
-    }
-    proxy._futureSnapshot = activatedRoute._futureSnapshot;
-    proxy._routerState = activatedRoute._routerState;
-    proxy.snapshot = activatedRoute.snapshot;
-    proxy.outlet = activatedRoute.outlet;
-    proxy.component = activatedRoute.component;
-    this.currentActivatedRoute$.next({
-      component,
-      activatedRoute
-    });
-  }
-};
-/** @nocollapse */
-__publicField(_IonRouterOutlet, "ɵfac", function IonRouterOutlet_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _IonRouterOutlet)(ɵɵinjectAttribute("name"), ɵɵinjectAttribute("tabs"), ɵɵdirectiveInject(Location), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(_IonRouterOutlet, 12));
-});
-/** @nocollapse */
-__publicField(_IonRouterOutlet, "ɵdir", ɵɵdefineDirective({
-  type: _IonRouterOutlet,
-  selectors: [["ion-router-outlet"]],
-  inputs: {
-    animated: "animated",
-    animation: "animation",
-    mode: "mode",
-    swipeGesture: "swipeGesture",
-    name: "name"
-  },
-  outputs: {
-    stackWillChange: "stackWillChange",
-    stackDidChange: "stackDidChange",
-    activateEvents: "activate",
-    deactivateEvents: "deactivate"
-  },
-  exportAs: ["outlet"],
-  standalone: false
-}));
-var IonRouterOutlet = _IonRouterOutlet;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonRouterOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "ion-router-outlet",
-      exportAs: "outlet",
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: ["animated", "animation", "mode", "swipeGesture"]
-    }]
-  }], function() {
-    return [{
-      type: void 0,
-      decorators: [{
-        type: Attribute,
-        args: ["name"]
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Attribute,
-        args: ["tabs"]
-      }]
-    }, {
-      type: Location
-    }, {
-      type: ElementRef
-    }, {
-      type: Router
-    }, {
-      type: NgZone
-    }, {
-      type: ActivatedRoute
-    }, {
-      type: IonRouterOutlet,
-      decorators: [{
-        type: SkipSelf
-      }, {
-        type: Optional
-      }]
-    }];
-  }, {
-    name: [{
-      type: Input
-    }],
-    stackWillChange: [{
-      type: Output
-    }],
-    stackDidChange: [{
-      type: Output
-    }],
-    activateEvents: [{
-      type: Output,
-      args: ["activate"]
-    }],
-    deactivateEvents: [{
-      type: Output,
-      args: ["deactivate"]
-    }]
-  });
-})();
-var OutletInjector = class {
-  route;
-  childContexts;
-  parent;
-  constructor(route, childContexts, parent) {
-    this.route = route;
-    this.childContexts = childContexts;
-    this.parent = parent;
-  }
-  get(token, notFoundValue) {
-    if (token === ActivatedRoute) {
-      return this.route;
-    }
-    if (token === ChildrenOutletContexts) {
-      return this.childContexts;
-    }
-    return this.parent.get(token, notFoundValue);
-  }
-};
-var INPUT_BINDER = new InjectionToken("");
-var _RoutedComponentInputBinder = class _RoutedComponentInputBinder {
-  outletDataSubscriptions = /* @__PURE__ */ new Map();
-  bindActivatedRouteToOutletComponent(outlet) {
-    this.unsubscribeFromRouteData(outlet);
-    this.subscribeToRouteData(outlet);
-  }
-  unsubscribeFromRouteData(outlet) {
-    var _a96;
-    (_a96 = this.outletDataSubscriptions.get(outlet)) == null ? void 0 : _a96.unsubscribe();
-    this.outletDataSubscriptions.delete(outlet);
-  }
-  subscribeToRouteData(outlet) {
-    const {
-      activatedRoute
-    } = outlet;
-    const dataSubscription = combineLatest([activatedRoute.queryParams, activatedRoute.params, activatedRoute.data]).pipe(switchMap(([queryParams, params, data], index) => {
-      data = __spreadValues(__spreadValues(__spreadValues({}, queryParams), params), data);
-      if (index === 0) {
-        return of(data);
-      }
-      return Promise.resolve(data);
-    })).subscribe((data) => {
-      if (!outlet.isActivated || !outlet.activatedComponentRef || outlet.activatedRoute !== activatedRoute || activatedRoute.component === null) {
-        this.unsubscribeFromRouteData(outlet);
-        return;
-      }
-      const mirror = reflectComponentType(activatedRoute.component);
-      if (!mirror) {
-        this.unsubscribeFromRouteData(outlet);
-        return;
-      }
-      for (const {
-        templateName
-      } of mirror.inputs) {
-        outlet.activatedComponentRef.setInput(templateName, data[templateName]);
-      }
-    });
-    this.outletDataSubscriptions.set(outlet, dataSubscription);
-  }
-};
-/** @nocollapse */
-__publicField(_RoutedComponentInputBinder, "ɵfac", function RoutedComponentInputBinder_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _RoutedComponentInputBinder)();
-});
-/** @nocollapse */
-__publicField(_RoutedComponentInputBinder, "ɵprov", ɵɵdefineInjectable({
-  token: _RoutedComponentInputBinder,
-  factory: _RoutedComponentInputBinder.ɵfac
-}));
-var RoutedComponentInputBinder = _RoutedComponentInputBinder;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RoutedComponentInputBinder, [{
-    type: Injectable
-  }], null, null);
-})();
-var provideComponentInputBinding = () => {
-  return {
-    provide: INPUT_BINDER,
-    useFactory: componentInputBindingFactory,
-    deps: [Router]
-  };
-};
-function componentInputBindingFactory(router) {
-  if (router == null ? void 0 : router.componentInputBindingEnabled) {
-    return new RoutedComponentInputBinder();
-  }
-  return null;
-}
-var BACK_BUTTON_INPUTS = ["color", "defaultHref", "disabled", "icon", "mode", "routerAnimation", "text", "type"];
-var _a4;
-var IonBackButton = (_a4 = class {
-  routerOutlet;
-  navCtrl;
-  config;
-  r;
-  z;
-  el;
-  constructor(routerOutlet, navCtrl, config2, r, z, c) {
-    this.routerOutlet = routerOutlet;
-    this.navCtrl = navCtrl;
-    this.config = config2;
-    this.r = r;
-    this.z = z;
-    c.detach();
-    this.el = this.r.nativeElement;
-  }
-  /**
-   * @internal
-   */
-  onClick(ev) {
-    var _a96;
-    const defaultHref = this.defaultHref || this.config.get("backButtonDefaultHref");
-    if ((_a96 = this.routerOutlet) == null ? void 0 : _a96.canGoBack()) {
-      this.navCtrl.setDirection("back", void 0, void 0, this.routerAnimation);
-      this.routerOutlet.pop();
-      ev.preventDefault();
-    } else if (defaultHref != null) {
-      this.navCtrl.navigateBack(defaultHref, {
-        animation: this.routerAnimation
-      });
-      ev.preventDefault();
-    }
-  }
-}, /** @nocollapse */
-__publicField(_a4, "ɵfac", function IonBackButton_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a4)(ɵɵdirectiveInject(IonRouterOutlet, 8), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(Config), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
-}), /** @nocollapse */
-__publicField(_a4, "ɵdir", ɵɵdefineDirective({
-  type: _a4,
-  hostBindings: function IonBackButton_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("click", function IonBackButton_click_HostBindingHandler($event) {
-        return ctx.onClick($event);
-      });
-    }
-  },
-  inputs: {
-    color: "color",
-    defaultHref: "defaultHref",
-    disabled: "disabled",
-    icon: "icon",
-    mode: "mode",
-    routerAnimation: "routerAnimation",
-    text: "text",
-    type: "type"
-  },
-  standalone: false
-})), _a4);
-IonBackButton = __decorate([ProxyCmp({
-  inputs: BACK_BUTTON_INPUTS
-})], IonBackButton);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonBackButton, [{
-    type: Directive,
-    args: [{
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: BACK_BUTTON_INPUTS
-    }]
-  }], function() {
-    return [{
-      type: IonRouterOutlet,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: NavController
-    }, {
-      type: Config
-    }, {
-      type: ElementRef
-    }, {
-      type: NgZone
-    }, {
-      type: ChangeDetectorRef
-    }];
-  }, {
-    onClick: [{
-      type: HostListener,
-      args: ["click", ["$event"]]
-    }]
-  });
-})();
-var _RouterLinkDelegateDirective = class _RouterLinkDelegateDirective {
-  locationStrategy;
-  navCtrl;
-  elementRef;
-  router;
-  routerLink;
-  routerDirection = "forward";
-  routerAnimation;
-  constructor(locationStrategy, navCtrl, elementRef, router, routerLink) {
-    this.locationStrategy = locationStrategy;
-    this.navCtrl = navCtrl;
-    this.elementRef = elementRef;
-    this.router = router;
-    this.routerLink = routerLink;
-  }
-  ngOnInit() {
-    this.updateTargetUrlAndHref();
-    this.updateTabindex();
-  }
-  ngOnChanges() {
-    this.updateTargetUrlAndHref();
-  }
-  /**
-   * The `tabindex` is set to `0` by default on the host element when
-   * the `routerLink` directive is used. This causes issues with Ionic
-   * components that wrap an `a` or `button` element, such as `ion-item`.
-   * See issue https://github.com/angular/angular/issues/28345
-   *
-   * This method removes the `tabindex` attribute from the host element
-   * to allow the Ionic component to manage the focus state correctly.
-   */
-  updateTabindex() {
-    const ionicComponents = ["ION-BACK-BUTTON", "ION-BREADCRUMB", "ION-BUTTON", "ION-CARD", "ION-FAB-BUTTON", "ION-ITEM", "ION-ITEM-OPTION", "ION-MENU-BUTTON", "ION-SEGMENT-BUTTON", "ION-TAB-BUTTON"];
-    const hostElement = this.elementRef.nativeElement;
-    if (ionicComponents.includes(hostElement.tagName)) {
-      if (hostElement.getAttribute("tabindex") === "0") {
-        hostElement.removeAttribute("tabindex");
-      }
-    }
-  }
-  updateTargetUrlAndHref() {
-    var _a96;
-    if ((_a96 = this.routerLink) == null ? void 0 : _a96.urlTree) {
-      const href = this.locationStrategy.prepareExternalUrl(this.router.serializeUrl(this.routerLink.urlTree));
-      this.elementRef.nativeElement.href = href;
-    }
-  }
-  /**
-   * @internal
-   */
-  onClick(ev) {
-    this.navCtrl.setDirection(this.routerDirection, void 0, void 0, this.routerAnimation);
-    ev.preventDefault();
-  }
-};
-/** @nocollapse */
-__publicField(_RouterLinkDelegateDirective, "ɵfac", function RouterLinkDelegateDirective_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _RouterLinkDelegateDirective)(ɵɵdirectiveInject(LocationStrategy), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(RouterLink, 8));
-});
-/** @nocollapse */
-__publicField(_RouterLinkDelegateDirective, "ɵdir", ɵɵdefineDirective({
-  type: _RouterLinkDelegateDirective,
-  selectors: [["", "routerLink", "", 5, "a", 5, "area"]],
-  hostBindings: function RouterLinkDelegateDirective_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("click", function RouterLinkDelegateDirective_click_HostBindingHandler($event) {
-        return ctx.onClick($event);
-      });
-    }
-  },
-  inputs: {
-    routerDirection: "routerDirection",
-    routerAnimation: "routerAnimation"
-  },
-  standalone: false,
-  features: [ɵɵNgOnChangesFeature]
-}));
-var RouterLinkDelegateDirective = _RouterLinkDelegateDirective;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RouterLinkDelegateDirective, [{
-    type: Directive,
-    args: [{
-      selector: ":not(a):not(area)[routerLink]"
-    }]
-  }], function() {
-    return [{
-      type: LocationStrategy
-    }, {
-      type: NavController
-    }, {
-      type: ElementRef
-    }, {
-      type: Router
-    }, {
-      type: RouterLink,
-      decorators: [{
-        type: Optional
-      }]
-    }];
-  }, {
-    routerDirection: [{
-      type: Input
-    }],
-    routerAnimation: [{
-      type: Input
-    }],
-    onClick: [{
-      type: HostListener,
-      args: ["click", ["$event"]]
-    }]
-  });
-})();
-var _RouterLinkWithHrefDelegateDirective = class _RouterLinkWithHrefDelegateDirective {
-  locationStrategy;
-  navCtrl;
-  elementRef;
-  router;
-  routerLink;
-  routerDirection = "forward";
-  routerAnimation;
-  constructor(locationStrategy, navCtrl, elementRef, router, routerLink) {
-    this.locationStrategy = locationStrategy;
-    this.navCtrl = navCtrl;
-    this.elementRef = elementRef;
-    this.router = router;
-    this.routerLink = routerLink;
-  }
-  ngOnInit() {
-    this.updateTargetUrlAndHref();
-  }
-  ngOnChanges() {
-    this.updateTargetUrlAndHref();
-  }
-  updateTargetUrlAndHref() {
-    var _a96;
-    if ((_a96 = this.routerLink) == null ? void 0 : _a96.urlTree) {
-      const href = this.locationStrategy.prepareExternalUrl(this.router.serializeUrl(this.routerLink.urlTree));
-      this.elementRef.nativeElement.href = href;
-    }
-  }
-  /**
-   * @internal
-   */
-  onClick() {
-    this.navCtrl.setDirection(this.routerDirection, void 0, void 0, this.routerAnimation);
-  }
-};
-/** @nocollapse */
-__publicField(_RouterLinkWithHrefDelegateDirective, "ɵfac", function RouterLinkWithHrefDelegateDirective_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _RouterLinkWithHrefDelegateDirective)(ɵɵdirectiveInject(LocationStrategy), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(RouterLink, 8));
-});
-/** @nocollapse */
-__publicField(_RouterLinkWithHrefDelegateDirective, "ɵdir", ɵɵdefineDirective({
-  type: _RouterLinkWithHrefDelegateDirective,
-  selectors: [["a", "routerLink", ""], ["area", "routerLink", ""]],
-  hostBindings: function RouterLinkWithHrefDelegateDirective_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("click", function RouterLinkWithHrefDelegateDirective_click_HostBindingHandler() {
-        return ctx.onClick();
-      });
-    }
-  },
-  inputs: {
-    routerDirection: "routerDirection",
-    routerAnimation: "routerAnimation"
-  },
-  standalone: false,
-  features: [ɵɵNgOnChangesFeature]
-}));
-var RouterLinkWithHrefDelegateDirective = _RouterLinkWithHrefDelegateDirective;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RouterLinkWithHrefDelegateDirective, [{
-    type: Directive,
-    args: [{
-      selector: "a[routerLink],area[routerLink]"
-    }]
-  }], function() {
-    return [{
-      type: LocationStrategy
-    }, {
-      type: NavController
-    }, {
-      type: ElementRef
-    }, {
-      type: Router
-    }, {
-      type: RouterLink,
-      decorators: [{
-        type: Optional
-      }]
-    }];
-  }, {
-    routerDirection: [{
-      type: Input
-    }],
-    routerAnimation: [{
-      type: Input
-    }],
-    onClick: [{
-      type: HostListener,
-      args: ["click"]
-    }]
-  });
-})();
-var NAV_INPUTS = ["animated", "animation", "root", "rootParams", "swipeGesture"];
-var NAV_METHODS = ["push", "insert", "insertPages", "pop", "popTo", "popToRoot", "removeIndex", "setRoot", "setPages", "getActive", "getByIndex", "canGoBack", "getPrevious"];
-var _a5;
-var IonNav = (_a5 = class {
-  z;
-  el;
-  constructor(ref, environmentInjector, injector, angularDelegate, z, c) {
-    this.z = z;
-    c.detach();
-    this.el = ref.nativeElement;
-    ref.nativeElement.delegate = angularDelegate.create(environmentInjector, injector);
-    proxyOutputs(this, this.el, ["ionNavDidChange", "ionNavWillChange"]);
-  }
-}, /** @nocollapse */
-__publicField(_a5, "ɵfac", function IonNav_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a5)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(EnvironmentInjector), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(AngularDelegate), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
-}), /** @nocollapse */
-__publicField(_a5, "ɵdir", ɵɵdefineDirective({
-  type: _a5,
-  inputs: {
-    animated: "animated",
-    animation: "animation",
-    root: "root",
-    rootParams: "rootParams",
-    swipeGesture: "swipeGesture"
-  },
-  standalone: false
-})), _a5);
-IonNav = __decorate([ProxyCmp({
-  inputs: NAV_INPUTS,
-  methods: NAV_METHODS
-})], IonNav);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonNav, [{
-    type: Directive,
-    args: [{
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: NAV_INPUTS
-    }]
-  }], function() {
-    return [{
-      type: ElementRef
-    }, {
-      type: EnvironmentInjector
-    }, {
-      type: Injector
-    }, {
-      type: AngularDelegate
-    }, {
-      type: NgZone
-    }, {
-      type: ChangeDetectorRef
-    }];
-  }, null);
-})();
-var _IonTabs = class _IonTabs {
-  navCtrl;
-  tabsInner;
-  /**
-   * Emitted before the tab view is changed.
-   */
-  ionTabsWillChange = new EventEmitter();
-  /**
-   * Emitted after the tab view is changed.
-   */
-  ionTabsDidChange = new EventEmitter();
-  tabBarSlot = "bottom";
-  hasTab = false;
-  selectedTab;
-  leavingTab;
-  constructor(navCtrl) {
-    this.navCtrl = navCtrl;
-  }
-  ngAfterViewInit() {
-    const firstTab = this.tabs.length > 0 ? this.tabs.first : void 0;
-    if (firstTab) {
-      this.hasTab = true;
-      this.setActiveTab(firstTab.tab);
-      this.tabSwitch();
-    }
-  }
-  ngAfterContentInit() {
-    this.detectSlotChanges();
-  }
-  ngAfterContentChecked() {
-    this.detectSlotChanges();
-  }
-  /**
-   * @internal
-   */
-  onStackWillChange({
-    enteringView,
-    tabSwitch
-  }) {
-    const stackId = enteringView.stackId;
-    if (tabSwitch && stackId !== void 0) {
-      this.ionTabsWillChange.emit({
-        tab: stackId
-      });
-    }
-  }
-  /**
-   * @internal
-   */
-  onStackDidChange({
-    enteringView,
-    tabSwitch
-  }) {
-    const stackId = enteringView.stackId;
-    if (tabSwitch && stackId !== void 0) {
-      if (this.tabBar) {
-        this.tabBar.selectedTab = stackId;
-      }
-      this.ionTabsDidChange.emit({
-        tab: stackId
-      });
-    }
-  }
-  /**
-   * When a tab button is clicked, there are several scenarios:
-   * 1. If the selected tab is currently active (the tab button has been clicked
-   *    again), then it should go to the root view for that tab.
-   *
-   *   a. Get the saved root view from the router outlet. If the saved root view
-   *      matches the tabRootUrl, set the route view to this view including the
-   *      navigation extras.
-   *   b. If the saved root view from the router outlet does
-   *      not match, navigate to the tabRootUrl. No navigation extras are
-   *      included.
-   *
-   * 2. If the current tab tab is not currently selected, get the last route
-   *    view from the router outlet.
-   *
-   *   a. If the last route view exists, navigate to that view including any
-   *      navigation extras
-   *   b. If the last route view doesn't exist, then navigate
-   *      to the default tabRootUrl
-   */
-  select(tabOrEvent) {
-    const isTabString = typeof tabOrEvent === "string";
-    const tab = isTabString ? tabOrEvent : tabOrEvent.detail.tab;
-    if (this.hasTab) {
-      this.setActiveTab(tab);
-      this.tabSwitch();
-      return;
-    }
-    const alreadySelected = this.outlet.getActiveStackId() === tab;
-    const tabRootUrl = `${this.outlet.tabsPrefix}/${tab}`;
-    if (!isTabString) {
-      tabOrEvent.stopPropagation();
-    }
-    if (alreadySelected) {
-      const activeStackId = this.outlet.getActiveStackId();
-      const activeView = this.outlet.getLastRouteView(activeStackId);
-      if ((activeView == null ? void 0 : activeView.url) === tabRootUrl) {
-        return;
-      }
-      const rootView = this.outlet.getRootView(tab);
-      const navigationExtras = rootView && tabRootUrl === rootView.url && rootView.savedExtras;
-      return this.navCtrl.navigateRoot(tabRootUrl, __spreadProps(__spreadValues({}, navigationExtras), {
-        animated: true,
-        animationDirection: "back"
-      }));
-    } else {
-      const lastRoute = this.outlet.getLastRouteView(tab);
-      const url = (lastRoute == null ? void 0 : lastRoute.url) || tabRootUrl;
-      const navigationExtras = lastRoute == null ? void 0 : lastRoute.savedExtras;
-      return this.navCtrl.navigateRoot(url, __spreadProps(__spreadValues({}, navigationExtras), {
-        animated: true,
-        animationDirection: "back"
-      }));
-    }
-  }
-  setActiveTab(tab) {
-    const tabs = this.tabs;
-    const selectedTab = tabs.find((t) => t.tab === tab);
-    if (!selectedTab) {
-      console.error(`[Ionic Error]: Tab with id: "${tab}" does not exist`);
-      return;
-    }
-    this.leavingTab = this.selectedTab;
-    this.selectedTab = selectedTab;
-    this.ionTabsWillChange.emit({
-      tab
-    });
-    selectedTab.el.active = true;
-  }
-  tabSwitch() {
-    const {
-      selectedTab,
-      leavingTab
-    } = this;
-    if (this.tabBar && selectedTab) {
-      this.tabBar.selectedTab = selectedTab.tab;
-    }
-    if ((leavingTab == null ? void 0 : leavingTab.tab) !== (selectedTab == null ? void 0 : selectedTab.tab)) {
-      if (leavingTab == null ? void 0 : leavingTab.el) {
-        leavingTab.el.active = false;
-      }
-    }
-    if (selectedTab) {
-      this.ionTabsDidChange.emit({
-        tab: selectedTab.tab
-      });
-    }
-  }
-  getSelected() {
-    var _a96;
-    if (this.hasTab) {
-      return (_a96 = this.selectedTab) == null ? void 0 : _a96.tab;
-    }
-    return this.outlet.getActiveStackId();
-  }
-  /**
-   * Detects changes to the slot attribute of the tab bar.
-   *
-   * If the slot attribute has changed, then the tab bar
-   * should be relocated to the new slot position.
-   */
-  detectSlotChanges() {
-    this.tabBars.forEach((tabBar) => {
-      const currentSlot = tabBar.el.getAttribute("slot");
-      if (currentSlot !== this.tabBarSlot) {
-        this.tabBarSlot = currentSlot;
-        this.relocateTabBar();
-      }
-    });
-  }
-  /**
-   * Relocates the tab bar to the new slot position.
-   */
-  relocateTabBar() {
-    const tabBar = this.tabBar.el;
-    if (this.tabBarSlot === "top") {
-      this.tabsInner.nativeElement.before(tabBar);
-    } else {
-      this.tabsInner.nativeElement.after(tabBar);
-    }
-  }
-};
-/** @nocollapse */
-__publicField(_IonTabs, "ɵfac", function IonTabs_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _IonTabs)(ɵɵdirectiveInject(NavController));
-});
-/** @nocollapse */
-__publicField(_IonTabs, "ɵdir", ɵɵdefineDirective({
-  type: _IonTabs,
-  selectors: [["ion-tabs"]],
-  viewQuery: function IonTabs_Query(rf, ctx) {
-    if (rf & 1) {
-      ɵɵviewQuery(_c0, 7, ElementRef);
-    }
-    if (rf & 2) {
-      let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabsInner = _t.first);
-    }
-  },
-  hostBindings: function IonTabs_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("ionTabButtonClick", function IonTabs_ionTabButtonClick_HostBindingHandler($event) {
-        return ctx.select($event);
-      });
-    }
-  },
-  outputs: {
-    ionTabsWillChange: "ionTabsWillChange",
-    ionTabsDidChange: "ionTabsDidChange"
-  },
-  standalone: false
-}));
-var IonTabs = _IonTabs;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonTabs, [{
-    type: Directive,
-    args: [{
-      selector: "ion-tabs"
-    }]
-  }], function() {
-    return [{
-      type: NavController
-    }];
-  }, {
-    tabsInner: [{
-      type: ViewChild,
-      args: ["tabsInner", {
-        read: ElementRef,
-        static: true
-      }]
-    }],
-    ionTabsWillChange: [{
-      type: Output
-    }],
-    ionTabsDidChange: [{
-      type: Output
-    }],
-    select: [{
-      type: HostListener,
-      args: ["ionTabButtonClick", ["$event"]]
-    }]
-  });
-})();
-var raf2 = (h2) => {
-  if (typeof __zone_symbol__requestAnimationFrame === "function") {
-    return __zone_symbol__requestAnimationFrame(h2);
-  }
-  if (typeof requestAnimationFrame === "function") {
-    return requestAnimationFrame(h2);
-  }
-  return setTimeout(h2);
-};
-var _ValueAccessor = class _ValueAccessor {
-  injector;
-  elementRef;
-  onChange = () => {
-  };
-  onTouched = () => {
-  };
-  lastValue;
-  statusChanges;
-  constructor(injector, elementRef) {
-    this.injector = injector;
-    this.elementRef = elementRef;
-  }
-  writeValue(value) {
-    this.elementRef.nativeElement.value = this.lastValue = value;
-    setIonicClasses(this.elementRef);
-  }
-  /**
-   * Notifies the ControlValueAccessor of a change in the value of the control.
-   *
-   * This is called by each of the ValueAccessor directives when we want to update
-   * the status and validity of the form control. For example with text components this
-   * is called when the ionInput event is fired. For select components this is called
-   * when the ionChange event is fired.
-   *
-   * This also updates the Ionic form status classes on the element.
-   *
-   * @param el The component element.
-   * @param value The new value of the control.
-   */
-  handleValueChange(el, value) {
-    if (el === this.elementRef.nativeElement) {
-      if (value !== this.lastValue) {
-        this.lastValue = value;
-        this.onChange(value);
-      }
-      setIonicClasses(this.elementRef);
-    }
-  }
-  _handleBlurEvent(el) {
-    if (el === this.elementRef.nativeElement) {
-      this.onTouched();
-      setIonicClasses(this.elementRef);
-    } else if (el.closest("ion-radio-group") === this.elementRef.nativeElement) {
-      this.onTouched();
-    }
-  }
-  registerOnChange(fn) {
-    this.onChange = fn;
-  }
-  registerOnTouched(fn) {
-    this.onTouched = fn;
-  }
-  setDisabledState(isDisabled) {
-    this.elementRef.nativeElement.disabled = isDisabled;
-  }
-  ngOnDestroy() {
-    if (this.statusChanges) {
-      this.statusChanges.unsubscribe();
-    }
-  }
-  ngAfterViewInit() {
-    let ngControl;
-    try {
-      ngControl = this.injector.get(NgControl);
-    } catch {
-    }
-    if (!ngControl) {
-      return;
-    }
-    if (ngControl.statusChanges) {
-      this.statusChanges = ngControl.statusChanges.subscribe(() => setIonicClasses(this.elementRef));
-    }
-    const formControl = ngControl.control;
-    if (formControl) {
-      const methodsToPatch = ["markAsTouched", "markAllAsTouched", "markAsUntouched", "markAsDirty", "markAsPristine"];
-      methodsToPatch.forEach((method) => {
-        if (typeof formControl[method] !== "undefined") {
-          const oldFn = formControl[method].bind(formControl);
-          formControl[method] = (...params) => {
-            oldFn(...params);
-            setIonicClasses(this.elementRef);
-          };
-        }
-      });
-    }
-  }
-};
-/** @nocollapse */
-__publicField(_ValueAccessor, "ɵfac", function ValueAccessor_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _ValueAccessor)(ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(ElementRef));
-});
-/** @nocollapse */
-__publicField(_ValueAccessor, "ɵdir", ɵɵdefineDirective({
-  type: _ValueAccessor,
-  hostBindings: function ValueAccessor_HostBindings(rf, ctx) {
-    if (rf & 1) {
-      ɵɵlistener("ionBlur", function ValueAccessor_ionBlur_HostBindingHandler($event) {
-        return ctx._handleBlurEvent($event.target);
-      });
-    }
-  },
-  standalone: false
-}));
-var ValueAccessor = _ValueAccessor;
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ValueAccessor, [{
-    type: Directive
-  }], function() {
-    return [{
-      type: Injector
-    }, {
-      type: ElementRef
-    }];
-  }, {
-    _handleBlurEvent: [{
-      type: HostListener,
-      args: ["ionBlur", ["$event.target"]]
-    }]
-  });
-})();
-var setIonicClasses = (element) => {
-  raf2(() => {
-    const input = element.nativeElement;
-    const hasValue = input.value != null && input.value.toString().length > 0;
-    const classes = getClasses(input);
-    setClasses(input, classes);
-    const item = input.closest("ion-item");
-    if (item) {
-      if (hasValue) {
-        setClasses(item, [...classes, "item-has-value"]);
-      } else {
-        setClasses(item, classes);
-      }
-    }
-  });
-};
-var getClasses = (element) => {
-  const classList = element.classList;
-  const classes = [];
-  for (let i = 0; i < classList.length; i++) {
-    const item = classList.item(i);
-    if (item !== null && startsWith(item, "ng-")) {
-      classes.push(`ion-${item.substring(3)}`);
-    }
-  }
-  return classes;
-};
-var setClasses = (element, classes) => {
-  const classList = element.classList;
-  classList.remove("ion-valid", "ion-invalid", "ion-touched", "ion-untouched", "ion-dirty", "ion-pristine");
-  classList.add(...classes);
-};
-var startsWith = (input, search) => {
-  return input.substring(0, search.length) === search;
-};
-var IonicRouteStrategy = class {
-  /**
-   * Whether the given route should detach for later reuse.
-   */
-  shouldDetach(_route) {
-    return false;
-  }
-  /**
-   * Returns `false`, meaning the route (and its subtree) is never reattached
-   */
-  shouldAttach(_route) {
-    return false;
-  }
-  /**
-   * A no-op; the route is never stored since this strategy never detaches routes for later re-use.
-   */
-  store(_route, _detachedTree) {
-    return;
-  }
-  /**
-   * Returns `null` because this strategy does not store routes for later re-use.
-   */
-  retrieve(_route) {
-    return null;
-  }
-  /**
-   * Determines if a route should be reused.
-   * This strategy returns `true` when the future route config and
-   * current route config are identical and all route parameters are identical.
-   */
-  shouldReuseRoute(future, curr) {
-    if (future.routeConfig !== curr.routeConfig) {
-      return false;
-    }
-    const futureParams = future.params;
-    const currentParams = curr.params;
-    const keysA = Object.keys(futureParams);
-    const keysB = Object.keys(currentParams);
-    if (keysA.length !== keysB.length) {
-      return false;
-    }
-    for (const key of keysA) {
-      if (currentParams[key] !== futureParams[key]) {
-        return false;
-      }
-    }
-    return true;
-  }
-};
-var OverlayBaseController = class {
-  ctrl;
-  constructor(ctrl) {
-    this.ctrl = ctrl;
-  }
-  /**
-   * Creates a new overlay
-   */
-  create(opts) {
-    return this.ctrl.create(opts || {});
-  }
-  /**
-   * When `id` is not provided, it dismisses the top overlay.
-   */
-  dismiss(data, role, id) {
-    return this.ctrl.dismiss(data, role, id);
-  }
-  /**
-   * Returns the top overlay.
-   */
-  getTop() {
-    return this.ctrl.getTop();
-  }
-};
 
 // node_modules/@ionic/core/components/index7.js
 var arrowBackSharp = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path stroke-linecap='square' stroke-miterlimit='10' stroke-width='48' d='M244 400L100 256l144-144M120 256h292' class='ionicon-fill-none'/></svg>";
@@ -10716,7 +275,7 @@ var getIconMap = () => {
     return CACHED_MAP;
   }
 };
-var getUrl2 = (i) => {
+var getUrl = (i) => {
   let url = getSrc(i.src);
   if (url) {
     return url;
@@ -10943,7 +502,7 @@ var Icon = proxyCustomElement(class Icon2 extends H {
   }
   loadIcon() {
     if (Build.isBrowser && this.isVisible) {
-      const url = getUrl2(this);
+      const url = getUrl(this);
       if (url) {
         if (ioniconContent.has(url)) {
           this.svgContent = ioniconContent.get(url);
@@ -10965,7 +524,7 @@ var Icon = proxyCustomElement(class Icon2 extends H {
     const mode = this.mode || "md";
     const shouldAutoFlip = iconName ? (iconName.includes("arrow") || iconName.includes("chevron")) && flipRtl !== false : false;
     const shouldBeFlippable = flipRtl || shouldAutoFlip;
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       role: "img",
       class: Object.assign(Object.assign({
         [mode]: true
@@ -11107,7 +666,7 @@ var RippleEffect = proxyCustomElement(class RippleEffect2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "40c7f73e7f5f67e29f83e1236a61c6e1c9943c42",
       role: "presentation",
       class: {
@@ -11224,7 +783,7 @@ var BackButton = proxyCustomElement(class BackButton2 extends H {
     const showBackButton = defaultHref !== void 0;
     const mode = getIonMode(this);
     const ariaLabel = inheritedAttributes["aria-label"] || backButtonText || "back";
-    return h(Host2, {
+    return h(Host, {
       key: "5466624a10f1ab56f5469e6dc07080303880f2fe",
       onClick: this.onClick,
       class: createColorClasses(color, {
@@ -11360,9 +919,9 @@ var RouterOutlet = proxyCustomElement(class RouterOutlet2 extends H {
           this.swipeHandler.onStart();
         }
       };
-      this.gesture = (yield import("./swipe-back-BUZJTUWU.js")).createSwipeBackGesture(this.el, () => !this.gestureOrAnimationInProgress && !!this.swipeHandler && this.swipeHandler.canStart(), () => onStart(), (step) => {
-        var _a96;
-        return (_a96 = this.ani) === null || _a96 === void 0 ? void 0 : _a96.progressStep(step);
+      this.gesture = (yield import("./swipe-back-CJJBFXX2.js")).createSwipeBackGesture(this.el, () => !this.gestureOrAnimationInProgress && !!this.swipeHandler && this.swipeHandler.canStart(), () => onStart(), (step) => {
+        var _a91;
+        return (_a91 = this.ani) === null || _a91 === void 0 ? void 0 : _a91.progressStep(step);
       }, (shouldComplete, step, dur) => {
         if (this.ani) {
           this.ani.onFinish(() => {
@@ -11572,7 +1131,7 @@ var Backdrop = proxyCustomElement(class Backdrop2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "7abaf2c310aa399607451b14063265e8a5846938",
       "aria-hidden": "true",
       class: {
@@ -11916,7 +1475,7 @@ var iosEnterAnimation = (baseEl, opts) => {
     opacity: 1
   });
   !expandToScroll && (contentAnimation === null || contentAnimation === void 0 ? void 0 : contentAnimation.addElement(baseEl.querySelector(".ion-page")));
-  const baseAnimation2 = createAnimation("entering-base").addElement(baseEl).easing("cubic-bezier(0.32,0.72,0,1)").duration(500).addAnimation([wrapperAnimation]).beforeAddWrite(() => {
+  const baseAnimation = createAnimation("entering-base").addElement(baseEl).easing("cubic-bezier(0.32,0.72,0,1)").duration(500).addAnimation([wrapperAnimation]).beforeAddWrite(() => {
     if (expandToScroll) {
       return;
     }
@@ -11933,10 +1492,10 @@ var iosEnterAnimation = (baseEl, opts) => {
     }
   });
   if (contentAnimation) {
-    baseAnimation2.addAnimation(contentAnimation);
+    baseAnimation.addAnimation(contentAnimation);
   }
   if (presentingEl) {
-    const isMobile2 = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 768;
     const hasCardModal = presentingEl.tagName === "ION-MODAL" && presentingEl.presentingElement !== void 0;
     const presentingElRoot = getElementRoot(presentingEl);
     const presentingAnimation = createAnimation().beforeStyles({
@@ -11945,7 +1504,7 @@ var iosEnterAnimation = (baseEl, opts) => {
       overflow: "hidden"
     });
     const bodyEl = document.body;
-    if (isMobile2) {
+    if (isMobile) {
       const transformOffset = !CSS.supports("width", "max(0px, 1px)") ? "30px" : "max(30px, var(--ion-safe-area-top))";
       const modalTransform = hasCardModal ? "-10px" : transformOffset;
       const toPresentingScale = SwipeToCloseDefaults.MIN_PRESENTING_SCALE;
@@ -11963,9 +1522,9 @@ var iosEnterAnimation = (baseEl, opts) => {
         transform: finalTransform,
         borderRadius: "10px 10px 0 0"
       }]);
-      baseAnimation2.addAnimation(presentingAnimation);
+      baseAnimation.addAnimation(presentingAnimation);
     } else {
-      baseAnimation2.addAnimation(backdropAnimation);
+      baseAnimation.addAnimation(backdropAnimation);
       if (!hasCardModal) {
         wrapperAnimation.fromTo("opacity", "0", "1");
       } else {
@@ -11993,13 +1552,13 @@ var iosEnterAnimation = (baseEl, opts) => {
           opacity: "0",
           transform: finalTransform
         }]);
-        baseAnimation2.addAnimation([presentingAnimation, shadowAnimation]);
+        baseAnimation.addAnimation([presentingAnimation, shadowAnimation]);
       }
     }
   } else {
-    baseAnimation2.addAnimation(backdropAnimation);
+    baseAnimation.addAnimation(backdropAnimation);
   }
-  return baseAnimation2;
+  return baseAnimation;
 };
 var createLeaveAnimation$1 = () => {
   const backdropAnimation = createAnimation().fromTo("opacity", "var(--backdrop-opacity)", 0);
@@ -12024,7 +1583,7 @@ var iosLeaveAnimation = (baseEl, opts, duration = 500) => {
   wrapperAnimation.addElement(root.querySelectorAll(".modal-wrapper, .modal-shadow")).beforeStyles({
     opacity: 1
   });
-  const baseAnimation2 = createAnimation("leaving-base").addElement(baseEl).easing("cubic-bezier(0.32,0.72,0,1)").duration(duration).addAnimation(wrapperAnimation).beforeAddWrite(() => {
+  const baseAnimation = createAnimation("leaving-base").addElement(baseEl).easing("cubic-bezier(0.32,0.72,0,1)").duration(duration).addAnimation(wrapperAnimation).beforeAddWrite(() => {
     if (expandToScroll) {
       return;
     }
@@ -12040,7 +1599,7 @@ var iosLeaveAnimation = (baseEl, opts, duration = 500) => {
     }
   });
   if (presentingEl) {
-    const isMobile2 = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 768;
     const hasCardModal = presentingEl.tagName === "ION-MODAL" && presentingEl.presentingElement !== void 0;
     const presentingElRoot = getElementRoot(presentingEl);
     const presentingAnimation = createAnimation().beforeClearStyles(["transform"]).afterClearStyles(["transform"]).onFinish((currentStep) => {
@@ -12054,7 +1613,7 @@ var iosLeaveAnimation = (baseEl, opts, duration = 500) => {
       }
     });
     const bodyEl = document.body;
-    if (isMobile2) {
+    if (isMobile) {
       const transformOffset = !CSS.supports("width", "max(0px, 1px)") ? "30px" : "max(30px, var(--ion-safe-area-top))";
       const modalTransform = hasCardModal ? "-10px" : transformOffset;
       const toPresentingScale = SwipeToCloseDefaults.MIN_PRESENTING_SCALE;
@@ -12070,9 +1629,9 @@ var iosLeaveAnimation = (baseEl, opts, duration = 500) => {
         transform: "translateY(0px) scale(1)",
         borderRadius: "0px"
       }]);
-      baseAnimation2.addAnimation(presentingAnimation);
+      baseAnimation.addAnimation(presentingAnimation);
     } else {
-      baseAnimation2.addAnimation(backdropAnimation);
+      baseAnimation.addAnimation(backdropAnimation);
       if (!hasCardModal) {
         wrapperAnimation.fromTo("opacity", "1", "0");
       } else {
@@ -12100,13 +1659,13 @@ var iosLeaveAnimation = (baseEl, opts, duration = 500) => {
           opacity: "1",
           transform: "translateY(0) scale(1)"
         }]);
-        baseAnimation2.addAnimation([presentingAnimation, shadowAnimation]);
+        baseAnimation.addAnimation([presentingAnimation, shadowAnimation]);
       }
     }
   } else {
-    baseAnimation2.addAnimation(backdropAnimation);
+    baseAnimation.addAnimation(backdropAnimation);
   }
-  return baseAnimation2;
+  return baseAnimation;
 };
 var createEnterAnimation = () => {
   const backdropAnimation = createAnimation().fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -12141,7 +1700,7 @@ var mdEnterAnimation = (baseEl, opts) => {
   backdropAnimation.addElement(root.querySelector("ion-backdrop"));
   wrapperAnimation.addElement(root.querySelector(".modal-wrapper"));
   expandToScroll && (contentAnimation === null || contentAnimation === void 0 ? void 0 : contentAnimation.addElement(baseEl.querySelector(".ion-page")));
-  const baseAnimation2 = createAnimation().addElement(baseEl).easing("cubic-bezier(0.36,0.66,0.04,1)").duration(280).addAnimation([backdropAnimation, wrapperAnimation]).beforeAddWrite(() => {
+  const baseAnimation = createAnimation().addElement(baseEl).easing("cubic-bezier(0.36,0.66,0.04,1)").duration(280).addAnimation([backdropAnimation, wrapperAnimation]).beforeAddWrite(() => {
     if (expandToScroll) {
       return;
     }
@@ -12158,9 +1717,9 @@ var mdEnterAnimation = (baseEl, opts) => {
     }
   });
   if (contentAnimation) {
-    baseAnimation2.addAnimation(contentAnimation);
+    baseAnimation.addAnimation(contentAnimation);
   }
-  return baseAnimation2;
+  return baseAnimation;
 };
 var createLeaveAnimation = () => {
   const backdropAnimation = createAnimation().fromTo("opacity", "var(--backdrop-opacity)", 0);
@@ -12190,7 +1749,7 @@ var mdLeaveAnimation = (baseEl, opts) => {
   } = currentBreakpoint !== void 0 ? createSheetLeaveAnimation(opts) : createLeaveAnimation();
   backdropAnimation.addElement(root.querySelector("ion-backdrop"));
   wrapperAnimation.addElement(root.querySelector(".modal-wrapper"));
-  const baseAnimation2 = createAnimation().easing("cubic-bezier(0.47,0,0.745,0.715)").duration(200).addAnimation([backdropAnimation, wrapperAnimation]).beforeAddWrite(() => {
+  const baseAnimation = createAnimation().easing("cubic-bezier(0.47,0,0.745,0.715)").duration(200).addAnimation([backdropAnimation, wrapperAnimation]).beforeAddWrite(() => {
     if (expandToScroll) {
       return;
     }
@@ -12205,7 +1764,7 @@ var mdLeaveAnimation = (baseEl, opts) => {
       page.style.removeProperty("padding-bottom");
     }
   });
-  return baseAnimation2;
+  return baseAnimation;
 };
 var createSheetGesture = (baseEl, backdropEl, wrapperEl, initialBreakpoint, backdropBreakpoint, animation, breakpoints = [], expandToScroll, getCurrentBreakpoint, onDismiss, onBreakpointChange) => {
   const defaultBackdrop = [{
@@ -12581,7 +2140,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
     this.triggerController.removeClickListener();
   }
   componentWillLoad() {
-    var _a96;
+    var _a91;
     const {
       breakpoints,
       initialBreakpoint,
@@ -12608,7 +2167,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
     if (breakpoints !== void 0 && initialBreakpoint !== void 0 && !breakpoints.includes(initialBreakpoint)) {
       printIonWarning("[ion-modal] - Your breakpoints array must include the initialBreakpoint value.");
     }
-    if (!((_a96 = this.htmlAttributes) === null || _a96 === void 0 ? void 0 : _a96.id)) {
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -12719,7 +2278,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
     });
   }
   initSwipeToClose() {
-    var _a96;
+    var _a91;
     if (getIonMode(this) !== "ios") {
       return;
     }
@@ -12736,7 +2295,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
       printIonContentErrorMsg(el);
       return;
     }
-    const statusBarStyle = (_a96 = this.statusBarStyle) !== null && _a96 !== void 0 ? _a96 : Style.Default;
+    const statusBarStyle = (_a91 = this.statusBarStyle) !== null && _a91 !== void 0 ? _a91 : Style.Default;
     this.gesture = createSwipeToCloseGesture(el, ani, statusBarStyle, () => {
       this.gestureAnimationDismissing = true;
       setCardStatusBarDefault(this.statusBarStyle);
@@ -12768,8 +2327,8 @@ var Modal = proxyCustomElement(class Modal2 extends H {
       gesture,
       moveSheetToBreakpoint
     } = createSheetGesture(this.el, this.backdropEl, wrapperEl, initialBreakpoint, backdropBreakpoint, ani, this.sortedBreakpoints, this.expandToScroll, () => {
-      var _a96;
-      return (_a96 = this.currentBreakpoint) !== null && _a96 !== void 0 ? _a96 : 0;
+      var _a91;
+      return (_a91 = this.currentBreakpoint) !== null && _a91 !== void 0 ? _a91 : 0;
     }, () => this.sheetOnDismiss(), (breakpoint) => {
       if (this.currentBreakpoint !== breakpoint) {
         this.currentBreakpoint = breakpoint;
@@ -12805,7 +2364,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
    */
   dismiss(data, role) {
     return __async(this, null, function* () {
-      var _a96;
+      var _a91;
       if (this.gestureAnimationDismissing && role !== GESTURE) {
         return false;
       }
@@ -12827,7 +2386,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
       }
       const dismissed = yield dismiss(this, data, role, "modalLeave", iosLeaveAnimation, mdLeaveAnimation, {
         presentingEl: presentingElement,
-        currentBreakpoint: (_a96 = this.currentBreakpoint) !== null && _a96 !== void 0 ? _a96 : this.initialBreakpoint,
+        currentBreakpoint: (_a91 = this.currentBreakpoint) !== null && _a91 !== void 0 ? _a91 : this.initialBreakpoint,
         backdropBreakpoint: this.backdropBreakpoint,
         expandToScroll: this.expandToScroll
       });
@@ -12938,7 +2497,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
     const mode = getIonMode(this);
     const isCardModal = presentingElement !== void 0 && mode === "ios";
     const isHandleCycle = handleBehavior === "cycle";
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       key: "0991b2e4e32da511e59fb1463b47e4ac1b86d1ca",
       "no-router": true,
       tabindex: "-1"
@@ -13274,10 +2833,10 @@ var focusItem = (item) => {
 var isTriggerElement = (el) => el.hasAttribute("data-ion-popover-trigger");
 var configureKeyboardInteraction = (popoverEl) => {
   const callback = (ev) => __async(null, null, function* () {
-    var _a96;
+    var _a91;
     const activeElement = document.activeElement;
     let items = [];
-    const targetTagName = (_a96 = ev.target) === null || _a96 === void 0 ? void 0 : _a96.tagName;
+    const targetTagName = (_a91 = ev.target) === null || _a91 === void 0 ? void 0 : _a91.tagName;
     if (targetTagName !== "ION-POPOVER" && targetTagName !== "ION-ITEM") {
       return;
     }
@@ -13358,7 +2917,7 @@ var configureKeyboardInteraction = (popoverEl) => {
   return () => popoverEl.removeEventListener("keydown", callback);
 };
 var getPopoverPosition = (isRTL4, contentWidth, contentHeight, arrowWidth, arrowHeight, reference, side, align, defaultPosition, triggerEl, event) => {
-  var _a96;
+  var _a91;
   let referenceCoordinates = {
     top: 0,
     left: 0,
@@ -13388,7 +2947,7 @@ var getPopoverPosition = (isRTL4, contentWidth, contentHeight, arrowWidth, arrow
     case "trigger":
     default:
       const customEv = event;
-      const actualTriggerEl = triggerEl || ((_a96 = customEv === null || customEv === void 0 ? void 0 : customEv.detail) === null || _a96 === void 0 ? void 0 : _a96.ionShadowTarget) || (customEv === null || customEv === void 0 ? void 0 : customEv.target);
+      const actualTriggerEl = triggerEl || ((_a91 = customEv === null || customEv === void 0 ? void 0 : customEv.detail) === null || _a91 === void 0 ? void 0 : _a91.ionShadowTarget) || (customEv === null || customEv === void 0 ? void 0 : customEv.target);
       if (!actualTriggerEl) {
         return defaultPosition;
       }
@@ -13650,7 +3209,7 @@ var shouldShowArrow = (side, didAdjustBounds = false, ev, trigger) => {
 };
 var POPOVER_IOS_BODY_PADDING = 5;
 var iosEnterAnimation2 = (baseEl, opts) => {
-  var _a96;
+  var _a91;
   const {
     event: ev,
     size,
@@ -13666,7 +3225,7 @@ var iosEnterAnimation2 = (baseEl, opts) => {
   const root = getElementRoot(baseEl);
   const contentEl = root.querySelector(".popover-content");
   const arrowEl = root.querySelector(".popover-arrow");
-  const referenceSizeEl = trigger || ((_a96 = ev === null || ev === void 0 ? void 0 : ev.detail) === null || _a96 === void 0 ? void 0 : _a96.ionShadowTarget) || (ev === null || ev === void 0 ? void 0 : ev.target);
+  const referenceSizeEl = trigger || ((_a91 = ev === null || ev === void 0 ? void 0 : ev.detail) === null || _a91 === void 0 ? void 0 : _a91.ionShadowTarget) || (ev === null || ev === void 0 ? void 0 : ev.target);
   const {
     contentWidth,
     contentHeight
@@ -13696,14 +3255,14 @@ var iosEnterAnimation2 = (baseEl, opts) => {
     arrowLeft,
     addPopoverBottomClass
   } = calculateWindowAdjustment(side, results.top, results.left, padding, bodyWidth, bodyHeight, contentWidth, contentHeight, margin, results.originX, results.originY, results.referenceCoordinates, results.arrowTop, results.arrowLeft, arrowHeight);
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const contentAnimation = createAnimation();
   backdropAnimation.addElement(root.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
     "pointer-events": "none"
   }).afterClearStyles(["pointer-events"]);
   contentAnimation.addElement(root.querySelector(".popover-arrow")).addElement(root.querySelector(".popover-content")).fromTo("opacity", 0.01, 1);
-  return baseAnimation2.easing("ease").duration(100).beforeAddWrite(() => {
+  return baseAnimation.easing("ease").duration(100).beforeAddWrite(() => {
     if (size === "cover") {
       baseEl.style.setProperty("--width", `${contentWidth}px`);
     }
@@ -13741,12 +3300,12 @@ var iosLeaveAnimation2 = (baseEl) => {
   const root = getElementRoot(baseEl);
   const contentEl = root.querySelector(".popover-content");
   const arrowEl = root.querySelector(".popover-arrow");
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const contentAnimation = createAnimation();
   backdropAnimation.addElement(root.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   contentAnimation.addElement(root.querySelector(".popover-arrow")).addElement(root.querySelector(".popover-content")).fromTo("opacity", 0.99, 0);
-  return baseAnimation2.easing("ease").afterAddWrite(() => {
+  return baseAnimation.easing("ease").afterAddWrite(() => {
     baseEl.style.removeProperty("--width");
     baseEl.classList.remove("popover-bottom");
     contentEl.style.removeProperty("top");
@@ -13762,7 +3321,7 @@ var iosLeaveAnimation2 = (baseEl) => {
 };
 var POPOVER_MD_BODY_PADDING = 12;
 var mdEnterAnimation2 = (baseEl, opts) => {
-  var _a96;
+  var _a91;
   const {
     event: ev,
     size,
@@ -13777,7 +3336,7 @@ var mdEnterAnimation2 = (baseEl, opts) => {
   const bodyHeight = doc2.defaultView.innerHeight;
   const root = getElementRoot(baseEl);
   const contentEl = root.querySelector(".popover-content");
-  const referenceSizeEl = trigger || ((_a96 = ev === null || ev === void 0 ? void 0 : ev.detail) === null || _a96 === void 0 ? void 0 : _a96.ionShadowTarget) || (ev === null || ev === void 0 ? void 0 : ev.target);
+  const referenceSizeEl = trigger || ((_a91 = ev === null || ev === void 0 ? void 0 : ev.detail) === null || _a91 === void 0 ? void 0 : _a91.ionShadowTarget) || (ev === null || ev === void 0 ? void 0 : ev.target);
   const {
     contentWidth,
     contentHeight
@@ -13797,7 +3356,7 @@ var mdEnterAnimation2 = (baseEl, opts) => {
     left,
     bottom
   } = calculateWindowAdjustment(side, results.top, results.left, padding, bodyWidth, bodyHeight, contentWidth, contentHeight, 0, results.originX, results.originY, results.referenceCoordinates);
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const contentAnimation = createAnimation();
@@ -13816,7 +3375,7 @@ var mdEnterAnimation2 = (baseEl, opts) => {
     }
   }).fromTo("transform", "scale(0.8)", "scale(1)");
   viewportAnimation.addElement(root.querySelector(".popover-viewport")).fromTo("opacity", 0.01, 1);
-  return baseAnimation2.easing("cubic-bezier(0.36,0.66,0.04,1)").duration(300).beforeAddWrite(() => {
+  return baseAnimation.easing("cubic-bezier(0.36,0.66,0.04,1)").duration(300).beforeAddWrite(() => {
     if (size === "cover") {
       baseEl.style.setProperty("--width", `${contentWidth}px`);
     }
@@ -13828,12 +3387,12 @@ var mdEnterAnimation2 = (baseEl, opts) => {
 var mdLeaveAnimation2 = (baseEl) => {
   const root = getElementRoot(baseEl);
   const contentEl = root.querySelector(".popover-content");
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(root.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   wrapperAnimation.addElement(root.querySelector(".popover-wrapper")).fromTo("opacity", 0.99, 0);
-  return baseAnimation2.easing("ease").afterAddWrite(() => {
+  return baseAnimation.easing("ease").afterAddWrite(() => {
     baseEl.style.removeProperty("--width");
     baseEl.classList.remove("popover-bottom");
     contentEl.style.removeProperty("top");
@@ -13982,11 +3541,11 @@ var Popover = proxyCustomElement(class Popover2 extends H {
     }
   }
   componentWillLoad() {
-    var _a96, _b;
+    var _a91, _b;
     const {
       el
     } = this;
-    const popoverId = (_b = (_a96 = this.htmlAttributes) === null || _a96 === void 0 ? void 0 : _a96.id) !== null && _b !== void 0 ? _b : setOverlayId(el);
+    const popoverId = (_b = (_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id) !== null && _b !== void 0 ? _b : setOverlayId(el);
     this.parentPopover = el.closest(`ion-popover:not(#${popoverId})`);
     if (this.alignment === void 0) {
       this.alignment = getIonMode(this) === "ios" ? "center" : "start";
@@ -14166,7 +3725,7 @@ var Popover = proxyCustomElement(class Popover2 extends H {
     } = this;
     const desktop = isPlatform("desktop");
     const enableArrow = arrow && !parentPopover;
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       key: "ff24e8d9677711248a36994cce568e74ba151499",
       "aria-modal": "true",
       "no-router": true,
@@ -14501,8 +4060,8 @@ var Accordion = proxyCustomElement(class Accordion2 extends H {
     this.updateState();
   }
   connectedCallback() {
-    var _a96;
-    const accordionGroupEl = this.accordionGroupEl = (_a96 = this.el) === null || _a96 === void 0 ? void 0 : _a96.closest("ion-accordion-group");
+    var _a91;
+    const accordionGroupEl = this.accordionGroupEl = (_a91 = this.el) === null || _a91 === void 0 ? void 0 : _a91.closest("ion-accordion-group");
     if (accordionGroupEl) {
       this.updateState(true);
       addEventListener(accordionGroupEl, "ionValueChange", this.updateListener);
@@ -14546,7 +4105,7 @@ var Accordion = proxyCustomElement(class Accordion2 extends H {
     const headerPart = expanded ? "header expanded" : "header";
     const contentPart = expanded ? "content expanded" : "content";
     this.setAria(expanded);
-    return h(Host2, {
+    return h(Host, {
       key: "073e1d02c18dcbc20c68648426e87c14750c031d",
       class: {
         [mode]: true,
@@ -14826,7 +4385,7 @@ var AccordionGroup = proxyCustomElement(class AccordionGroup2 extends H {
       expand
     } = this;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "d1a79a93179474fbba66fcf11a92f4871dacc975",
       class: {
         [mode]: true,
@@ -15036,40 +4595,40 @@ var createButtonActiveGesture = (el, isButton) => {
 
 // node_modules/@ionic/core/components/action-sheet.js
 var iosEnterAnimation3 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
     "pointer-events": "none"
   }).afterClearStyles(["pointer-events"]);
   wrapperAnimation.addElement(baseEl.querySelector(".action-sheet-wrapper")).fromTo("transform", "translateY(100%)", "translateY(0%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var iosLeaveAnimation3 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   wrapperAnimation.addElement(baseEl.querySelector(".action-sheet-wrapper")).fromTo("transform", "translateY(0%)", "translateY(100%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(450).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(450).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdEnterAnimation3 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
     "pointer-events": "none"
   }).afterClearStyles(["pointer-events"]);
   wrapperAnimation.addElement(baseEl.querySelector(".action-sheet-wrapper")).fromTo("transform", "translateY(100%)", "translateY(0%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdLeaveAnimation3 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   wrapperAnimation.addElement(baseEl.querySelector(".action-sheet-wrapper")).fromTo("transform", "translateY(0%)", "translateY(100%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(450).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(450).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var actionSheetIosCss = '.sc-ion-action-sheet-ios-h{--color:initial;--button-color-activated:var(--button-color);--button-color-focused:var(--button-color);--button-color-hover:var(--button-color);--button-color-selected:var(--button-color);--min-width:auto;--width:100%;--max-width:500px;--min-height:auto;--height:auto;--max-height:calc(100% - (var(--ion-safe-area-top) + var(--ion-safe-area-bottom)));-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;left:0;right:0;top:0;bottom:0;display:block;position:fixed;outline:none;font-family:var(--ion-font-family, inherit);-ms-touch-action:none;touch-action:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1001}.overlay-hidden.sc-ion-action-sheet-ios-h{display:none}.action-sheet-wrapper.sc-ion-action-sheet-ios{left:0;right:0;bottom:0;-webkit-transform:translate3d(0,  100%,  0);transform:translate3d(0,  100%,  0);display:block;position:absolute;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);z-index:10;pointer-events:none}.action-sheet-button.sc-ion-action-sheet-ios{display:block;position:relative;width:100%;border:0;outline:none;background:var(--button-background);color:var(--button-color);font-family:inherit;overflow:hidden}.action-sheet-button.sc-ion-action-sheet-ios:disabled{color:var(--button-color-disabled);opacity:0.4}.action-sheet-button-inner.sc-ion-action-sheet-ios{display:-ms-flexbox;display:flex;position:relative;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-negative:0;flex-shrink:0;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;pointer-events:none;width:100%;height:100%;z-index:1}.action-sheet-container.sc-ion-action-sheet-ios{display:-ms-flexbox;display:flex;-ms-flex-flow:column;flex-flow:column;-ms-flex-pack:end;justify-content:flex-end;height:100%;max-height:calc(100vh - (var(--ion-safe-area-top, 0) + var(--ion-safe-area-bottom, 0)));max-height:calc(100dvh - (var(--ion-safe-area-top, 0) + var(--ion-safe-area-bottom, 0)))}.action-sheet-group.sc-ion-action-sheet-ios{-ms-flex-negative:2;flex-shrink:2;overscroll-behavior-y:contain;overflow-y:auto;-webkit-overflow-scrolling:touch;pointer-events:all;background:var(--background)}@media (any-pointer: coarse){.action-sheet-group.sc-ion-action-sheet-ios::-webkit-scrollbar{display:none}}.action-sheet-group-cancel.sc-ion-action-sheet-ios{-ms-flex-negative:0;flex-shrink:0;overflow:hidden}.action-sheet-button.sc-ion-action-sheet-ios::after{left:0;right:0;top:0;bottom:0;position:absolute;content:"";opacity:0}.action-sheet-selected.sc-ion-action-sheet-ios{color:var(--button-color-selected)}.action-sheet-selected.sc-ion-action-sheet-ios::after{background:var(--button-background-selected);opacity:var(--button-background-selected-opacity)}.action-sheet-button.ion-activated.sc-ion-action-sheet-ios{color:var(--button-color-activated)}.action-sheet-button.ion-activated.sc-ion-action-sheet-ios::after{background:var(--button-background-activated);opacity:var(--button-background-activated-opacity)}.action-sheet-button.ion-focused.sc-ion-action-sheet-ios{color:var(--button-color-focused)}.action-sheet-button.ion-focused.sc-ion-action-sheet-ios::after{background:var(--button-background-focused);opacity:var(--button-background-focused-opacity)}@media (any-hover: hover){.action-sheet-button.sc-ion-action-sheet-ios:not(:disabled):hover{color:var(--button-color-hover)}.action-sheet-button.sc-ion-action-sheet-ios:not(:disabled):hover::after{background:var(--button-background-hover);opacity:var(--button-background-hover-opacity)}}.sc-ion-action-sheet-ios-h{--background:var(--ion-overlay-background-color, var(--ion-color-step-100, var(--ion-background-color-step-100, #f9f9f9)));--backdrop-opacity:var(--ion-backdrop-opacity, 0.4);--button-background:linear-gradient(0deg, rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08), rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08) 50%, transparent 50%) bottom/100% 1px no-repeat transparent;--button-background-activated:var(--ion-text-color, #000);--button-background-activated-opacity:.08;--button-background-hover:currentColor;--button-background-hover-opacity:.04;--button-background-focused:currentColor;--button-background-focused-opacity:.12;--button-background-selected:var(--ion-color-step-150, var(--ion-background-color-step-150, var(--ion-background-color, #fff)));--button-background-selected-opacity:1;--button-color:var(--ion-color-primary, #0054e9);--button-color-disabled:var(--ion-color-step-850, var(--ion-text-color-step-150, #262626));--color:var(--ion-color-step-400, var(--ion-text-color-step-600, #999999));text-align:center}.action-sheet-wrapper.sc-ion-action-sheet-ios{-webkit-margin-start:auto;margin-inline-start:auto;-webkit-margin-end:auto;margin-inline-end:auto;margin-top:var(--ion-safe-area-top, 0);padding-bottom:var(--ion-safe-area-bottom, 0);-webkit-box-sizing:content-box;box-sizing:content-box}.action-sheet-container.sc-ion-action-sheet-ios{-webkit-padding-start:8px;padding-inline-start:8px;-webkit-padding-end:8px;padding-inline-end:8px;padding-top:0;padding-bottom:0}.action-sheet-group.sc-ion-action-sheet-ios{border-radius:13px;margin-bottom:8px}.action-sheet-group.sc-ion-action-sheet-ios:first-child{margin-top:10px}.action-sheet-group.sc-ion-action-sheet-ios:last-child{margin-bottom:10px}@supports ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))){.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-group.sc-ion-action-sheet-ios{background-color:transparent;-webkit-backdrop-filter:saturate(280%) blur(20px);backdrop-filter:saturate(280%) blur(20px)}.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-title.sc-ion-action-sheet-ios,.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-button.sc-ion-action-sheet-ios{background-color:transparent;background-image:-webkit-gradient(linear, left bottom, left top, from(rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8)), to(rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8))), -webkit-gradient(linear, left bottom, left top, from(rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.4)), color-stop(50%, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.4)), color-stop(50%, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8)));background-image:linear-gradient(0deg, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8), rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8) 100%), linear-gradient(0deg, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.4), rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.4) 50%, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8) 50%);background-repeat:no-repeat;background-position:top, bottom;background-size:100% calc(100% - 1px), 100% 1px;-webkit-backdrop-filter:saturate(120%);backdrop-filter:saturate(120%)}.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-button.ion-activated.sc-ion-action-sheet-ios{background-color:rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.7);background-image:none}.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-cancel.sc-ion-action-sheet-ios{background:var(--button-background-selected)}}.action-sheet-title.sc-ion-action-sheet-ios{background:-webkit-gradient(linear, left bottom, left top, from(rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08)), color-stop(50%, rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08)), color-stop(50%, transparent)) bottom/100% 1px no-repeat transparent;background:linear-gradient(0deg, rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08), rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08) 50%, transparent 50%) bottom/100% 1px no-repeat transparent}.action-sheet-title.sc-ion-action-sheet-ios{-webkit-padding-start:10px;padding-inline-start:10px;-webkit-padding-end:10px;padding-inline-end:10px;padding-top:14px;padding-bottom:13px;color:var(--color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-size:max(13px, 0.8125rem);font-weight:400;text-align:center}.action-sheet-title.action-sheet-has-sub-title.sc-ion-action-sheet-ios{font-weight:600}.action-sheet-sub-title.sc-ion-action-sheet-ios{padding-left:0;padding-right:0;padding-top:6px;padding-bottom:0;font-size:max(13px, 0.8125rem);font-weight:400}.action-sheet-button.sc-ion-action-sheet-ios{-webkit-padding-start:14px;padding-inline-start:14px;-webkit-padding-end:14px;padding-inline-end:14px;padding-top:14px;padding-bottom:14px;min-height:56px;font-size:max(20px, 1.25rem);contain:content}.action-sheet-button.sc-ion-action-sheet-ios .action-sheet-icon.sc-ion-action-sheet-ios{-webkit-margin-end:0.3em;margin-inline-end:0.3em;font-size:max(28px, 1.75rem);pointer-events:none}.action-sheet-button.sc-ion-action-sheet-ios:last-child{background-image:none}.action-sheet-selected.sc-ion-action-sheet-ios{font-weight:bold}.action-sheet-cancel.sc-ion-action-sheet-ios{font-weight:600}.action-sheet-cancel.sc-ion-action-sheet-ios::after{background:var(--button-background-selected);opacity:var(--button-background-selected-opacity)}.action-sheet-destructive.sc-ion-action-sheet-ios,.action-sheet-destructive.ion-activated.sc-ion-action-sheet-ios,.action-sheet-destructive.ion-focused.sc-ion-action-sheet-ios{color:var(--ion-color-danger, #c5000f)}@media (any-hover: hover){.action-sheet-destructive.sc-ion-action-sheet-ios:hover{color:var(--ion-color-danger, #c5000f)}}';
 var IonActionSheetIosStyle0 = actionSheetIosCss;
@@ -15226,8 +4785,8 @@ var ActionSheet = proxyCustomElement(class ActionSheet2 extends H {
     this.triggerController.removeClickListener();
   }
   componentWillLoad() {
-    var _a96;
-    if (!((_a96 = this.htmlAttributes) === null || _a96 === void 0 ? void 0 : _a96.id)) {
+    var _a91;
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -15261,7 +4820,7 @@ var ActionSheet = proxyCustomElement(class ActionSheet2 extends H {
     const cancelButton = allButtons.find((b) => b.role === "cancel");
     const buttons = allButtons.filter((b) => b.role !== "cancel");
     const headerID = `action-sheet-${overlayIndex}-header`;
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       key: "7bbd202ca9e19727e7514abbe073687d982f80c3",
       role: "dialog",
       "aria-modal": "true",
@@ -15430,7 +4989,7 @@ var defineCustomElement13 = defineCustomElement12;
 
 // node_modules/@ionic/core/components/alert.js
 var iosEnterAnimation4 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -15445,10 +5004,10 @@ var iosEnterAnimation4 = (baseEl) => {
     opacity: "1",
     transform: "scale(1)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var iosLeaveAnimation4 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
@@ -15461,10 +5020,10 @@ var iosLeaveAnimation4 = (baseEl) => {
     opacity: 0,
     transform: "scale(0.9)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdEnterAnimation4 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -15479,15 +5038,15 @@ var mdEnterAnimation4 = (baseEl) => {
     opacity: "1",
     transform: "scale(1)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(150).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(150).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdLeaveAnimation4 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   wrapperAnimation.addElement(baseEl.querySelector(".alert-wrapper")).fromTo("opacity", 0.99, 0);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(150).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(150).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var alertIosCss = ".sc-ion-alert-ios-h{--min-width:250px;--width:auto;--min-height:auto;--height:auto;--max-height:90%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;left:0;right:0;top:0;bottom:0;display:-ms-flexbox;display:flex;position:absolute;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;outline:none;font-family:var(--ion-font-family, inherit);contain:strict;-ms-touch-action:none;touch-action:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1001}.overlay-hidden.sc-ion-alert-ios-h{display:none}.alert-top.sc-ion-alert-ios-h{padding-top:50px;-ms-flex-align:start;align-items:flex-start}.alert-wrapper.sc-ion-alert-ios{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);background:var(--background);contain:content;opacity:0;z-index:10}.alert-title.sc-ion-alert-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0}.alert-sub-title.sc-ion-alert-ios{margin-left:0;margin-right:0;margin-top:5px;margin-bottom:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;font-weight:normal}.alert-message.sc-ion-alert-ios,.alert-input-group.sc-ion-alert-ios{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-overflow-scrolling:touch;overflow-y:auto;overscroll-behavior-y:contain}.alert-checkbox-label.sc-ion-alert-ios,.alert-radio-label.sc-ion-alert-ios{overflow-wrap:anywhere}@media (any-pointer: coarse){.alert-checkbox-group.sc-ion-alert-ios::-webkit-scrollbar,.alert-radio-group.sc-ion-alert-ios::-webkit-scrollbar,.alert-message.sc-ion-alert-ios::-webkit-scrollbar{display:none}}.alert-input.sc-ion-alert-ios{padding-left:0;padding-right:0;padding-top:10px;padding-bottom:10px;width:100%;border:0;background:inherit;font:inherit;-webkit-box-sizing:border-box;box-sizing:border-box}.alert-button-group.sc-ion-alert-ios{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;width:100%}.alert-button-group-vertical.sc-ion-alert-ios{-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:nowrap;flex-wrap:nowrap}.alert-button.sc-ion-alert-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;display:block;border:0;font-size:0.875rem;line-height:1.25rem;z-index:0}.alert-button.ion-focused.sc-ion-alert-ios,.alert-tappable.ion-focused.sc-ion-alert-ios{background:var(--ion-color-step-100, var(--ion-background-color-step-100, #e6e6e6))}.alert-button-inner.sc-ion-alert-ios{display:-ms-flexbox;display:flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-negative:0;flex-shrink:0;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%;min-height:inherit}.alert-input-disabled.sc-ion-alert-ios,.alert-checkbox-button-disabled.sc-ion-alert-ios .alert-button-inner.sc-ion-alert-ios,.alert-radio-button-disabled.sc-ion-alert-ios .alert-button-inner.sc-ion-alert-ios{cursor:default;opacity:0.5;pointer-events:none}.alert-tappable.sc-ion-alert-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;display:-ms-flexbox;display:flex;width:100%;border:0;background:transparent;font-size:inherit;line-height:initial;text-align:start;-webkit-appearance:none;-moz-appearance:none;appearance:none;contain:content}.alert-button.sc-ion-alert-ios,.alert-checkbox.sc-ion-alert-ios,.alert-input.sc-ion-alert-ios,.alert-radio.sc-ion-alert-ios{outline:none}.alert-radio-icon.sc-ion-alert-ios,.alert-checkbox-icon.sc-ion-alert-ios,.alert-checkbox-inner.sc-ion-alert-ios{-webkit-box-sizing:border-box;box-sizing:border-box}textarea.alert-input.sc-ion-alert-ios{min-height:37px;resize:none}.sc-ion-alert-ios-h{--background:var(--ion-overlay-background-color, var(--ion-color-step-100, var(--ion-background-color-step-100, #f9f9f9)));--max-width:clamp(270px, 16.875rem, 324px);--backdrop-opacity:var(--ion-backdrop-opacity, 0.3);font-size:max(14px, 0.875rem)}.alert-wrapper.sc-ion-alert-ios{border-radius:13px;-webkit-box-shadow:none;box-shadow:none;overflow:hidden}.alert-button.sc-ion-alert-ios .alert-button-inner.sc-ion-alert-ios{pointer-events:none}@supports ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))){.alert-translucent.sc-ion-alert-ios-h .alert-wrapper.sc-ion-alert-ios{background:rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.9);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}}.alert-head.sc-ion-alert-ios{-webkit-padding-start:16px;padding-inline-start:16px;-webkit-padding-end:16px;padding-inline-end:16px;padding-top:12px;padding-bottom:7px;text-align:center}.alert-title.sc-ion-alert-ios{margin-top:8px;color:var(--ion-text-color, #000);font-size:max(17px, 1.0625rem);font-weight:600}.alert-sub-title.sc-ion-alert-ios{color:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666));font-size:max(14px, 0.875rem)}.alert-message.sc-ion-alert-ios,.alert-input-group.sc-ion-alert-ios{-webkit-padding-start:16px;padding-inline-start:16px;-webkit-padding-end:16px;padding-inline-end:16px;padding-top:0;padding-bottom:21px;color:var(--ion-text-color, #000);font-size:max(13px, 0.8125rem);text-align:center}.alert-message.sc-ion-alert-ios{max-height:240px}.alert-message.sc-ion-alert-ios:empty{padding-left:0;padding-right:0;padding-top:0;padding-bottom:12px}.alert-input.sc-ion-alert-ios{border-radius:7px;margin-top:10px;-webkit-padding-start:7px;padding-inline-start:7px;-webkit-padding-end:7px;padding-inline-end:7px;padding-top:7px;padding-bottom:7px;border:0.55px solid var(--ion-color-step-250, var(--ion-background-color-step-250, #bfbfbf));background-color:var(--ion-background-color, #fff);-webkit-appearance:none;-moz-appearance:none;appearance:none;font-size:1rem}.alert-input.sc-ion-alert-ios::-webkit-input-placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios::-moz-placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios:-ms-input-placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios::-ms-input-placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios::placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios::-ms-clear{display:none}.alert-input.sc-ion-alert-ios::-webkit-date-and-time-value{height:18px}.alert-radio-group.sc-ion-alert-ios,.alert-checkbox-group.sc-ion-alert-ios{-ms-scroll-chaining:none;overscroll-behavior:contain;max-height:240px;border-top:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2);overflow-y:auto;-webkit-overflow-scrolling:touch}.alert-tappable.sc-ion-alert-ios{min-height:44px}.alert-radio-label.sc-ion-alert-ios{-webkit-padding-start:13px;padding-inline-start:13px;-webkit-padding-end:13px;padding-inline-end:13px;padding-top:13px;padding-bottom:13px;-ms-flex:1;flex:1;-ms-flex-order:0;order:0;color:var(--ion-text-color, #000)}[aria-checked=true].sc-ion-alert-ios .alert-radio-label.sc-ion-alert-ios{color:var(--ion-color-primary, #0054e9)}.alert-radio-icon.sc-ion-alert-ios{position:relative;-ms-flex-order:1;order:1;min-width:30px}[aria-checked=true].sc-ion-alert-ios .alert-radio-inner.sc-ion-alert-ios{top:-7px;position:absolute;width:6px;height:12px;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-width:2px;border-top-width:0;border-left-width:0;border-style:solid;border-color:var(--ion-color-primary, #0054e9)}[aria-checked=true].sc-ion-alert-ios .alert-radio-inner.sc-ion-alert-ios{inset-inline-start:7px}.alert-checkbox-label.sc-ion-alert-ios{-webkit-padding-start:13px;padding-inline-start:13px;-webkit-padding-end:13px;padding-inline-end:13px;padding-top:13px;padding-bottom:13px;-ms-flex:1;flex:1;color:var(--ion-text-color, #000)}.alert-checkbox-icon.sc-ion-alert-ios{border-radius:50%;-webkit-margin-start:16px;margin-inline-start:16px;-webkit-margin-end:6px;margin-inline-end:6px;margin-top:10px;margin-bottom:10px;position:relative;width:min(1.375rem, 55.836px);height:min(1.375rem, 55.836px);border-width:0.125rem;border-style:solid;border-color:var(--ion-item-border-color, var(--ion-border-color, var(--ion-color-step-250, var(--ion-background-color-step-250, #c8c7cc))));background-color:var(--ion-item-background, var(--ion-background-color, #fff));contain:strict}[aria-checked=true].sc-ion-alert-ios .alert-checkbox-icon.sc-ion-alert-ios{border-color:var(--ion-color-primary, #0054e9);background-color:var(--ion-color-primary, #0054e9)}[aria-checked=true].sc-ion-alert-ios .alert-checkbox-inner.sc-ion-alert-ios{top:calc(min(1.375rem, 55.836px) / 8);position:absolute;width:calc(min(1.375rem, 55.836px) / 6 + 1px);height:calc(min(1.375rem, 55.836px) * 0.5);-webkit-transform:rotate(45deg);transform:rotate(45deg);border-width:0.125rem;border-top-width:0;border-left-width:0;border-style:solid;border-color:var(--ion-background-color, #fff)}[aria-checked=true].sc-ion-alert-ios .alert-checkbox-inner.sc-ion-alert-ios{inset-inline-start:calc(min(1.375rem, 55.836px) / 3)}.alert-button-group.sc-ion-alert-ios{-webkit-margin-end:-0.55px;margin-inline-end:-0.55px;-ms-flex-wrap:wrap;flex-wrap:wrap}.alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios{border-right:none}[dir=rtl].sc-ion-alert-ios-h .alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child,[dir=rtl] .sc-ion-alert-ios-h .alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child{border-right:none}[dir=rtl].sc-ion-alert-ios .alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child{border-right:none}@supports selector(:dir(rtl)){.alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child:dir(rtl){border-right:none}}.alert-button.sc-ion-alert-ios{-webkit-padding-start:8px;padding-inline-start:8px;-webkit-padding-end:8px;padding-inline-end:8px;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border-radius:0;-ms-flex:1 1 auto;flex:1 1 auto;min-width:50%;height:max(44px, 2.75rem);border-top:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2);border-right:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2);background-color:transparent;color:var(--ion-color-primary, #0054e9);font-size:max(17px, 1.0625rem);overflow:hidden}[dir=rtl].sc-ion-alert-ios-h .alert-button.sc-ion-alert-ios:first-child,[dir=rtl] .sc-ion-alert-ios-h .alert-button.sc-ion-alert-ios:first-child{border-right:0}[dir=rtl].sc-ion-alert-ios .alert-button.sc-ion-alert-ios:first-child{border-right:0}@supports selector(:dir(rtl)){.alert-button.sc-ion-alert-ios:first-child:dir(rtl){border-right:0}}.alert-button.sc-ion-alert-ios:last-child{border-right:0;font-weight:bold}[dir=rtl].sc-ion-alert-ios-h .alert-button.sc-ion-alert-ios:last-child,[dir=rtl] .sc-ion-alert-ios-h .alert-button.sc-ion-alert-ios:last-child{border-right:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2)}[dir=rtl].sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child{border-right:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2)}@supports selector(:dir(rtl)){.alert-button.sc-ion-alert-ios:last-child:dir(rtl){border-right:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2)}}.alert-button.ion-activated.sc-ion-alert-ios{background-color:rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.1)}.alert-button-role-destructive.sc-ion-alert-ios,.alert-button-role-destructive.ion-activated.sc-ion-alert-ios,.alert-button-role-destructive.ion-focused.sc-ion-alert-ios{color:var(--ion-color-danger, #c5000f)}";
 var IonAlertIosStyle0 = alertIosCss;
@@ -15559,7 +5118,7 @@ var Alert = proxyCustomElement(class Alert2 extends H {
     }
   }
   onKeydown(ev) {
-    var _a96;
+    var _a91;
     const inputTypes = new Set(this.processedInputs.map((i) => i.type));
     if (inputTypes.has("checkbox") && ev.key === "Enter") {
       ev.preventDefault();
@@ -15568,7 +5127,7 @@ var Alert = proxyCustomElement(class Alert2 extends H {
     if (ev.target.classList.contains("alert-wrapper")) {
       if (ev.key === "Tab" && ev.shiftKey) {
         ev.preventDefault();
-        const lastChildBtn = (_a96 = this.wrapperEl) === null || _a96 === void 0 ? void 0 : _a96.querySelector(".alert-button:last-child");
+        const lastChildBtn = (_a91 = this.wrapperEl) === null || _a91 === void 0 ? void 0 : _a91.querySelector(".alert-button:last-child");
         lastChildBtn.focus();
         return;
       }
@@ -15614,7 +5173,7 @@ var Alert = proxyCustomElement(class Alert2 extends H {
     }
     this.inputType = inputTypes.values().next().value;
     this.processedInputs = inputs.map((i, index) => {
-      var _a96;
+      var _a91;
       return {
         type: i.type || "text",
         name: i.name || `${index}`,
@@ -15627,7 +5186,7 @@ var Alert = proxyCustomElement(class Alert2 extends H {
         handler: i.handler,
         min: i.min,
         max: i.max,
-        cssClass: (_a96 = i.cssClass) !== null && _a96 !== void 0 ? _a96 : "",
+        cssClass: (_a91 = i.cssClass) !== null && _a91 !== void 0 ? _a91 : "",
         attributes: i.attributes || {},
         tabindex: i.type === "radio" && i !== focusable ? -1 : 0
       };
@@ -15638,8 +5197,8 @@ var Alert = proxyCustomElement(class Alert2 extends H {
     this.triggerChanged();
   }
   componentWillLoad() {
-    var _a96;
-    if (!((_a96 = this.htmlAttributes) === null || _a96 === void 0 ? void 0 : _a96.id)) {
+    var _a91;
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
     this.inputsChanged();
@@ -15670,9 +5229,9 @@ var Alert = proxyCustomElement(class Alert2 extends H {
       const unlock = yield this.lockController.lock();
       yield this.delegateController.attachViewToDom();
       yield present(this, "alertEnter", iosEnterAnimation4, mdEnterAnimation4).then(() => {
-        var _a96, _b;
+        var _a91, _b;
         if (this.buttons.length === 1 && this.inputs.length === 0) {
-          const queryBtn = (_a96 = this.wrapperEl) === null || _a96 === void 0 ? void 0 : _a96.querySelector(".alert-button");
+          const queryBtn = (_a91 = this.wrapperEl) === null || _a91 === void 0 ? void 0 : _a91.querySelector(".alert-button");
           queryBtn.focus();
         } else {
           (_b = this.wrapperEl) === null || _b === void 0 ? void 0 : _b.focus();
@@ -15865,7 +5424,7 @@ var Alert = proxyCustomElement(class Alert2 extends H {
     return h("div", {
       class: "alert-input-group"
     }, inputs.map((i) => {
-      var _a96, _b, _c, _d;
+      var _a91, _b, _c, _d;
       if (i.type === "textarea") {
         return h("div", {
           class: "alert-input-wrapper"
@@ -15875,12 +5434,12 @@ var Alert = proxyCustomElement(class Alert2 extends H {
           id: i.id,
           tabIndex: i.tabindex
         }, i.attributes, {
-          disabled: (_b = (_a96 = i.attributes) === null || _a96 === void 0 ? void 0 : _a96.disabled) !== null && _b !== void 0 ? _b : i.disabled,
+          disabled: (_b = (_a91 = i.attributes) === null || _a91 === void 0 ? void 0 : _a91.disabled) !== null && _b !== void 0 ? _b : i.disabled,
           class: inputClass(i),
           onInput: (e) => {
-            var _a97;
+            var _a92;
             i.value = e.target.value;
-            if ((_a97 = i.attributes) === null || _a97 === void 0 ? void 0 : _a97.onInput) {
+            if ((_a92 = i.attributes) === null || _a92 === void 0 ? void 0 : _a92.onInput) {
               i.attributes.onInput(e);
             }
           }
@@ -15900,9 +5459,9 @@ var Alert = proxyCustomElement(class Alert2 extends H {
           disabled: (_d = (_c = i.attributes) === null || _c === void 0 ? void 0 : _c.disabled) !== null && _d !== void 0 ? _d : i.disabled,
           class: inputClass(i),
           onInput: (e) => {
-            var _a97;
+            var _a92;
             i.value = e.target.value;
-            if ((_a97 = i.attributes) === null || _a97 === void 0 ? void 0 : _a97.onInput) {
+            if ((_a92 = i.attributes) === null || _a92 === void 0 ? void 0 : _a92.onInput) {
               i.attributes.onInput(e);
             }
           }
@@ -15960,7 +5519,7 @@ var Alert = proxyCustomElement(class Alert2 extends H {
     const subHdrId = `alert-${overlayIndex}-sub-hdr`;
     const role = this.inputs.length > 0 || this.buttons.length > 0 ? "alertdialog" : "alert";
     const ariaLabelledBy = header && subHeader ? `${hdrId} ${subHdrId}` : header ? hdrId : subHeader ? subHdrId : null;
-    return h(Host2, {
+    return h(Host, {
       key: "f8ee04fe6a97a2585b302c8e1a9eea3b122e3479",
       tabindex: "-1",
       style: {
@@ -16057,10 +5616,10 @@ var Alert = proxyCustomElement(class Alert2 extends H {
   "inputs": ["inputsChanged"]
 }]);
 var inputClass = (input) => {
-  var _a96, _b, _c;
+  var _a91, _b, _c;
   return Object.assign(Object.assign({
     "alert-input": true,
-    "alert-input-disabled": ((_b = (_a96 = input.attributes) === null || _a96 === void 0 ? void 0 : _a96.disabled) !== null && _b !== void 0 ? _b : input.disabled) || false
+    "alert-input-disabled": ((_b = (_a91 = input.attributes) === null || _a91 === void 0 ? void 0 : _a91.disabled) !== null && _b !== void 0 ? _b : input.disabled) || false
   }, getClassMap(input.cssClass)), getClassMap(input.attributes ? (_c = input.attributes.class) === null || _c === void 0 ? void 0 : _c.toString() : ""));
 };
 var buttonClass2 = (button) => {
@@ -16111,19 +5670,19 @@ var App = proxyCustomElement(class App2 extends H {
   componentDidLoad() {
     if (Build.isBrowser) {
       rIC(() => __async(this, null, function* () {
-        const isHybrid2 = isPlatform(window, "hybrid");
+        const isHybrid = isPlatform(window, "hybrid");
         if (!config.getBoolean("_testing")) {
-          import("./index9-2C5EMTSY.js").then((module) => module.startTapClick(config));
+          import("./index9-V7V2X3AV.js").then((module) => module.startTapClick(config));
         }
-        if (config.getBoolean("statusTap", isHybrid2)) {
+        if (config.getBoolean("statusTap", isHybrid)) {
           import("./status-tap-LLRF4EZB.js").then((module) => module.startStatusTap());
         }
         if (config.getBoolean("inputShims", needInputShims())) {
           const platform = isPlatform(window, "ios") ? "ios" : "android";
-          import("./input-shims-GNUKKSTP.js").then((module) => module.startInputShims(config, platform));
+          import("./input-shims-RNO5D4QV.js").then((module) => module.startInputShims(config, platform));
         }
         const hardwareBackButtonModule = yield import("./hardware-back-button-IKEIKBGZ.js");
-        const supportsHardwareBackButtonEvents = isHybrid2 || shouldUseCloseWatcher();
+        const supportsHardwareBackButtonEvents = isHybrid || shouldUseCloseWatcher();
         if (config.getBoolean("hardwareBackButton", supportsHardwareBackButtonEvents)) {
           hardwareBackButtonModule.startHardwareBackButton();
         } else {
@@ -16157,7 +5716,7 @@ var App = proxyCustomElement(class App2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "03aa892f986330078d112b1e8b010df98fa7e39e",
       class: {
         [mode]: true,
@@ -16222,7 +5781,7 @@ var Avatar = proxyCustomElement(class Avatar2 extends H {
     this.__attachShadow();
   }
   render() {
-    return h(Host2, {
+    return h(Host, {
       key: "998217066084f966bf5d356fed85bcbd451f675a",
       class: getIonMode(this)
     }, h("slot", {
@@ -16270,7 +5829,7 @@ var Badge = proxyCustomElement(class Badge2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "1a2d39c5deec771a2f2196447627b62a7d4c8389",
       class: createColorClasses(this.color, {
         [mode]: true
@@ -16376,7 +5935,7 @@ var Breadcrumb = proxyCustomElement(class Breadcrumb2 extends H {
       target
     };
     const showSeparator = last ? false : collapsed ? showCollapsedIndicator && !last ? true : false : separator;
-    return h(Host2, {
+    return h(Host, {
       key: "32ca61c83721dff52b5e97171ed449dce3584a55",
       onClick: (ev) => openURL(href, ev, routerDirection, routerAnimation),
       "aria-disabled": disabled ? "true" : null,
@@ -16584,7 +6143,7 @@ var Breadcrumbs = proxyCustomElement(class Breadcrumbs2 extends H {
       collapsed
     } = this;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "fe64e9cdf597ede2db140bf5fa05a0359d82db57",
       class: createColorClasses(color, {
         [mode]: true,
@@ -16817,7 +6376,7 @@ var Button = proxyCustomElement(class Button2 extends H {
     {
       type !== "button" && this.renderHiddenButton();
     }
-    return h(Host2, {
+    return h(Host, {
       key: "e213b0bb76b3f90f883b1a0ea463bb86c2df69c3",
       onClick: this.handleClick,
       "aria-disabled": disabled ? "true" : null,
@@ -16937,7 +6496,7 @@ var Buttons = proxyCustomElement(class Buttons2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "58c1fc5eb867d0731c63549b1ccb3ec3bbbe6e1b",
       class: {
         [mode]: true,
@@ -17032,7 +6591,7 @@ var Card = proxyCustomElement(class Card2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "85e9b30bd81e79a0c7ac75cb3664bdcf9e4afc4d",
       class: createColorClasses(this.color, {
         [mode]: true,
@@ -17096,7 +6655,7 @@ var CardContent = proxyCustomElement(class CardContent2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "d98e4d1fc6ad3237549f9bc17e4c67ec5059b1b3",
       class: {
         [mode]: true,
@@ -17144,7 +6703,7 @@ var CardHeader = proxyCustomElement(class CardHeader2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "64246b81931203a64d553c788cd736f41e23f37b",
       class: createColorClasses(this.color, {
         "card-header-translucent": this.translucent,
@@ -17196,7 +6755,7 @@ var CardSubtitle = proxyCustomElement(class CardSubtitle2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "84d820a19d9074f9c8bc61ccba1ca40062a60b73",
       role: "heading",
       "aria-level": "3",
@@ -17248,7 +6807,7 @@ var CardTitle = proxyCustomElement(class CardTitle2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "fca001a86396e83718d5211cd71912fdf40dea2f",
       role: "heading",
       "aria-level": "2",
@@ -17302,7 +6861,7 @@ var Chip = proxyCustomElement(class Chip2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "fa2e9a4837ef87a17ef10f388e8caa7f604d9145",
       "aria-disabled": this.disabled ? "true" : null,
       class: createColorClasses(this.color, {
@@ -17468,7 +7027,7 @@ var Col = proxyCustomElement(class Col2 extends H {
   render() {
     const isRTL4 = document.dir === "rtl";
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "32ed75d81dd09d9bc8999f6d42e5b3cb99c84d91",
       class: {
         [mode]: true
@@ -17819,7 +7378,7 @@ var Content = proxyCustomElement(class Content2 extends H {
     const forceOverscroll = this.shouldForceOverscroll();
     const transitionShadow = mode === "ios";
     this.resize();
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       key: "f2a24aa66dbf5c76f9d4b06f708eb73cadc239df",
       role: isMainContent ? "main" : void 0,
       class: createColorClasses(this.color, {
@@ -17884,11 +7443,11 @@ var Content = proxyCustomElement(class Content2 extends H {
   "scrollToPoint": [64]
 }, [[9, "resize", "onResize"]]]);
 var getParentElement = (el) => {
-  var _a96;
+  var _a91;
   if (el.parentElement) {
     return el.parentElement;
   }
-  if ((_a96 = el.parentNode) === null || _a96 === void 0 ? void 0 : _a96.host) {
+  if ((_a91 = el.parentNode) === null || _a91 === void 0 ? void 0 : _a91.host) {
     return el.parentNode.host;
   }
   return null;
@@ -18584,9 +8143,9 @@ var getYear = (locale, refParts) => {
   });
 };
 var getNormalizedDate = (refParts) => {
-  var _a96, _b, _c;
+  var _a91, _b, _c;
   const timeString = refParts.hour !== void 0 && refParts.minute !== void 0 ? ` ${refParts.hour}:${refParts.minute}` : "";
-  return /* @__PURE__ */ new Date(`${(_a96 = refParts.month) !== null && _a96 !== void 0 ? _a96 : 1}/${(_b = refParts.day) !== null && _b !== void 0 ? _b : 1}/${(_c = refParts.year) !== null && _c !== void 0 ? _c : 2023}${timeString} GMT+0000`);
+  return /* @__PURE__ */ new Date(`${(_a91 = refParts.month) !== null && _a91 !== void 0 ? _a91 : 1}/${(_b = refParts.day) !== null && _b !== void 0 ? _b : 1}/${(_c = refParts.year) !== null && _c !== void 0 ? _c : 2023}${timeString} GMT+0000`);
 };
 var getLocalizedDateTime = (locale, refParts, options) => {
   const date = getNormalizedDate(refParts);
@@ -18851,7 +8410,7 @@ var getDayColumnData = (locale, refParts, minParts, maxParts, dayValues, formatO
   return days;
 };
 var getYearColumnData = (locale, refParts, minParts, maxParts, yearValues) => {
-  var _a96, _b;
+  var _a91, _b;
   let processedYears = [];
   if (yearValues !== void 0) {
     processedYears = yearValues;
@@ -18865,7 +8424,7 @@ var getYearColumnData = (locale, refParts, minParts, maxParts, yearValues) => {
     const {
       year
     } = refParts;
-    const maxYear = (_a96 = maxParts === null || maxParts === void 0 ? void 0 : maxParts.year) !== null && _a96 !== void 0 ? _a96 : year;
+    const maxYear = (_a91 = maxParts === null || maxParts === void 0 ? void 0 : maxParts.year) !== null && _a91 !== void 0 ? _a91 : year;
     const minYear = (_b = minParts === null || minParts === void 0 ? void 0 : minParts.year) !== null && _b !== void 0 ? _b : year - 100;
     for (let i = minYear; i <= maxYear; i++) {
       processedYears.push(i);
@@ -18993,7 +8552,7 @@ var DatetimeButton = proxyCustomElement(class DatetimeButton2 extends H {
       return [value];
     };
     this.setDateTimeText = () => {
-      var _a96, _b, _c, _d, _e;
+      var _a91, _b, _c, _d, _e;
       const {
         datetimeEl,
         datetimePresentation
@@ -19021,7 +8580,7 @@ var DatetimeButton = proxyCustomElement(class DatetimeButton2 extends H {
       switch (datetimePresentation) {
         case "date-time":
         case "time-date":
-          const dateText = getLocalizedDateTime(locale, firstParsedDatetime, (_a96 = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) !== null && _a96 !== void 0 ? _a96 : {
+          const dateText = getLocalizedDateTime(locale, firstParsedDatetime, (_a91 = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) !== null && _a91 !== void 0 ? _a91 : {
             month: "short",
             day: "numeric",
             year: "numeric"
@@ -19219,7 +8778,7 @@ var DatetimeButton = proxyCustomElement(class DatetimeButton2 extends H {
       disabled
     } = this;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "11d037e6ab061e5116842970760b04850b42f2c7",
       class: createColorClasses(color, {
         [mode]: true,
@@ -19355,7 +8914,7 @@ var Fab = proxyCustomElement(class Fab2 extends H {
       edge
     } = this;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "8a310806d0e748d7ebb0ed3d9a2652038e0f2960",
       class: {
         [mode]: true,
@@ -19478,7 +9037,7 @@ var FabButton = proxyCustomElement(class FabButton2 extends H {
       rel: this.rel,
       target: this.target
     };
-    return h(Host2, {
+    return h(Host, {
       key: "4eee204d20b0e2ffed49a88f6cb3e04b6697965c",
       onClick: this.onClick,
       "aria-disabled": disabled ? "true" : null,
@@ -19591,7 +9150,7 @@ var FabList = proxyCustomElement(class FabList2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "64b33366447f66c7f979cfac56307fbb1a6fac1c",
       class: {
         [mode]: true,
@@ -19810,7 +9369,7 @@ var Footer = proxyCustomElement(class Footer2 extends H {
     const mode = getIonMode(this);
     const tabs = this.el.closest("ion-tabs");
     const tabBar = tabs === null || tabs === void 0 ? void 0 : tabs.querySelector(":scope > ion-tab-bar");
-    return h(Host2, {
+    return h(Host, {
       key: "ddc228f1a1e7fa4f707dccf74db2490ca3241137",
       role: "contentinfo",
       class: {
@@ -19872,7 +9431,7 @@ var Grid = proxyCustomElement(class Grid2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "617127ecfabf9bf615bef1dda1be3fed5a065949",
       class: {
         [mode]: true,
@@ -20172,7 +9731,7 @@ var Header = proxyCustomElement(class Header2 extends H {
     const mode = getIonMode(this);
     const collapse = this.collapse || "none";
     const roleType = hostContext("ion-menu", this.el) ? "none" : "banner";
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       key: "b6cc27f0b08afc9fcc889683525da765d80ba672",
       role: roleType,
       class: {
@@ -20293,7 +9852,7 @@ var Img = proxyCustomElement(class Img2 extends H {
     const {
       draggable
     } = inheritedAttributes;
-    return h(Host2, {
+    return h(Host, {
       key: "da600442894427dee1974a28e545613afac69fca",
       class: getIonMode(this)
     }, h("img", {
@@ -20488,7 +10047,7 @@ var InfiniteScroll = proxyCustomElement(class InfiniteScroll2 extends H {
   render() {
     const mode = getIonMode(this);
     const disabled = this.disabled;
-    return h(Host2, {
+    return h(Host, {
       key: "e844956795f69be33396ce4480aa7a54ad01b28c",
       class: {
         [mode]: true,
@@ -20698,11 +10257,11 @@ var Spinner = proxyCustomElement(class Spinner2 extends H {
     return mode === "ios" ? "lines" : "circular";
   }
   render() {
-    var _a96;
+    var _a91;
     const self = this;
     const mode = getIonMode(self);
     const spinnerName = self.getName();
-    const spinner = (_a96 = SPINNERS[spinnerName]) !== null && _a96 !== void 0 ? _a96 : SPINNERS["lines"];
+    const spinner = (_a91 = SPINNERS[spinnerName]) !== null && _a91 !== void 0 ? _a91 : SPINNERS["lines"];
     const duration = typeof self.duration === "number" && self.duration > 10 ? self.duration : spinner.dur;
     const svgs = [];
     if (spinner.circles !== void 0) {
@@ -20714,7 +10273,7 @@ var Spinner = proxyCustomElement(class Spinner2 extends H {
         svgs.push(buildLine(spinner, duration, i, spinner.lines));
       }
     }
-    return h(Host2, {
+    return h(Host, {
       key: "e0dfa8a3ee2a0469eb31323f506750bd77d65797",
       class: createColorClasses(self.color, {
         [mode]: true,
@@ -20816,7 +10375,7 @@ var InfiniteScrollContent = proxyCustomElement(class InfiniteScrollContent2 exte
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "7c16060dcfe2a0b0fb3e2f8f4c449589a76f1baa",
       class: {
         [mode]: true,
@@ -20916,16 +10475,16 @@ var InputPasswordToggle = proxyCustomElement(class InputPasswordToggle2 extends 
     this.inputElRef = null;
   }
   render() {
-    var _a96, _b;
+    var _a91, _b;
     const {
       color,
       type
     } = this;
     const mode = getIonMode(this);
-    const showPasswordIcon = (_a96 = this.showIcon) !== null && _a96 !== void 0 ? _a96 : eye;
+    const showPasswordIcon = (_a91 = this.showIcon) !== null && _a91 !== void 0 ? _a91 : eye;
     const hidePasswordIcon = (_b = this.hideIcon) !== null && _b !== void 0 ? _b : eyeOff;
     const isPasswordVisible = type === "text";
-    return h(Host2, {
+    return h(Host, {
       key: "1a28e078c83e74c72d8bb8189ece93ec2e3fa3d0",
       class: createColorClasses(color, {
         [mode]: true
@@ -21181,7 +10740,7 @@ var Item = proxyCustomElement(class Item2 extends H {
     const ariaDisabled = disabled || childStyles["item-interactive-disabled"] ? "true" : null;
     const inList = hostContext("ion-list", this.el) && !hostContext("ion-radio-group", this.el);
     const firstInteractiveNeedsPointerCursor = firstInteractive !== void 0 && !["ION-INPUT", "ION-TEXTAREA"].includes(firstInteractive.tagName);
-    return h(Host2, {
+    return h(Host, {
       key: "15e7d3b674c25232bc2d51573b291c72548690e5",
       "aria-disabled": ariaDisabled,
       class: Object.assign(Object.assign(Object.assign({}, childStyles), labelColorStyles), createColorClasses(this.color, {
@@ -21307,7 +10866,7 @@ var ItemDivider = proxyCustomElement(class ItemDivider2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "7150b1a3a881c3c312db40821acb9830c2885ccf",
       class: createColorClasses(this.color, {
         [mode]: true,
@@ -21372,7 +10931,7 @@ var ItemGroup = proxyCustomElement(class ItemGroup2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "de2a969ed0dda880bc560a325848b28d0287fdb9",
       role: "group",
       class: {
@@ -21447,7 +11006,7 @@ var ItemOption = proxyCustomElement(class ItemOption2 extends H {
       href: this.href,
       target: this.target
     };
-    return h(Host2, {
+    return h(Host, {
       key: "1b7708dd178dc2c9280652ca3da38c84ba7b767f",
       onClick: this.onClick,
       class: createColorClasses(this.color, {
@@ -21553,7 +11112,7 @@ var ItemOptions = proxyCustomElement(class ItemOptions2 extends H {
   render() {
     const mode = getIonMode(this);
     const isEnd = isEndSide(this.side);
-    return h(Host2, {
+    return h(Host, {
       key: "7df4b71547524bf359c48e1b40ccbc44e850f632",
       class: {
         [mode]: true,
@@ -21724,8 +11283,8 @@ var ItemSliding = proxyCustomElement(class ItemSliding2 extends H {
    */
   open(side) {
     return __async(this, null, function* () {
-      var _a96;
-      const item = this.item = (_a96 = this.item) !== null && _a96 !== void 0 ? _a96 : this.el.querySelector("ion-item");
+      var _a91;
+      const item = this.item = (_a91 = this.item) !== null && _a91 !== void 0 ? _a91 : this.el.querySelector("ion-item");
       if (item === null) {
         return;
       }
@@ -21970,7 +11529,7 @@ var ItemSliding = proxyCustomElement(class ItemSliding2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "f8aea4bb9802b111ef358cc6c172a635637ae1f8",
       class: {
         [mode]: true,
@@ -22083,7 +11642,7 @@ var Label = proxyCustomElement(class Label2 extends H {
   render() {
     const position = this.position;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "4da84c95351a74b547f8224ecfa66924d21398c5",
       class: createColorClasses(this.color, {
         [mode]: true,
@@ -22171,7 +11730,7 @@ var List = proxyCustomElement(class List2 extends H {
       lines,
       inset
     } = this;
-    return h(Host2, {
+    return h(Host, {
       key: "5ff2b0b3989cc99ce17abb8bcd7ec1847940d1ec",
       role: "list",
       class: {
@@ -22235,7 +11794,7 @@ var ListHeader = proxyCustomElement(class ListHeader2 extends H {
       lines
     } = this;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "95ce2135e2b1ad4d7d6020b0fb9bc6e02b3c0851",
       class: createColorClasses(this.color, {
         [mode]: true,
@@ -22279,7 +11838,7 @@ var defineCustomElement60 = defineCustomElement59;
 
 // node_modules/@ionic/core/components/ion-loading.js
 var iosEnterAnimation5 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -22294,10 +11853,10 @@ var iosEnterAnimation5 = (baseEl) => {
     opacity: 1,
     transform: "scale(1)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var iosLeaveAnimation5 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
@@ -22310,10 +11869,10 @@ var iosLeaveAnimation5 = (baseEl) => {
     opacity: 0,
     transform: "scale(0.9)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdEnterAnimation5 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -22328,10 +11887,10 @@ var mdEnterAnimation5 = (baseEl) => {
     opacity: 1,
     transform: "scale(1)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdLeaveAnimation5 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
@@ -22344,7 +11903,7 @@ var mdLeaveAnimation5 = (baseEl) => {
     opacity: 0,
     transform: "scale(0.9)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var loadingIosCss = ".sc-ion-loading-ios-h{--min-width:auto;--width:auto;--min-height:auto;--height:auto;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;left:0;right:0;top:0;bottom:0;display:-ms-flexbox;display:flex;position:fixed;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;outline:none;font-family:var(--ion-font-family, inherit);contain:strict;-ms-touch-action:none;touch-action:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1001}.overlay-hidden.sc-ion-loading-ios-h{display:none}.loading-wrapper.sc-ion-loading-ios{display:-ms-flexbox;display:flex;-ms-flex-align:inherit;align-items:inherit;-ms-flex-pack:inherit;justify-content:inherit;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);background:var(--background);opacity:0;z-index:10}ion-spinner.sc-ion-loading-ios{color:var(--spinner-color)}.sc-ion-loading-ios-h{--background:var(--ion-overlay-background-color, var(--ion-color-step-100, var(--ion-background-color-step-100, #f9f9f9)));--max-width:270px;--max-height:90%;--spinner-color:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666));--backdrop-opacity:var(--ion-backdrop-opacity, 0.3);color:var(--ion-text-color, #000);font-size:0.875rem}.loading-wrapper.sc-ion-loading-ios{border-radius:8px;-webkit-padding-start:34px;padding-inline-start:34px;-webkit-padding-end:34px;padding-inline-end:34px;padding-top:24px;padding-bottom:24px}@supports ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))){.loading-translucent.sc-ion-loading-ios-h .loading-wrapper.sc-ion-loading-ios{background-color:rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}}.loading-content.sc-ion-loading-ios{font-weight:bold}.loading-spinner.sc-ion-loading-ios+.loading-content.sc-ion-loading-ios{-webkit-margin-start:16px;margin-inline-start:16px}";
 var IonLoadingIosStyle0 = loadingIosCss;
@@ -22410,12 +11969,12 @@ var Loading = proxyCustomElement(class Loading2 extends H {
     this.triggerChanged();
   }
   componentWillLoad() {
-    var _a96;
+    var _a91;
     if (this.spinner === void 0) {
       const mode = getIonMode(this);
       this.spinner = config.get("loadingSpinner", config.get("spinner", mode === "ios" ? "lines" : "crescent"));
     }
-    if (!((_a96 = this.htmlAttributes) === null || _a96 === void 0 ? void 0 : _a96.id)) {
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -22508,7 +12067,7 @@ var Loading = proxyCustomElement(class Loading2 extends H {
     const mode = getIonMode(this);
     const msgId = `loading-${overlayIndex}-msg`;
     const ariaLabelledBy = message !== void 0 ? msgId : null;
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       key: "d6066c8b56b1fe4b597a243a7dab191ef0d21286",
       role: "dialog",
       "aria-modal": "true",
@@ -22995,7 +12554,7 @@ var Menu = proxyCustomElement(class Menu2 extends H {
     }
   }
   afterAnimation(isOpen, role) {
-    var _a96;
+    var _a91;
     this._isOpen = isOpen;
     this.isAnimating = false;
     if (!this._isOpen) {
@@ -23006,7 +12565,7 @@ var Menu = proxyCustomElement(class Menu2 extends H {
         this.el.removeAttribute("aria-hidden");
       }
       this.ionDidOpen.emit();
-      const focusedMenu = (_a96 = document.activeElement) === null || _a96 === void 0 ? void 0 : _a96.closest("ion-menu");
+      const focusedMenu = (_a91 = document.activeElement) === null || _a91 === void 0 ? void 0 : _a91.closest("ion-menu");
       if (focusedMenu !== this.el) {
         this.el.focus();
       }
@@ -23053,7 +12612,7 @@ var Menu = proxyCustomElement(class Menu2 extends H {
       side
     } = this;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "0a2ba4ff5600b80b54d1b5b45124779c6aa0d2f2",
       onKeyDown: shouldUseCloseWatcher() ? null : this.onKeydown,
       role: "navigation",
@@ -23207,7 +12766,7 @@ var MenuButton = proxyCustomElement(class MenuButton2 extends H {
       type: this.type
     };
     const ariaLabel = inheritedAttributes["aria-label"] || "menu";
-    return h(Host2, {
+    return h(Host, {
       key: "3cde3704f28eb275f4a5ff2985bbb68c1024e79c",
       onClick: this.onClick,
       "aria-disabled": disabled ? "true" : null,
@@ -23317,7 +12876,7 @@ var MenuToggle = proxyCustomElement(class MenuToggle2 extends H {
   render() {
     const mode = getIonMode(this);
     const hidden = this.autoHide && !this.visible;
-    return h(Host2, {
+    return h(Host, {
       key: "88e88fa13ac7f10ba3acfe378bd11cda0c7e2749",
       onClick: this.onClick,
       "aria-hidden": hidden ? "true" : null,
@@ -23394,7 +12953,7 @@ var NavLink = proxyCustomElement(class NavLink2 extends H {
     this.routerAnimation = void 0;
   }
   render() {
-    return h(Host2, {
+    return h(Host, {
       key: "9ba170d1b10e08e8a6b5e6a30d363871d455a0a9",
       onClick: this.onClick
     });
@@ -23439,7 +12998,7 @@ var Note = proxyCustomElement(class Note2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "3c3d9b2aa805c0bc1fdc6270a2bbf4dcc1b96c5b",
       class: createColorClasses(this.color, {
         [mode]: true
@@ -23778,7 +13337,7 @@ var Picker = proxyCustomElement(class Picker2 extends H {
     });
   }
   render() {
-    return h(Host2, {
+    return h(Host, {
       key: "28f81e4ed44a633178561757c5199c2c98f94b74",
       onPointerDown: (ev) => this.onPointerDown(ev),
       onClick: () => this.onClick()
@@ -23789,9 +13348,9 @@ var Picker = proxyCustomElement(class Picker2 extends H {
       inputmode: "numeric",
       type: "number",
       onKeyDown: (ev) => {
-        var _a96;
+        var _a91;
         if (ev.key === "Enter") {
-          (_a96 = this.inputEl) === null || _a96 === void 0 ? void 0 : _a96.blur();
+          (_a91 = this.inputEl) === null || _a91 === void 0 ? void 0 : _a91.blur();
         }
       },
       ref: (el) => this.inputEl = el,
@@ -23914,7 +13473,7 @@ var PickerColumn = proxyCustomElement(class PickerColumn2 extends H {
       let activeEl = this.activeItem;
       const scrollCallback = () => {
         raf(() => {
-          var _a96;
+          var _a91;
           if (!scrollEl) return;
           if (timeout) {
             clearTimeout(timeout);
@@ -23950,7 +13509,7 @@ var PickerColumn = proxyCustomElement(class PickerColumn2 extends H {
           activeEl = newActiveElement;
           this.setPickerItemActiveState(newActiveElement, true);
           if (this.updateValueTextOnScroll) {
-            (_a96 = this.assistiveFocusable) === null || _a96 === void 0 ? void 0 : _a96.setAttribute("aria-valuetext", this.getOptionValueText(newActiveElement));
+            (_a91 = this.assistiveFocusable) === null || _a91 === void 0 ? void 0 : _a91.setAttribute("aria-valuetext", this.getOptionValueText(newActiveElement));
           }
           timeout = setTimeout(() => {
             this.isScrolling = false;
@@ -24051,8 +13610,8 @@ var PickerColumn = proxyCustomElement(class PickerColumn2 extends H {
       }
     };
     this.getOptionValueText = (el) => {
-      var _a96;
-      return el ? (_a96 = el.getAttribute("aria-label")) !== null && _a96 !== void 0 ? _a96 : el.innerText : "";
+      var _a91;
+      return el ? (_a91 = el.getAttribute("aria-label")) !== null && _a91 !== void 0 ? _a91 : el.innerText : "";
     };
     this.renderAssistiveFocusable = () => {
       const {
@@ -24182,8 +13741,8 @@ var PickerColumn = proxyCustomElement(class PickerColumn2 extends H {
     });
   }
   connectedCallback() {
-    var _a96;
-    this.ariaLabel = (_a96 = this.el.getAttribute("aria-label")) !== null && _a96 !== void 0 ? _a96 : "Select a value";
+    var _a91;
+    this.ariaLabel = (_a91 = this.el.getAttribute("aria-label")) !== null && _a91 !== void 0 ? _a91 : "Select a value";
   }
   get activeItem() {
     const {
@@ -24205,7 +13764,7 @@ var PickerColumn = proxyCustomElement(class PickerColumn2 extends H {
       numericInput
     } = this;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "a221dc10f1eb7c41637a16d2c7167c16939822fd",
       class: createColorClasses(color, {
         [mode]: true,
@@ -24396,7 +13955,7 @@ var PickerColumnOption = proxyCustomElement(class PickerColumnOption2 extends H 
       ariaLabel
     } = this;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "c1353e99c2aa19c0e3ddbe433557ed18e72e1c66",
       class: createColorClasses(color, {
         [mode]: true,
@@ -24692,7 +14251,7 @@ var PickerColumnCmp = proxyCustomElement(class PickerColumnCmp2 extends H {
     }
   }
   refresh(forceRefresh, animated) {
-    var _a96;
+    var _a91;
     let min = this.col.options.length - 1;
     let max = 0;
     const options = this.col.options;
@@ -24705,7 +14264,7 @@ var PickerColumnCmp = proxyCustomElement(class PickerColumnCmp2 extends H {
     if (this.velocity !== 0) {
       return;
     }
-    const selectedIndex = clamp(min, (_a96 = this.col.selectedIndex) !== null && _a96 !== void 0 ? _a96 : 0, max);
+    const selectedIndex = clamp(min, (_a91 = this.col.selectedIndex) !== null && _a91 !== void 0 ? _a91 : 0, max);
     if (this.col.prevSelected !== selectedIndex || forceRefresh) {
       const y = selectedIndex * this.optHeight * -1;
       const duration = animated ? TRANSITION_DURATION : 0;
@@ -24723,7 +14282,7 @@ var PickerColumnCmp = proxyCustomElement(class PickerColumnCmp2 extends H {
   render() {
     const col = this.col;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "88a3c9397c9ac92dd814074c8ae6ecf8e3420a2c",
       class: Object.assign({
         [mode]: true,
@@ -24803,22 +14362,22 @@ function defineCustomElement73() {
 
 // node_modules/@ionic/core/components/ion-picker-legacy.js
 var iosEnterAnimation6 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
     "pointer-events": "none"
   }).afterClearStyles(["pointer-events"]);
   wrapperAnimation.addElement(baseEl.querySelector(".picker-wrapper")).fromTo("transform", "translateY(100%)", "translateY(0%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var iosLeaveAnimation6 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0.01);
   wrapperAnimation.addElement(baseEl.querySelector(".picker-wrapper")).fromTo("transform", "translateY(0%)", "translateY(100%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var pickerIosCss2 = ".sc-ion-picker-legacy-ios-h{--border-radius:0;--border-style:solid;--min-width:auto;--width:100%;--max-width:500px;--min-height:auto;--max-height:auto;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;top:0;display:block;position:absolute;width:100%;height:100%;outline:none;font-family:var(--ion-font-family, inherit);contain:strict;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1001}.sc-ion-picker-legacy-ios-h{inset-inline-start:0}.overlay-hidden.sc-ion-picker-legacy-ios-h{display:none}.picker-wrapper.sc-ion-picker-legacy-ios{border-radius:var(--border-radius);left:0;right:0;bottom:0;-webkit-margin-start:auto;margin-inline-start:auto;-webkit-margin-end:auto;margin-inline-end:auto;margin-top:auto;margin-bottom:auto;-webkit-transform:translate3d(0,  100%,  0);transform:translate3d(0,  100%,  0);display:-ms-flexbox;display:flex;position:absolute;-ms-flex-direction:column;flex-direction:column;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);border-width:var(--border-width);border-style:var(--border-style);border-color:var(--border-color);background:var(--background);contain:strict;overflow:hidden;z-index:10}.picker-toolbar.sc-ion-picker-legacy-ios{width:100%;background:transparent;contain:strict;z-index:1}.picker-button.sc-ion-picker-legacy-ios{border:0;font-family:inherit}.picker-button.sc-ion-picker-legacy-ios:active,.picker-button.sc-ion-picker-legacy-ios:focus{outline:none}.picker-columns.sc-ion-picker-legacy-ios{display:-ms-flexbox;display:flex;position:relative;-ms-flex-pack:center;justify-content:center;margin-bottom:var(--ion-safe-area-bottom, 0);contain:strict;overflow:hidden}.picker-above-highlight.sc-ion-picker-legacy-ios,.picker-below-highlight.sc-ion-picker-legacy-ios{display:none;pointer-events:none}.sc-ion-picker-legacy-ios-h{--background:var(--ion-background-color, #fff);--border-width:1px 0 0;--border-color:var(--ion-item-border-color, var(--ion-border-color, var(--ion-color-step-250, var(--ion-background-color-step-250, #c8c7cc))));--height:260px;--backdrop-opacity:var(--ion-backdrop-opacity, 0.26);color:var(--ion-item-color, var(--ion-text-color, #000))}.picker-toolbar.sc-ion-picker-legacy-ios{display:-ms-flexbox;display:flex;height:44px;border-bottom:0.55px solid var(--border-color)}.picker-toolbar-button.sc-ion-picker-legacy-ios{-ms-flex:1;flex:1;text-align:end}.picker-toolbar-button.sc-ion-picker-legacy-ios:last-child .picker-button.sc-ion-picker-legacy-ios{font-weight:600}.picker-toolbar-button.sc-ion-picker-legacy-ios:first-child{font-weight:normal;text-align:start}.picker-button.sc-ion-picker-legacy-ios,.picker-button.ion-activated.sc-ion-picker-legacy-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;-webkit-padding-start:1em;padding-inline-start:1em;-webkit-padding-end:1em;padding-inline-end:1em;padding-top:0;padding-bottom:0;height:44px;background:transparent;color:var(--ion-color-primary, #0054e9);font-size:16px}.picker-columns.sc-ion-picker-legacy-ios{height:215px;-webkit-perspective:1000px;perspective:1000px}.picker-above-highlight.sc-ion-picker-legacy-ios{top:0;-webkit-transform:translate3d(0,  0,  90px);transform:translate3d(0,  0,  90px);display:block;position:absolute;width:100%;height:81px;border-bottom:1px solid var(--border-color);background:-webkit-gradient(linear, left top, left bottom, color-stop(20%, var(--background, var(--ion-background-color, #fff))), to(rgba(var(--background-rgb, var(--ion-background-color-rgb, 255, 255, 255)), 0.8)));background:linear-gradient(to bottom, var(--background, var(--ion-background-color, #fff)) 20%, rgba(var(--background-rgb, var(--ion-background-color-rgb, 255, 255, 255)), 0.8) 100%);z-index:10}.picker-above-highlight.sc-ion-picker-legacy-ios{inset-inline-start:0}.picker-below-highlight.sc-ion-picker-legacy-ios{top:115px;-webkit-transform:translate3d(0,  0,  90px);transform:translate3d(0,  0,  90px);display:block;position:absolute;width:100%;height:119px;border-top:1px solid var(--border-color);background:-webkit-gradient(linear, left bottom, left top, color-stop(30%, var(--background, var(--ion-background-color, #fff))), to(rgba(var(--background-rgb, var(--ion-background-color-rgb, 255, 255, 255)), 0.8)));background:linear-gradient(to top, var(--background, var(--ion-background-color, #fff)) 30%, rgba(var(--background-rgb, var(--ion-background-color-rgb, 255, 255, 255)), 0.8) 100%);z-index:11}.picker-below-highlight.sc-ion-picker-legacy-ios{inset-inline-start:0}";
 var IonPickerLegacyIosStyle0 = pickerIosCss2;
@@ -24892,8 +14451,8 @@ var Picker3 = proxyCustomElement(class Picker4 extends H {
     this.triggerController.removeClickListener();
   }
   componentWillLoad() {
-    var _a96;
-    if (!((_a96 = this.htmlAttributes) === null || _a96 === void 0 ? void 0 : _a96.id)) {
+    var _a91;
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -25002,7 +14561,7 @@ var Picker3 = proxyCustomElement(class Picker4 extends H {
       htmlAttributes
     } = this;
     const mode = getIonMode(this);
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       key: "b6b6ca6f9aa74681e6d67f64b366f5965fec2a6d",
       "aria-modal": "true",
       tabindex: "-1"
@@ -25164,7 +14723,7 @@ var ProgressBar = proxyCustomElement(class ProgressBar2 extends H {
     const paused = config.getBoolean("_testing");
     const mode = getIonMode(this);
     const progressSolid = buffer === 1;
-    return h(Host2, {
+    return h(Host, {
       key: "d60eeaa18aaee607e083c0ef9d0de8178d47c4cd",
       role: "progressbar",
       "aria-valuenow": type === "determinate" ? value : null,
@@ -25409,7 +14968,7 @@ var Radio = proxyCustomElement(class Radio2 extends H {
     } = this;
     const mode = getIonMode(this);
     const inItem = hostContext("ion-item", el);
-    return h(Host2, {
+    return h(Host, {
       key: "8badd4aec277addc0793e14df21f73bb345e99b7",
       onFocus: this.onFocus,
       onBlur: this.onBlur,
@@ -25511,7 +15070,7 @@ var createBaseAnimation = (pullingRefresherIcon) => {
   const spinnerArrowContainer = pullingRefresherIcon.querySelector(".spinner-arrow-container");
   const arrowContainer = pullingRefresherIcon.querySelector(".arrow-container");
   const arrow = arrowContainer ? arrowContainer.querySelector("ion-icon") : null;
-  const baseAnimation2 = createAnimation().duration(1e3).easing("ease-out");
+  const baseAnimation = createAnimation().duration(1e3).easing("ease-out");
   const spinnerArrowContainerAnimation = createAnimation().addElement(spinnerArrowContainer).keyframes([{
     offset: 0,
     opacity: "0.3"
@@ -25572,9 +15131,9 @@ var createBaseAnimation = (pullingRefresherIcon) => {
       offset: 1,
       transform: "translateX(-1.5px) scale(1)"
     }]);
-    baseAnimation2.addAnimation([arrowContainerAnimation, arrowAnimation]);
+    baseAnimation.addAnimation([arrowContainerAnimation, arrowAnimation]);
   }
-  return baseAnimation2.addAnimation([spinnerArrowContainerAnimation, circleInnerAnimation, circleOuterAnimation]);
+  return baseAnimation.addAnimation([spinnerArrowContainerAnimation, circleInnerAnimation, circleOuterAnimation]);
 };
 var createScaleAnimation = (pullingRefresherIcon, refresherEl) => {
   const height = refresherEl.clientHeight;
@@ -26111,13 +15670,13 @@ var Refresher = proxyCustomElement(class Refresher2 extends H {
   }
   close(state, delay) {
     setTimeout(() => {
-      var _a96;
+      var _a91;
       this.state = 1;
       this.progress = 0;
       this.didStart = false;
       this.setCss(0, "0ms", false, "", true);
       if (this.contentFullscreen && this.backgroundContentEl) {
-        (_a96 = this.backgroundContentEl) === null || _a96 === void 0 ? void 0 : _a96.style.removeProperty("--offset-top");
+        (_a91 = this.backgroundContentEl) === null || _a91 === void 0 ? void 0 : _a91.style.removeProperty("--offset-top");
       }
     }, 600);
     this.state = state;
@@ -26171,7 +15730,7 @@ var Refresher = proxyCustomElement(class Refresher2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "c717c16f2ca3e42351848cc8ad37918dec28961d",
       slot: "fixed",
       class: {
@@ -26292,7 +15851,7 @@ var RefresherContent = proxyCustomElement(class RefresherContent2 extends H {
     const pullingIcon = this.pullingIcon;
     const hasSpinner = pullingIcon != null && SPINNERS[pullingIcon] !== void 0;
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "fb78d7e31f8feb31025e58903eb9de85cb928dbd",
       class: mode
     }, h("div", {
@@ -26391,7 +15950,7 @@ var Reorder = proxyCustomElement(class Reorder2 extends H {
   render() {
     const mode = getIonMode(this);
     const reorderIcon = mode === "ios" ? reorderThreeOutline : reorderTwoSharp;
-    return h(Host2, {
+    return h(Host, {
       key: "17adf3165f4e09283d5d6434d7cd47bd23519048",
       class: mode
     }, h("slot", {
@@ -26663,7 +16222,7 @@ var ReorderGroup = proxyCustomElement(class ReorderGroup2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "6ca009dd65302a914d459aec638e62977440db20",
       class: {
         [mode]: true,
@@ -26708,9 +16267,9 @@ var findReorderItem = (node, container) => {
 var AUTO_SCROLL_MARGIN = 60;
 var SCROLL_JUMP = 10;
 var ITEM_REORDER_SELECTED = "reorder-selected";
-var reorderArray = (array, from2, to) => {
-  const element = array[from2];
-  array.splice(from2, 1);
+var reorderArray = (array, from, to) => {
+  const element = array[from];
+  array.splice(from, 1);
   array.splice(to, 0, element);
   return array.slice();
 };
@@ -26744,7 +16303,7 @@ var Row = proxyCustomElement(class Row2 extends H {
     this.__attachShadow();
   }
   render() {
-    return h(Host2, {
+    return h(Host, {
       key: "a690022e2abdce6946d24264574e4aa0886a8ea5",
       class: getIonMode(this)
     }, h("slot", {
@@ -26875,7 +16434,7 @@ var SegmentButton = proxyCustomElement(class SegmentButton2 extends H {
     } = this;
     const mode = getIonMode(this);
     const hasSegmentColor = () => (segmentEl === null || segmentEl === void 0 ? void 0 : segmentEl.color) !== void 0;
-    return h(Host2, {
+    return h(Host, {
       key: "d79dad80db69123510c6d52bbf4424558600c14a",
       class: {
         [mode]: true,
@@ -26977,7 +16536,7 @@ var SegmentContent = proxyCustomElement(class SegmentContent2 extends H {
     this.__attachShadow();
   }
   render() {
-    return h(Host2, {
+    return h(Host, {
       key: "64b3965b14c749e77e9ce13b59f349d971e245c8"
     }, h("slot", {
       key: "2d0bed34f9bc93f92e713cb51e42220f3cecd8f5"
@@ -27021,7 +16580,7 @@ var SegmentView = proxyCustomElement(class SegmentView2 extends H {
     this.isManualScroll = void 0;
   }
   handleScroll(ev) {
-    var _a96;
+    var _a91;
     const {
       scrollLeft,
       scrollWidth,
@@ -27030,7 +16589,7 @@ var SegmentView = proxyCustomElement(class SegmentView2 extends H {
     const scrollRatio = scrollLeft / (scrollWidth - clientWidth);
     this.ionSegmentViewScroll.emit({
       scrollRatio,
-      isManualScroll: (_a96 = this.isManualScroll) !== null && _a96 !== void 0 ? _a96 : true
+      isManualScroll: (_a91 = this.isManualScroll) !== null && _a91 !== void 0 ? _a91 : true
     });
     this.resetScrollEndTimeout();
   }
@@ -27112,7 +16671,7 @@ var SegmentView = proxyCustomElement(class SegmentView2 extends H {
       disabled,
       isManualScroll
     } = this;
-    return h(Host2, {
+    return h(Host, {
       key: "fa528d2d9ae0f00fc3067defe2a047dce77c814a",
       class: {
         "segment-view-disabled": disabled,
@@ -27295,7 +16854,7 @@ var Checkbox = proxyCustomElement(class Checkbox2 extends H {
     const path = getSVGPath(mode, indeterminate);
     const hasLabelContent = el.textContent !== "";
     renderHiddenInput(true, el, name, checked ? value : "", disabled);
-    return h(Host2, {
+    return h(Host, {
       key: "26cbe7220e555107200e9b5deeae754aa534a80b",
       role: "checkbox",
       "aria-checked": indeterminate ? "mixed" : `${checked}`,
@@ -27592,7 +17151,7 @@ var RadioGroup = proxyCustomElement(class RadioGroup2 extends H {
     } = this;
     const mode = getIonMode(this);
     renderHiddenInput(true, el, name, value, false);
-    return h(Host2, {
+    return h(Host, {
       key: "cac92777297029d7fd1b6af264d92850e35dfbba",
       role: "radiogroup",
       "aria-labelledby": label ? labelId : null,
@@ -27681,7 +17240,7 @@ var ToolbarTitle = proxyCustomElement(class ToolbarTitle2 extends H {
   render() {
     const mode = getIonMode(this);
     const size = this.getSize();
-    return h(Host2, {
+    return h(Host, {
       key: "3f7b19c99961dbb86c0a925218332528b22e6880",
       class: createColorClasses(this.color, {
         [mode]: true,
@@ -27786,7 +17345,7 @@ var Toolbar = proxyCustomElement(class Toolbar2 extends H {
     this.childrenStyles.forEach((value) => {
       Object.assign(childStyles, value);
     });
-    return h(Host2, {
+    return h(Host, {
       key: "402afe7ce0c97883cedd0e48a5a0492a9bfe76ae",
       class: Object.assign(Object.assign({}, childStyles), createColorClasses(this.color, {
         [mode]: true,
@@ -27946,7 +17505,7 @@ var SelectModal = proxyCustomElement(class SelectModal2 extends H {
     }, option.text)));
   }
   render() {
-    return h(Host2, {
+    return h(Host, {
       key: "885198a9f21884e3bfb9bf0af53e0ee3ae37b231",
       class: getIonMode(this)
     }, h("ion-header", {
@@ -28079,7 +17638,7 @@ var SelectOption = proxyCustomElement(class SelectOption2 extends H {
     this.value = void 0;
   }
   render() {
-    return h(Host2, {
+    return h(Host, {
       key: "8c96c199ce3a3065de3fe446500f567236e0610a",
       role: "option",
       id: this.inputId,
@@ -28138,7 +17697,7 @@ var SkeletonText = proxyCustomElement(class SkeletonText2 extends H {
     const animated = this.animated && config.getBoolean("animated", true);
     const inMedia = hostContext("ion-avatar", this.el) || hostContext("ion-thumbnail", this.el);
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "c193f9a8e8efab5139544f047bdae4b6d421aa86",
       class: {
         [mode]: true,
@@ -28298,7 +17857,7 @@ var SplitPane = proxyCustomElement(class SplitPane2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "098801b5a318e2fc6913fb0d9079b1552927b99b",
       class: {
         [mode]: true,
@@ -28423,7 +17982,7 @@ var Tab = proxyCustomElement(class Tab2 extends H {
       active,
       component
     } = this;
-    return h(Host2, {
+    return h(Host, {
       key: "c36c113e74e12b58459df9e3b546ad4856187e90",
       role: "tabpanel",
       "aria-hidden": !active ? "true" : null,
@@ -28527,7 +18086,7 @@ var TabBar = proxyCustomElement(class TabBar2 extends H {
     } = this;
     const mode = getIonMode(this);
     const shouldHide = keyboardVisible && this.el.getAttribute("slot") !== "top";
-    return h(Host2, {
+    return h(Host, {
       key: "62303a7f9d8c98ffab51a5900c144c5117b9c543",
       role: "tablist",
       "aria-hidden": shouldHide ? "true" : null,
@@ -28659,7 +18218,7 @@ var TabButton = proxyCustomElement(class TabButton2 extends H {
       rel,
       target
     };
-    return h(Host2, {
+    return h(Host, {
       key: "a86d441d8df350fe991f2f948fc6b6ad007728f7",
       onClick: this.onClick,
       onKeyup: this.onKeyUp,
@@ -28749,7 +18308,7 @@ var Text = proxyCustomElement(class Text2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "0c2546ea3f24b0a6bfd606199441d0a4edfa4ca1",
       class: createColorClasses(this.color, {
         [mode]: true
@@ -28791,7 +18350,7 @@ var Thumbnail = proxyCustomElement(class Thumbnail2 extends H {
     this.__attachShadow();
   }
   render() {
-    return h(Host2, {
+    return h(Host, {
       key: "7f5fd6c056da2d82feb2c3c33f3e6dec898787f5",
       class: getIonMode(this)
     }, h("slot", {
@@ -28858,7 +18417,7 @@ var getOffsetForMiddlePosition = (toastHeight, wrapperHeight) => {
   return Math.floor(toastHeight / 2 - wrapperHeight / 2);
 };
 var iosEnterAnimation7 = (baseEl, opts) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const {
     position,
@@ -28881,10 +18440,10 @@ var iosEnterAnimation7 = (baseEl, opts) => {
       wrapperAnimation.fromTo("transform", "translateY(100%)", `translateY(${bottom})`);
       break;
   }
-  return baseAnimation2.easing("cubic-bezier(.155,1.105,.295,1.12)").duration(400).addAnimation(wrapperAnimation);
+  return baseAnimation.easing("cubic-bezier(.155,1.105,.295,1.12)").duration(400).addAnimation(wrapperAnimation);
 };
 var iosLeaveAnimation7 = (baseEl, opts) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const {
     position,
@@ -28905,10 +18464,10 @@ var iosLeaveAnimation7 = (baseEl, opts) => {
       wrapperAnimation.fromTo("transform", `translateY(${bottom})`, "translateY(100%)");
       break;
   }
-  return baseAnimation2.easing("cubic-bezier(.36,.66,.04,1)").duration(300).addAnimation(wrapperAnimation);
+  return baseAnimation.easing("cubic-bezier(.36,.66,.04,1)").duration(300).addAnimation(wrapperAnimation);
 };
 var mdEnterAnimation6 = (baseEl, opts) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const {
     position,
@@ -28933,15 +18492,15 @@ var mdEnterAnimation6 = (baseEl, opts) => {
       wrapperAnimation.fromTo("opacity", 0.01, 1);
       break;
   }
-  return baseAnimation2.easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation(wrapperAnimation);
+  return baseAnimation.easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation(wrapperAnimation);
 };
 var mdLeaveAnimation6 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const root = getElementRoot(baseEl);
   const wrapperEl = root.querySelector(".toast-wrapper");
   wrapperAnimation.addElement(wrapperEl).fromTo("opacity", 0.99, 0);
-  return baseAnimation2.easing("cubic-bezier(.36,.66,.04,1)").duration(300).addAnimation(wrapperAnimation);
+  return baseAnimation.easing("cubic-bezier(.36,.66,.04,1)").duration(300).addAnimation(wrapperAnimation);
 };
 var createSwipeToDismissGesture = (el, toastPosition, onDismiss) => {
   const wrapperEl = Build.isTesting ? document.createElement("div") : getElementRoot(el).querySelector(".toast-wrapper");
@@ -29172,8 +18731,8 @@ var Toast = proxyCustomElement(class Toast2 extends H {
     this.triggerController.removeClickListener();
   }
   componentWillLoad() {
-    var _a96;
-    if (!((_a96 = this.htmlAttributes) === null || _a96 === void 0 ? void 0 : _a96.id)) {
+    var _a91;
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -29227,7 +18786,7 @@ var Toast = proxyCustomElement(class Toast2 extends H {
    */
   dismiss(data, role) {
     return __async(this, null, function* () {
-      var _a96, _b;
+      var _a91, _b;
       const unlock = yield this.lockController.lock();
       const {
         durationTimeout,
@@ -29251,7 +18810,7 @@ var Toast = proxyCustomElement(class Toast2 extends H {
          */
         {
           position,
-          top: (_a96 = lastPresentedPosition === null || lastPresentedPosition === void 0 ? void 0 : lastPresentedPosition.top) !== null && _a96 !== void 0 ? _a96 : "",
+          top: (_a91 = lastPresentedPosition === null || lastPresentedPosition === void 0 ? void 0 : lastPresentedPosition.top) !== null && _a91 !== void 0 ? _a91 : "",
           bottom: (_b = lastPresentedPosition === null || lastPresentedPosition === void 0 ? void 0 : lastPresentedPosition.bottom) !== null && _b !== void 0 ? _b : ""
         }
       );
@@ -29432,7 +18991,7 @@ var Toast = proxyCustomElement(class Toast2 extends H {
     if (layout === "stacked" && startButtons.length > 0 && endButtons.length > 0) {
       printIonWarning("[ion-toast] - This toast is using start and end buttons with the stacked toast layout. We recommend following the best practice of using either start or end buttons with the stacked toast layout.", el);
     }
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       key: "a2216d860255c99337464370dcb12f6125871a50",
       tabindex: "-1"
     }, this.htmlAttributes, {
@@ -29681,7 +19240,7 @@ var Nav = proxyCustomElement(class Nav2 extends H {
     return __async(this, null, function* () {
       this.didLoad = true;
       this.rootChanged();
-      this.gesture = (yield import("./swipe-back-BUZJTUWU.js")).createSwipeBackGesture(this.el, this.canStart.bind(this), this.onStart.bind(this), this.onMove.bind(this), this.onEnd.bind(this));
+      this.gesture = (yield import("./swipe-back-CJJBFXX2.js")).createSwipeBackGesture(this.el, this.canStart.bind(this), this.onStart.bind(this), this.onMove.bind(this), this.onEnd.bind(this));
       this.swipeGestureChanged();
     });
   }
@@ -29985,8 +19544,8 @@ var Nav = proxyCustomElement(class Nav2 extends H {
    */
   queueTrns(ti, done) {
     return __async(this, null, function* () {
-      var _a96, _b;
-      if (this.isTransitioning && ((_a96 = ti.opts) === null || _a96 === void 0 ? void 0 : _a96.skipIfBusy)) {
+      var _a91, _b;
+      if (this.isTransitioning && ((_a91 = ti.opts) === null || _a91 === void 0 ? void 0 : _a91.skipIfBusy)) {
         return false;
       }
       const promise = new Promise((resolve, reject) => {
@@ -30109,10 +19668,10 @@ var Nav = proxyCustomElement(class Nav2 extends H {
     });
   }
   prepareTI(ti) {
-    var _a96, _b;
+    var _a91, _b;
     var _c;
     const viewsLength = this.views.length;
-    (_a96 = ti.opts) !== null && _a96 !== void 0 ? _a96 : ti.opts = {};
+    (_a91 = ti.opts) !== null && _a91 !== void 0 ? _a91 : ti.opts = {};
     (_b = (_c = ti.opts).delegate) !== null && _b !== void 0 ? _b : _c.delegate = this.delegate;
     if (ti.removeView !== void 0) {
       assert(ti.removeStart !== void 0, "removeView needs removeStart");
@@ -30193,7 +19752,7 @@ var Nav = proxyCustomElement(class Nav2 extends H {
    * @param ti The instructions.
    */
   postViewInit(enteringView, leavingView, ti) {
-    var _a96, _b, _c;
+    var _a91, _b, _c;
     assert(leavingView || enteringView, "Both leavingView and enteringView are null");
     assert(ti.resolve, "resolve must be valid");
     assert(ti.reject, "reject must be valid");
@@ -30214,7 +19773,7 @@ var Nav = proxyCustomElement(class Nav2 extends H {
           destroyQueue.push(view);
         }
       }
-      (_a96 = opts.direction) !== null && _a96 !== void 0 ? _a96 : opts.direction = "back";
+      (_a91 = opts.direction) !== null && _a91 !== void 0 ? _a91 : opts.direction = "back";
     }
     const finalNumViews = this.views.length + ((_b = insertViews === null || insertViews === void 0 ? void 0 : insertViews.length) !== null && _b !== void 0 ? _b : 0) - (removeCount !== null && removeCount !== void 0 ? removeCount : 0);
     assert(finalNumViews >= 0, "final balance can not be negative");
@@ -30543,8 +20102,8 @@ var getHighlightStyles = (highlightedDates, dateIsoString, el) => {
   return void 0;
 };
 var warnIfTimeZoneProvided = (el, formatOptions) => {
-  var _a96, _b, _c, _d;
-  if (((_a96 = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) === null || _a96 === void 0 ? void 0 : _a96.timeZone) || ((_b = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) === null || _b === void 0 ? void 0 : _b.timeZoneName) || ((_c = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.time) === null || _c === void 0 ? void 0 : _c.timeZone) || ((_d = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.time) === null || _d === void 0 ? void 0 : _d.timeZoneName)) {
+  var _a91, _b, _c, _d;
+  if (((_a91 = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) === null || _a91 === void 0 ? void 0 : _a91.timeZone) || ((_b = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) === null || _b === void 0 ? void 0 : _b.timeZoneName) || ((_c = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.time) === null || _c === void 0 ? void 0 : _c.timeZone) || ((_d = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.time) === null || _d === void 0 ? void 0 : _d.timeZoneName)) {
     printIonWarning('[ion-datetime] - "timeZone" and "timeZoneName" are not supported in "formatOptions".', el);
   }
 };
@@ -30609,11 +20168,11 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
       });
     };
     this.getActivePartsWithFallback = () => {
-      var _a96;
+      var _a91;
       const {
         defaultParts
       } = this;
-      return (_a96 = this.getActivePart()) !== null && _a96 !== void 0 ? _a96 : defaultParts;
+      return (_a91 = this.getActivePart()) !== null && _a91 !== void 0 ? _a91 : defaultParts;
     };
     this.getActivePart = () => {
       const {
@@ -30666,9 +20225,9 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
       const root = this.el.shadowRoot;
       const currentMonth = calendarBodyRef.querySelector(".calendar-month:nth-of-type(2)");
       const checkCalendarBodyFocus = (ev) => {
-        var _a96;
+        var _a91;
         const record = ev[0];
-        if (((_a96 = record.oldValue) === null || _a96 === void 0 ? void 0 : _a96.includes("ion-focused")) || !calendarBodyRef.classList.contains("ion-focused")) {
+        if (((_a91 = record.oldValue) === null || _a91 === void 0 ? void 0 : _a91.includes("ion-focused")) || !calendarBodyRef.classList.contains("ion-focused")) {
           return;
         }
         this.focusWorkingDay(currentMonth);
@@ -31492,7 +21051,7 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
     return renderArray;
   }
   renderDayPickerColumn(days) {
-    var _a96;
+    var _a91;
     if (days.length === 0) {
       return [];
     }
@@ -31501,7 +21060,7 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
       workingParts
     } = this;
     const activePart = this.getActivePartsWithFallback();
-    const pickerColumnValue = (_a96 = workingParts.day !== null ? workingParts.day : this.defaultParts.day) !== null && _a96 !== void 0 ? _a96 : void 0;
+    const pickerColumnValue = (_a91 = workingParts.day !== null ? workingParts.day : this.defaultParts.day) !== null && _a91 !== void 0 ? _a91 : void 0;
     return h("ion-picker-column", {
       "aria-label": "Select a day",
       class: "day-column",
@@ -31995,7 +21554,7 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
     }, this.renderWheelPicker("time"))];
   }
   getHeaderSelectedDateText() {
-    var _a96;
+    var _a91;
     const {
       activeParts,
       formatOptions,
@@ -32014,7 +21573,7 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
         }
       }
     } else {
-      headerText = getLocalizedDateTime(this.locale, this.getActivePartsWithFallback(), (_a96 = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) !== null && _a96 !== void 0 ? _a96 : {
+      headerText = getLocalizedDateTime(this.locale, this.getActivePartsWithFallback(), (_a91 = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) !== null && _a91 !== void 0 ? _a91 : {
         weekday: "short",
         month: "short",
         day: "numeric"
@@ -32115,7 +21674,7 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
     const hasDatePresentation = presentation === "date" || presentation === "date-time" || presentation === "time-date";
     const hasWheelVariant = hasDatePresentation && preferWheel;
     renderHiddenInput(true, el, name, formatValue(value), disabled);
-    return h(Host2, {
+    return h(Host, {
       key: "c3dfea8f46fcbcef38eb9e8a69b1b46a4e4b82fd",
       "aria-disabled": disabled ? "true" : null,
       onFocus: this.onFocus,
@@ -32294,7 +21853,7 @@ var getIconMap2 = () => {
     return CACHED_MAP2;
   }
 };
-var getUrl3 = (i) => {
+var getUrl2 = (i) => {
   let url = getSrc2(i.src);
   if (url) {
     return url;
@@ -32522,7 +22081,7 @@ var Icon3 = proxyCustomElement(class Icon4 extends H {
   }
   loadIcon() {
     if (Build.isBrowser && this.isVisible) {
-      const url = getUrl3(this);
+      const url = getUrl2(this);
       if (url) {
         if (ioniconContent2.has(url)) {
           this.svgContent = ioniconContent2.get(url);
@@ -32544,7 +22103,7 @@ var Icon3 = proxyCustomElement(class Icon4 extends H {
     const mode = this.mode || "md";
     const shouldAutoFlip = iconName ? (iconName.includes("arrow") || iconName.includes("chevron")) && flipRtl !== false : false;
     const shouldBeFlippable = flipRtl || shouldAutoFlip;
-    return h(Host2, Object.assign({
+    return h(Host, Object.assign({
       role: "img",
       class: Object.assign(Object.assign({
         [mode]: true
@@ -32746,7 +22305,7 @@ var createSlotMutationController = (el, slotName, mutationCallback) => {
     });
   }
   const watchForSlotChange = (slottedEl) => {
-    var _a96;
+    var _a91;
     if (slottedContentMutationObserver) {
       slottedContentMutationObserver.disconnect();
       slottedContentMutationObserver = void 0;
@@ -32761,7 +22320,7 @@ var createSlotMutationController = (el, slotName, mutationCallback) => {
         }
       }
     });
-    slottedContentMutationObserver.observe((_a96 = slottedEl.parentElement) !== null && _a96 !== void 0 ? _a96 : slottedEl, {
+    slottedContentMutationObserver.observe((_a91 = slottedEl.parentElement) !== null && _a91 !== void 0 ? _a91 : slottedEl, {
       subtree: true,
       childList: true
     });
@@ -32805,7 +22364,7 @@ var inputIosCss = ".sc-ion-input-ios-h{--placeholder-color:initial;--placeholder
 var IonInputIosStyle0 = inputIosCss;
 var inputMdCss = ".sc-ion-input-md-h{--placeholder-color:initial;--placeholder-font-style:initial;--placeholder-font-weight:initial;--placeholder-opacity:var(--ion-placeholder-opacity, 0.6);--padding-top:0px;--padding-end:0px;--padding-bottom:0px;--padding-start:0px;--background:transparent;--color:initial;--border-style:solid;--highlight-color-focused:var(--ion-color-primary, #0054e9);--highlight-color-valid:var(--ion-color-success, #2dd55b);--highlight-color-invalid:var(--ion-color-danger, #c5000f);--highlight-color:var(--highlight-color-focused);display:block;position:relative;width:100%;min-height:44px;padding:0 !important;color:var(--color);font-family:var(--ion-font-family, inherit);z-index:2}ion-item[slot=start].sc-ion-input-md-h,ion-item [slot=start].sc-ion-input-md-h,ion-item[slot=end].sc-ion-input-md-h,ion-item [slot=end].sc-ion-input-md-h{width:auto}.ion-color.sc-ion-input-md-h{--highlight-color-focused:var(--ion-color-base)}.input-label-placement-floating.sc-ion-input-md-h,.input-label-placement-stacked.sc-ion-input-md-h{min-height:56px}.native-input.sc-ion-input-md{padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;text-decoration:inherit;text-indent:inherit;text-overflow:inherit;text-transform:inherit;text-align:inherit;white-space:inherit;color:inherit;display:inline-block;position:relative;-ms-flex:1;flex:1;width:100%;max-width:100%;height:100%;max-height:100%;border:0;outline:none;background:transparent;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;z-index:1}.native-input.sc-ion-input-md::-webkit-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md::-moz-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md:-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md::-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md::placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md:-webkit-autofill{background-color:transparent}.native-input.sc-ion-input-md:invalid{-webkit-box-shadow:none;box-shadow:none}.native-input.sc-ion-input-md::-ms-clear{display:none}.cloned-input.sc-ion-input-md{top:0;bottom:0;position:absolute;pointer-events:none}.cloned-input.sc-ion-input-md{inset-inline-start:0}.cloned-input.sc-ion-input-md:disabled{opacity:1}.input-clear-icon.sc-ion-input-md{-webkit-margin-start:auto;margin-inline-start:auto;-webkit-margin-end:auto;margin-inline-end:auto;margin-top:auto;margin-bottom:auto;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;background-position:center;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:30px;height:30px;border:0;outline:none;background-color:transparent;background-repeat:no-repeat;color:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666));visibility:hidden;-webkit-appearance:none;-moz-appearance:none;appearance:none}.in-item-color.sc-ion-input-md-h .input-clear-icon.sc-ion-input-md{color:inherit}.input-clear-icon.sc-ion-input-md:focus{opacity:0.5}.has-value.sc-ion-input-md-h .input-clear-icon.sc-ion-input-md{visibility:visible}.input-wrapper.sc-ion-input-md{-webkit-padding-start:var(--padding-start);padding-inline-start:var(--padding-start);-webkit-padding-end:var(--padding-end);padding-inline-end:var(--padding-end);padding-top:var(--padding-top);padding-bottom:var(--padding-bottom);border-radius:var(--border-radius);display:-ms-flexbox;display:flex;position:relative;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:stretch;align-items:stretch;height:inherit;min-height:inherit;-webkit-transition:background-color 15ms linear;transition:background-color 15ms linear;background:var(--background);line-height:normal}.native-wrapper.sc-ion-input-md{display:-ms-flexbox;display:flex;position:relative;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center;width:100%}.ion-touched.ion-invalid.sc-ion-input-md-h{--highlight-color:var(--highlight-color-invalid)}.ion-valid.sc-ion-input-md-h{--highlight-color:var(--highlight-color-valid)}.input-bottom.sc-ion-input-md{-webkit-padding-start:var(--padding-start);padding-inline-start:var(--padding-start);-webkit-padding-end:var(--padding-end);padding-inline-end:var(--padding-end);padding-top:5px;padding-bottom:0;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;border-top:var(--border-width) var(--border-style) var(--border-color);font-size:0.75rem;white-space:normal}.has-focus.ion-valid.sc-ion-input-md-h,.ion-touched.ion-invalid.sc-ion-input-md-h{--border-color:var(--highlight-color)}.input-bottom.sc-ion-input-md .error-text.sc-ion-input-md{display:none;color:var(--highlight-color-invalid)}.input-bottom.sc-ion-input-md .helper-text.sc-ion-input-md{display:block;color:var(--ion-color-step-700, var(--ion-text-color-step-300, #4d4d4d))}.ion-touched.ion-invalid.sc-ion-input-md-h .input-bottom.sc-ion-input-md .error-text.sc-ion-input-md{display:block}.ion-touched.ion-invalid.sc-ion-input-md-h .input-bottom.sc-ion-input-md .helper-text.sc-ion-input-md{display:none}.input-bottom.sc-ion-input-md .counter.sc-ion-input-md{-webkit-margin-start:auto;margin-inline-start:auto;color:var(--ion-color-step-700, var(--ion-text-color-step-300, #4d4d4d));white-space:nowrap;-webkit-padding-start:16px;padding-inline-start:16px}.has-focus.sc-ion-input-md-h input.sc-ion-input-md{caret-color:var(--highlight-color)}.label-text-wrapper.sc-ion-input-md{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;max-width:200px;-webkit-transition:color 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);transition:color 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);transition:color 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);transition:color 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);pointer-events:none}.label-text.sc-ion-input-md,.sc-ion-input-md-s>[slot=label]{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.label-text-wrapper-hidden.sc-ion-input-md,.input-outline-notch-hidden.sc-ion-input-md{display:none}.input-wrapper.sc-ion-input-md input.sc-ion-input-md{-webkit-transition:opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);transition:opacity 150ms cubic-bezier(0.4, 0, 0.2, 1)}.input-label-placement-start.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{-ms-flex-direction:row;flex-direction:row}.input-label-placement-start.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:16px;margin-inline-end:16px;margin-top:0;margin-bottom:0}.input-label-placement-end.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{-ms-flex-direction:row-reverse;flex-direction:row-reverse}.input-label-placement-end.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-margin-start:16px;margin-inline-start:16px;-webkit-margin-end:0;margin-inline-end:0;margin-top:0;margin-bottom:0}.input-label-placement-fixed.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:16px;margin-inline-end:16px;margin-top:0;margin-bottom:0}.input-label-placement-fixed.sc-ion-input-md-h .label-text.sc-ion-input-md{-ms-flex:0 0 100px;flex:0 0 100px;width:100px;min-width:100px;max-width:200px}.input-label-placement-stacked.sc-ion-input-md-h .input-wrapper.sc-ion-input-md,.input-label-placement-floating.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{-ms-flex-direction:column;flex-direction:column;-ms-flex-align:start;align-items:start}.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:left top;transform-origin:left top;max-width:100%;z-index:2}[dir=rtl].sc-ion-input-md-h -no-combinator.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .sc-ion-input-md-h -no-combinator.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].sc-ion-input-md-h -no-combinator.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .sc-ion-input-md-h -no-combinator.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:right top;transform-origin:right top}@supports selector(:dir(rtl)){.input-label-placement-stacked.sc-ion-input-md-h:dir(rtl) .label-text-wrapper.sc-ion-input-md,.input-label-placement-floating.sc-ion-input-md-h:dir(rtl) .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:right top;transform-origin:right top}}.input-label-placement-stacked.sc-ion-input-md-h input.sc-ion-input-md,.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md{margin-left:0;margin-right:0;margin-top:1px;margin-bottom:0}.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform:translateY(100%) scale(1);transform:translateY(100%) scale(1)}.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md{opacity:0}.has-focus.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md,.has-value.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md{opacity:1}.label-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform:translateY(50%) scale(0.75);transform:translateY(50%) scale(0.75);max-width:calc(100% / 0.75)}.sc-ion-input-md-s>[slot=start]:last-of-type{-webkit-margin-end:16px;margin-inline-end:16px;-webkit-margin-start:0;margin-inline-start:0}.sc-ion-input-md-s>[slot=end]:first-of-type{-webkit-margin-start:16px;margin-inline-start:16px;-webkit-margin-end:0;margin-inline-end:0}.sc-ion-input-md-h[disabled].sc-ion-input-md-s>ion-input-password-toggle,.sc-ion-input-md-h[disabled] .sc-ion-input-md-s>ion-input-password-toggle,.sc-ion-input-md-h[readonly].sc-ion-input-md-s>ion-input-password-toggle,.sc-ion-input-md-h[readonly] .sc-ion-input-md-s>ion-input-password-toggle{display:none}.input-fill-solid.sc-ion-input-md-h{--background:var(--ion-color-step-50, var(--ion-background-color-step-50, #f2f2f2));--border-color:var(--ion-color-step-500, var(--ion-background-color-step-500, gray));--border-radius:4px;--padding-start:16px;--padding-end:16px;min-height:56px}.input-fill-solid.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{border-bottom:var(--border-width) var(--border-style) var(--border-color)}.has-focus.input-fill-solid.ion-valid.sc-ion-input-md-h,.input-fill-solid.ion-touched.ion-invalid.sc-ion-input-md-h{--border-color:var(--highlight-color)}.input-fill-solid.sc-ion-input-md-h .input-bottom.sc-ion-input-md{border-top:none}@media (any-hover: hover){.input-fill-solid.sc-ion-input-md-h:hover{--background:var(--ion-color-step-100, var(--ion-background-color-step-100, #e6e6e6));--border-color:var(--ion-color-step-750, var(--ion-background-color-step-750, #404040))}}.input-fill-solid.has-focus.sc-ion-input-md-h{--background:var(--ion-color-step-150, var(--ion-background-color-step-150, #d9d9d9));--border-color:var(--ion-color-step-750, var(--ion-background-color-step-750, #404040))}.input-fill-solid.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{border-start-start-radius:var(--border-radius);border-start-end-radius:var(--border-radius);border-end-end-radius:0px;border-end-start-radius:0px}.label-floating.input-fill-solid.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{max-width:calc(100% / 0.75)}.input-fill-outline.sc-ion-input-md-h{--border-color:var(--ion-color-step-300, var(--ion-background-color-step-300, #b3b3b3));--border-radius:4px;--padding-start:16px;--padding-end:16px;min-height:56px}.input-fill-outline.input-shape-round.sc-ion-input-md-h{--border-radius:28px;--padding-start:32px;--padding-end:32px}.has-focus.input-fill-outline.ion-valid.sc-ion-input-md-h,.input-fill-outline.ion-touched.ion-invalid.sc-ion-input-md-h{--border-color:var(--highlight-color)}@media (any-hover: hover){.input-fill-outline.sc-ion-input-md-h:hover{--border-color:var(--ion-color-step-750, var(--ion-background-color-step-750, #404040))}}.input-fill-outline.has-focus.sc-ion-input-md-h{--border-width:var(--highlight-height);--border-color:var(--highlight-color)}.input-fill-outline.sc-ion-input-md-h .input-bottom.sc-ion-input-md{border-top:none}.input-fill-outline.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{border-bottom:none}.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:left top;transform-origin:left top;position:absolute;max-width:calc(100% - var(--padding-start) - var(--padding-end))}[dir=rtl].sc-ion-input-md-h -no-combinator.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .sc-ion-input-md-h -no-combinator.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].sc-ion-input-md-h -no-combinator.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .sc-ion-input-md-h -no-combinator.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:right top;transform-origin:right top}@supports selector(:dir(rtl)){.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h:dir(rtl) .label-text-wrapper.sc-ion-input-md,.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h:dir(rtl) .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:right top;transform-origin:right top}}.input-fill-outline.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{position:relative}.label-floating.input-fill-outline.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform:translateY(-32%) scale(0.75);transform:translateY(-32%) scale(0.75);margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;max-width:calc((100% - var(--padding-start) - var(--padding-end) - 8px) / 0.75)}.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h input.sc-ion-input-md,.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md{margin-left:0;margin-right:0;margin-top:6px;margin-bottom:6px}.input-fill-outline.sc-ion-input-md-h .input-outline-container.sc-ion-input-md{left:0;right:0;top:0;bottom:0;display:-ms-flexbox;display:flex;position:absolute;width:100%;height:100%}.input-fill-outline.sc-ion-input-md-h .input-outline-start.sc-ion-input-md,.input-fill-outline.sc-ion-input-md-h .input-outline-end.sc-ion-input-md{pointer-events:none}.input-fill-outline.sc-ion-input-md-h .input-outline-start.sc-ion-input-md,.input-fill-outline.sc-ion-input-md-h .input-outline-notch.sc-ion-input-md,.input-fill-outline.sc-ion-input-md-h .input-outline-end.sc-ion-input-md{border-top:var(--border-width) var(--border-style) var(--border-color);border-bottom:var(--border-width) var(--border-style) var(--border-color)}.input-fill-outline.sc-ion-input-md-h .input-outline-notch.sc-ion-input-md{max-width:calc(100% - var(--padding-start) - var(--padding-end))}.input-fill-outline.sc-ion-input-md-h .notch-spacer.sc-ion-input-md{-webkit-padding-end:8px;padding-inline-end:8px;font-size:calc(1em * 0.75);opacity:0;pointer-events:none;-webkit-box-sizing:content-box;box-sizing:content-box}.input-fill-outline.sc-ion-input-md-h .input-outline-start.sc-ion-input-md{border-start-start-radius:var(--border-radius);border-start-end-radius:0px;border-end-end-radius:0px;border-end-start-radius:var(--border-radius);-webkit-border-start:var(--border-width) var(--border-style) var(--border-color);border-inline-start:var(--border-width) var(--border-style) var(--border-color);width:calc(var(--padding-start) - 4px)}.input-fill-outline.sc-ion-input-md-h .input-outline-end.sc-ion-input-md{-webkit-border-end:var(--border-width) var(--border-style) var(--border-color);border-inline-end:var(--border-width) var(--border-style) var(--border-color);border-start-start-radius:0px;border-start-end-radius:var(--border-radius);border-end-end-radius:var(--border-radius);border-end-start-radius:0px;-ms-flex-positive:1;flex-grow:1}.label-floating.input-fill-outline.sc-ion-input-md-h .input-outline-notch.sc-ion-input-md{border-top:none}.sc-ion-input-md-h{--border-width:1px;--border-color:var(--ion-item-border-color, var(--ion-border-color, var(--ion-color-step-150, var(--ion-background-color-step-150, rgba(0, 0, 0, 0.13)))));--highlight-height:2px;font-size:inherit}.input-clear-icon.sc-ion-input-md ion-icon.sc-ion-input-md{width:22px;height:22px}.input-disabled.sc-ion-input-md-h{opacity:0.38}.has-focus.ion-valid.sc-ion-input-md-h,.ion-touched.ion-invalid.sc-ion-input-md-h{--border-color:var(--highlight-color)}.input-bottom.sc-ion-input-md .counter.sc-ion-input-md{letter-spacing:0.0333333333em}.input-label-placement-floating.has-focus.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-label-placement-stacked.has-focus.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{color:var(--highlight-color)}.has-focus.input-label-placement-floating.ion-valid.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-label-placement-floating.ion-touched.ion-invalid.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.has-focus.input-label-placement-stacked.ion-valid.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-label-placement-stacked.ion-touched.ion-invalid.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{color:var(--highlight-color)}.input-highlight.sc-ion-input-md{bottom:-1px;position:absolute;width:100%;height:var(--highlight-height);-webkit-transform:scale(0);transform:scale(0);-webkit-transition:-webkit-transform 200ms;transition:-webkit-transform 200ms;transition:transform 200ms;transition:transform 200ms, -webkit-transform 200ms;background:var(--highlight-color)}.input-highlight.sc-ion-input-md{inset-inline-start:0}.has-focus.sc-ion-input-md-h .input-highlight.sc-ion-input-md{-webkit-transform:scale(1);transform:scale(1)}.in-item.sc-ion-input-md-h .input-highlight.sc-ion-input-md{bottom:0}.in-item.sc-ion-input-md-h .input-highlight.sc-ion-input-md{inset-inline-start:0}.input-shape-round.sc-ion-input-md-h{--border-radius:16px}.sc-ion-input-md-s>ion-button[slot=start].button-has-icon-only,.sc-ion-input-md-s>ion-button[slot=end].button-has-icon-only{--border-radius:50%;--padding-start:8px;--padding-end:8px;--padding-top:8px;--padding-bottom:8px;aspect-ratio:1;min-height:40px}";
 var IonInputMdStyle0 = inputMdCss;
-var Input2 = proxyCustomElement(class Input3 extends H {
+var Input = proxyCustomElement(class Input2 extends H {
   constructor() {
     super();
     this.__registerHost();
@@ -32976,8 +22535,8 @@ var Input2 = proxyCustomElement(class Input3 extends H {
     this.debounceChanged();
   }
   componentDidRender() {
-    var _a96;
-    (_a96 = this.notchController) === null || _a96 === void 0 ? void 0 : _a96.calculateNotchWidth();
+    var _a91;
+    (_a91 = this.notchController) === null || _a91 === void 0 ? void 0 : _a91.calculateNotchWidth();
   }
   disconnectedCallback() {
     if (Build.isBrowser) {
@@ -33229,7 +22788,7 @@ var Input2 = proxyCustomElement(class Input3 extends H {
     const hasValue = this.hasValue();
     const hasStartEndSlots = el.querySelector('[slot="start"], [slot="end"]') !== null;
     const labelShouldFloat = labelPlacement === "stacked" || labelPlacement === "floating" && (hasValue || hasFocus || hasStartEndSlots);
-    return h(Host2, {
+    return h(Host, {
       key: "41b2526627e7d2773a80f011b123284203a71ca0",
       class: createColorClasses(this.color, {
         [mode]: true,
@@ -33385,7 +22944,7 @@ function defineCustomElement$160() {
     switch (tagName) {
       case "ion-input":
         if (!customElements.get(tagName)) {
-          customElements.define(tagName, Input2);
+          customElements.define(tagName, Input);
         }
         break;
       case "ion-icon":
@@ -33605,7 +23164,7 @@ var Range = proxyCustomElement(class Range2 extends H {
     this.didLoad = true;
   }
   connectedCallback() {
-    var _a96;
+    var _a91;
     this.updateRatio();
     this.debounceChanged();
     this.disabledChanged();
@@ -33614,7 +23173,7 @@ var Range = proxyCustomElement(class Range2 extends H {
       this.setupGesture();
     }
     const ionContent = findClosestIonContent(this.el);
-    this.contentEl = (_a96 = ionContent === null || ionContent === void 0 ? void 0 : ionContent.querySelector(".ion-content-scroll-host")) !== null && _a96 !== void 0 ? _a96 : ionContent;
+    this.contentEl = (_a91 = ionContent === null || ionContent === void 0 ? void 0 : ionContent.querySelector(".ion-content-scroll-host")) !== null && _a91 !== void 0 ? _a91 : ionContent;
   }
   disconnectedCallback() {
     if (this.gesture) {
@@ -33623,8 +23182,8 @@ var Range = proxyCustomElement(class Range2 extends H {
     }
   }
   getValue() {
-    var _a96;
-    const value = (_a96 = this.value) !== null && _a96 !== void 0 ? _a96 : 0;
+    var _a91;
+    const value = (_a91 = this.value) !== null && _a91 !== void 0 ? _a91 : 0;
     if (this.dualKnobs) {
       if (typeof value === "object") {
         return value;
@@ -33700,12 +23259,12 @@ var Range = proxyCustomElement(class Range2 extends H {
    * @param detail The details of the gesture or mouse event.
    */
   onEnd(detail) {
-    var _a96;
+    var _a91;
     const {
       contentEl,
       initialContentScrollY
     } = this;
-    const currentX = (_a96 = detail.currentX) !== null && _a96 !== void 0 ? _a96 : detail.clientX;
+    const currentX = (_a91 = detail.currentX) !== null && _a91 !== void 0 ? _a91 : detail.clientX;
     if (this.pressedKnob === void 0) {
       this.setPressedKnob(currentX);
     }
@@ -33817,7 +23376,7 @@ var Range = proxyCustomElement(class Range2 extends H {
     return this.label !== void 0 || this.el.querySelector('[slot="label"]') !== null;
   }
   renderRangeSlider() {
-    var _a96;
+    var _a91;
     const {
       min,
       max,
@@ -33842,7 +23401,7 @@ var Range = proxyCustomElement(class Range2 extends H {
       };
     };
     if (this.dualKnobs === false) {
-      if (this.valA < ((_a96 = this.activeBarStart) !== null && _a96 !== void 0 ? _a96 : this.min)) {
+      if (this.valA < ((_a91 = this.activeBarStart) !== null && _a91 !== void 0 ? _a91 : this.min)) {
         barStart = `${ratioUpper * 100}%`;
         barEnd = `${100 - ratioLower * 100}%`;
       } else {
@@ -33959,7 +23518,7 @@ var Range = proxyCustomElement(class Range2 extends H {
     const needsEndAdjustment = inItem && !hasEndContent;
     const mode = getIonMode(this);
     renderHiddenInput(true, el, this.name, JSON.stringify(this.getValue()), disabled);
-    return h(Host2, {
+    return h(Host, {
       key: "3e065039ee048f1f70d97dba5dae98fa1315d867",
       onFocusin: this.onFocus,
       onFocusout: this.onBlur,
@@ -34500,7 +24059,7 @@ var Searchbar = proxyCustomElement(class Searchbar2 extends H {
       icon: this.cancelButtonIcon,
       lazy: false
     }) : cancelButtonText));
-    return h(Host2, {
+    return h(Host, {
       key: "d1a1972725e949fb102c91487aaa7b9d10c2d718",
       role: "search",
       "aria-disabled": this.disabled ? "true" : null,
@@ -34682,7 +24241,7 @@ var Segment = proxyCustomElement(class Segment2 extends H {
       this.valueChanged(this.value);
     };
     this.getSegmentButton = (selector) => {
-      var _a96, _b;
+      var _a91, _b;
       const buttons = this.getButtons().filter((button) => !button.disabled);
       const currIndex = buttons.findIndex((button) => button === document.activeElement);
       switch (selector) {
@@ -34691,7 +24250,7 @@ var Segment = proxyCustomElement(class Segment2 extends H {
         case "last":
           return buttons[buttons.length - 1];
         case "next":
-          return (_a96 = buttons[currIndex + 1]) !== null && _a96 !== void 0 ? _a96 : buttons[0];
+          return (_a91 = buttons[currIndex + 1]) !== null && _a91 !== void 0 ? _a91 : buttons[0];
         case "previous":
           return (_b = buttons[currIndex - 1]) !== null && _b !== void 0 ? _b : buttons[buttons.length - 1];
         default:
@@ -35063,7 +24622,7 @@ var Segment = proxyCustomElement(class Segment2 extends H {
   }
   render() {
     const mode = getIonMode(this);
-    return h(Host2, {
+    return h(Host, {
       key: "a64e39352050b516f7dc82ce95a4bcff8431d1d0",
       role: "tablist",
       onClick: this.onClick,
@@ -35250,7 +24809,7 @@ var SelectPopover = proxyCustomElement(class SelectPopover2 extends H {
       subHeader
     } = this;
     const hasSubHeaderOrMessage = subHeader !== void 0 || message !== void 0;
-    return h(Host2, {
+    return h(Host, {
       key: "542367ab8fb72bfebf7e65630b91017d68827fd6",
       class: getIonMode(this)
     }, h("ion-list", {
@@ -35811,8 +25370,8 @@ var Select = proxyCustomElement(class Select2 extends H {
     }, label));
   }
   componentDidRender() {
-    var _a96;
-    (_a96 = this.notchController) === null || _a96 === void 0 ? void 0 : _a96.calculateNotchWidth();
+    var _a91;
+    (_a91 = this.notchController) === null || _a91 === void 0 ? void 0 : _a91.calculateNotchWidth();
   }
   /**
    * Gets any content passed into the `label` slot,
@@ -35910,13 +25469,13 @@ var Select = proxyCustomElement(class Select2 extends H {
     });
   }
   get ariaLabel() {
-    var _a96;
+    var _a91;
     const {
       placeholder,
       inheritedAttributes
     } = this;
     const displayValue = this.getText();
-    const definedLabel = (_a96 = inheritedAttributes["aria-label"]) !== null && _a96 !== void 0 ? _a96 : this.labelText;
+    const definedLabel = (_a91 = inheritedAttributes["aria-label"]) !== null && _a91 !== void 0 ? _a91 : this.labelText;
     let renderedLabel = displayValue;
     if (renderedLabel === "" && placeholder !== void 0) {
       renderedLabel = placeholder;
@@ -36025,7 +25584,7 @@ var Select = proxyCustomElement(class Select2 extends H {
     const hasStartEndSlots = el.querySelector('[slot="start"], [slot="end"]') !== null;
     renderHiddenInput(true, el, name, parseValue(value), disabled);
     const labelShouldFloat = labelPlacement === "stacked" || labelPlacement === "floating" && (hasValue || isExpanded || hasStartEndSlots);
-    return h(Host2, {
+    return h(Host, {
       key: "6dd3c92dc3c587960d767c7dd1c142fc20bef8ed",
       onClick: this.onClick,
       class: createColorClasses(this.color, {
@@ -36436,8 +25995,8 @@ var Textarea = proxyCustomElement(class Textarea2 extends H {
     this.runAutoGrow();
   }
   componentDidRender() {
-    var _a96;
-    (_a96 = this.notchController) === null || _a96 === void 0 ? void 0 : _a96.calculateNotchWidth();
+    var _a91;
+    (_a91 = this.notchController) === null || _a91 === void 0 ? void 0 : _a91.calculateNotchWidth();
   }
   /**
    * Sets focus on the native `textarea` in `ion-textarea`. Use this method instead of the global
@@ -36495,9 +26054,9 @@ var Textarea = proxyCustomElement(class Textarea2 extends H {
   runAutoGrow() {
     if (this.nativeInput && this.autoGrow) {
       writeTask(() => {
-        var _a96;
+        var _a91;
         if (this.textareaWrapper) {
-          this.textareaWrapper.dataset.replicatedValue = (_a96 = this.value) !== null && _a96 !== void 0 ? _a96 : "";
+          this.textareaWrapper.dataset.replicatedValue = (_a91 = this.value) !== null && _a91 !== void 0 ? _a91 : "";
         }
       });
     }
@@ -36668,7 +26227,7 @@ var Textarea = proxyCustomElement(class Textarea2 extends H {
     const hasValue = this.hasValue();
     const hasStartEndSlots = el.querySelector('[slot="start"], [slot="end"]') !== null;
     const labelShouldFloat = labelPlacement === "stacked" || labelPlacement === "floating" && (hasValue || hasFocus || hasStartEndSlots);
-    return h(Host2, {
+    return h(Host, {
       key: "7eb390b79de0d671a785bbb783f97e09169472f9",
       class: createColorClasses(this.color, {
         [mode]: true,
@@ -37049,7 +26608,7 @@ var Toggle = proxyCustomElement(class Toggle2 extends H {
     const value = this.getValue();
     const rtl = isRTL(el) ? "rtl" : "ltr";
     renderHiddenInput(true, el, name, checked ? value : "", disabled);
-    return h(Host2, {
+    return h(Host, {
       key: "d9dad2132e9d6cf8e9844fefa009402e1a637ef8",
       role: "switch",
       "aria-checked": `${checked}`,
@@ -37166,7 +26725,7 @@ function defineCustomElement$166() {
 var defineCustomElement117 = defineCustomElement$166;
 
 // node_modules/@ionic/angular/fesm2022/ionic-angular-standalone.mjs
-var _c02 = ["outletContent"];
+var _c0 = ["outletContent"];
 var _c1 = ["*"];
 function IonModal_div_0_Template(rf, ctx) {
   if (rf & 1) {
@@ -37213,8 +26772,8 @@ function IonTabs_ng_content_4_Template(rf, ctx) {
     ɵɵprojection(0, 2, ["*ngIf", "tabs.length > 0"]);
   }
 }
-var _a6;
-var IonRouterOutlet2 = (_a6 = class extends IonRouterOutlet {
+var _a;
+var IonRouterOutlet2 = (_a = class extends IonRouterOutlet {
   parentOutlet;
   /**
    * `static: true` must be set so the query results are resolved
@@ -37235,15 +26794,15 @@ var IonRouterOutlet2 = (_a6 = class extends IonRouterOutlet {
     this.parentOutlet = parentOutlet;
   }
 }, /** @nocollapse */
-__publicField(_a6, "ɵfac", function IonRouterOutlet_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a6)(ɵɵinjectAttribute("name"), ɵɵinjectAttribute("tabs"), ɵɵdirectiveInject(Location), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(_a6, 12));
+__publicField(_a, "ɵfac", function IonRouterOutlet_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a)(ɵɵinjectAttribute("name"), ɵɵinjectAttribute("tabs"), ɵɵdirectiveInject(Location), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(_a, 12));
 }), /** @nocollapse */
-__publicField(_a6, "ɵcmp", ɵɵdefineComponent({
-  type: _a6,
+__publicField(_a, "ɵcmp", ɵɵdefineComponent({
+  type: _a,
   selectors: [["ion-router-outlet"]],
   viewQuery: function IonRouterOutlet_Query(rf, ctx) {
     if (rf & 1) {
-      ɵɵviewQuery(_c02, 7, ViewContainerRef);
+      ɵɵviewQuery(_c0, 7, ViewContainerRef);
     }
     if (rf & 2) {
       let _t;
@@ -37264,7 +26823,7 @@ __publicField(_a6, "ɵcmp", ɵɵdefineComponent({
     }
   },
   encapsulation: 2
-})), _a6);
+})), _a);
 IonRouterOutlet2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement4
 })], IonRouterOutlet2);
@@ -37319,17 +26878,17 @@ IonRouterOutlet2 = __decorate([ProxyCmp({
     }]
   });
 })();
-var _a7;
-var IonBackButton2 = (_a7 = class extends IonBackButton {
+var _a2;
+var IonBackButton2 = (_a2 = class extends IonBackButton {
   constructor(routerOutlet, navCtrl, config2, r, z, c) {
     super(routerOutlet, navCtrl, config2, r, z, c);
   }
 }, /** @nocollapse */
-__publicField(_a7, "ɵfac", function IonBackButton_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a7)(ɵɵdirectiveInject(IonRouterOutlet2, 8), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(Config), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
+__publicField(_a2, "ɵfac", function IonBackButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a2)(ɵɵdirectiveInject(IonRouterOutlet2, 8), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(Config), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
 }), /** @nocollapse */
-__publicField(_a7, "ɵcmp", ɵɵdefineComponent({
-  type: _a7,
+__publicField(_a2, "ɵcmp", ɵɵdefineComponent({
+  type: _a2,
   selectors: [["ion-back-button"]],
   features: [ɵɵInheritDefinitionFeature],
   ngContentSelectors: _c1,
@@ -37343,7 +26902,7 @@ __publicField(_a7, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a7);
+})), _a2);
 IonBackButton2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement3
 })], IonBackButton2);
@@ -37375,17 +26934,17 @@ IonBackButton2 = __decorate([ProxyCmp({
     }];
   }, null);
 })();
-var _a8;
-var IonModal2 = (_a8 = class extends IonModal {
+var _a3;
+var IonModal2 = (_a3 = class extends IonModal {
 }, /** @nocollapse */
-__publicField(_a8, "ɵfac", /* @__PURE__ */ (() => {
+__publicField(_a3, "ɵfac", /* @__PURE__ */ (() => {
   let ɵIonModal_BaseFactory;
   return function IonModal_Factory(__ngFactoryType__) {
-    return (ɵIonModal_BaseFactory || (ɵIonModal_BaseFactory = ɵɵgetInheritedFactory(_a8)))(__ngFactoryType__ || _a8);
+    return (ɵIonModal_BaseFactory || (ɵIonModal_BaseFactory = ɵɵgetInheritedFactory(_a3)))(__ngFactoryType__ || _a3);
   };
 })()), /** @nocollapse */
-__publicField(_a8, "ɵcmp", ɵɵdefineComponent({
-  type: _a8,
+__publicField(_a3, "ɵcmp", ɵɵdefineComponent({
+  type: _a3,
   selectors: [["ion-modal"]],
   features: [ɵɵInheritDefinitionFeature],
   decls: 1,
@@ -37402,7 +26961,7 @@ __publicField(_a8, "ɵcmp", ɵɵdefineComponent({
   dependencies: [CommonModule, NgIf, NgTemplateOutlet],
   encapsulation: 2,
   changeDetection: 0
-})), _a8);
+})), _a3);
 IonModal2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement7
 })], IonModal2);
@@ -37420,17 +26979,17 @@ IonModal2 = __decorate([ProxyCmp({
     }]
   }], null, null);
 })();
-var _a9;
-var IonPopover2 = (_a9 = class extends IonPopover {
+var _a4;
+var IonPopover2 = (_a4 = class extends IonPopover {
 }, /** @nocollapse */
-__publicField(_a9, "ɵfac", /* @__PURE__ */ (() => {
+__publicField(_a4, "ɵfac", /* @__PURE__ */ (() => {
   let ɵIonPopover_BaseFactory;
   return function IonPopover_Factory(__ngFactoryType__) {
-    return (ɵIonPopover_BaseFactory || (ɵIonPopover_BaseFactory = ɵɵgetInheritedFactory(_a9)))(__ngFactoryType__ || _a9);
+    return (ɵIonPopover_BaseFactory || (ɵIonPopover_BaseFactory = ɵɵgetInheritedFactory(_a4)))(__ngFactoryType__ || _a4);
   };
 })()), /** @nocollapse */
-__publicField(_a9, "ɵcmp", ɵɵdefineComponent({
-  type: _a9,
+__publicField(_a4, "ɵcmp", ɵɵdefineComponent({
+  type: _a4,
   selectors: [["ion-popover"]],
   features: [ɵɵInheritDefinitionFeature],
   decls: 1,
@@ -37447,7 +27006,7 @@ __publicField(_a9, "ɵcmp", ɵɵdefineComponent({
   dependencies: [CommonModule, NgIf, NgTemplateOutlet],
   encapsulation: 2,
   changeDetection: 0
-})), _a9);
+})), _a4);
 IonPopover2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement9
 })], IonPopover2);
@@ -37513,7 +27072,7 @@ var IonRouterLinkWithHref = _IonRouterLinkWithHref;
     }]
   }], null, null);
 })();
-var proxyInputs2 = (Cmp, inputs) => {
+var proxyInputs = (Cmp, inputs) => {
   const Prototype = Cmp.prototype;
   inputs.forEach((item) => {
     Object.defineProperty(Prototype, item, {
@@ -37534,7 +27093,7 @@ var proxyInputs2 = (Cmp, inputs) => {
     });
   });
 };
-var proxyMethods2 = (Cmp, methods) => {
+var proxyMethods = (Cmp, methods) => {
   const Prototype = Cmp.prototype;
   methods.forEach((methodName) => {
     Prototype[methodName] = function() {
@@ -37543,7 +27102,7 @@ var proxyMethods2 = (Cmp, methods) => {
     };
   });
 };
-var proxyOutputs2 = (instance, el, events) => {
+var proxyOutputs = (instance, el, events) => {
   events.forEach((eventName) => instance[eventName] = fromEvent(el, eventName));
 };
 function ProxyCmp2(opts) {
@@ -37557,17 +27116,17 @@ function ProxyCmp2(opts) {
       defineCustomElementFn();
     }
     if (inputs) {
-      proxyInputs2(cls, inputs);
+      proxyInputs(cls, inputs);
     }
     if (methods) {
-      proxyMethods2(cls, methods);
+      proxyMethods(cls, methods);
     }
     return cls;
   };
   return decorator;
 }
-var _a10;
-var IonAccordion = (_a10 = class {
+var _a5;
+var IonAccordion = (_a5 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -37576,11 +27135,11 @@ var IonAccordion = (_a10 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a10, "ɵfac", function IonAccordion_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a10)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a5, "ɵfac", function IonAccordion_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a5)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a10, "ɵcmp", ɵɵdefineComponent({
-  type: _a10,
+__publicField(_a5, "ɵcmp", ɵɵdefineComponent({
+  type: _a5,
   selectors: [["ion-accordion"]],
   inputs: {
     disabled: "disabled",
@@ -37601,7 +27160,7 @@ __publicField(_a10, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a10);
+})), _a5);
 IonAccordion = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement10,
   inputs: ["disabled", "mode", "readonly", "toggleIcon", "toggleIconSlot", "value"]
@@ -37627,22 +27186,22 @@ IonAccordion = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a11;
-var IonAccordionGroup = (_a11 = class {
+var _a6;
+var IonAccordionGroup = (_a6 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange"]);
+    proxyOutputs(this, this.el, ["ionChange"]);
   }
 }, /** @nocollapse */
-__publicField(_a11, "ɵfac", function IonAccordionGroup_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a11)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a6, "ɵfac", function IonAccordionGroup_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a6)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a11, "ɵcmp", ɵɵdefineComponent({
-  type: _a11,
+__publicField(_a6, "ɵcmp", ɵɵdefineComponent({
+  type: _a6,
   selectors: [["ion-accordion-group"]],
   inputs: {
     animated: "animated",
@@ -37664,7 +27223,7 @@ __publicField(_a11, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a11);
+})), _a6);
 IonAccordionGroup = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement11,
   inputs: ["animated", "disabled", "expand", "mode", "multiple", "readonly", "value"]
@@ -37690,22 +27249,22 @@ IonAccordionGroup = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a12;
-var IonActionSheet = (_a12 = class {
+var _a7;
+var IonActionSheet = (_a7 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionActionSheetDidPresent", "ionActionSheetWillPresent", "ionActionSheetWillDismiss", "ionActionSheetDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionActionSheetDidPresent", "ionActionSheetWillPresent", "ionActionSheetWillDismiss", "ionActionSheetDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
 }, /** @nocollapse */
-__publicField(_a12, "ɵfac", function IonActionSheet_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a12)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a7, "ɵfac", function IonActionSheet_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a7)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a12, "ɵcmp", ɵɵdefineComponent({
-  type: _a12,
+__publicField(_a7, "ɵcmp", ɵɵdefineComponent({
+  type: _a7,
   selectors: [["ion-action-sheet"]],
   inputs: {
     animated: "animated",
@@ -37734,7 +27293,7 @@ __publicField(_a12, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a12);
+})), _a7);
 IonActionSheet = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement13,
   inputs: ["animated", "backdropDismiss", "buttons", "cssClass", "enterAnimation", "header", "htmlAttributes", "isOpen", "keyboardClose", "leaveAnimation", "mode", "subHeader", "translucent", "trigger"],
@@ -37761,22 +27320,22 @@ IonActionSheet = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a13;
-var IonAlert = (_a13 = class {
+var _a8;
+var IonAlert = (_a8 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionAlertDidPresent", "ionAlertWillPresent", "ionAlertWillDismiss", "ionAlertDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionAlertDidPresent", "ionAlertWillPresent", "ionAlertWillDismiss", "ionAlertDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
 }, /** @nocollapse */
-__publicField(_a13, "ɵfac", function IonAlert_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a13)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a8, "ɵfac", function IonAlert_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a8)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a13, "ɵcmp", ɵɵdefineComponent({
-  type: _a13,
+__publicField(_a8, "ɵcmp", ɵɵdefineComponent({
+  type: _a8,
   selectors: [["ion-alert"]],
   inputs: {
     animated: "animated",
@@ -37807,7 +27366,7 @@ __publicField(_a13, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a13);
+})), _a8);
 IonAlert = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement15,
   inputs: ["animated", "backdropDismiss", "buttons", "cssClass", "enterAnimation", "header", "htmlAttributes", "inputs", "isOpen", "keyboardClose", "leaveAnimation", "message", "mode", "subHeader", "translucent", "trigger"],
@@ -37834,8 +27393,8 @@ IonAlert = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a14;
-var IonApp = (_a14 = class {
+var _a9;
+var IonApp = (_a9 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -37844,11 +27403,11 @@ var IonApp = (_a14 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a14, "ɵfac", function IonApp_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a14)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a9, "ɵfac", function IonApp_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a9)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a14, "ɵcmp", ɵɵdefineComponent({
-  type: _a14,
+__publicField(_a9, "ɵcmp", ɵɵdefineComponent({
+  type: _a9,
   selectors: [["ion-app"]],
   ngContentSelectors: _c1,
   decls: 1,
@@ -37861,7 +27420,7 @@ __publicField(_a14, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a14);
+})), _a9);
 IonApp = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement16,
   methods: ["setFocus"]
@@ -37887,8 +27446,8 @@ IonApp = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a15;
-var IonAvatar = (_a15 = class {
+var _a10;
+var IonAvatar = (_a10 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -37897,11 +27456,11 @@ var IonAvatar = (_a15 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a15, "ɵfac", function IonAvatar_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a15)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a10, "ɵfac", function IonAvatar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a10)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a15, "ɵcmp", ɵɵdefineComponent({
-  type: _a15,
+__publicField(_a10, "ɵcmp", ɵɵdefineComponent({
+  type: _a10,
   selectors: [["ion-avatar"]],
   ngContentSelectors: _c1,
   decls: 1,
@@ -37914,7 +27473,7 @@ __publicField(_a15, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a15);
+})), _a10);
 IonAvatar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement17
 })], IonAvatar);
@@ -37939,22 +27498,22 @@ IonAvatar = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a16;
-var IonBackdrop = (_a16 = class {
+var _a11;
+var IonBackdrop = (_a11 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionBackdropTap"]);
+    proxyOutputs(this, this.el, ["ionBackdropTap"]);
   }
 }, /** @nocollapse */
-__publicField(_a16, "ɵfac", function IonBackdrop_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a16)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a11, "ɵfac", function IonBackdrop_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a11)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a16, "ɵcmp", ɵɵdefineComponent({
-  type: _a16,
+__publicField(_a11, "ɵcmp", ɵɵdefineComponent({
+  type: _a11,
   selectors: [["ion-backdrop"]],
   inputs: {
     stopPropagation: "stopPropagation",
@@ -37972,7 +27531,7 @@ __publicField(_a16, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a16);
+})), _a11);
 IonBackdrop = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement18,
   inputs: ["stopPropagation", "tappable", "visible"]
@@ -37998,8 +27557,8 @@ IonBackdrop = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a17;
-var IonBadge = (_a17 = class {
+var _a12;
+var IonBadge = (_a12 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38008,11 +27567,11 @@ var IonBadge = (_a17 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a17, "ɵfac", function IonBadge_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a17)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a12, "ɵfac", function IonBadge_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a12)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a17, "ɵcmp", ɵɵdefineComponent({
-  type: _a17,
+__publicField(_a12, "ɵcmp", ɵɵdefineComponent({
+  type: _a12,
   selectors: [["ion-badge"]],
   inputs: {
     color: "color",
@@ -38029,7 +27588,7 @@ __publicField(_a17, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a17);
+})), _a12);
 IonBadge = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement19,
   inputs: ["color", "mode"]
@@ -38055,22 +27614,22 @@ IonBadge = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a18;
-var IonBreadcrumb = (_a18 = class {
+var _a13;
+var IonBreadcrumb = (_a13 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionFocus", "ionBlur"]);
   }
 }, /** @nocollapse */
-__publicField(_a18, "ɵfac", function IonBreadcrumb_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a18)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a13, "ɵfac", function IonBreadcrumb_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a13)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a18, "ɵcmp", ɵɵdefineComponent({
-  type: _a18,
+__publicField(_a13, "ɵcmp", ɵɵdefineComponent({
+  type: _a13,
   selectors: [["ion-breadcrumb"]],
   inputs: {
     active: "active",
@@ -38096,7 +27655,7 @@ __publicField(_a18, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a18);
+})), _a13);
 IonBreadcrumb = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement20,
   inputs: ["active", "color", "disabled", "download", "href", "mode", "rel", "routerAnimation", "routerDirection", "separator", "target"]
@@ -38122,22 +27681,22 @@ IonBreadcrumb = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a19;
-var IonBreadcrumbs = (_a19 = class {
+var _a14;
+var IonBreadcrumbs = (_a14 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionCollapsedClick"]);
+    proxyOutputs(this, this.el, ["ionCollapsedClick"]);
   }
 }, /** @nocollapse */
-__publicField(_a19, "ɵfac", function IonBreadcrumbs_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a19)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a14, "ɵfac", function IonBreadcrumbs_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a14)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a19, "ɵcmp", ɵɵdefineComponent({
-  type: _a19,
+__publicField(_a14, "ɵcmp", ɵɵdefineComponent({
+  type: _a14,
   selectors: [["ion-breadcrumbs"]],
   inputs: {
     color: "color",
@@ -38157,7 +27716,7 @@ __publicField(_a19, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a19);
+})), _a14);
 IonBreadcrumbs = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement21,
   inputs: ["color", "itemsAfterCollapse", "itemsBeforeCollapse", "maxItems", "mode"]
@@ -38183,22 +27742,22 @@ IonBreadcrumbs = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a20;
-var IonButton = (_a20 = class {
+var _a15;
+var IonButton = (_a15 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionFocus", "ionBlur"]);
   }
 }, /** @nocollapse */
-__publicField(_a20, "ɵfac", function IonButton_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a20)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a15, "ɵfac", function IonButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a15)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a20, "ɵcmp", ɵɵdefineComponent({
-  type: _a20,
+__publicField(_a15, "ɵcmp", ɵɵdefineComponent({
+  type: _a15,
   selectors: [["ion-button"]],
   inputs: {
     buttonType: "buttonType",
@@ -38230,7 +27789,7 @@ __publicField(_a20, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a20);
+})), _a15);
 IonButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement23,
   inputs: ["buttonType", "color", "disabled", "download", "expand", "fill", "form", "href", "mode", "rel", "routerAnimation", "routerDirection", "shape", "size", "strong", "target", "type"]
@@ -38256,8 +27815,8 @@ IonButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a21;
-var IonButtons = (_a21 = class {
+var _a16;
+var IonButtons = (_a16 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38266,11 +27825,11 @@ var IonButtons = (_a21 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a21, "ɵfac", function IonButtons_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a21)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a16, "ɵfac", function IonButtons_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a16)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a21, "ɵcmp", ɵɵdefineComponent({
-  type: _a21,
+__publicField(_a16, "ɵcmp", ɵɵdefineComponent({
+  type: _a16,
   selectors: [["ion-buttons"]],
   inputs: {
     collapse: "collapse"
@@ -38286,7 +27845,7 @@ __publicField(_a21, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a21);
+})), _a16);
 IonButtons = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement25,
   inputs: ["collapse"]
@@ -38312,8 +27871,8 @@ IonButtons = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a22;
-var IonCard = (_a22 = class {
+var _a17;
+var IonCard = (_a17 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38322,11 +27881,11 @@ var IonCard = (_a22 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a22, "ɵfac", function IonCard_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a22)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a17, "ɵfac", function IonCard_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a17)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a22, "ɵcmp", ɵɵdefineComponent({
-  type: _a22,
+__publicField(_a17, "ɵcmp", ɵɵdefineComponent({
+  type: _a17,
   selectors: [["ion-card"]],
   inputs: {
     button: "button",
@@ -38352,7 +27911,7 @@ __publicField(_a22, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a22);
+})), _a17);
 IonCard = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement26,
   inputs: ["button", "color", "disabled", "download", "href", "mode", "rel", "routerAnimation", "routerDirection", "target", "type"]
@@ -38378,8 +27937,8 @@ IonCard = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a23;
-var IonCardContent = (_a23 = class {
+var _a18;
+var IonCardContent = (_a18 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38388,11 +27947,11 @@ var IonCardContent = (_a23 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a23, "ɵfac", function IonCardContent_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a23)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a18, "ɵfac", function IonCardContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a18)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a23, "ɵcmp", ɵɵdefineComponent({
-  type: _a23,
+__publicField(_a18, "ɵcmp", ɵɵdefineComponent({
+  type: _a18,
   selectors: [["ion-card-content"]],
   inputs: {
     mode: "mode"
@@ -38408,7 +27967,7 @@ __publicField(_a23, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a23);
+})), _a18);
 IonCardContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement27,
   inputs: ["mode"]
@@ -38434,8 +27993,8 @@ IonCardContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a24;
-var IonCardHeader = (_a24 = class {
+var _a19;
+var IonCardHeader = (_a19 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38444,11 +28003,11 @@ var IonCardHeader = (_a24 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a24, "ɵfac", function IonCardHeader_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a24)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a19, "ɵfac", function IonCardHeader_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a19)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a24, "ɵcmp", ɵɵdefineComponent({
-  type: _a24,
+__publicField(_a19, "ɵcmp", ɵɵdefineComponent({
+  type: _a19,
   selectors: [["ion-card-header"]],
   inputs: {
     color: "color",
@@ -38466,7 +28025,7 @@ __publicField(_a24, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a24);
+})), _a19);
 IonCardHeader = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement28,
   inputs: ["color", "mode", "translucent"]
@@ -38492,8 +28051,8 @@ IonCardHeader = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a25;
-var IonCardSubtitle = (_a25 = class {
+var _a20;
+var IonCardSubtitle = (_a20 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38502,11 +28061,11 @@ var IonCardSubtitle = (_a25 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a25, "ɵfac", function IonCardSubtitle_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a25)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a20, "ɵfac", function IonCardSubtitle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a20)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a25, "ɵcmp", ɵɵdefineComponent({
-  type: _a25,
+__publicField(_a20, "ɵcmp", ɵɵdefineComponent({
+  type: _a20,
   selectors: [["ion-card-subtitle"]],
   inputs: {
     color: "color",
@@ -38523,7 +28082,7 @@ __publicField(_a25, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a25);
+})), _a20);
 IonCardSubtitle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement29,
   inputs: ["color", "mode"]
@@ -38549,8 +28108,8 @@ IonCardSubtitle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a26;
-var IonCardTitle = (_a26 = class {
+var _a21;
+var IonCardTitle = (_a21 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38559,11 +28118,11 @@ var IonCardTitle = (_a26 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a26, "ɵfac", function IonCardTitle_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a26)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a21, "ɵfac", function IonCardTitle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a21)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a26, "ɵcmp", ɵɵdefineComponent({
-  type: _a26,
+__publicField(_a21, "ɵcmp", ɵɵdefineComponent({
+  type: _a21,
   selectors: [["ion-card-title"]],
   inputs: {
     color: "color",
@@ -38580,7 +28139,7 @@ __publicField(_a26, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a26);
+})), _a21);
 IonCardTitle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement30,
   inputs: ["color", "mode"]
@@ -38606,8 +28165,8 @@ IonCardTitle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a27;
-var IonChip = (_a27 = class {
+var _a22;
+var IonChip = (_a22 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38616,11 +28175,11 @@ var IonChip = (_a27 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a27, "ɵfac", function IonChip_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a27)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a22, "ɵfac", function IonChip_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a22)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a27, "ɵcmp", ɵɵdefineComponent({
-  type: _a27,
+__publicField(_a22, "ɵcmp", ɵɵdefineComponent({
+  type: _a22,
   selectors: [["ion-chip"]],
   inputs: {
     color: "color",
@@ -38639,7 +28198,7 @@ __publicField(_a27, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a27);
+})), _a22);
 IonChip = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement31,
   inputs: ["color", "disabled", "mode", "outline"]
@@ -38665,8 +28224,8 @@ IonChip = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a28;
-var IonCol = (_a28 = class {
+var _a23;
+var IonCol = (_a23 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38675,11 +28234,11 @@ var IonCol = (_a28 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a28, "ɵfac", function IonCol_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a28)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a23, "ɵfac", function IonCol_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a23)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a28, "ɵcmp", ɵɵdefineComponent({
-  type: _a28,
+__publicField(_a23, "ɵcmp", ɵɵdefineComponent({
+  type: _a23,
   selectors: [["ion-col"]],
   inputs: {
     offset: "offset",
@@ -38718,7 +28277,7 @@ __publicField(_a28, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a28);
+})), _a23);
 IonCol = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement32,
   inputs: ["offset", "offsetLg", "offsetMd", "offsetSm", "offsetXl", "offsetXs", "pull", "pullLg", "pullMd", "pullSm", "pullXl", "pullXs", "push", "pushLg", "pushMd", "pushSm", "pushXl", "pushXs", "size", "sizeLg", "sizeMd", "sizeSm", "sizeXl", "sizeXs"]
@@ -38744,22 +28303,22 @@ IonCol = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a29;
-var IonContent = (_a29 = class {
+var _a24;
+var IonContent = (_a24 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionScrollStart", "ionScroll", "ionScrollEnd"]);
+    proxyOutputs(this, this.el, ["ionScrollStart", "ionScroll", "ionScrollEnd"]);
   }
 }, /** @nocollapse */
-__publicField(_a29, "ɵfac", function IonContent_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a29)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a24, "ɵfac", function IonContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a24)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a29, "ɵcmp", ɵɵdefineComponent({
-  type: _a29,
+__publicField(_a24, "ɵcmp", ɵɵdefineComponent({
+  type: _a24,
   selectors: [["ion-content"]],
   inputs: {
     color: "color",
@@ -38781,7 +28340,7 @@ __publicField(_a29, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a29);
+})), _a24);
 IonContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement34,
   inputs: ["color", "fixedSlotPlacement", "forceOverscroll", "fullscreen", "scrollEvents", "scrollX", "scrollY"],
@@ -38808,8 +28367,8 @@ IonContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a30;
-var IonDatetimeButton = (_a30 = class {
+var _a25;
+var IonDatetimeButton = (_a25 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38818,11 +28377,11 @@ var IonDatetimeButton = (_a30 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a30, "ɵfac", function IonDatetimeButton_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a30)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a25, "ɵfac", function IonDatetimeButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a25)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a30, "ɵcmp", ɵɵdefineComponent({
-  type: _a30,
+__publicField(_a25, "ɵcmp", ɵɵdefineComponent({
+  type: _a25,
   selectors: [["ion-datetime-button"]],
   inputs: {
     color: "color",
@@ -38841,7 +28400,7 @@ __publicField(_a30, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a30);
+})), _a25);
 IonDatetimeButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement35,
   inputs: ["color", "datetime", "disabled", "mode"]
@@ -38867,8 +28426,8 @@ IonDatetimeButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a31;
-var IonFab = (_a31 = class {
+var _a26;
+var IonFab = (_a26 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -38877,11 +28436,11 @@ var IonFab = (_a31 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a31, "ɵfac", function IonFab_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a31)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a26, "ɵfac", function IonFab_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a26)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a31, "ɵcmp", ɵɵdefineComponent({
-  type: _a31,
+__publicField(_a26, "ɵcmp", ɵɵdefineComponent({
+  type: _a26,
   selectors: [["ion-fab"]],
   inputs: {
     activated: "activated",
@@ -38900,7 +28459,7 @@ __publicField(_a31, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a31);
+})), _a26);
 IonFab = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement36,
   inputs: ["activated", "edge", "horizontal", "vertical"],
@@ -38927,22 +28486,22 @@ IonFab = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a32;
-var IonFabButton = (_a32 = class {
+var _a27;
+var IonFabButton = (_a27 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionFocus", "ionBlur"]);
   }
 }, /** @nocollapse */
-__publicField(_a32, "ɵfac", function IonFabButton_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a32)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a27, "ɵfac", function IonFabButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a27)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a32, "ɵcmp", ɵɵdefineComponent({
-  type: _a32,
+__publicField(_a27, "ɵcmp", ɵɵdefineComponent({
+  type: _a27,
   selectors: [["ion-fab-button"]],
   inputs: {
     activated: "activated",
@@ -38972,7 +28531,7 @@ __publicField(_a32, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a32);
+})), _a27);
 IonFabButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement37,
   inputs: ["activated", "closeIcon", "color", "disabled", "download", "href", "mode", "rel", "routerAnimation", "routerDirection", "show", "size", "target", "translucent", "type"]
@@ -38998,8 +28557,8 @@ IonFabButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a33;
-var IonFabList = (_a33 = class {
+var _a28;
+var IonFabList = (_a28 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39008,11 +28567,11 @@ var IonFabList = (_a33 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a33, "ɵfac", function IonFabList_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a33)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a28, "ɵfac", function IonFabList_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a28)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a33, "ɵcmp", ɵɵdefineComponent({
-  type: _a33,
+__publicField(_a28, "ɵcmp", ɵɵdefineComponent({
+  type: _a28,
   selectors: [["ion-fab-list"]],
   inputs: {
     activated: "activated",
@@ -39029,7 +28588,7 @@ __publicField(_a33, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a33);
+})), _a28);
 IonFabList = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement38,
   inputs: ["activated", "side"]
@@ -39055,8 +28614,8 @@ IonFabList = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a34;
-var IonFooter = (_a34 = class {
+var _a29;
+var IonFooter = (_a29 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39065,11 +28624,11 @@ var IonFooter = (_a34 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a34, "ɵfac", function IonFooter_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a34)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a29, "ɵfac", function IonFooter_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a29)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a34, "ɵcmp", ɵɵdefineComponent({
-  type: _a34,
+__publicField(_a29, "ɵcmp", ɵɵdefineComponent({
+  type: _a29,
   selectors: [["ion-footer"]],
   inputs: {
     collapse: "collapse",
@@ -39087,7 +28646,7 @@ __publicField(_a34, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a34);
+})), _a29);
 IonFooter = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement39,
   inputs: ["collapse", "mode", "translucent"]
@@ -39113,8 +28672,8 @@ IonFooter = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a35;
-var IonGrid = (_a35 = class {
+var _a30;
+var IonGrid = (_a30 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39123,11 +28682,11 @@ var IonGrid = (_a35 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a35, "ɵfac", function IonGrid_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a35)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a30, "ɵfac", function IonGrid_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a30)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a35, "ɵcmp", ɵɵdefineComponent({
-  type: _a35,
+__publicField(_a30, "ɵcmp", ɵɵdefineComponent({
+  type: _a30,
   selectors: [["ion-grid"]],
   inputs: {
     fixed: "fixed"
@@ -39143,7 +28702,7 @@ __publicField(_a35, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a35);
+})), _a30);
 IonGrid = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement40,
   inputs: ["fixed"]
@@ -39169,8 +28728,8 @@ IonGrid = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a36;
-var IonHeader = (_a36 = class {
+var _a31;
+var IonHeader = (_a31 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39179,11 +28738,11 @@ var IonHeader = (_a36 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a36, "ɵfac", function IonHeader_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a36)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a31, "ɵfac", function IonHeader_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a31)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a36, "ɵcmp", ɵɵdefineComponent({
-  type: _a36,
+__publicField(_a31, "ɵcmp", ɵɵdefineComponent({
+  type: _a31,
   selectors: [["ion-header"]],
   inputs: {
     collapse: "collapse",
@@ -39201,7 +28760,7 @@ __publicField(_a36, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a36);
+})), _a31);
 IonHeader = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement42,
   inputs: ["collapse", "mode", "translucent"]
@@ -39227,22 +28786,22 @@ IonHeader = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a37;
-var IonImg = (_a37 = class {
+var _a32;
+var IonImg = (_a32 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionImgWillLoad", "ionImgDidLoad", "ionError"]);
+    proxyOutputs(this, this.el, ["ionImgWillLoad", "ionImgDidLoad", "ionError"]);
   }
 }, /** @nocollapse */
-__publicField(_a37, "ɵfac", function IonImg_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a37)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a32, "ɵfac", function IonImg_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a32)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a37, "ɵcmp", ɵɵdefineComponent({
-  type: _a37,
+__publicField(_a32, "ɵcmp", ɵɵdefineComponent({
+  type: _a32,
   selectors: [["ion-img"]],
   inputs: {
     alt: "alt",
@@ -39259,7 +28818,7 @@ __publicField(_a37, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a37);
+})), _a32);
 IonImg = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement43,
   inputs: ["alt", "src"]
@@ -39285,22 +28844,22 @@ IonImg = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a38;
-var IonInfiniteScroll = (_a38 = class {
+var _a33;
+var IonInfiniteScroll = (_a33 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionInfinite"]);
+    proxyOutputs(this, this.el, ["ionInfinite"]);
   }
 }, /** @nocollapse */
-__publicField(_a38, "ɵfac", function IonInfiniteScroll_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a38)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a33, "ɵfac", function IonInfiniteScroll_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a33)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a38, "ɵcmp", ɵɵdefineComponent({
-  type: _a38,
+__publicField(_a33, "ɵcmp", ɵɵdefineComponent({
+  type: _a33,
   selectors: [["ion-infinite-scroll"]],
   inputs: {
     disabled: "disabled",
@@ -39318,7 +28877,7 @@ __publicField(_a38, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a38);
+})), _a33);
 IonInfiniteScroll = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement44,
   inputs: ["disabled", "position", "threshold"],
@@ -39345,8 +28904,8 @@ IonInfiniteScroll = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a39;
-var IonInfiniteScrollContent = (_a39 = class {
+var _a34;
+var IonInfiniteScrollContent = (_a34 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39355,11 +28914,11 @@ var IonInfiniteScrollContent = (_a39 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a39, "ɵfac", function IonInfiniteScrollContent_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a39)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a34, "ɵfac", function IonInfiniteScrollContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a34)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a39, "ɵcmp", ɵɵdefineComponent({
-  type: _a39,
+__publicField(_a34, "ɵcmp", ɵɵdefineComponent({
+  type: _a34,
   selectors: [["ion-infinite-scroll-content"]],
   inputs: {
     loadingSpinner: "loadingSpinner",
@@ -39376,7 +28935,7 @@ __publicField(_a39, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a39);
+})), _a34);
 IonInfiniteScrollContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement46,
   inputs: ["loadingSpinner", "loadingText"]
@@ -39402,8 +28961,8 @@ IonInfiniteScrollContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a40;
-var IonInputPasswordToggle = (_a40 = class {
+var _a35;
+var IonInputPasswordToggle = (_a35 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39412,11 +28971,11 @@ var IonInputPasswordToggle = (_a40 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a40, "ɵfac", function IonInputPasswordToggle_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a40)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a35, "ɵfac", function IonInputPasswordToggle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a35)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a40, "ɵcmp", ɵɵdefineComponent({
-  type: _a40,
+__publicField(_a35, "ɵcmp", ɵɵdefineComponent({
+  type: _a35,
   selectors: [["ion-input-password-toggle"]],
   inputs: {
     color: "color",
@@ -39435,7 +28994,7 @@ __publicField(_a40, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a40);
+})), _a35);
 IonInputPasswordToggle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement47,
   inputs: ["color", "hideIcon", "mode", "showIcon"]
@@ -39461,8 +29020,8 @@ IonInputPasswordToggle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a41;
-var IonItem = (_a41 = class {
+var _a36;
+var IonItem = (_a36 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39471,11 +29030,11 @@ var IonItem = (_a41 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a41, "ɵfac", function IonItem_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a41)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a36, "ɵfac", function IonItem_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a36)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a41, "ɵcmp", ɵɵdefineComponent({
-  type: _a41,
+__publicField(_a36, "ɵcmp", ɵɵdefineComponent({
+  type: _a36,
   selectors: [["ion-item"]],
   inputs: {
     button: "button",
@@ -39504,7 +29063,7 @@ __publicField(_a41, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a41);
+})), _a36);
 IonItem = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement49,
   inputs: ["button", "color", "detail", "detailIcon", "disabled", "download", "href", "lines", "mode", "rel", "routerAnimation", "routerDirection", "target", "type"]
@@ -39530,8 +29089,8 @@ IonItem = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a42;
-var IonItemDivider = (_a42 = class {
+var _a37;
+var IonItemDivider = (_a37 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39540,11 +29099,11 @@ var IonItemDivider = (_a42 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a42, "ɵfac", function IonItemDivider_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a42)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a37, "ɵfac", function IonItemDivider_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a37)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a42, "ɵcmp", ɵɵdefineComponent({
-  type: _a42,
+__publicField(_a37, "ɵcmp", ɵɵdefineComponent({
+  type: _a37,
   selectors: [["ion-item-divider"]],
   inputs: {
     color: "color",
@@ -39562,7 +29121,7 @@ __publicField(_a42, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a42);
+})), _a37);
 IonItemDivider = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement50,
   inputs: ["color", "mode", "sticky"]
@@ -39588,8 +29147,8 @@ IonItemDivider = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a43;
-var IonItemGroup = (_a43 = class {
+var _a38;
+var IonItemGroup = (_a38 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39598,11 +29157,11 @@ var IonItemGroup = (_a43 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a43, "ɵfac", function IonItemGroup_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a43)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a38, "ɵfac", function IonItemGroup_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a38)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a43, "ɵcmp", ɵɵdefineComponent({
-  type: _a43,
+__publicField(_a38, "ɵcmp", ɵɵdefineComponent({
+  type: _a38,
   selectors: [["ion-item-group"]],
   ngContentSelectors: _c1,
   decls: 1,
@@ -39615,7 +29174,7 @@ __publicField(_a43, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a43);
+})), _a38);
 IonItemGroup = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement51
 })], IonItemGroup);
@@ -39640,8 +29199,8 @@ IonItemGroup = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a44;
-var IonItemOption = (_a44 = class {
+var _a39;
+var IonItemOption = (_a39 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39650,11 +29209,11 @@ var IonItemOption = (_a44 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a44, "ɵfac", function IonItemOption_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a44)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a39, "ɵfac", function IonItemOption_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a39)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a44, "ɵcmp", ɵɵdefineComponent({
-  type: _a44,
+__publicField(_a39, "ɵcmp", ɵɵdefineComponent({
+  type: _a39,
   selectors: [["ion-item-option"]],
   inputs: {
     color: "color",
@@ -39678,7 +29237,7 @@ __publicField(_a44, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a44);
+})), _a39);
 IonItemOption = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement52,
   inputs: ["color", "disabled", "download", "expandable", "href", "mode", "rel", "target", "type"]
@@ -39704,22 +29263,22 @@ IonItemOption = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a45;
-var IonItemOptions = (_a45 = class {
+var _a40;
+var IonItemOptions = (_a40 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionSwipe"]);
+    proxyOutputs(this, this.el, ["ionSwipe"]);
   }
 }, /** @nocollapse */
-__publicField(_a45, "ɵfac", function IonItemOptions_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a45)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a40, "ɵfac", function IonItemOptions_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a40)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a45, "ɵcmp", ɵɵdefineComponent({
-  type: _a45,
+__publicField(_a40, "ɵcmp", ɵɵdefineComponent({
+  type: _a40,
   selectors: [["ion-item-options"]],
   inputs: {
     side: "side"
@@ -39735,7 +29294,7 @@ __publicField(_a45, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a45);
+})), _a40);
 IonItemOptions = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement53,
   inputs: ["side"]
@@ -39761,22 +29320,22 @@ IonItemOptions = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a46;
-var IonItemSliding = (_a46 = class {
+var _a41;
+var IonItemSliding = (_a41 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionDrag"]);
+    proxyOutputs(this, this.el, ["ionDrag"]);
   }
 }, /** @nocollapse */
-__publicField(_a46, "ɵfac", function IonItemSliding_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a46)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a41, "ɵfac", function IonItemSliding_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a41)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a46, "ɵcmp", ɵɵdefineComponent({
-  type: _a46,
+__publicField(_a41, "ɵcmp", ɵɵdefineComponent({
+  type: _a41,
   selectors: [["ion-item-sliding"]],
   inputs: {
     disabled: "disabled"
@@ -39792,7 +29351,7 @@ __publicField(_a46, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a46);
+})), _a41);
 IonItemSliding = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement54,
   inputs: ["disabled"],
@@ -39819,8 +29378,8 @@ IonItemSliding = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a47;
-var IonLabel = (_a47 = class {
+var _a42;
+var IonLabel = (_a42 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39829,11 +29388,11 @@ var IonLabel = (_a47 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a47, "ɵfac", function IonLabel_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a47)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a42, "ɵfac", function IonLabel_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a42)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a47, "ɵcmp", ɵɵdefineComponent({
-  type: _a47,
+__publicField(_a42, "ɵcmp", ɵɵdefineComponent({
+  type: _a42,
   selectors: [["ion-label"]],
   inputs: {
     color: "color",
@@ -39851,7 +29410,7 @@ __publicField(_a47, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a47);
+})), _a42);
 IonLabel = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement56,
   inputs: ["color", "mode", "position"]
@@ -39877,8 +29436,8 @@ IonLabel = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a48;
-var IonList = (_a48 = class {
+var _a43;
+var IonList = (_a43 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39887,11 +29446,11 @@ var IonList = (_a48 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a48, "ɵfac", function IonList_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a48)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a43, "ɵfac", function IonList_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a43)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a48, "ɵcmp", ɵɵdefineComponent({
-  type: _a48,
+__publicField(_a43, "ɵcmp", ɵɵdefineComponent({
+  type: _a43,
   selectors: [["ion-list"]],
   inputs: {
     inset: "inset",
@@ -39909,7 +29468,7 @@ __publicField(_a48, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a48);
+})), _a43);
 IonList = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement58,
   inputs: ["inset", "lines", "mode"],
@@ -39936,8 +29495,8 @@ IonList = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a49;
-var IonListHeader = (_a49 = class {
+var _a44;
+var IonListHeader = (_a44 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -39946,11 +29505,11 @@ var IonListHeader = (_a49 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a49, "ɵfac", function IonListHeader_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a49)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a44, "ɵfac", function IonListHeader_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a44)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a49, "ɵcmp", ɵɵdefineComponent({
-  type: _a49,
+__publicField(_a44, "ɵcmp", ɵɵdefineComponent({
+  type: _a44,
   selectors: [["ion-list-header"]],
   inputs: {
     color: "color",
@@ -39968,7 +29527,7 @@ __publicField(_a49, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a49);
+})), _a44);
 IonListHeader = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement60,
   inputs: ["color", "lines", "mode"]
@@ -39994,22 +29553,22 @@ IonListHeader = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a50;
-var IonLoading = (_a50 = class {
+var _a45;
+var IonLoading = (_a45 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionLoadingDidPresent", "ionLoadingWillPresent", "ionLoadingWillDismiss", "ionLoadingDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionLoadingDidPresent", "ionLoadingWillPresent", "ionLoadingWillDismiss", "ionLoadingDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
 }, /** @nocollapse */
-__publicField(_a50, "ɵfac", function IonLoading_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a50)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a45, "ɵfac", function IonLoading_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a45)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a50, "ɵcmp", ɵɵdefineComponent({
-  type: _a50,
+__publicField(_a45, "ɵcmp", ɵɵdefineComponent({
+  type: _a45,
   selectors: [["ion-loading"]],
   inputs: {
     animated: "animated",
@@ -40039,7 +29598,7 @@ __publicField(_a50, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a50);
+})), _a45);
 IonLoading = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement61,
   inputs: ["animated", "backdropDismiss", "cssClass", "duration", "enterAnimation", "htmlAttributes", "isOpen", "keyboardClose", "leaveAnimation", "message", "mode", "showBackdrop", "spinner", "translucent", "trigger"],
@@ -40066,22 +29625,22 @@ IonLoading = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a51;
-var IonMenu = (_a51 = class {
+var _a46;
+var IonMenu = (_a46 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionWillOpen", "ionWillClose", "ionDidOpen", "ionDidClose"]);
+    proxyOutputs(this, this.el, ["ionWillOpen", "ionWillClose", "ionDidOpen", "ionDidClose"]);
   }
 }, /** @nocollapse */
-__publicField(_a51, "ɵfac", function IonMenu_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a51)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a46, "ɵfac", function IonMenu_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a46)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a51, "ɵcmp", ɵɵdefineComponent({
-  type: _a51,
+__publicField(_a46, "ɵcmp", ɵɵdefineComponent({
+  type: _a46,
   selectors: [["ion-menu"]],
   inputs: {
     contentId: "contentId",
@@ -40103,7 +29662,7 @@ __publicField(_a51, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a51);
+})), _a46);
 IonMenu = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement62,
   inputs: ["contentId", "disabled", "maxEdgeStart", "menuId", "side", "swipeGesture", "type"],
@@ -40130,8 +29689,8 @@ IonMenu = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a52;
-var IonMenuButton = (_a52 = class {
+var _a47;
+var IonMenuButton = (_a47 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40140,11 +29699,11 @@ var IonMenuButton = (_a52 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a52, "ɵfac", function IonMenuButton_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a52)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a47, "ɵfac", function IonMenuButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a47)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a52, "ɵcmp", ɵɵdefineComponent({
-  type: _a52,
+__publicField(_a47, "ɵcmp", ɵɵdefineComponent({
+  type: _a47,
   selectors: [["ion-menu-button"]],
   inputs: {
     autoHide: "autoHide",
@@ -40165,7 +29724,7 @@ __publicField(_a52, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a52);
+})), _a47);
 IonMenuButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement63,
   inputs: ["autoHide", "color", "disabled", "menu", "mode", "type"]
@@ -40191,8 +29750,8 @@ IonMenuButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a53;
-var IonMenuToggle = (_a53 = class {
+var _a48;
+var IonMenuToggle = (_a48 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40201,11 +29760,11 @@ var IonMenuToggle = (_a53 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a53, "ɵfac", function IonMenuToggle_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a53)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a48, "ɵfac", function IonMenuToggle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a48)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a53, "ɵcmp", ɵɵdefineComponent({
-  type: _a53,
+__publicField(_a48, "ɵcmp", ɵɵdefineComponent({
+  type: _a48,
   selectors: [["ion-menu-toggle"]],
   inputs: {
     autoHide: "autoHide",
@@ -40222,7 +29781,7 @@ __publicField(_a53, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a53);
+})), _a48);
 IonMenuToggle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement64,
   inputs: ["autoHide", "menu"]
@@ -40248,8 +29807,8 @@ IonMenuToggle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a54;
-var IonNavLink = (_a54 = class {
+var _a49;
+var IonNavLink = (_a49 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40258,11 +29817,11 @@ var IonNavLink = (_a54 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a54, "ɵfac", function IonNavLink_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a54)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a49, "ɵfac", function IonNavLink_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a49)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a54, "ɵcmp", ɵɵdefineComponent({
-  type: _a54,
+__publicField(_a49, "ɵcmp", ɵɵdefineComponent({
+  type: _a49,
   selectors: [["ion-nav-link"]],
   inputs: {
     component: "component",
@@ -40281,7 +29840,7 @@ __publicField(_a54, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a54);
+})), _a49);
 IonNavLink = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement65,
   inputs: ["component", "componentProps", "routerAnimation", "routerDirection"]
@@ -40307,8 +29866,8 @@ IonNavLink = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a55;
-var IonNote = (_a55 = class {
+var _a50;
+var IonNote = (_a50 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40317,11 +29876,11 @@ var IonNote = (_a55 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a55, "ɵfac", function IonNote_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a55)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a50, "ɵfac", function IonNote_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a50)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a55, "ɵcmp", ɵɵdefineComponent({
-  type: _a55,
+__publicField(_a50, "ɵcmp", ɵɵdefineComponent({
+  type: _a50,
   selectors: [["ion-note"]],
   inputs: {
     color: "color",
@@ -40338,7 +29897,7 @@ __publicField(_a55, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a55);
+})), _a50);
 IonNote = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement66,
   inputs: ["color", "mode"]
@@ -40364,8 +29923,8 @@ IonNote = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a56;
-var IonPicker = (_a56 = class {
+var _a51;
+var IonPicker = (_a51 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40374,11 +29933,11 @@ var IonPicker = (_a56 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a56, "ɵfac", function IonPicker_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a56)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a51, "ɵfac", function IonPicker_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a51)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a56, "ɵcmp", ɵɵdefineComponent({
-  type: _a56,
+__publicField(_a51, "ɵcmp", ɵɵdefineComponent({
+  type: _a51,
   selectors: [["ion-picker"]],
   inputs: {
     mode: "mode"
@@ -40394,7 +29953,7 @@ __publicField(_a56, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a56);
+})), _a51);
 IonPicker = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement68,
   inputs: ["mode"]
@@ -40420,22 +29979,22 @@ IonPicker = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a57;
-var IonPickerColumn = (_a57 = class {
+var _a52;
+var IonPickerColumn = (_a52 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange"]);
+    proxyOutputs(this, this.el, ["ionChange"]);
   }
 }, /** @nocollapse */
-__publicField(_a57, "ɵfac", function IonPickerColumn_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a57)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a52, "ɵfac", function IonPickerColumn_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a52)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a57, "ɵcmp", ɵɵdefineComponent({
-  type: _a57,
+__publicField(_a52, "ɵcmp", ɵɵdefineComponent({
+  type: _a52,
   selectors: [["ion-picker-column"]],
   inputs: {
     color: "color",
@@ -40454,7 +30013,7 @@ __publicField(_a57, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a57);
+})), _a52);
 IonPickerColumn = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement70,
   inputs: ["color", "disabled", "mode", "value"],
@@ -40481,8 +30040,8 @@ IonPickerColumn = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a58;
-var IonPickerColumnOption = (_a58 = class {
+var _a53;
+var IonPickerColumnOption = (_a53 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40491,11 +30050,11 @@ var IonPickerColumnOption = (_a58 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a58, "ɵfac", function IonPickerColumnOption_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a58)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a53, "ɵfac", function IonPickerColumnOption_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a53)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a58, "ɵcmp", ɵɵdefineComponent({
-  type: _a58,
+__publicField(_a53, "ɵcmp", ɵɵdefineComponent({
+  type: _a53,
   selectors: [["ion-picker-column-option"]],
   inputs: {
     color: "color",
@@ -40513,7 +30072,7 @@ __publicField(_a58, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a58);
+})), _a53);
 IonPickerColumnOption = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement72,
   inputs: ["color", "disabled", "value"]
@@ -40539,22 +30098,22 @@ IonPickerColumnOption = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a59;
-var IonPickerLegacy = (_a59 = class {
+var _a54;
+var IonPickerLegacy = (_a54 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionPickerDidPresent", "ionPickerWillPresent", "ionPickerWillDismiss", "ionPickerDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionPickerDidPresent", "ionPickerWillPresent", "ionPickerWillDismiss", "ionPickerDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
 }, /** @nocollapse */
-__publicField(_a59, "ɵfac", function IonPickerLegacy_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a59)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a54, "ɵfac", function IonPickerLegacy_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a54)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a59, "ɵcmp", ɵɵdefineComponent({
-  type: _a59,
+__publicField(_a54, "ɵcmp", ɵɵdefineComponent({
+  type: _a54,
   selectors: [["ion-picker-legacy"]],
   inputs: {
     animated: "animated",
@@ -40583,7 +30142,7 @@ __publicField(_a59, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a59);
+})), _a54);
 IonPickerLegacy = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement74,
   inputs: ["animated", "backdropDismiss", "buttons", "columns", "cssClass", "duration", "enterAnimation", "htmlAttributes", "isOpen", "keyboardClose", "leaveAnimation", "mode", "showBackdrop", "trigger"],
@@ -40610,8 +30169,8 @@ IonPickerLegacy = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a60;
-var IonProgressBar = (_a60 = class {
+var _a55;
+var IonProgressBar = (_a55 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40620,11 +30179,11 @@ var IonProgressBar = (_a60 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a60, "ɵfac", function IonProgressBar_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a60)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a55, "ɵfac", function IonProgressBar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a55)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a60, "ɵcmp", ɵɵdefineComponent({
-  type: _a60,
+__publicField(_a55, "ɵcmp", ɵɵdefineComponent({
+  type: _a55,
   selectors: [["ion-progress-bar"]],
   inputs: {
     buffer: "buffer",
@@ -40645,7 +30204,7 @@ __publicField(_a60, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a60);
+})), _a55);
 IonProgressBar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement75,
   inputs: ["buffer", "color", "mode", "reversed", "type", "value"]
@@ -40671,22 +30230,22 @@ IonProgressBar = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a61;
-var IonRadio = (_a61 = class {
+var _a56;
+var IonRadio = (_a56 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionFocus", "ionBlur"]);
   }
 }, /** @nocollapse */
-__publicField(_a61, "ɵfac", function IonRadio_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a61)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a56, "ɵfac", function IonRadio_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a56)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a61, "ɵcmp", ɵɵdefineComponent({
-  type: _a61,
+__publicField(_a56, "ɵcmp", ɵɵdefineComponent({
+  type: _a56,
   selectors: [["ion-radio"]],
   inputs: {
     alignment: "alignment",
@@ -40709,7 +30268,7 @@ __publicField(_a61, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a61);
+})), _a56);
 IonRadio = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement77,
   inputs: ["alignment", "color", "disabled", "justify", "labelPlacement", "mode", "name", "value"]
@@ -40735,22 +30294,22 @@ IonRadio = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a62;
-var IonRefresher = (_a62 = class {
+var _a57;
+var IonRefresher = (_a57 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionRefresh", "ionPull", "ionStart"]);
+    proxyOutputs(this, this.el, ["ionRefresh", "ionPull", "ionStart"]);
   }
 }, /** @nocollapse */
-__publicField(_a62, "ɵfac", function IonRefresher_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a62)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a57, "ɵfac", function IonRefresher_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a57)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a62, "ɵcmp", ɵɵdefineComponent({
-  type: _a62,
+__publicField(_a57, "ɵcmp", ɵɵdefineComponent({
+  type: _a57,
   selectors: [["ion-refresher"]],
   inputs: {
     closeDuration: "closeDuration",
@@ -40772,7 +30331,7 @@ __publicField(_a62, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a62);
+})), _a57);
 IonRefresher = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement78,
   inputs: ["closeDuration", "disabled", "mode", "pullFactor", "pullMax", "pullMin", "snapbackDuration"],
@@ -40799,8 +30358,8 @@ IonRefresher = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a63;
-var IonRefresherContent = (_a63 = class {
+var _a58;
+var IonRefresherContent = (_a58 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40809,11 +30368,11 @@ var IonRefresherContent = (_a63 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a63, "ɵfac", function IonRefresherContent_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a63)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a58, "ɵfac", function IonRefresherContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a58)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a63, "ɵcmp", ɵɵdefineComponent({
-  type: _a63,
+__publicField(_a58, "ɵcmp", ɵɵdefineComponent({
+  type: _a58,
   selectors: [["ion-refresher-content"]],
   inputs: {
     pullingIcon: "pullingIcon",
@@ -40832,7 +30391,7 @@ __publicField(_a63, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a63);
+})), _a58);
 IonRefresherContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement79,
   inputs: ["pullingIcon", "pullingText", "refreshingSpinner", "refreshingText"]
@@ -40858,8 +30417,8 @@ IonRefresherContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a64;
-var IonReorder = (_a64 = class {
+var _a59;
+var IonReorder = (_a59 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40868,11 +30427,11 @@ var IonReorder = (_a64 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a64, "ɵfac", function IonReorder_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a64)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a59, "ɵfac", function IonReorder_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a59)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a64, "ɵcmp", ɵɵdefineComponent({
-  type: _a64,
+__publicField(_a59, "ɵcmp", ɵɵdefineComponent({
+  type: _a59,
   selectors: [["ion-reorder"]],
   ngContentSelectors: _c1,
   decls: 1,
@@ -40885,7 +30444,7 @@ __publicField(_a64, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a64);
+})), _a59);
 IonReorder = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement80
 })], IonReorder);
@@ -40910,22 +30469,22 @@ IonReorder = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a65;
-var IonReorderGroup = (_a65 = class {
+var _a60;
+var IonReorderGroup = (_a60 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionItemReorder"]);
+    proxyOutputs(this, this.el, ["ionItemReorder"]);
   }
 }, /** @nocollapse */
-__publicField(_a65, "ɵfac", function IonReorderGroup_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a65)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a60, "ɵfac", function IonReorderGroup_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a60)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a65, "ɵcmp", ɵɵdefineComponent({
-  type: _a65,
+__publicField(_a60, "ɵcmp", ɵɵdefineComponent({
+  type: _a60,
   selectors: [["ion-reorder-group"]],
   inputs: {
     disabled: "disabled"
@@ -40941,7 +30500,7 @@ __publicField(_a65, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a65);
+})), _a60);
 IonReorderGroup = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement81,
   inputs: ["disabled"],
@@ -40968,8 +30527,8 @@ IonReorderGroup = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a66;
-var IonRippleEffect = (_a66 = class {
+var _a61;
+var IonRippleEffect = (_a61 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -40978,11 +30537,11 @@ var IonRippleEffect = (_a66 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a66, "ɵfac", function IonRippleEffect_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a66)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a61, "ɵfac", function IonRippleEffect_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a61)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a66, "ɵcmp", ɵɵdefineComponent({
-  type: _a66,
+__publicField(_a61, "ɵcmp", ɵɵdefineComponent({
+  type: _a61,
   selectors: [["ion-ripple-effect"]],
   inputs: {
     type: "type"
@@ -40998,7 +30557,7 @@ __publicField(_a66, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a66);
+})), _a61);
 IonRippleEffect = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement82,
   inputs: ["type"],
@@ -41025,8 +30584,8 @@ IonRippleEffect = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a67;
-var IonRow = (_a67 = class {
+var _a62;
+var IonRow = (_a62 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41035,11 +30594,11 @@ var IonRow = (_a67 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a67, "ɵfac", function IonRow_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a67)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a62, "ɵfac", function IonRow_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a62)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a67, "ɵcmp", ɵɵdefineComponent({
-  type: _a67,
+__publicField(_a62, "ɵcmp", ɵɵdefineComponent({
+  type: _a62,
   selectors: [["ion-row"]],
   ngContentSelectors: _c1,
   decls: 1,
@@ -41052,7 +30611,7 @@ __publicField(_a67, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a67);
+})), _a62);
 IonRow = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement83
 })], IonRow);
@@ -41077,8 +30636,8 @@ IonRow = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a68;
-var IonSegmentButton = (_a68 = class {
+var _a63;
+var IonSegmentButton = (_a63 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41087,11 +30646,11 @@ var IonSegmentButton = (_a68 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a68, "ɵfac", function IonSegmentButton_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a68)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a63, "ɵfac", function IonSegmentButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a63)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a68, "ɵcmp", ɵɵdefineComponent({
-  type: _a68,
+__publicField(_a63, "ɵcmp", ɵɵdefineComponent({
+  type: _a63,
   selectors: [["ion-segment-button"]],
   inputs: {
     contentId: "contentId",
@@ -41112,7 +30671,7 @@ __publicField(_a68, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a68);
+})), _a63);
 IonSegmentButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement84,
   inputs: ["contentId", "disabled", "layout", "mode", "type", "value"]
@@ -41138,8 +30697,8 @@ IonSegmentButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a69;
-var IonSegmentContent = (_a69 = class {
+var _a64;
+var IonSegmentContent = (_a64 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41148,11 +30707,11 @@ var IonSegmentContent = (_a69 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a69, "ɵfac", function IonSegmentContent_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a69)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a64, "ɵfac", function IonSegmentContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a64)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a69, "ɵcmp", ɵɵdefineComponent({
-  type: _a69,
+__publicField(_a64, "ɵcmp", ɵɵdefineComponent({
+  type: _a64,
   selectors: [["ion-segment-content"]],
   ngContentSelectors: _c1,
   decls: 1,
@@ -41165,7 +30724,7 @@ __publicField(_a69, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a69);
+})), _a64);
 IonSegmentContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement85
 })], IonSegmentContent);
@@ -41190,22 +30749,22 @@ IonSegmentContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a70;
-var IonSegmentView = (_a70 = class {
+var _a65;
+var IonSegmentView = (_a65 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionSegmentViewScroll"]);
+    proxyOutputs(this, this.el, ["ionSegmentViewScroll"]);
   }
 }, /** @nocollapse */
-__publicField(_a70, "ɵfac", function IonSegmentView_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a70)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a65, "ɵfac", function IonSegmentView_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a65)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a70, "ɵcmp", ɵɵdefineComponent({
-  type: _a70,
+__publicField(_a65, "ɵcmp", ɵɵdefineComponent({
+  type: _a65,
   selectors: [["ion-segment-view"]],
   inputs: {
     disabled: "disabled"
@@ -41221,7 +30780,7 @@ __publicField(_a70, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a70);
+})), _a65);
 IonSegmentView = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement86,
   inputs: ["disabled"]
@@ -41247,8 +30806,8 @@ IonSegmentView = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a71;
-var IonSelectModal = (_a71 = class {
+var _a66;
+var IonSelectModal = (_a66 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41257,11 +30816,11 @@ var IonSelectModal = (_a71 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a71, "ɵfac", function IonSelectModal_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a71)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a66, "ɵfac", function IonSelectModal_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a66)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a71, "ɵcmp", ɵɵdefineComponent({
-  type: _a71,
+__publicField(_a66, "ɵcmp", ɵɵdefineComponent({
+  type: _a66,
   selectors: [["ion-select-modal"]],
   inputs: {
     header: "header",
@@ -41279,7 +30838,7 @@ __publicField(_a71, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a71);
+})), _a66);
 IonSelectModal = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement92,
   inputs: ["header", "multiple", "options"]
@@ -41305,8 +30864,8 @@ IonSelectModal = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a72;
-var IonSelectOption = (_a72 = class {
+var _a67;
+var IonSelectOption = (_a67 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41315,11 +30874,11 @@ var IonSelectOption = (_a72 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a72, "ɵfac", function IonSelectOption_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a72)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a67, "ɵfac", function IonSelectOption_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a67)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a72, "ɵcmp", ɵɵdefineComponent({
-  type: _a72,
+__publicField(_a67, "ɵcmp", ɵɵdefineComponent({
+  type: _a67,
   selectors: [["ion-select-option"]],
   inputs: {
     disabled: "disabled",
@@ -41336,7 +30895,7 @@ __publicField(_a72, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a72);
+})), _a67);
 IonSelectOption = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement93,
   inputs: ["disabled", "value"]
@@ -41362,8 +30921,8 @@ IonSelectOption = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a73;
-var IonSkeletonText = (_a73 = class {
+var _a68;
+var IonSkeletonText = (_a68 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41372,11 +30931,11 @@ var IonSkeletonText = (_a73 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a73, "ɵfac", function IonSkeletonText_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a73)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a68, "ɵfac", function IonSkeletonText_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a68)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a73, "ɵcmp", ɵɵdefineComponent({
-  type: _a73,
+__publicField(_a68, "ɵcmp", ɵɵdefineComponent({
+  type: _a68,
   selectors: [["ion-skeleton-text"]],
   inputs: {
     animated: "animated"
@@ -41392,7 +30951,7 @@ __publicField(_a73, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a73);
+})), _a68);
 IonSkeletonText = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement94,
   inputs: ["animated"]
@@ -41418,8 +30977,8 @@ IonSkeletonText = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a74;
-var IonSpinner = (_a74 = class {
+var _a69;
+var IonSpinner = (_a69 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41428,11 +30987,11 @@ var IonSpinner = (_a74 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a74, "ɵfac", function IonSpinner_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a74)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a69, "ɵfac", function IonSpinner_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a69)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a74, "ɵcmp", ɵɵdefineComponent({
-  type: _a74,
+__publicField(_a69, "ɵcmp", ɵɵdefineComponent({
+  type: _a69,
   selectors: [["ion-spinner"]],
   inputs: {
     color: "color",
@@ -41451,7 +31010,7 @@ __publicField(_a74, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a74);
+})), _a69);
 IonSpinner = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement95,
   inputs: ["color", "duration", "name", "paused"]
@@ -41477,22 +31036,22 @@ IonSpinner = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a75;
-var IonSplitPane = (_a75 = class {
+var _a70;
+var IonSplitPane = (_a70 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionSplitPaneVisible"]);
+    proxyOutputs(this, this.el, ["ionSplitPaneVisible"]);
   }
 }, /** @nocollapse */
-__publicField(_a75, "ɵfac", function IonSplitPane_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a75)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a70, "ɵfac", function IonSplitPane_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a70)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a75, "ɵcmp", ɵɵdefineComponent({
-  type: _a75,
+__publicField(_a70, "ɵcmp", ɵɵdefineComponent({
+  type: _a70,
   selectors: [["ion-split-pane"]],
   inputs: {
     contentId: "contentId",
@@ -41510,7 +31069,7 @@ __publicField(_a75, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a75);
+})), _a70);
 IonSplitPane = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement96,
   inputs: ["contentId", "disabled", "when"]
@@ -41536,8 +31095,8 @@ IonSplitPane = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a76;
-var IonTab = (_a76 = class {
+var _a71;
+var IonTab = (_a71 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41546,11 +31105,11 @@ var IonTab = (_a76 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a76, "ɵfac", function IonTab_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a76)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a71, "ɵfac", function IonTab_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a71)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a76, "ɵcmp", ɵɵdefineComponent({
-  type: _a76,
+__publicField(_a71, "ɵcmp", ɵɵdefineComponent({
+  type: _a71,
   selectors: [["ion-tab"]],
   inputs: {
     component: "component",
@@ -41567,7 +31126,7 @@ __publicField(_a76, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a76);
+})), _a71);
 IonTab = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement97,
   inputs: ["component", "tab"],
@@ -41594,8 +31153,8 @@ IonTab = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a77;
-var IonTabBar = (_a77 = class {
+var _a72;
+var IonTabBar = (_a72 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41604,11 +31163,11 @@ var IonTabBar = (_a77 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a77, "ɵfac", function IonTabBar_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a77)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a72, "ɵfac", function IonTabBar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a72)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a77, "ɵcmp", ɵɵdefineComponent({
-  type: _a77,
+__publicField(_a72, "ɵcmp", ɵɵdefineComponent({
+  type: _a72,
   selectors: [["ion-tab-bar"]],
   inputs: {
     color: "color",
@@ -41627,7 +31186,7 @@ __publicField(_a77, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a77);
+})), _a72);
 IonTabBar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement98,
   inputs: ["color", "mode", "selectedTab", "translucent"]
@@ -41653,8 +31212,8 @@ IonTabBar = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a78;
-var IonTabButton = (_a78 = class {
+var _a73;
+var IonTabButton = (_a73 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41663,11 +31222,11 @@ var IonTabButton = (_a78 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a78, "ɵfac", function IonTabButton_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a78)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a73, "ɵfac", function IonTabButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a73)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a78, "ɵcmp", ɵɵdefineComponent({
-  type: _a78,
+__publicField(_a73, "ɵcmp", ɵɵdefineComponent({
+  type: _a73,
   selectors: [["ion-tab-button"]],
   inputs: {
     disabled: "disabled",
@@ -41691,7 +31250,7 @@ __publicField(_a78, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a78);
+})), _a73);
 IonTabButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement99,
   inputs: ["disabled", "download", "href", "layout", "mode", "rel", "selected", "tab", "target"]
@@ -41717,8 +31276,8 @@ IonTabButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a79;
-var IonText = (_a79 = class {
+var _a74;
+var IonText = (_a74 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41727,11 +31286,11 @@ var IonText = (_a79 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a79, "ɵfac", function IonText_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a79)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a74, "ɵfac", function IonText_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a74)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a79, "ɵcmp", ɵɵdefineComponent({
-  type: _a79,
+__publicField(_a74, "ɵcmp", ɵɵdefineComponent({
+  type: _a74,
   selectors: [["ion-text"]],
   inputs: {
     color: "color",
@@ -41748,7 +31307,7 @@ __publicField(_a79, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a79);
+})), _a74);
 IonText = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement100,
   inputs: ["color", "mode"]
@@ -41774,8 +31333,8 @@ IonText = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a80;
-var IonThumbnail = (_a80 = class {
+var _a75;
+var IonThumbnail = (_a75 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41784,11 +31343,11 @@ var IonThumbnail = (_a80 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a80, "ɵfac", function IonThumbnail_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a80)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a75, "ɵfac", function IonThumbnail_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a75)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a80, "ɵcmp", ɵɵdefineComponent({
-  type: _a80,
+__publicField(_a75, "ɵcmp", ɵɵdefineComponent({
+  type: _a75,
   selectors: [["ion-thumbnail"]],
   ngContentSelectors: _c1,
   decls: 1,
@@ -41801,7 +31360,7 @@ __publicField(_a80, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a80);
+})), _a75);
 IonThumbnail = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement101
 })], IonThumbnail);
@@ -41826,8 +31385,8 @@ IonThumbnail = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a81;
-var IonTitle = (_a81 = class {
+var _a76;
+var IonTitle = (_a76 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41836,11 +31395,11 @@ var IonTitle = (_a81 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a81, "ɵfac", function IonTitle_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a81)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a76, "ɵfac", function IonTitle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a76)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a81, "ɵcmp", ɵɵdefineComponent({
-  type: _a81,
+__publicField(_a76, "ɵcmp", ɵɵdefineComponent({
+  type: _a76,
   selectors: [["ion-title"]],
   inputs: {
     color: "color",
@@ -41857,7 +31416,7 @@ __publicField(_a81, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a81);
+})), _a76);
 IonTitle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement102,
   inputs: ["color", "size"]
@@ -41883,22 +31442,22 @@ IonTitle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a82;
-var IonToast = (_a82 = class {
+var _a77;
+var IonToast = (_a77 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionToastDidPresent", "ionToastWillPresent", "ionToastWillDismiss", "ionToastDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionToastDidPresent", "ionToastWillPresent", "ionToastWillDismiss", "ionToastDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
 }, /** @nocollapse */
-__publicField(_a82, "ɵfac", function IonToast_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a82)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a77, "ɵfac", function IonToast_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a77)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a82, "ɵcmp", ɵɵdefineComponent({
-  type: _a82,
+__publicField(_a77, "ɵcmp", ɵɵdefineComponent({
+  type: _a77,
   selectors: [["ion-toast"]],
   inputs: {
     animated: "animated",
@@ -41933,7 +31492,7 @@ __publicField(_a82, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a82);
+})), _a77);
 IonToast = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement103,
   inputs: ["animated", "buttons", "color", "cssClass", "duration", "enterAnimation", "header", "htmlAttributes", "icon", "isOpen", "keyboardClose", "layout", "leaveAnimation", "message", "mode", "position", "positionAnchor", "swipeGesture", "translucent", "trigger"],
@@ -41960,8 +31519,8 @@ IonToast = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _a83;
-var IonToolbar = (_a83 = class {
+var _a78;
+var IonToolbar = (_a78 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -41970,11 +31529,11 @@ var IonToolbar = (_a83 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a83, "ɵfac", function IonToolbar_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a83)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a78, "ɵfac", function IonToolbar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a78)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a83, "ɵcmp", ɵɵdefineComponent({
-  type: _a83,
+__publicField(_a78, "ɵcmp", ɵɵdefineComponent({
+  type: _a78,
   selectors: [["ion-toolbar"]],
   inputs: {
     color: "color",
@@ -41991,7 +31550,7 @@ __publicField(_a83, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a83);
+})), _a78);
 IonToolbar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement104,
   inputs: ["color", "mode"]
@@ -42017,22 +31576,22 @@ IonToolbar = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var _IonTabs2 = class _IonTabs2 extends IonTabs {
+var _IonTabs = class _IonTabs extends IonTabs {
   outlet;
   tabBar;
   tabBars;
   tabs;
 };
 /** @nocollapse */
-__publicField(_IonTabs2, "ɵfac", /* @__PURE__ */ (() => {
+__publicField(_IonTabs, "ɵfac", /* @__PURE__ */ (() => {
   let ɵIonTabs_BaseFactory;
   return function IonTabs_Factory(__ngFactoryType__) {
-    return (ɵIonTabs_BaseFactory || (ɵIonTabs_BaseFactory = ɵɵgetInheritedFactory(_IonTabs2)))(__ngFactoryType__ || _IonTabs2);
+    return (ɵIonTabs_BaseFactory || (ɵIonTabs_BaseFactory = ɵɵgetInheritedFactory(_IonTabs)))(__ngFactoryType__ || _IonTabs);
   };
 })());
 /** @nocollapse */
-__publicField(_IonTabs2, "ɵcmp", ɵɵdefineComponent({
-  type: _IonTabs2,
+__publicField(_IonTabs, "ɵcmp", ɵɵdefineComponent({
+  type: _IonTabs,
   selectors: [["ion-tabs"]],
   contentQueries: function IonTabs_ContentQueries(rf, ctx, dirIndex) {
     if (rf & 1) {
@@ -42080,7 +31639,7 @@ __publicField(_IonTabs2, "ɵcmp", ɵɵdefineComponent({
   dependencies: [IonRouterOutlet2, NgIf],
   styles: ["[_nghost-%COMP%]{display:flex;position:absolute;inset:0;flex-direction:column;width:100%;height:100%;contain:layout size style}.tabs-inner[_ngcontent-%COMP%]{position:relative;flex:1;contain:layout size style}"]
 }));
-var IonTabs2 = _IonTabs2;
+var IonTabs2 = _IonTabs;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonTabs2, [{
     type: Component,
@@ -42438,17 +31997,17 @@ var ToastController = _ToastController;
     return [];
   }, null);
 })();
-var _a84;
-var IonNav2 = (_a84 = class extends IonNav {
+var _a79;
+var IonNav2 = (_a79 = class extends IonNav {
   constructor(ref, environmentInjector, injector, angularDelegate, z, c) {
     super(ref, environmentInjector, injector, angularDelegate, z, c);
   }
 }, /** @nocollapse */
-__publicField(_a84, "ɵfac", function IonNav_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a84)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(EnvironmentInjector), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(AngularDelegate), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
+__publicField(_a79, "ɵfac", function IonNav_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a79)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(EnvironmentInjector), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(AngularDelegate), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
 }), /** @nocollapse */
-__publicField(_a84, "ɵcmp", ɵɵdefineComponent({
-  type: _a84,
+__publicField(_a79, "ɵcmp", ɵɵdefineComponent({
+  type: _a79,
   selectors: [["ion-nav"]],
   features: [ɵɵInheritDefinitionFeature],
   ngContentSelectors: _c1,
@@ -42461,7 +32020,7 @@ __publicField(_a84, "ɵcmp", ɵɵdefineComponent({
     }
   },
   encapsulation: 2
-})), _a84);
+})), _a79);
 IonNav2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement105
 })], IonNav2);
@@ -42495,8 +32054,8 @@ var accessorProvider$9 = {
   useExisting: forwardRef(() => IonCheckbox),
   multi: true
 };
-var _a85;
-var IonCheckbox = (_a85 = class extends ValueAccessor {
+var _a80;
+var IonCheckbox = (_a80 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -42504,7 +32063,7 @@ var IonCheckbox = (_a85 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionFocus", "ionBlur"]);
   }
   writeValue(value) {
     this.elementRef.nativeElement.checked = this.lastValue = value;
@@ -42514,11 +32073,11 @@ var IonCheckbox = (_a85 = class extends ValueAccessor {
     this.handleValueChange(el, el.checked);
   }
 }, /** @nocollapse */
-__publicField(_a85, "ɵfac", function IonCheckbox_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a85)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a80, "ɵfac", function IonCheckbox_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a80)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a85, "ɵcmp", ɵɵdefineComponent({
-  type: _a85,
+__publicField(_a80, "ɵcmp", ɵɵdefineComponent({
+  type: _a80,
   selectors: [["ion-checkbox"]],
   hostBindings: function IonCheckbox_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -42552,7 +32111,7 @@ __publicField(_a85, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a85);
+})), _a80);
 IonCheckbox = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement106,
   inputs: CHECKBOX_INPUTS
@@ -42592,8 +32151,8 @@ var accessorProvider$8 = {
   useExisting: forwardRef(() => IonDatetime),
   multi: true
 };
-var _a86;
-var IonDatetime = (_a86 = class extends ValueAccessor {
+var _a81;
+var IonDatetime = (_a81 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -42601,17 +32160,17 @@ var IonDatetime = (_a86 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionCancel", "ionChange", "ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionCancel", "ionChange", "ionFocus", "ionBlur"]);
   }
   handleIonChange(el) {
     this.handleValueChange(el, el.value);
   }
 }, /** @nocollapse */
-__publicField(_a86, "ɵfac", function IonDatetime_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a86)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a81, "ɵfac", function IonDatetime_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a81)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a86, "ɵcmp", ɵɵdefineComponent({
-  type: _a86,
+__publicField(_a81, "ɵcmp", ɵɵdefineComponent({
+  type: _a81,
   selectors: [["ion-datetime"]],
   hostBindings: function IonDatetime_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -42665,7 +32224,7 @@ __publicField(_a86, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a86);
+})), _a81);
 IonDatetime = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement107,
   inputs: DATETIME_INPUTS,
@@ -42700,8 +32259,8 @@ IonDatetime = __decorate([ProxyCmp2({
     }]
   });
 })();
-var _a87;
-var IonIcon = (_a87 = class {
+var _a82;
+var IonIcon = (_a82 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -42710,11 +32269,11 @@ var IonIcon = (_a87 = class {
     this.el = r.nativeElement;
   }
 }, /** @nocollapse */
-__publicField(_a87, "ɵfac", function IonIcon_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a87)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+__publicField(_a82, "ɵfac", function IonIcon_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a82)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
 }), /** @nocollapse */
-__publicField(_a87, "ɵcmp", ɵɵdefineComponent({
-  type: _a87,
+__publicField(_a82, "ɵcmp", ɵɵdefineComponent({
+  type: _a82,
   selectors: [["ion-icon"]],
   inputs: {
     color: "color",
@@ -42740,7 +32299,7 @@ __publicField(_a87, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a87);
+})), _a82);
 IonIcon = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement108,
   inputs: ["color", "flipRtl", "icon", "ios", "lazy", "md", "mode", "name", "sanitize", "size", "src"]
@@ -42772,8 +32331,8 @@ var accessorProvider$7 = {
   useExisting: forwardRef(() => IonInput),
   multi: true
 };
-var _a88;
-var IonInput = (_a88 = class extends ValueAccessor {
+var _a83;
+var IonInput = (_a83 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -42781,7 +32340,7 @@ var IonInput = (_a88 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionInput", "ionChange", "ionBlur", "ionFocus"]);
+    proxyOutputs(this, this.el, ["ionInput", "ionChange", "ionBlur", "ionFocus"]);
   }
   handleIonInput(el) {
     this.handleValueChange(el, el.value);
@@ -42796,11 +32355,11 @@ var IonInput = (_a88 = class extends ValueAccessor {
     });
   }
 }, /** @nocollapse */
-__publicField(_a88, "ɵfac", function IonInput_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a88)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a83, "ɵfac", function IonInput_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a83)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a88, "ɵcmp", ɵɵdefineComponent({
-  type: _a88,
+__publicField(_a83, "ɵcmp", ɵɵdefineComponent({
+  type: _a83,
   selectors: [["ion-input"]],
   hostBindings: function IonInput_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -42859,7 +32418,7 @@ __publicField(_a88, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a88);
+})), _a83);
 IonInput = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement109,
   inputs: INPUT_INPUTS,
@@ -42900,8 +32459,8 @@ var accessorProvider$6 = {
   useExisting: forwardRef(() => IonRadioGroup),
   multi: true
 };
-var _a89;
-var IonRadioGroup = (_a89 = class extends ValueAccessor {
+var _a84;
+var IonRadioGroup = (_a84 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -42909,17 +32468,17 @@ var IonRadioGroup = (_a89 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange"]);
+    proxyOutputs(this, this.el, ["ionChange"]);
   }
   handleIonChange(el) {
     this.handleValueChange(el, el.value);
   }
 }, /** @nocollapse */
-__publicField(_a89, "ɵfac", function IonRadioGroup_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a89)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a84, "ɵfac", function IonRadioGroup_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a84)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a89, "ɵcmp", ɵɵdefineComponent({
-  type: _a89,
+__publicField(_a84, "ɵcmp", ɵɵdefineComponent({
+  type: _a84,
   selectors: [["ion-radio-group"]],
   hostBindings: function IonRadioGroup_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -42948,7 +32507,7 @@ __publicField(_a89, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a89);
+})), _a84);
 IonRadioGroup = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement110,
   inputs: RADIO_GROUP_INPUTS
@@ -42988,8 +32547,8 @@ var accessorProvider$5 = {
   useExisting: forwardRef(() => IonRange),
   multi: true
 };
-var _a90;
-var IonRange = (_a90 = class extends ValueAccessor {
+var _a85;
+var IonRange = (_a85 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -42997,17 +32556,17 @@ var IonRange = (_a90 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionInput", "ionFocus", "ionBlur", "ionKnobMoveStart", "ionKnobMoveEnd"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionInput", "ionFocus", "ionBlur", "ionKnobMoveStart", "ionKnobMoveEnd"]);
   }
   handleIonInput(el) {
     this.handleValueChange(el, el.value);
   }
 }, /** @nocollapse */
-__publicField(_a90, "ɵfac", function IonRange_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a90)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a85, "ɵfac", function IonRange_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a85)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a90, "ɵcmp", ɵɵdefineComponent({
-  type: _a90,
+__publicField(_a85, "ɵcmp", ɵɵdefineComponent({
+  type: _a85,
   selectors: [["ion-range"]],
   hostBindings: function IonRange_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -43047,7 +32606,7 @@ __publicField(_a90, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a90);
+})), _a85);
 IonRange = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement111,
   inputs: RANGE_INPUTS
@@ -43087,8 +32646,8 @@ var accessorProvider$4 = {
   useExisting: forwardRef(() => IonSearchbar),
   multi: true
 };
-var _a91;
-var IonSearchbar = (_a91 = class extends ValueAccessor {
+var _a86;
+var IonSearchbar = (_a86 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -43096,17 +32655,17 @@ var IonSearchbar = (_a91 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionInput", "ionChange", "ionCancel", "ionClear", "ionBlur", "ionFocus"]);
+    proxyOutputs(this, this.el, ["ionInput", "ionChange", "ionCancel", "ionClear", "ionBlur", "ionFocus"]);
   }
   handleIonInput(el) {
     this.handleValueChange(el, el.value);
   }
 }, /** @nocollapse */
-__publicField(_a91, "ɵfac", function IonSearchbar_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a91)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a86, "ɵfac", function IonSearchbar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a86)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a91, "ɵcmp", ɵɵdefineComponent({
-  type: _a91,
+__publicField(_a86, "ɵcmp", ɵɵdefineComponent({
+  type: _a86,
   selectors: [["ion-searchbar"]],
   hostBindings: function IonSearchbar_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -43149,7 +32708,7 @@ __publicField(_a91, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a91);
+})), _a86);
 IonSearchbar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement112,
   inputs: SEARCHBAR_INPUTS,
@@ -43190,8 +32749,8 @@ var accessorProvider$3 = {
   useExisting: forwardRef(() => IonSegment),
   multi: true
 };
-var _a92;
-var IonSegment = (_a92 = class extends ValueAccessor {
+var _a87;
+var IonSegment = (_a87 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -43199,17 +32758,17 @@ var IonSegment = (_a92 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange"]);
+    proxyOutputs(this, this.el, ["ionChange"]);
   }
   handleIonChange(el) {
     this.handleValueChange(el, el.value);
   }
 }, /** @nocollapse */
-__publicField(_a92, "ɵfac", function IonSegment_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a92)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a87, "ɵfac", function IonSegment_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a87)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a92, "ɵcmp", ɵɵdefineComponent({
-  type: _a92,
+__publicField(_a87, "ɵcmp", ɵɵdefineComponent({
+  type: _a87,
   selectors: [["ion-segment"]],
   hostBindings: function IonSegment_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -43239,7 +32798,7 @@ __publicField(_a92, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a92);
+})), _a87);
 IonSegment = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement113,
   inputs: SEGMENT_INPUTS
@@ -43279,8 +32838,8 @@ var accessorProvider$2 = {
   useExisting: forwardRef(() => IonSelect),
   multi: true
 };
-var _a93;
-var IonSelect = (_a93 = class extends ValueAccessor {
+var _a88;
+var IonSelect = (_a88 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -43288,17 +32847,17 @@ var IonSelect = (_a93 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionCancel", "ionDismiss", "ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionCancel", "ionDismiss", "ionFocus", "ionBlur"]);
   }
   handleIonChange(el) {
     this.handleValueChange(el, el.value);
   }
 }, /** @nocollapse */
-__publicField(_a93, "ɵfac", function IonSelect_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a93)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a88, "ɵfac", function IonSelect_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a88)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a93, "ɵcmp", ɵɵdefineComponent({
-  type: _a93,
+__publicField(_a88, "ɵcmp", ɵɵdefineComponent({
+  type: _a88,
   selectors: [["ion-select"]],
   hostBindings: function IonSelect_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -43343,7 +32902,7 @@ __publicField(_a93, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a93);
+})), _a88);
 IonSelect = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement115,
   inputs: SELECT_INPUTS,
@@ -43384,8 +32943,8 @@ var accessorProvider$1 = {
   useExisting: forwardRef(() => IonTextarea),
   multi: true
 };
-var _a94;
-var IonTextarea = (_a94 = class extends ValueAccessor {
+var _a89;
+var IonTextarea = (_a89 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -43393,17 +32952,17 @@ var IonTextarea = (_a94 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionInput", "ionBlur", "ionFocus"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionInput", "ionBlur", "ionFocus"]);
   }
   handleIonInput(el) {
     this.handleValueChange(el, el.value);
   }
 }, /** @nocollapse */
-__publicField(_a94, "ɵfac", function IonTextarea_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a94)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a89, "ɵfac", function IonTextarea_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a89)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a94, "ɵcmp", ɵɵdefineComponent({
-  type: _a94,
+__publicField(_a89, "ɵcmp", ɵɵdefineComponent({
+  type: _a89,
   selectors: [["ion-textarea"]],
   hostBindings: function IonTextarea_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -43455,7 +33014,7 @@ __publicField(_a94, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a94);
+})), _a89);
 IonTextarea = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement116,
   inputs: TEXTAREA_INPUTS,
@@ -43496,8 +33055,8 @@ var accessorProvider = {
   useExisting: forwardRef(() => IonToggle),
   multi: true
 };
-var _a95;
-var IonToggle = (_a95 = class extends ValueAccessor {
+var _a90;
+var IonToggle = (_a90 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -43505,7 +33064,7 @@ var IonToggle = (_a95 = class extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionFocus", "ionBlur"]);
   }
   writeValue(value) {
     this.elementRef.nativeElement.checked = this.lastValue = value;
@@ -43515,11 +33074,11 @@ var IonToggle = (_a95 = class extends ValueAccessor {
     this.handleValueChange(el, el.checked);
   }
 }, /** @nocollapse */
-__publicField(_a95, "ɵfac", function IonToggle_Factory(__ngFactoryType__) {
-  return new (__ngFactoryType__ || _a95)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+__publicField(_a90, "ɵfac", function IonToggle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a90)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
 }), /** @nocollapse */
-__publicField(_a95, "ɵcmp", ɵɵdefineComponent({
-  type: _a95,
+__publicField(_a90, "ɵcmp", ɵɵdefineComponent({
+  type: _a90,
   selectors: [["ion-toggle"]],
   hostBindings: function IonToggle_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -43553,7 +33112,7 @@ __publicField(_a95, "ɵcmp", ɵɵdefineComponent({
   },
   encapsulation: 2,
   changeDetection: 0
-})), _a95);
+})), _a90);
 IonToggle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement117,
   inputs: TOGGLE_INPUTS
@@ -43710,14 +33269,6 @@ export {
 };
 /*! Bundled license information:
 
-@ionic/core/components/cubic-bezier.js:
-@ionic/core/components/ionic-global.js:
-@ionic/core/components/config.js:
-@ionic/core/components/theme.js:
-@ionic/core/components/index5.js:
-@ionic/core/components/framework-delegate.js:
-@ionic/core/components/overlays.js:
-@ionic/core/components/index.js:
 @ionic/core/components/index7.js:
 @ionic/core/components/icon.js:
 @ionic/core/components/ripple-effect.js:
@@ -43847,13 +33398,6 @@ export {
 @ionic/core/components/ion-toggle.js:
   (*!
    * (C) Ionic http://ionicframework.com - MIT License
-   *)
-
-@angular/forms/fesm2022/forms.mjs:
-  (**
-   * @license Angular v19.2.11
-   * (c) 2010-2025 Google LLC. https://angular.io/
-   * License: MIT
    *)
 */
 //# sourceMappingURL=@ionic_angular_standalone.js.map
