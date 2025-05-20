@@ -1,4 +1,4 @@
-# Mounts & Menagerie: A Collector's Compendium
+# Field Guide to Mounts & Critters
 
 A mobile companion app for **World of Warcraft** collectors.  
 Track your **mounts**, **pets**, and more – wherever you are.
@@ -31,8 +31,8 @@ Track your **mounts**, **pets**, and more – wherever you are.
 ### 🔹 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/mounts-menagerie-app.git
-cd mounts-menagerie-app
+git clone https://github.com/your-username/field-guide-wow.git
+cd field-guide-wow
 ````
 
 ---
