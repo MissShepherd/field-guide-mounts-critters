@@ -1,55 +1,23 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
-
-/* Core CSS required for Ionic components to work properly */
+/* Required Ionic styles */
 @import "@ionic/angular/css/core.css";
-
-/* Basic CSS for apps built with Ionic */
 @import "@ionic/angular/css/normalize.css";
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
 @import "@ionic/angular/css/display.css";
-
-/* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-/* Dark Mode (System preference) */
-@import '@ionic/angular/css/palettes/dark.system.css';
-
-/* ------------------------------------------
- * Layout Fixes
- * ------------------------------------------ */
+/* Fix layout height */
 html, body, ion-app, ion-router-outlet {
   height: 100%;
   display: block;
 }
 
-
 ion-content {
   overflow-y: auto;
 }
 
-
-/* ------------------------------------------
- * WoW-Inspired Fonts
- * ------------------------------------------ */
-
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=PT+Sans+Narrow&family=Roboto+Condensed&display=swap');
-
-/* Local Fantasy Font: LifeCraft */
+/* Fonts */
 @font-face {
   font-family: 'LifeCraft';
   src: url('/assets/fonts/LifeCraft_Font.ttf') format('truetype');
@@ -57,50 +25,24 @@ ion-content {
   font-style: normal;
 }
 
-
-/* ------------------------------------------
- * Font Variables and Utility Classes
- * ------------------------------------------ */
-
 :root {
-  --font-title: 'Cinzel', serif;
   --font-display: 'LifeCraft', serif;
   --font-ui: 'PT Sans Narrow', sans-serif;
   --font-description: 'Roboto Condensed', sans-serif;
 }
 
-/* Apply global font to base */
 body {
   font-family: var(--font-ui);
   background: #000;
   color: #fff;
 }
 
-/* Titles (e.g., splash screen) */
 .app-title {
-  font-family: var(--font-title);
-  font-size: 2.5rem;
-  text-align: center;
+  font-family: var(--font-display);
   text-shadow: 0 0 8px gold;
 }
 
-/* Section headers */
-.section-header {
-  font-family: var(--font-display);
-  font-size: 1.8rem;
-  color: #EDE944;
-  margin-top: 1.5rem;
-}
-
-/* Item labels / UI */
-.item-label {
-  font-family: var(--font-ui);
-  font-size: 1rem;
-}
-
-/* Descriptive text */
 .description {
   font-family: var(--font-description);
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 1.1rem;
 }

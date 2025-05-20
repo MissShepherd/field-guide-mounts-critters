@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   selector: 'app-home',
   imports: [IonicModule, CommonModule],
-  template: `<p>Welcome to the Field Guide!</p>`,
+  template: `
+    <p class="description">✅ Welcome to the Field Guide home page!</p>
+  `
 })
 export class HomePage {}

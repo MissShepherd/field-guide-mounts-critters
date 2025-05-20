@@ -9,7 +9,7 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        component: HomePage,
+        component: HomePage
       }
     ]
   }
