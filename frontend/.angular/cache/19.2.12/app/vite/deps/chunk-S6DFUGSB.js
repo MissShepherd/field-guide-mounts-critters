@@ -1,21 +1,60 @@
 import {
-  Build,
-  writeTask
-} from "./chunk-MGPHXSG2.js";
-import {
-  raf
-} from "./chunk-L6BHBXTE.js";
-import {
-  win
-} from "./chunk-CJ5MJUPJ.js";
-import {
-  config,
-  printIonError,
-  printIonWarning
-} from "./chunk-ZWBDDU4U.js";
-import {
-  __async
+  __glob
 } from "./chunk-ZVATTXSA.js";
+
+// node_modules/@ionic/core/components/index4.js
+var Config = class {
+  constructor() {
+    this.m = /* @__PURE__ */ new Map();
+  }
+  reset(configObj) {
+    this.m = new Map(Object.entries(configObj));
+  }
+  get(key, fallback) {
+    const value = this.m.get(key);
+    return value !== void 0 ? value : fallback;
+  }
+  getBoolean(key, fallback = false) {
+    const val = this.m.get(key);
+    if (val === void 0) {
+      return fallback;
+    }
+    if (typeof val === "string") {
+      return val === "true";
+    }
+    return !!val;
+  }
+  getNumber(key, fallback) {
+    const val = parseFloat(this.m.get(key));
+    return isNaN(val) ? fallback !== void 0 ? fallback : NaN : val;
+  }
+  set(key, value) {
+    this.m.set(key, value);
+  }
+};
+var config = new Config();
+var LogLevel;
+(function(LogLevel2) {
+  LogLevel2["OFF"] = "OFF";
+  LogLevel2["ERROR"] = "ERROR";
+  LogLevel2["WARN"] = "WARN";
+})(LogLevel || (LogLevel = {}));
+var printIonWarning = (message, ...params) => {
+  const logLevel = config.get("logLevel", LogLevel.WARN);
+  if ([LogLevel.WARN].includes(logLevel)) {
+    return console.warn(`[Ionic Warning]: ${message}`, ...params);
+  }
+};
+var printIonError = (message, ...params) => {
+  const logLevel = config.get("logLevel", LogLevel.ERROR);
+  if ([LogLevel.ERROR, LogLevel.WARN].includes(logLevel)) {
+    return console.error(`[Ionic Error]: ${message}`, ...params);
+  }
+};
+
+// node_modules/@ionic/core/components/index6.js
+var win = typeof window !== "undefined" ? window : void 0;
+var doc = typeof document !== "undefined" ? document : void 0;
 
 // node_modules/@ionic/core/components/animation.js
 var animationPrefix;
@@ -144,8 +183,8 @@ var createAnimation = (animationId) => {
   };
   const cleanUpElements = () => {
     if (supportsWebAnimations) {
-      webAnimations.forEach((animation2) => {
-        animation2.cancel();
+      webAnimations.forEach((animation) => {
+        animation.cancel();
       });
       webAnimations.length = 0;
     }
@@ -315,8 +354,8 @@ var createAnimation = (animationId) => {
     update(true);
     return ani;
   };
-  const parent = (animation2) => {
-    parentAnimation = animation2;
+  const parent = (animation) => {
+    parentAnimation = animation;
     return ani;
   };
   const addElement = (el) => {
@@ -336,9 +375,9 @@ var createAnimation = (animationId) => {
   const addAnimation = (animationToAdd) => {
     if (animationToAdd != null) {
       if (Array.isArray(animationToAdd)) {
-        for (const animation2 of animationToAdd) {
-          animation2.parent(ani);
-          childAnimations.push(animation2);
+        for (const animation of animationToAdd) {
+          animation.parent(ani);
+          childAnimations.push(animation);
         }
       } else {
         animationToAdd.parent(ani);
@@ -357,13 +396,13 @@ var createAnimation = (animationId) => {
   };
   const updateKeyframes = (keyframeValues) => {
     if (supportsWebAnimations) {
-      getWebAnimations().forEach((animation2) => {
-        const keyframeEffect = animation2.effect;
+      getWebAnimations().forEach((animation) => {
+        const keyframeEffect = animation.effect;
         if (keyframeEffect.setKeyframes) {
           keyframeEffect.setKeyframes(keyframeValues);
         } else {
           const newEffect = new KeyframeEffect(keyframeEffect.target, keyframeValues, keyframeEffect.getTiming());
-          animation2.effect = newEffect;
+          animation.effect = newEffect;
         }
       });
     }
@@ -432,7 +471,7 @@ var createAnimation = (animationId) => {
   };
   const initializeWebAnimation = () => {
     elements.forEach((element) => {
-      const animation2 = element.animate(_keyframes, {
+      const animation = element.animate(_keyframes, {
         id,
         delay: getDelay(),
         duration: getDuration(),
@@ -441,8 +480,8 @@ var createAnimation = (animationId) => {
         fill: getFill(),
         direction: getDirection()
       });
-      animation2.pause();
-      webAnimations.push(animation2);
+      animation.pause();
+      webAnimations.push(animation);
     });
     if (webAnimations.length > 0) {
       webAnimations[0].onfinish = () => {
@@ -462,15 +501,15 @@ var createAnimation = (animationId) => {
   const setAnimationStep = (step) => {
     step = Math.min(Math.max(step, 0), 0.9999);
     if (supportsWebAnimations) {
-      webAnimations.forEach((animation2) => {
-        animation2.currentTime = animation2.effect.getComputedTiming().delay + getDuration() * step;
-        animation2.pause();
+      webAnimations.forEach((animation) => {
+        animation.currentTime = animation.effect.getComputedTiming().delay + getDuration() * step;
+        animation.pause();
       });
     }
   };
   const updateWebAnimation = (step) => {
-    webAnimations.forEach((animation2) => {
-      animation2.effect.updateTiming({
+    webAnimations.forEach((animation) => {
+      animation.effect.updateTiming({
         delay: getDelay(),
         duration: getDuration(),
         easing: getEasing(),
@@ -485,8 +524,8 @@ var createAnimation = (animationId) => {
   };
   const update = (deep = false, toggleAnimationName = true, step) => {
     if (deep) {
-      childAnimations.forEach((animation2) => {
-        animation2.update(deep, toggleAnimationName, step);
+      childAnimations.forEach((animation) => {
+        animation.update(deep, toggleAnimationName, step);
       });
     }
     if (supportsWebAnimations) {
@@ -495,8 +534,8 @@ var createAnimation = (animationId) => {
     return ani;
   };
   const progressStart = (forceLinearEasing = false, step) => {
-    childAnimations.forEach((animation2) => {
-      animation2.progressStart(forceLinearEasing, step);
+    childAnimations.forEach((animation) => {
+      animation.progressStart(forceLinearEasing, step);
     });
     pauseAnimation();
     shouldForceLinearEasing = forceLinearEasing;
@@ -507,16 +546,16 @@ var createAnimation = (animationId) => {
     return ani;
   };
   const progressStep = (step) => {
-    childAnimations.forEach((animation2) => {
-      animation2.progressStep(step);
+    childAnimations.forEach((animation) => {
+      animation.progressStep(step);
     });
     setAnimationStep(step);
     return ani;
   };
   const progressEnd = (playTo, step, dur) => {
     shouldForceLinearEasing = false;
-    childAnimations.forEach((animation2) => {
-      animation2.progressEnd(playTo, step, dur);
+    childAnimations.forEach((animation) => {
+      animation.progressEnd(playTo, step, dur);
     });
     if (dur !== void 0) {
       forceDurationValue = dur;
@@ -552,8 +591,8 @@ var createAnimation = (animationId) => {
   const pauseAnimation = () => {
     if (initialized) {
       if (supportsWebAnimations) {
-        webAnimations.forEach((animation2) => {
-          animation2.pause();
+        webAnimations.forEach((animation) => {
+          animation.pause();
         });
       } else {
         elements.forEach((element) => {
@@ -564,8 +603,8 @@ var createAnimation = (animationId) => {
     }
   };
   const pause = () => {
-    childAnimations.forEach((animation2) => {
-      animation2.pause();
+    childAnimations.forEach((animation) => {
+      animation.pause();
     });
     pauseAnimation();
     return ani;
@@ -574,8 +613,8 @@ var createAnimation = (animationId) => {
     animationFinish();
   };
   const playWebAnimations = () => {
-    webAnimations.forEach((animation2) => {
-      animation2.play();
+    webAnimations.forEach((animation) => {
+      animation.play();
     });
     if (_keyframes.length === 0 || elements.length === 0) {
       animationFinish();
@@ -620,8 +659,8 @@ var createAnimation = (animationId) => {
       onStop(onStopCallback, {
         oneTimeCallback: true
       });
-      childAnimations.forEach((animation2) => {
-        animation2.play();
+      childAnimations.forEach((animation) => {
+        animation.play();
       });
       if (supportsWebAnimations) {
         playWebAnimations();
@@ -632,8 +671,8 @@ var createAnimation = (animationId) => {
     });
   };
   const stop = () => {
-    childAnimations.forEach((animation2) => {
-      animation2.stop();
+    childAnimations.forEach((animation) => {
+      animation.stop();
     });
     if (initialized) {
       cleanUpElements();
@@ -722,6 +761,296 @@ var createAnimation = (animationId) => {
   };
 };
 
+// node_modules/@stencil/core/internal/app-data/index.js
+var BUILD = {
+  allRenderFn: false,
+  cmpDidLoad: true,
+  cmpDidUnload: false,
+  cmpDidUpdate: true,
+  cmpDidRender: true,
+  cmpWillLoad: true,
+  cmpWillUpdate: true,
+  cmpWillRender: true,
+  connectedCallback: true,
+  disconnectedCallback: true,
+  element: true,
+  event: true,
+  hasRenderFn: true,
+  lifecycle: true,
+  hostListener: true,
+  hostListenerTargetWindow: true,
+  hostListenerTargetDocument: true,
+  hostListenerTargetBody: true,
+  hostListenerTargetParent: false,
+  hostListenerTarget: true,
+  member: true,
+  method: true,
+  mode: true,
+  observeAttribute: true,
+  prop: true,
+  propMutable: true,
+  reflect: true,
+  scoped: true,
+  shadowDom: true,
+  slot: true,
+  cssAnnotations: true,
+  state: true,
+  style: true,
+  formAssociated: false,
+  svg: true,
+  updatable: true,
+  vdomAttribute: true,
+  vdomXlink: true,
+  vdomClass: true,
+  vdomFunctional: true,
+  vdomKey: true,
+  vdomListener: true,
+  vdomRef: true,
+  vdomPropOrAttr: true,
+  vdomRender: true,
+  vdomStyle: true,
+  vdomText: true,
+  watchCallback: true,
+  taskQueue: true,
+  hotModuleReplacement: false,
+  isDebug: false,
+  isDev: false,
+  isTesting: false,
+  hydrateServerSide: false,
+  hydrateClientSide: false,
+  lifecycleDOMEvents: false,
+  lazyLoad: false,
+  profile: false,
+  slotRelocation: true,
+  // TODO(STENCIL-914): remove this option when `experimentalSlotFixes` is the default behavior
+  appendChildSlotFix: false,
+  // TODO(STENCIL-914): remove this option when `experimentalSlotFixes` is the default behavior
+  cloneNodeFix: false,
+  hydratedAttribute: false,
+  hydratedClass: true,
+  // TODO(STENCIL-1305): remove this option
+  scriptDataOpts: false,
+  // TODO(STENCIL-914): remove this option when `experimentalSlotFixes` is the default behavior
+  scopedSlotTextContentFix: false,
+  // TODO(STENCIL-854): Remove code related to legacy shadowDomShim field
+  shadowDomShim: false,
+  // TODO(STENCIL-914): remove this option when `experimentalSlotFixes` is the default behavior
+  slotChildNodesFix: false,
+  invisiblePrehydration: true,
+  propBoolean: true,
+  propNumber: true,
+  propString: true,
+  constructableCSS: true,
+  cmpShouldUpdate: true,
+  devTools: false,
+  shadowDelegatesFocus: true,
+  initializeNextTick: false,
+  asyncLoading: false,
+  asyncQueue: false,
+  transformTagName: false,
+  attachStyles: true,
+  // TODO(STENCIL-914): remove this option when `experimentalSlotFixes` is the default behavior
+  experimentalSlotFixes: false
+};
+
+// import("./**/*.entry.js*") in node_modules/@stencil/core/internal/client/index.js
+var globImport_entry_js = __glob({});
+
+// node_modules/@stencil/core/internal/client/index.js
+var __defProp = Object.defineProperty;
+var __export = (target, all) => {
+  for (var name in all) __defProp(target, name, {
+    get: all[name],
+    enumerable: true
+  });
+};
+var Build = {
+  isDev: BUILD.isDev ? true : false,
+  isBrowser: true,
+  isServer: false,
+  isTesting: BUILD.isTesting ? true : false
+};
+var hostRefs = BUILD.hotModuleReplacement ? window.__STENCIL_HOSTREFS__ || (window.__STENCIL_HOSTREFS__ = /* @__PURE__ */ new WeakMap()) : /* @__PURE__ */ new WeakMap();
+var getHostRef = (ref) => hostRefs.get(ref);
+var customError;
+var consoleError = (e, el) => (customError || console.error)(e, el);
+var STENCIL_DEV_MODE = BUILD.isTesting ? ["STENCIL:"] : ["%cstencil", "color: white;background:#4c47ff;font-weight: bold; font-size:10px; padding:2px 6px; border-radius: 5px"];
+var win2 = typeof window !== "undefined" ? window : {};
+var doc2 = win2.document || {
+  head: {}
+};
+var H = win2.HTMLElement || class {
+};
+var plt = {
+  $flags$: 0,
+  $resourcesUrl$: "",
+  jmp: (h2) => h2(),
+  raf: (h2) => requestAnimationFrame(h2),
+  ael: (el, eventName, listener, opts) => el.addEventListener(eventName, listener, opts),
+  rel: (el, eventName, listener, opts) => el.removeEventListener(eventName, listener, opts),
+  ce: (eventName, opts) => new CustomEvent(eventName, opts)
+};
+var supportsShadow = BUILD.shadowDom;
+var supportsListenerOptions = (() => {
+  let supportsListenerOptions2 = false;
+  try {
+    doc2.addEventListener("e", null, Object.defineProperty({}, "passive", {
+      get() {
+        supportsListenerOptions2 = true;
+      }
+    }));
+  } catch (e) {
+  }
+  return supportsListenerOptions2;
+})();
+var promiseResolve = (v) => Promise.resolve(v);
+var supportsConstructableStylesheets = BUILD.constructableCSS ? (() => {
+  try {
+    new CSSStyleSheet();
+    return typeof new CSSStyleSheet().replaceSync === "function";
+  } catch (e) {
+  }
+  return false;
+})() : false;
+var queueCongestion = 0;
+var queuePending = false;
+var queueDomReads = [];
+var queueDomWrites = [];
+var queueDomWritesLow = [];
+var queueTask = (queue, write) => (cb) => {
+  queue.push(cb);
+  if (!queuePending) {
+    queuePending = true;
+    if (write && plt.$flags$ & 4) {
+      nextTick(flush);
+    } else {
+      plt.raf(flush);
+    }
+  }
+};
+var consume = (queue) => {
+  for (let i2 = 0; i2 < queue.length; i2++) {
+    try {
+      queue[i2](performance.now());
+    } catch (e) {
+      consoleError(e);
+    }
+  }
+  queue.length = 0;
+};
+var consumeTimeout = (queue, timeout) => {
+  let i2 = 0;
+  let ts = 0;
+  while (i2 < queue.length && (ts = performance.now()) < timeout) {
+    try {
+      queue[i2++](ts);
+    } catch (e) {
+      consoleError(e);
+    }
+  }
+  if (i2 === queue.length) {
+    queue.length = 0;
+  } else if (i2 !== 0) {
+    queue.splice(0, i2);
+  }
+};
+var flush = () => {
+  if (BUILD.asyncQueue) {
+    queueCongestion++;
+  }
+  consume(queueDomReads);
+  if (BUILD.asyncQueue) {
+    const timeout = (plt.$flags$ & 6) === 2 ? performance.now() + 14 * Math.ceil(queueCongestion * (1 / 10)) : Infinity;
+    consumeTimeout(queueDomWrites, timeout);
+    consumeTimeout(queueDomWritesLow, timeout);
+    if (queueDomWrites.length > 0) {
+      queueDomWritesLow.push(...queueDomWrites);
+      queueDomWrites.length = 0;
+    }
+    if (queuePending = queueDomReads.length + queueDomWrites.length + queueDomWritesLow.length > 0) {
+      plt.raf(flush);
+    } else {
+      queueCongestion = 0;
+    }
+  } else {
+    consume(queueDomWrites);
+    if (queuePending = queueDomReads.length > 0) {
+      plt.raf(flush);
+    }
+  }
+};
+var nextTick = (cb) => promiseResolve().then(cb);
+var readTask = queueTask(queueDomReads, false);
+var writeTask = queueTask(queueDomWrites, true);
+var result_exports = {};
+__export(result_exports, {
+  err: () => err,
+  map: () => map,
+  ok: () => ok,
+  unwrap: () => unwrap,
+  unwrapErr: () => unwrapErr
+});
+var ok = (value) => ({
+  isOk: true,
+  isErr: false,
+  value
+});
+var err = (value) => ({
+  isOk: false,
+  isErr: true,
+  value
+});
+function map(result, fn) {
+  if (result.isOk) {
+    const val = fn(result.value);
+    if (val instanceof Promise) {
+      return val.then((newVal) => ok(newVal));
+    } else {
+      return ok(val);
+    }
+  }
+  if (result.isErr) {
+    const value = result.value;
+    return err(value);
+  }
+  throw "should never get here";
+}
+var unwrap = (result) => {
+  if (result.isOk) {
+    return result.value;
+  } else {
+    throw result.value;
+  }
+};
+var unwrapErr = (result) => {
+  if (result.isErr) {
+    return result.value;
+  } else {
+    throw result.value;
+  }
+};
+var getMode = (ref) => getHostRef(ref).$modeName$;
+var CAPTURE_EVENT_SUFFIX = "Capture";
+var CAPTURE_EVENT_REGEX = new RegExp(CAPTURE_EVENT_SUFFIX + "$");
+
+// node_modules/@ionic/core/components/helpers.js
+var componentOnReady = (el, callback) => {
+  if (el.componentOnReady) {
+    el.componentOnReady().then((resolvedEl) => callback(resolvedEl));
+  } else {
+    raf(() => callback(el));
+  }
+};
+var raf = (h) => {
+  if (typeof __zone_symbol__requestAnimationFrame === "function") {
+    return __zone_symbol__requestAnimationFrame(h);
+  }
+  if (typeof requestAnimationFrame === "function") {
+    return requestAnimationFrame(h);
+  }
+  return setTimeout(h);
+};
+
 // node_modules/@ionic/core/components/index2.js
 var LIFECYCLE_WILL_ENTER = "ionViewWillEnter";
 var LIFECYCLE_DID_ENTER = "ionViewDidEnter";
@@ -790,175 +1119,7 @@ var createFocusController = () => {
   };
 };
 var LAST_FOCUS = "ion-last-focus";
-var iosTransitionAnimation = () => import("./ios.transition-ZP74WNVO.js");
-var mdTransitionAnimation = () => import("./md.transition-R7G663RN.js");
 var focusController = createFocusController();
-var transition = (opts) => {
-  return new Promise((resolve, reject) => {
-    writeTask(() => {
-      beforeTransition(opts);
-      runTransition(opts).then((result) => {
-        if (result.animation) {
-          result.animation.destroy();
-        }
-        afterTransition(opts);
-        resolve(result);
-      }, (error) => {
-        afterTransition(opts);
-        reject(error);
-      });
-    });
-  });
-};
-var beforeTransition = (opts) => {
-  const enteringEl = opts.enteringEl;
-  const leavingEl = opts.leavingEl;
-  focusController.saveViewFocus(leavingEl);
-  setZIndex(enteringEl, leavingEl, opts.direction);
-  if (opts.showGoBack) {
-    enteringEl.classList.add("can-go-back");
-  } else {
-    enteringEl.classList.remove("can-go-back");
-  }
-  setPageHidden(enteringEl, false);
-  enteringEl.style.setProperty("pointer-events", "none");
-  if (leavingEl) {
-    setPageHidden(leavingEl, false);
-    leavingEl.style.setProperty("pointer-events", "none");
-  }
-};
-var runTransition = (opts) => __async(null, null, function* () {
-  const animationBuilder = yield getAnimationBuilder(opts);
-  const ani = animationBuilder && Build.isBrowser ? animation(animationBuilder, opts) : noAnimation(opts);
-  return ani;
-});
-var afterTransition = (opts) => {
-  const enteringEl = opts.enteringEl;
-  const leavingEl = opts.leavingEl;
-  enteringEl.classList.remove("ion-page-invisible");
-  enteringEl.style.removeProperty("pointer-events");
-  if (leavingEl !== void 0) {
-    leavingEl.classList.remove("ion-page-invisible");
-    leavingEl.style.removeProperty("pointer-events");
-  }
-  focusController.setViewFocus(enteringEl);
-};
-var getAnimationBuilder = (opts) => __async(null, null, function* () {
-  if (!opts.leavingEl || !opts.animated || opts.duration === 0) {
-    return void 0;
-  }
-  if (opts.animationBuilder) {
-    return opts.animationBuilder;
-  }
-  const getAnimation = opts.mode === "ios" ? (yield iosTransitionAnimation()).iosTransitionAnimation : (yield mdTransitionAnimation()).mdTransitionAnimation;
-  return getAnimation;
-});
-var animation = (animationBuilder, opts) => __async(null, null, function* () {
-  yield waitForReady(opts, true);
-  const trans = animationBuilder(opts.baseEl, opts);
-  fireWillEvents(opts.enteringEl, opts.leavingEl);
-  const didComplete = yield playTransition(trans, opts);
-  if (opts.progressCallback) {
-    opts.progressCallback(void 0);
-  }
-  if (didComplete) {
-    fireDidEvents(opts.enteringEl, opts.leavingEl);
-  }
-  return {
-    hasCompleted: didComplete,
-    animation: trans
-  };
-});
-var noAnimation = (opts) => __async(null, null, function* () {
-  const enteringEl = opts.enteringEl;
-  const leavingEl = opts.leavingEl;
-  const focusManagerEnabled = config.get("focusManagerPriority", false);
-  yield waitForReady(opts, focusManagerEnabled);
-  fireWillEvents(enteringEl, leavingEl);
-  fireDidEvents(enteringEl, leavingEl);
-  return {
-    hasCompleted: true
-  };
-});
-var waitForReady = (opts, defaultDeep) => __async(null, null, function* () {
-  const deep = opts.deepWait !== void 0 ? opts.deepWait : defaultDeep;
-  if (deep) {
-    yield Promise.all([deepReady(opts.enteringEl), deepReady(opts.leavingEl)]);
-  }
-  yield notifyViewReady(opts.viewIsReady, opts.enteringEl);
-});
-var notifyViewReady = (viewIsReady, enteringEl) => __async(null, null, function* () {
-  if (viewIsReady) {
-    yield viewIsReady(enteringEl);
-  }
-});
-var playTransition = (trans, opts) => {
-  const progressCallback = opts.progressCallback;
-  const promise = new Promise((resolve) => {
-    trans.onFinish((currentStep) => resolve(currentStep === 1));
-  });
-  if (progressCallback) {
-    trans.progressStart(true);
-    progressCallback(trans);
-  } else {
-    trans.play();
-  }
-  return promise;
-};
-var fireWillEvents = (enteringEl, leavingEl) => {
-  lifecycle(leavingEl, LIFECYCLE_WILL_LEAVE);
-  lifecycle(enteringEl, LIFECYCLE_WILL_ENTER);
-};
-var fireDidEvents = (enteringEl, leavingEl) => {
-  lifecycle(enteringEl, LIFECYCLE_DID_ENTER);
-  lifecycle(leavingEl, LIFECYCLE_DID_LEAVE);
-};
-var lifecycle = (el, eventName) => {
-  if (el) {
-    const ev = new CustomEvent(eventName, {
-      bubbles: false,
-      cancelable: false
-    });
-    el.dispatchEvent(ev);
-  }
-};
-var waitForMount = () => {
-  return new Promise((resolve) => raf(() => raf(() => resolve())));
-};
-var deepReady = (el) => __async(null, null, function* () {
-  const element = el;
-  if (element) {
-    if (element.componentOnReady != null) {
-      const stencilEl = yield element.componentOnReady();
-      if (stencilEl != null) {
-        return;
-      }
-    } else if (element.__registerHost != null) {
-      const waitForCustomElement = new Promise((resolve) => raf(resolve));
-      yield waitForCustomElement;
-      return;
-    }
-    yield Promise.all(Array.from(element.children).map(deepReady));
-  }
-});
-var setPageHidden = (el, hidden) => {
-  if (hidden) {
-    el.setAttribute("aria-hidden", "true");
-    el.classList.add("ion-page-hidden");
-  } else {
-    el.hidden = false;
-    el.removeAttribute("aria-hidden");
-    el.classList.remove("ion-page-hidden");
-  }
-};
-var setZIndex = (enteringEl, leavingEl, direction) => {
-  if (enteringEl !== void 0) {
-    enteringEl.style.zIndex = direction === "back" ? "99" : "101";
-  }
-  if (leavingEl !== void 0) {
-    leavingEl.style.zIndex = "100";
-  }
-};
 var getIonPageElement = (element) => {
   if (element.classList.contains("ion-page")) {
     return element;
@@ -971,25 +1132,28 @@ var getIonPageElement = (element) => {
 };
 
 export {
+  getMode,
+  config,
+  printIonWarning,
+  doc,
   createAnimation,
+  componentOnReady,
   LIFECYCLE_WILL_ENTER,
   LIFECYCLE_DID_ENTER,
   LIFECYCLE_WILL_LEAVE,
   LIFECYCLE_DID_LEAVE,
   LIFECYCLE_WILL_UNLOAD,
-  transition,
-  lifecycle,
-  waitForMount,
-  deepReady,
-  setPageHidden,
   getIonPageElement
 };
 /*! Bundled license information:
 
+@ionic/core/components/index4.js:
+@ionic/core/components/index6.js:
 @ionic/core/components/animation.js:
+@ionic/core/components/helpers.js:
 @ionic/core/components/index2.js:
   (*!
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=chunk-I6Q7YG6M.js.map
+//# sourceMappingURL=chunk-S6DFUGSB.js.map
