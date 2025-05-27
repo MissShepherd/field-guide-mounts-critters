@@ -23,12 +23,14 @@ html, body {
   margin: 0;
   background-color: #1a1a1a;
   background-image: url('/assets/bg/parchment.png');
-  background-repeat: repeat;
-  background-position: top left;
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
   z-index: -1;
 }
+
+
 
 /* -------------------------------
  * Ionic Container Transparency
