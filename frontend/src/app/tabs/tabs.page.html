@@ -1,30 +1,23 @@
-<ion-tabs>
-  <ion-router-outlet></ion-router-outlet>
+<ion-tab-bar slot="bottom" class="wow-tab-bar">
+  <ion-tab-button tab="mounts" [routerLink]="['/tabs/mounts']">
+    <img src="/assets/icons/mount_icon_64x64.png" class="tab-icon" />
+    <ion-label>Mounts</ion-label>
+  </ion-tab-button>
 
-  <ion-tab-bar slot="bottom" class="wow-tab-bar">
-    <ion-tab-button tab="mounts" [routerLink]="['/tabs/mounts']">
-      <ion-icon name="archive-outline"></ion-icon>
-      <ion-label>Mounts</ion-label>
-    </ion-tab-button>
+  <ion-tab-button tab="pets" [routerLink]="['/tabs/pets']">
+    <img src="/assets/icons/pet_icon_64x64.png" class="tab-icon" />
+    <ion-label>Pets</ion-label>
+  </ion-tab-button>
 
-    <ion-tab-button tab="pets" [routerLink]="['/tabs/pets']">
-      <ion-icon name="paw-outline"></ion-icon>
-      <ion-label>Pets</ion-label>
-    </ion-tab-button>
+  <ion-tab-button tab="toys" [routerLink]="['/tabs/toys']">
+    <img src="/assets/icons/toy_icon_64x64.png" class="tab-icon" />
+    <ion-label>Toys</ion-label>
+  </ion-tab-button>
 
-    <ion-tab-button tab="toys" [routerLink]="['/tabs/toys']">
-      <ion-icon name="cube-outline"></ion-icon>
-      <ion-label>Toys</ion-label>
-    </ion-tab-button>
+  <ion-tab-button tab="more" [routerLink]="['/tabs/more']">
+    <img src="/assets/icons/more_icon_64x64.png" class="tab-icon" />
+    <ion-label>More</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
 
-    <ion-tab-button tab="search" [routerLink]="['/tabs/search']">
-      <ion-icon name="search-outline"></ion-icon>
-      <ion-label>Search</ion-label>
-    </ion-tab-button>
 
-    <ion-tab-button tab="more" [routerLink]="['/tabs/more']">
-      <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-      <ion-label>More</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>

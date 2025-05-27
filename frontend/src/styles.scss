@@ -6,13 +6,18 @@
 @import "@ionic/angular/css/padding.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+/* -------------------------------
+ * Font Variables
+ * ------------------------------- */
 :root {
   --font-title: 'Cinzel', serif;
   --font-ui: 'PT Sans Narrow', sans-serif;
   --font-description: 'Roboto Condensed', sans-serif;
 }
 
-/* --- Set parchment background globally --- */
+/* -------------------------------
+ * Global Background (Parchment)
+ * ------------------------------- */
 html, body {
   height: 100%;
   margin: 0;
@@ -25,7 +30,9 @@ html, body {
   z-index: -1;
 }
 
-/* --- Force all Ionic containers to be transparent --- */
+/* -------------------------------
+ * Ionic Container Transparency
+ * ------------------------------- */
 ion-app,
 ion-content,
 ion-router-outlet,
@@ -38,28 +45,31 @@ ion-view {
   box-shadow: none !important;
 }
 
-/* --- Make sure content isn’t covering it with white --- */
+/* Remove background from shadow DOM scroll containers */
 ion-content::part(scroll),
 ion-router-outlet::part(scroll),
 ion-app::part(scroll) {
   background: transparent !important;
 }
 
-/* --- Themed text --- */
+/* -------------------------------
+ * Typography
+ * ------------------------------- */
 ion-content {
   color: #ede944;
   font-family: var(--font-ui);
 }
 
-/* --- Tab Bar Styling --- */
-ion-tab-bar.wow-tab-bar {
-  --background: #111;
-  --color: #ede944;
-  --color-selected: #cd650e;
-  border-top: 1px solid #4e284f;
+.section-header {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  color: #ede944;
+  margin: 1rem 0;
 }
 
-/* --- Cards --- */
+/* -------------------------------
+ * Cards
+ * ------------------------------- */
 ion-card {
   background: #2b2b2b;
   border: 1px solid #4e284f;
@@ -71,10 +81,24 @@ ion-card.uncollected {
   filter: grayscale(1);
 }
 
-/* --- Section headers --- */
-.section-header {
-  font-family: var(--font-title);
-  font-size: 1.5rem;
-  color: #ede944;
-  margin: 1rem 0;
+/* -------------------------------
+ * Tab Bar Styling (Fixed Bottom)
+ * ------------------------------- */
+ion-tab-bar.wow-tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  height: 56px;
+
+  --background: #111;
+  --color: #ede944;
+  --color-selected: #cd650e;
+  border-top: 1px solid #4e284f;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.5); // optional lifted look
+}
+
+ion-tabs {
+  padding-bottom: 56px; // prevent content from being hidden
 }
