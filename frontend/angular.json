@@ -34,9 +34,9 @@
               }
             ],
             "styles": [
-              "src/global.scss",
+              "src/styles.scss",
               "src/theme/variables.scss"
-              ]
+            ]
             ,
             "scripts": [],
             "browser": "src/main.ts"

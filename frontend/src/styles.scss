@@ -12,36 +12,46 @@
   --font-description: 'Roboto Condensed', sans-serif;
 }
 
-html, body, ion-app, ion-router-outlet {
+/* --- Set parchment background globally --- */
+html, body {
   height: 100%;
-  display: block;
-}
-
-ion-app {
-  background: #1a1a1a url('/assets/bg/parchment.png') repeat;
+  margin: 0;
+  background-color: #1a1a1a;
+  background-image: url('/assets/bg/parchment.png');
+  background-repeat: repeat;
+  background-position: top left;
   background-size: auto;
   background-attachment: fixed;
+  z-index: -1;
 }
 
-ion-content {
+/* --- Force all Ionic containers to be transparent --- */
+ion-app,
+ion-content,
+ion-router-outlet,
+ion-tabs,
+ion-tab,
+ion-page,
+ion-view {
   background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* --- Make sure content isn’t covering it with white --- */
+ion-content::part(scroll),
+ion-router-outlet::part(scroll),
+ion-app::part(scroll) {
+  background: transparent !important;
+}
+
+/* --- Themed text --- */
+ion-content {
   color: #ede944;
   font-family: var(--font-ui);
 }
 
-ion-router-outlet {
-  background: transparent !important;
-}
-
-
-
-.section-header {
-  font-family: var(--font-title);
-  font-size: 1.5rem;
-  color: #ede944;
-  margin: 1rem 0;
-}
-
+/* --- Tab Bar Styling --- */
 ion-tab-bar.wow-tab-bar {
   --background: #111;
   --color: #ede944;
@@ -49,12 +59,22 @@ ion-tab-bar.wow-tab-bar {
   border-top: 1px solid #4e284f;
 }
 
+/* --- Cards --- */
 ion-card {
   background: #2b2b2b;
   border: 1px solid #4e284f;
   box-shadow: 0 0 8px rgba(255, 215, 0, 0.2);
 }
+
 ion-card.uncollected {
   opacity: 0.4;
   filter: grayscale(1);
+}
+
+/* --- Section headers --- */
+.section-header {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  color: #ede944;
+  margin: 1rem 0;
 }
