@@ -32,7 +32,7 @@ Track your **mounts**, **pets**, and more – wherever you are.
 
 ```bash
 git clone https://github.com/your-username/field-guide-wow.git
-cd field-guide-wow
+cd field-guide-mounts-critters
 ````
 
 ---
