@@ -4,7 +4,7 @@ import { TabsPage } from './tabs/tabs.page';
 export const routes: Routes = [
   {
     path: 'tabs',
-    component: TabsPage, // your wrapper tab page
+    component: TabsPage,
     children: [
       {
         path: 'mounts',
