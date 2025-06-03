@@ -54,7 +54,7 @@ cd backend
 npm install
 # Create a .env file from the example
 cp .env.example .env
-node server.js
+node app.js
 ```
 
 ---
