@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { RouterOutlet } from '@angular/router';
 import { BlizzardService } from './services/blizzard.service'; // <--- Import your service
 
 @Component({
@@ -10,7 +11,7 @@ import { BlizzardService } from './services/blizzard.service'; // <--- Import yo
       <ion-router-outlet></ion-router-outlet>
     </ion-app>
   `,
-  imports: [IonicModule] // Removed RouterOutlet from imports
+  imports: [IonicModule, RouterOutlet] // <-- Added RouterOutlet import for best practice
 })
 export class AppComponent implements OnInit {
   constructor(private blizzardService: BlizzardService) {}
