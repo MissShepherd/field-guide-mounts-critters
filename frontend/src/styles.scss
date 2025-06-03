@@ -16,29 +16,30 @@
 }
 
 /* -------------------------------
- * Global Background Fallback
+ * Fixed Fullscreen Background Layer
  * ------------------------------- */
-html, body {
-  height: 100%;
+body {
+  position: relative;
   margin: 0;
-  background-color: #1a1a1a;
-  z-index: -1;
+  background: none !important;
 }
 
-/* Persistent Parchment Background Layer */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
-  inset: 0;
-  z-index: -1;
-  background: #1a1a1a url('/assets/bg/parchment.png') no-repeat center center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #1a1a1a url('/assets/bg/parchment.png') center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  z-index: -1;
   pointer-events: none;
 }
 
 /* -------------------------------
- * Transparent Ionic Layout Layers
+ * Transparent Ionic Layers
  * ------------------------------- */
 ion-app,
 ion-content,
@@ -46,8 +47,7 @@ ion-router-outlet,
 ion-tabs,
 ion-tab,
 ion-page,
-ion-view,
-.ion-page {
+ion-view {
   background: transparent !important;
   box-shadow: none !important;
 }
