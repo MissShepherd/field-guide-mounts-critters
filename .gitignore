@@ -36,8 +36,11 @@ testem.log
 log.txt
 *.log
 
-# Environment files (keep secrets safe!)
-**/.env
+# Ignore backend env files and node_modules
+backend/.env
+backend/node_modules/
+frontend/node_modules/
+
 
 # Editor backups
 *~

@@ -16,22 +16,23 @@
 }
 
 /* -------------------------------
- * Global Background (Parchment Frame)
+ * Global Background (Parchment)
  * ------------------------------- */
-html, body {
-  height: 100%;
+body {
+  position: relative;
   margin: 0;
   background-color: #1a1a1a;
   background-image: url('/assets/bg/parchment.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: auto;
   background-attachment: fixed;
   z-index: -1;
+  pointer-events: none;
 }
 
 /* -------------------------------
- * Ionic Container Transparency
+ * Transparent Ionic Layers
  * ------------------------------- */
 ion-app,
 ion-content,
@@ -41,11 +42,9 @@ ion-tab,
 ion-page,
 ion-view {
   background: transparent !important;
-  background-color: transparent !important;
   box-shadow: none !important;
 }
 
-/* Remove background from shadow DOM scroll containers */
 ion-content::part(scroll),
 ion-router-outlet::part(scroll),
 ion-app::part(scroll) {
@@ -81,8 +80,23 @@ ion-card.uncollected {
   filter: grayscale(1);
 }
 
+ion-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 0.25rem;
+  border-radius: 4px;
+  border-bottom: 1px solid #4e284f;
+  transition: transform 0.3s ease;
+}
+
+ion-card:hover img {
+  transform: scale(1.02);
+}
+
 /* -------------------------------
- * Tab Bar Styling (Fixed Bottom)
+ * Tab Bar
  * ------------------------------- */
 ion-tab-bar.wow-tab-bar {
   position: fixed;
@@ -100,34 +114,5 @@ ion-tab-bar.wow-tab-bar {
 }
 
 ion-tabs {
-  padding-bottom: 56px;
-}
-
-/* -------------------------------
- * Tab Icon Style (for PNGs)
- * ------------------------------- */
-.tab-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  margin-bottom: 4px;
-  filter: drop-shadow(0 0 2px #cd650e);
-}
-
-/* -------------------------------
- * Responsive Background Switch
- * ------------------------------- */
-
-/* Default background (low-res / fallback) already set */
-
-@media screen and (min-width: 800px) and (min-height: 1600px) {
-  html, body {
-    background-image: url('/assets/bg/parchment_background_mobile_720x1280.png');
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-height: 2400px) {
-  html, body {
-    background-image: url('/assets/bg/parchment_background_mobile_1440x3040.png');
-  }
+  padding-bottom: 56px; // prevent content from being hidden
 }
