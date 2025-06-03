@@ -1,14 +1,19 @@
 import { Routes } from '@angular/router';
 import { TabsPage } from './tabs/tabs.page';
+import { HomePage } from './pages/home/home.page'; // Make sure this import exists
 
 export const routes: Routes = [
+  {
+    path: '',
+    component: HomePage // Starting page
+  },
   {
     path: 'tabs',
     component: TabsPage,
     children: [
       {
         path: 'mounts',
-        loadComponent: () => import('./mounts/mounts.page').then(m => m.MountsPage)
+        loadComponent: () => import('./pages/mounts/mounts.page').then(m => m.MountsPage)
       },
       {
         path: 'pets',
@@ -28,10 +33,5 @@ export const routes: Routes = [
         pathMatch: 'full'
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/mounts',
-    pathMatch: 'full'
   }
 ];

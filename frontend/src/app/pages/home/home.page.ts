@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   standalone: true,
   selector: 'app-home',
-  imports: [IonicModule, CommonModule],
-  template: `
-    <p class="description">✅ Welcome to the Field Guide home page!</p>
-  `
+  imports: [IonicModule, RouterModule, CommonModule],
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss']
 })
 export class HomePage {}
