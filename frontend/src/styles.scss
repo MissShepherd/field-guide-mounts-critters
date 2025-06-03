@@ -16,18 +16,25 @@
 }
 
 /* -------------------------------
- * Global Background
+ * Global Background Fallback
  * ------------------------------- */
 html, body {
   height: 100%;
   margin: 0;
   background-color: #1a1a1a;
-  background-image: url('/assets/bg/parchment.png');
-  background-repeat: no-repeat;
-  background-position: center center;
+  z-index: -1;
+}
+
+/* Persistent Parchment Background Layer */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #1a1a1a url('/assets/bg/parchment.png') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -1;
+  pointer-events: none;
 }
 
 /* -------------------------------
@@ -39,7 +46,8 @@ ion-router-outlet,
 ion-tabs,
 ion-tab,
 ion-page,
-ion-view {
+ion-view,
+.ion-page {
   background: transparent !important;
   box-shadow: none !important;
 }
