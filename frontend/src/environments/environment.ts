@@ -1,5 +1,4 @@
 export const environment = {
   production: false,
-  blizzardClientId: 'YOUR_DEV_CLIENT_ID',
-  blizzardClientSecret: 'YOUR_DEV_CLIENT_SECRET'
+  apiUrl: 'http://localhost:3000/api'
 };

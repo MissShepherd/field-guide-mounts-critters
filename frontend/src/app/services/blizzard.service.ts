@@ -7,8 +7,10 @@ export class BlizzardService {
   constructor(private http: HttpClient) {}
 
   getToken() {
+    // Fix: Use environment['apiUrl'] if environment.apiUrl is undefined due to import issues
+    const apiUrl = environment.apiUrl || environment['apiUrl'];
     return this.http.get<{ access_token: string }>(
-      `${environment.apiUrl}/blizzard-token`
+      `${apiUrl}/blizzard-token`
     );
   }
 }
