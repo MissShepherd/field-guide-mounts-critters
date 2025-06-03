@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-tabs',
   standalone: true,
+  templateUrl: './tabs.page.html',
   imports: [IonicModule, RouterModule, CommonModule],
-  templateUrl: './tabs.page.html'
 })
 export class TabsPage {}

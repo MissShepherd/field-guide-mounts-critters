@@ -1,62 +1,53 @@
 {
-  "hash": "edd6c307",
-  "configHash": "dbb9f2da",
+  "hash": "eb845d59",
+  "configHash": "baa4ffe3",
   "lockfileHash": "7d4b7f07",
-  "browserHash": "b5ba3538",
+  "browserHash": "06460643",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "322b597b",
-      "needsInterop": false
-    },
-    "@angular/common/http": {
-      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
-      "file": "@angular_common_http.js",
-      "fileHash": "985cc044",
+      "fileHash": "cc767a7f",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "0f47429a",
+      "fileHash": "a45f5e70",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "77dbe7b0",
+      "fileHash": "a6c38e3d",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "c04ca938",
+      "fileHash": "2e67a47a",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "0705ce8c",
+      "fileHash": "f5f68d7d",
       "needsInterop": false
     },
     "@ionic/angular": {
       "src": "../../../../../../node_modules/@ionic/angular/fesm2022/ionic-angular.mjs",
       "file": "@ionic_angular.js",
-      "fileHash": "29952be1",
+      "fileHash": "140b2810",
       "needsInterop": false
     },
     "@ionic/angular/standalone": {
       "src": "../../../../../../node_modules/@ionic/angular/fesm2022/ionic-angular-standalone.mjs",
       "file": "@ionic_angular_standalone.js",
-      "fileHash": "7450cf06",
+      "fileHash": "0ea8172a",
       "needsInterop": false
     }
   },
   "chunks": {
-    "core-js-UR6QH4NU": {
-      "file": "core-js-UR6QH4NU.js"
-    },
     "swipe-back-CJJBFXX2": {
       "file": "swipe-back-CJJBFXX2.js"
     },
@@ -74,9 +65,6 @@
     },
     "focus-visible-RAFDA6YZ": {
       "file": "focus-visible-RAFDA6YZ.js"
-    },
-    "shadow-css-KQBFNRGS": {
-      "file": "shadow-css-KQBFNRGS.js"
     },
     "ios.transition-ZP74WNVO": {
       "file": "ios__transition-ZP74WNVO.js"
@@ -98,6 +86,9 @@
     },
     "dom-3FHNNQ6P": {
       "file": "dom-3FHNNQ6P.js"
+    },
+    "core-js-UR6QH4NU": {
+      "file": "core-js-UR6QH4NU.js"
     },
     "chunk-5APOKNA7": {
       "file": "chunk-5APOKNA7.js"
@@ -123,8 +114,8 @@
     "chunk-7Q5HCUSL": {
       "file": "chunk-7Q5HCUSL.js"
     },
-    "chunk-CFUCFYGK": {
-      "file": "chunk-CFUCFYGK.js"
+    "chunk-5OURQJ5X": {
+      "file": "chunk-5OURQJ5X.js"
     },
     "chunk-GJ4SWXUR": {
       "file": "chunk-GJ4SWXUR.js"
@@ -153,29 +144,26 @@
     "chunk-ZWBDDU4U": {
       "file": "chunk-ZWBDDU4U.js"
     },
-    "chunk-ABRXWRBO": {
-      "file": "chunk-ABRXWRBO.js"
+    "chunk-74MM4AQU": {
+      "file": "chunk-74MM4AQU.js"
     },
-    "chunk-PDMJY2H2": {
-      "file": "chunk-PDMJY2H2.js"
+    "chunk-7XU7F6QN": {
+      "file": "chunk-7XU7F6QN.js"
     },
-    "chunk-FAXQQWXG": {
-      "file": "chunk-FAXQQWXG.js"
+    "chunk-PDJMDHY7": {
+      "file": "chunk-PDJMDHY7.js"
     },
-    "chunk-RD4WJ4KX": {
-      "file": "chunk-RD4WJ4KX.js"
-    },
-    "chunk-2NCG5MPK": {
-      "file": "chunk-2NCG5MPK.js"
-    },
-    "chunk-Y4XM2DEG": {
-      "file": "chunk-Y4XM2DEG.js"
+    "chunk-WS6JTBDN": {
+      "file": "chunk-WS6JTBDN.js"
     },
     "chunk-DMVQLT2H": {
       "file": "chunk-DMVQLT2H.js"
     },
     "chunk-7IZRYL2Z": {
       "file": "chunk-7IZRYL2Z.js"
+    },
+    "shadow-css-KQBFNRGS": {
+      "file": "shadow-css-KQBFNRGS.js"
     },
     "chunk-ZVATTXSA": {
       "file": "chunk-ZVATTXSA.js"

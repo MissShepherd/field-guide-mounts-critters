@@ -5,7 +5,7 @@ import { HomePage } from './pages/home/home.page';
 export const routes: Routes = [
   {
     path: '',
-    component: HomePage // Landing screen (start page)
+    component: HomePage // Start page
   },
   {
     path: 'tabs',

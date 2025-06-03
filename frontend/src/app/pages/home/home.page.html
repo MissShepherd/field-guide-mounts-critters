@@ -1,11 +1,12 @@
-<ion-content class="ion-padding">
-  <div class="welcome-box">
-    <h1 class="section-header">Welcome, Collector!</h1>
-    <p class="description">Explore your collection of mounts, pets, and more.</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="section-header">Welcome Collector!</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-    <ion-button expand="block" routerLink="/tabs/mounts" color="warning">🐎 Mounts</ion-button>
-    <ion-button expand="block" routerLink="/tabs/pets" color="warning">🐾 Pets</ion-button>
-    <ion-button expand="block" routerLink="/tabs/toys" color="warning">🎁 Toys</ion-button>
-    <ion-button expand="block" routerLink="/tabs/more" color="warning">🎒 More</ion-button>
-  </div>
+<ion-content class="ion-padding">
+  <ion-button expand="block" routerLink="/tabs/mounts">🐎 Mounts</ion-button>
+  <ion-button expand="block" routerLink="/tabs/pets">🐾 Pets</ion-button>
+  <ion-button expand="block" routerLink="/tabs/toys">🎁 Toys</ion-button>
+  <ion-button expand="block" routerLink="/tabs/more">🎒 More</ion-button>
 </ion-content>
