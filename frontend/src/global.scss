@@ -96,3 +96,9 @@ ion-progress-bar {
 ion-list {
   background: transparent;
 }
+
+.page-background {
+  background: url('/assets/img/main background.png') no-repeat center center / cover;
+  background-attachment: fixed;
+  background-size: cover;
+}
