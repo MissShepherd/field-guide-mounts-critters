@@ -1,2 +1,32 @@
-// For information on how to create your own theme, please see:
-// http://ionicframework.com/docs/theming/
+/* WoW-Themed Ionic Variables */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+/* Core Ionic Variables */
+:root {
+  --ion-font-family: 'IM Fell English SC', serif;
+
+  --color-parchment: #f1d9a5;
+  --color-blue: #00437A;
+  --color-gold: #EDE944;
+  --color-bronze: #CD650E;
+  --color-dark: #000000;
+  --color-tab-highlight: #0787AC;
+  --color-panel-dark: #003354;
+
+  --ion-color-primary: var(--color-blue);
+  --ion-color-secondary: var(--color-gold);
+  --ion-color-tertiary: var(--color-bronze);
+  --ion-text-color: var(--color-dark);
+  --ion-background-color: var(--color-parchment);
+}
+
+/* Optional Dark Theme */
+.dark-theme {
+  --ion-background-color: #1a1a1a;
+  --ion-text-color: #ede4d2;
+  --ion-color-primary: #0787AC;
+  --ion-color-secondary: #EDE944;
+  --ion-tab-bar-background: #000;
+  --ion-tab-bar-color: #EDE944;
+  --ion-tab-bar-color-selected: #0787AC;
+}
