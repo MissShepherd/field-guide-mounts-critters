@@ -1,0 +1,98 @@
+/* WoW-Themed Global Styles for Field Guide to Mounts & Critters */
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+:root {
+  --color-parchment: #f1d9a5;
+  --color-blue: #00437A;
+  --color-gold: #EDE944;
+  --color-bronze: #CD650E;
+  --color-dark: #000000;
+  --color-tab-highlight: #0787AC;
+  --color-panel-dark: #003354;
+
+  --ion-font-family: 'IM Fell English SC', serif;
+
+  --ion-color-primary: var(--color-blue);
+  --ion-color-secondary: var(--color-gold);
+  --ion-color-tertiary: var(--color-bronze);
+  --ion-text-color: var(--color-dark);
+  --ion-background-color: var(--color-parchment);
+
+  --ion-color-step-50: #fbf6e9;
+  --ion-color-step-850: #2d2d2d;
+}
+
+/* App Base Styling */
+body {
+  font-family: var(--ion-font-family);
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+
+/* Reusable Card Style */
+.card-parchment {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+/* Tab Bar Styling */
+ion-tab-bar {
+  background: var(--color-dark);
+  color: var(--color-gold);
+  --color-selected: var(--color-tab-highlight);
+  font-family: var(--ion-font-family);
+  font-size: 0.9rem;
+}
+
+ion-tab-button {
+  font-family: var(--ion-font-family);
+}
+
+/* Toolbar and Headers */
+ion-toolbar {
+  --background: var(--color-blue);
+  --color: var(--color-gold);
+  font-family: var(--ion-font-family);
+}
+
+/* Common Button Style */
+ion-button {
+  --background: var(--color-bronze);
+  --color: white;
+  text-transform: none;
+  font-family: var(--ion-font-family);
+  border-radius: 6px;
+}
+
+/* Inputs, Selects */
+ion-input, ion-select, ion-textarea {
+  font-family: var(--ion-font-family);
+  --padding-start: 10px;
+  --padding-end: 10px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+/* Labels */
+ion-label {
+  font-family: var(--ion-font-family);
+  font-weight: bold;
+}
+
+/* Progress Bars */
+ion-progress-bar {
+  --progress-background: rgba(255, 255, 255, 0.15);
+  --progress-color: var(--color-gold);
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Lists */
+ion-list {
+  background: transparent;
+}
