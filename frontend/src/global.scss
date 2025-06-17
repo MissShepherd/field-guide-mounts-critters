@@ -25,10 +25,19 @@
 
 /* App Base Styling */
 body {
-  font-family: var(--ion-font-family);
-  background-color: var(--ion-background-color);
-  color: var(--ion-text-color);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1a1a1a;
+  background-image: url('/assets/img/main background.png'); /* rename if needed */
+  background-repeat: no-repeat;
+  background-size: cover; /* ✅ make it fill the screen */
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'IM Fell English SC', serif;
 }
+
 
 /* Reusable Card Style */
 .card-parchment {
