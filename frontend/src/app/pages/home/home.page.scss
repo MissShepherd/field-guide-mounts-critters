@@ -67,3 +67,40 @@
   margin-top: 2px;
   text-align: right;
 }
+
+.character-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: linear-gradient(to right, #003b6f, #00437A);
+  border-bottom: 2px solid var(--color-gold);
+}
+
+.char-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--color-gold);
+}
+
+.char-details {
+  flex: 1;
+  margin-left: 12px;
+  color: var(--color-gold);
+}
+
+.char-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.char-class {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.char-icon {
+  width: 32px;
+  height: 32px;
+}
