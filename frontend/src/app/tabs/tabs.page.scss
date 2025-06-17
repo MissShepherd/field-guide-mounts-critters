@@ -17,3 +17,8 @@ ion-tab-button {
   height: 26px;
   margin-bottom: 2px;
 }
+
+ion-tab-button.ion-selected {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-top: 2px solid var(--color-gold);
+}
