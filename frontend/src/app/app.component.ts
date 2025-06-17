@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router'; // ✅ this is missing
 import { BlizzardService } from './services/blizzard.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { BlizzardService } from './services/blizzard.service';
       <ion-router-outlet></ion-router-outlet>
     </ion-app>
   `,
-  imports: [IonicModule]
+  imports: [IonicModule, RouterModule] // ✅ include RouterModule here
 })
 export class AppComponent implements OnInit {
   constructor(private blizzardService: BlizzardService) {}
@@ -18,9 +19,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.blizzardService.getToken().subscribe({
       next: (data) => {
-        // For testing: log the token, or store/use as needed
         console.log('Blizzard access token:', data.access_token);
-        // You could also store it as a class property if you want
       },
       error: (err) => {
         console.error('Error fetching token:', err);
