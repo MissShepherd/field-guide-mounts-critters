@@ -1,3 +1,14 @@
+/* 🖼️ Home Page Background */
+.page-background-home {
+  background: url('/assets/img/home_bg.png') no-repeat center center / cover;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'IM Fell English SC', serif;
+  color: var(--color-gold);
+  min-height: 100%;
+}
+
+/* ✨ Default Page Background (used on other pages) */
 .page-background {
   background: url('/assets/img/main background.png') no-repeat center center / cover;
   background-attachment: fixed;
@@ -72,4 +83,9 @@
   font-size: 0.85rem;
   margin-top: 2px;
   text-align: right;
+}
+
+/* Make sure ion-content shows background */
+ion-content {
+  --background: transparent;
 }
