@@ -2,7 +2,7 @@ import {
   MENU_BACK_BUTTON_PRIORITY,
   OVERLAY_BACK_BUTTON_PRIORITY,
   shouldUseCloseWatcher
-} from "./chunk-USATX7BD.js";
+} from "./chunk-AY32UJ3J.js";
 import {
   BACKDROP_NO_SCROLL
 } from "./chunk-6HCD6MJG.js";
@@ -14,13 +14,13 @@ import {
   Router,
   RouterLink,
   UrlSerializer
-} from "./chunk-74MM4AQU.js";
+} from "./chunk-U7QWURI4.js";
 import {
   DOCUMENT,
   Location,
   LocationStrategy,
   getDOM
-} from "./chunk-WS6JTBDN.js";
+} from "./chunk-LI5BIINZ.js";
 import {
   ApplicationRef,
   Attribute,
@@ -100,14 +100,11 @@ import {
   LIFECYCLE_WILL_LEAVE,
   LIFECYCLE_WILL_UNLOAD,
   createAnimation
-} from "./chunk-TETET2SC.js";
+} from "./chunk-7V2MWCHA.js";
 import {
   getMode,
   setMode
 } from "./chunk-MGPHXSG2.js";
-import {
-  doc
-} from "./chunk-CJ5MJUPJ.js";
 import {
   addEventListener,
   componentOnReady,
@@ -123,6 +120,9 @@ import {
   printIonWarning,
   saveConfig
 } from "./chunk-ZWBDDU4U.js";
+import {
+  doc
+} from "./chunk-CJ5MJUPJ.js";
 import {
   __async,
   __objRest,
@@ -10682,4 +10682,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=chunk-LSZSSO4T.js.map
+//# sourceMappingURL=chunk-3XBISOZG.js.map

@@ -1,16 +1,12 @@
 import {
-  Keyboard,
-  KeyboardResize
-} from "./chunk-ZXOPHZFH.js";
-import {
   findClosestIonContent,
   getScrollElement,
   scrollByPoint
 } from "./chunk-T3IT6Q7Y.js";
 import {
-  doc,
-  win
-} from "./chunk-CJ5MJUPJ.js";
+  Keyboard,
+  KeyboardResize
+} from "./chunk-ZXOPHZFH.js";
 import {
   addEventListener,
   componentOnReady,
@@ -18,6 +14,10 @@ import {
   removeEventListener
 } from "./chunk-L6BHBXTE.js";
 import "./chunk-ZWBDDU4U.js";
+import {
+  doc,
+  win
+} from "./chunk-CJ5MJUPJ.js";
 import {
   __async
 } from "./chunk-ZVATTXSA.js";
@@ -358,4 +358,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=input-shims-GNUKKSTP.js.map
+//# sourceMappingURL=input-shims-OUSF3ABK.js.map
