@@ -34,7 +34,7 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
+              "src/global.scss",
               "src/theme/variables.scss"
             ]
             ,
