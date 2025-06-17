@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true" class="home-background">
+
+  <div class="profile-bar">
+    <img src="/assets/img/profile.jpg" class="avatar" />
+    <div class="profile-text">
+      <div class="name">Name</div>
+      <div class="subtext">Class, Level</div>
+    </div>
+    <img src="/assets/icons/paw.png" class="icon" />
+  </div>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title class="heading">Welcome back, [Username]!</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="tracker">
+        <div class="label">Mounts</div>
+        <ion-progress-bar color="warning" [value]="getMountsProgress()"></ion-progress-bar>
+        <div class="value">{{ mountsCollected }}/{{ totalMounts }}</div>
+      </div>
+
+      <div class="tracker">
+        <div class="label">Pets</div>
+        <ion-progress-bar color="warning" [value]="getPetsProgress()"></ion-progress-bar>
+        <div class="value">{{ petsCollected }}/{{ totalPets }}</div>
+      </div>
+
+      <div class="tracker">
+        <div class="label">Toys</div>
+        <ion-progress-bar color="warning" [value]="getToysProgress()"></ion-progress-bar>
+        <div class="value">{{ toysCollected }}/{{ totalToys }}</div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
