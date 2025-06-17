@@ -3,11 +3,11 @@ import {
   writeTask
 } from "./chunk-MGPHXSG2.js";
 import {
-  raf
-} from "./chunk-L6BHBXTE.js";
-import {
   win
 } from "./chunk-CJ5MJUPJ.js";
+import {
+  raf
+} from "./chunk-L6BHBXTE.js";
 import {
   config,
   printIonError,
@@ -790,8 +790,8 @@ var createFocusController = () => {
   };
 };
 var LAST_FOCUS = "ion-last-focus";
-var iosTransitionAnimation = () => import("./ios.transition-ZP74WNVO.js");
-var mdTransitionAnimation = () => import("./md.transition-R7G663RN.js");
+var iosTransitionAnimation = () => import("./ios.transition-ZPX53QBZ.js");
+var mdTransitionAnimation = () => import("./md.transition-7SZVADGK.js");
 var focusController = createFocusController();
 var transition = (opts) => {
   return new Promise((resolve, reject) => {
@@ -992,4 +992,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=chunk-I6Q7YG6M.js.map
+//# sourceMappingURL=chunk-TETET2SC.js.map
