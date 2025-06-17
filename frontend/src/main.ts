@@ -1,12 +1,9 @@
 import { bootstrapApplication } from '@angular/platform-browser';
+import { AppComponent } from './app/app.component';
 import { provideRouter } from '@angular/router';
-import { provideIonicAngular } from '@ionic/angular/standalone';
 import { routes } from './app/app.routes';
-import { HomePage } from './app/pages/home/home.page';
+import { provideIonicAngular } from '@ionic/angular/standalone';
 
-bootstrapApplication(HomePage, {
-  providers: [
-    provideIonicAngular(),
-    provideRouter(routes),
-  ],
+bootstrapApplication(AppComponent, {
+  providers: [provideIonicAngular(), provideRouter(routes)],
 });
