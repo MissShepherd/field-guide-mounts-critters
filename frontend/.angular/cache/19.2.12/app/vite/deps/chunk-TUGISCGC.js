@@ -1,5 +1,4 @@
 import {
-  DOCUMENT,
   HashLocationStrategy,
   LOCATION_INITIALIZED,
   Location,
@@ -7,7 +6,10 @@ import {
   PathLocationStrategy,
   Title,
   ViewportScroller
-} from "./chunk-LI5BIINZ.js";
+} from "./chunk-G7LJ6HD5.js";
+import {
+  DOCUMENT
+} from "./chunk-M5VP2YLJ.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   ApplicationRef,
@@ -6061,4 +6063,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-U7QWURI4.js.map
+//# sourceMappingURL=chunk-TUGISCGC.js.map
