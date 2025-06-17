@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common'; // falls du z. B. *ngIf oder *ngFor nutzt
 
 @Component({
   selector: 'app-home',
+  standalone: true,
+  imports: [IonicModule, CommonModule],
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
