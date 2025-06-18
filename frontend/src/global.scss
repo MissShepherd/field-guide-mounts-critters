@@ -94,12 +94,14 @@ ion-label {
 
 /* Progress Bars */
 ion-progress-bar {
-  --progress-background: rgba(255, 255, 255, 0.15);
-  --progress-color: var(--color-gold);
+  --background: rgba(255, 255, 255, 0.2); /* track */
+  --progress-background: #EEA600;         /* fill bar */
   height: 12px;
   border-radius: 6px;
   overflow: hidden;
+  margin-top: 4px;
 }
+
 
 /* Lists */
 ion-list {

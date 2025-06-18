@@ -5,16 +5,16 @@
   height: 60px;
 }
 
-
 ion-tab-button {
-  --color: var(--color-gold);
+  --color: #EDE944;
   --color-selected: #EEA600;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 0;
+  font-size: 0.8rem;
 }
+
+ion-tab-button.ion-selected {
+  border-top: 2px solid #EEA600;
+}
+
 
 .tab-icon {
   width: 26px;
