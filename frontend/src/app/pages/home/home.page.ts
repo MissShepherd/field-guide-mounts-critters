@@ -8,23 +8,26 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
+
 export class HomePage {
   mountsCollected = 120;
   totalMounts = 600;
+
   petsCollected = 75;
   totalPets = 1000;
+
   toysCollected = 120;
   totalToys = 300;
 
-  getMountsProgress() {
-    return this.mountsCollected / this.totalMounts;
+  getMountsProgress(): number {
+    return this.totalMounts > 0 ? this.mountsCollected / this.totalMounts : 0;
   }
 
-  getPetsProgress() {
-    return this.petsCollected / this.totalPets;
+  getPetsProgress(): number {
+    return this.totalPets > 0 ? this.petsCollected / this.totalPets : 0;
   }
 
-  getToysProgress() {
-    return this.toysCollected / this.totalToys;
+  getToysProgress(): number {
+    return this.totalToys > 0 ? this.toysCollected / this.totalToys : 0;
   }
 }
