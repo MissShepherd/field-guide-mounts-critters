@@ -1,15 +1,19 @@
 .wow-tab-bar {
-  background-color: #000000;
+  --background: linear-gradient(to bottom, #5E3801, #3D2501); /* ✅ Ionic-compatible override */
   border-top: 2px solid var(--color-gold);
   font-family: 'IM Fell English SC', serif;
+  height: 60px;
 }
+
 
 ion-tab-button {
   --color: var(--color-gold);
-  --color-selected: var(--color-blue);
+  --color-selected: #EEA600;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 4px 0;
 }
 
 .tab-icon {
@@ -19,6 +23,6 @@ ion-tab-button {
 }
 
 ion-tab-button.ion-selected {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-top: 2px solid var(--color-gold);
+  background-color: rgba(255, 255, 255, 0.06);
+  border-top: 2px solid #EEA600;
 }
