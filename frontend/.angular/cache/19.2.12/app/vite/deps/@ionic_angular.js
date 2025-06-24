@@ -45,7 +45,7 @@ import {
   provideComponentInputBinding,
   raf,
   setIonicClasses
-} from "./chunk-HI3PINGJ.js";
+} from "./chunk-4ZV6G4EO.js";
 import "./chunk-DOTYFT23.js";
 import "./chunk-USATX7BD.js";
 import "./chunk-6HCD6MJG.js";
