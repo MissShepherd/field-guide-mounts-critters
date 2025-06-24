@@ -2,29 +2,31 @@
   <ion-router-outlet></ion-router-outlet>
 
   <ion-tab-bar slot="bottom" class="wow-tab-bar">
-    <ion-tab-button [routerLink]="['/tabs/home']">
+
+    <ion-tab-button [routerLink]="['/tabs/home']" (click)="reloadTab('/tabs/home')">
       <img src="assets/icons/home.png" class="tab-icon" />
       <ion-label>Home</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button [routerLink]="['/tabs/mounts']">
+    <ion-tab-button [routerLink]="['/tabs/mounts']" (click)="reloadTab('/tabs/mounts')">
       <img src="assets/icons/mount_icon.png" class="tab-icon" />
       <ion-label>Mounts</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button [routerLink]="['/tabs/pets']">
+    <ion-tab-button [routerLink]="['/tabs/pets']" (click)="reloadTab('/tabs/pets')">
       <img src="assets/icons/pet_icon.png" class="tab-icon" />
       <ion-label>Pets</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button [routerLink]="['/tabs/toys']">
+    <ion-tab-button [routerLink]="['/tabs/toys']" (click)="reloadTab('/tabs/toys')">
       <img src="assets/icons/toy_icon.png" class="tab-icon" />
       <ion-label>Toys</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button [routerLink]="['/tabs/more']">
+    <ion-tab-button [routerLink]="['/tabs/more']" (click)="reloadTab('/tabs/more')">
       <img src="assets/icons/more_icon.png" class="tab-icon" />
       <ion-label>More</ion-label>
     </ion-tab-button>
+
   </ion-tab-bar>
 </ion-tabs>

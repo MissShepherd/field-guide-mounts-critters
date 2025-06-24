@@ -8,4 +8,15 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: './mounts.page.html',
   styleUrls: ['./mounts.page.scss'],
 })
-export class MountsPage {}
+export class MountsPage {
+  data: any;
+
+  ionViewWillEnter() {
+    this.loadData(); // ✅ this runs every time the tab is activated
+  }
+
+  loadData() {
+    console.log('Reloading mounts data...');
+    // fetch your Blizzard API data or reset the view
+  }
+}
