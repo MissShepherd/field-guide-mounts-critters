@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
-import { BlizzardService } from './services/blizzard.service';
+import { RouterOutlet } from '@angular/router';
+import { BlizzardService } from './app/services/blizzard.service';
+
 
 @Component({
   selector: 'app-root',
