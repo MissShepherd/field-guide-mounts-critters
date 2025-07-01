@@ -1,16 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment'; // Adjust the path as necessary
+import { environment } from '../../environments/environment'; // passe ggf. Pfad an
 
 @Injectable({ providedIn: 'root' })
 export class BlizzardService {
-  constructor(private http: HttpClient) {}
+  private readonly apiUrl: string;
+
+  constructor(private http: HttpClient) {
+    // Fallback, falls `environment.apiUrl` nicht vorhanden ist
+    this.apiUrl = environment.apiUrl ?? (environment as any)['apiUrl'];
+  }
 
   getToken() {
-    // Fix: Use environment['apiUrl'] if environment.apiUrl is undefined due to import issues
-    const apiUrl = environment.apiUrl || environment['apiUrl'];
     return this.http.get<{ access_token: string }>(
-      `${apiUrl}/blizzard-token`
+      `${this.apiUrl}/blizzard-token`
     );
   }
 }
