@@ -8,15 +8,15 @@ import {
   scrollByPoint
 } from "./chunk-T3IT6Q7Y.js";
 import {
-  doc,
-  win
-} from "./chunk-CJ5MJUPJ.js";
-import {
   addEventListener,
   componentOnReady,
   raf,
   removeEventListener
 } from "./chunk-L6BHBXTE.js";
+import {
+  doc,
+  win
+} from "./chunk-CJ5MJUPJ.js";
 import "./chunk-ZWBDDU4U.js";
 import {
   __async
@@ -358,4 +358,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=input-shims-GNUKKSTP.js.map
+//# sourceMappingURL=input-shims-RNO5D4QV.js.map
