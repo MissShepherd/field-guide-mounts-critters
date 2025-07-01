@@ -6,21 +6,29 @@ import { CommonModule } from '@angular/common';
   selector: 'app-mounts',
   standalone: true,
   imports: [IonicModule, CommonModule],
-  templateUrl: './mounts.page.html',
-  styleUrls: ['./mounts.page.scss']
-})
-export class MountsPage {
-  // ✅ Dummy data for now
-  collected = 120;
-  total = 600;
+  template: `
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Mounts</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-  mounts = [
-    { name: 'Ashes of Al’ar' },
-    { name: 'Invincible' },
-    { name: 'Swift Spectral Tiger' },
-    { name: 'Rivendare’s Deathcharger' },
-    { name: 'Heavenly Onyx Cloud Serpent' },
-    { name: 'Mimiron’s Head' },
-    { name: 'Celestial Steed' }
-  ];
-}
+    <ion-content class="parchment-bg">
+      <div class="content-wrapper">
+        <h1>Mount Collection</h1>
+        <p>Display your mount list here</p>
+      </div>
+    </ion-content>
+  `,
+  styles: [`
+    .parchment-bg {
+      --background: url('/assets/images/parchment-bg.png') no-repeat center center / cover;
+    }
+
+    .content-wrapper {
+      padding: 16px;
+      color: #000;
+    }
+  `]
+})
+export class MountsPage {}

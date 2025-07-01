@@ -1,26 +1,34 @@
-import { Component, OnInit } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
-import { RouterOutlet } from '@angular/router';
-import { BlizzardService } from './app/services/blizzard.service';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { AppComponent } from './app/app.component';
+import { provideRouter } from '@angular/router';
+import { routes } from './app/app.routes';
+import { provideIonicAngular } from '@ionic/angular/standalone';
+import { provideHttpClient } from '@angular/common/http';
 
+// ✅ Ionicons fix: import and register missing icons
+import { addIcons } from 'ionicons';
+import {
+  funnelOutline,
+  swapVerticalOutline,
+  homeOutline,
+  pawOutline,
+  giftOutline,
+  ellipseOutline
+} from 'ionicons/icons';
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [IonicModule],
-  template: `<ion-app><ion-router-outlet></ion-router-outlet></ion-app>`,
-})
-export class AppComponent implements OnInit {
-  constructor(private blizzardService: BlizzardService) {}
+addIcons({
+  'funnel-outline': funnelOutline,
+  'swap-vertical-outline': swapVerticalOutline,
+  'home-outline': homeOutline,
+  'paw-outline': pawOutline,
+  'gift-outline': giftOutline,
+  'ellipse-outline': ellipseOutline
+});
 
-  ngOnInit() {
-    this.blizzardService.getToken().subscribe({
-      next: (data) => {
-        console.log('Blizzard access token:', data.access_token);
-      },
-      error: (err) => {
-        console.error('Error fetching token:', err);
-      }
-    });
-  }
-}
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideIonicAngular(),
+    provideRouter(routes),
+    provideHttpClient()
+  ]
+});

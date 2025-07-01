@@ -1,35 +1,21 @@
-// src/app/tabs/tabs.routes.ts
-import { Routes } from '@angular/router';
+import { Component } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
-export const tabRoutes: Routes = [
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },
-  {
-    path: 'home',
-    loadComponent: () =>
-      import('../pages/home/home.page').then(m => m.HomePage),
-  },
-  {
-    path: 'mounts',
-    loadComponent: () =>
-      import('../pages/mounts/mounts.page').then(m => m.MountsPage),
-  },
-  {
-    path: 'pets',
-    loadComponent: () =>
-      import('../pages/pets/pets.page').then(m => m.PetsPage),
-  },
-  {
-    path: 'toys',
-    loadComponent: () =>
-      import('../pages/toys/toys.page').then(m => m.ToysPage),
-  },
-  {
-    path: 'more',
-    loadComponent: () =>
-      import('../pages/more/more.page').then(m => m.MorePage),
-  },
-];
+@Component({
+  selector: 'app-tabs',
+  standalone: true,
+  imports: [IonicModule, RouterModule, CommonModule],
+  template: `
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="mounts" [routerLink]="['/tabs/mounts']">
+          <ion-icon name="paw-outline"></ion-icon>
+          <ion-label>Mounts</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  `
+})
+export class TabsPage {}
