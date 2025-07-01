@@ -1,19 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
-import { RouterOutlet } from '@angular/router'; // ✅ use RouterOutlet, not RouterModule
+import { RouterOutlet } from '@angular/router';
 import { BlizzardService } from './services/blizzard.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [IonicModule, RouterOutlet], // ✅ RouterOutlet, not RouterModule here
+  imports: [IonicModule, RouterOutlet],
   template: `
     <ion-app>
       <ion-router-outlet></ion-router-outlet>
     </ion-app>
-  `
+  `,
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(private blizzardService: BlizzardService) {}
 
   ngOnInit() {

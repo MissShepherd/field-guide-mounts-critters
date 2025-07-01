@@ -1,14 +1,24 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { AppComponent } from './app/app.component';
-import { provideRouter } from '@angular/router';
-import { routes } from './app/app.routes';
-import { provideIonicAngular } from '@ionic/angular/standalone';
-import { provideHttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { BlizzardService } from './services/blizzard.service';
 
-bootstrapApplication(AppComponent, {
-  providers: [
-    provideIonicAngular(),
-    provideRouter(routes),
-    provideHttpClient()
-  ]
-});
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [IonicModule],
+  template: `<ion-app><ion-router-outlet></ion-router-outlet></ion-app>`,
+})
+export class AppComponent implements OnInit {
+  constructor(private blizzardService: BlizzardService) {}
+
+  ngOnInit() {
+    this.blizzardService.getToken().subscribe({
+      next: (data) => {
+        console.log('Blizzard access token:', data.access_token);
+      },
+      error: (err) => {
+        console.error('Error fetching token:', err);
+      }
+    });
+  }
+}
