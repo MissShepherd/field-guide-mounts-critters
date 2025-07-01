@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { RouterOutlet } from '@angular/router';
 import { BlizzardService } from './services/blizzard.service';
@@ -11,9 +11,9 @@ import { BlizzardService } from './services/blizzard.service';
     <ion-app>
       <ion-router-outlet></ion-router-outlet>
     </ion-app>
-  `,
+  `
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   constructor(private blizzardService: BlizzardService) {}
 
   ngOnInit() {
