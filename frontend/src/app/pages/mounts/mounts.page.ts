@@ -1,12 +1,23 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
+import { CharacterHeaderComponent } from '../../components/character-header/character-header.component';
 
 @Component({
   selector: 'app-mounts',
   standalone: true,
-  imports: [IonicModule, CommonModule],
+  imports: [IonicModule, CommonModule, CharacterHeaderComponent],
   templateUrl: './mounts.page.html',
   styleUrls: ['./mounts.page.scss']
 })
-export class MountsPage {}
+export class MountsPage {
+  mounts = [
+    'Ashes of Al\'ar',
+    'Invincible',
+    'Swift Spectral Tiger',
+    'Rivendare\'s Deathcharger',
+    'Heavenly Onyx Cloud Serpent',
+    'Mimiron\'s Head',
+    'Celestial Steed'
+  ];
+}

@@ -1,12 +1,36 @@
-<ion-header>
-  <ion-toolbar class="wow-toolbar">
-    <ion-title>Mounts</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-character-header
+  name="Name"
+  classLevel="Class, Level"
+  icon="assets/icons/mount_icon.png"
+  avatar="assets/icons/home.png">
+</app-character-header>
 
-<ion-content class="wow-content">
-  <div class="mounts-wrapper">
-    <p>Welcome to your mount collection!</p>
-    <!-- Mount list or cards will go here -->
-  </div>
+<ion-content class="mounts-content">
+  <ion-card class="progress-card">
+    <ion-card-header>
+      <ion-card-title>Mounts</ion-card-title>
+      <ion-card-subtitle>Progress: 120/600</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-toolbar color="dark" class="toolbar-controls">
+    <ion-buttons slot="start">
+      <ion-button>Value</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>Filter</ion-button>
+      <ion-button>Sort</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item *ngFor="let mount of mounts">
+      <ion-avatar slot="start">
+        <img src="assets/icons/mount_icon.png" />
+      </ion-avatar>
+      <ion-label class="mount-name">
+        {{ mount }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

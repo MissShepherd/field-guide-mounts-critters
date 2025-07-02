@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { CharacterHeaderComponent } from '../../components/character-header/character-header.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [IonicModule],
+  imports: [IonicModule, CharacterHeaderComponent],
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
