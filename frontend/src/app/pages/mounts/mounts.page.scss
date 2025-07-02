@@ -6,17 +6,22 @@
 }
 
 .wow-content {
-  --background: url('/assets/bg/main background.png') repeat;
-  background-size: cover;
+  --background: transparent; // allow custom background image through
+  background: none;
+  background-color: transparent;
   font-family: 'IM Fell English SC', serif;
   color: #000;
-  padding: 0; // override padding to fit edge-to-edge layout
+  padding: 0;
+  height: 100%;
 }
 
 .wow-content--main-bg {
-  --background: url('/assets/bg/main background.png') no-repeat center center fixed;
+  background: url('/assets/bg/main background.png') no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
+
 
 // 🐎 Mounts specific container
 .mounts-wrapper {
