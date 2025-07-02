@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  background-color: #00437A;
+  color: #EDE944;
+  padding: 10px;
+  border-bottom: 4px solid #EDE944;
+  font-family: 'IM Fell English SC', serif;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.character-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #EDE944;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.class-level {
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
