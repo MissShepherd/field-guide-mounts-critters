@@ -11,6 +11,6 @@ import { CommonModule } from '@angular/common';
 export class CharacterHeaderComponent {
   @Input() name: string = 'Name';
   @Input() classLevel: string = 'Class, Level';
-  @Input() icon: string = 'assets/icons/mount_icon.png';
-  @Input() avatar: string = 'assets/icons/home.png';
+  @Input() icon: string = 'assets/icons/paw.png';
+  @Input() avatar: string = 'assets/icons/profile.jpg';
 }
