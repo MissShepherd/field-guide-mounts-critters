@@ -6,13 +6,19 @@
 }
 
 .wow-content {
-  --background: url('/assets/parchment-bg.jpg') repeat;
+  --background: url('/assets/bg/main background.png') repeat;
   background-size: cover;
   font-family: 'IM Fell English SC', serif;
   color: #000;
-  padding: 16px;
+  padding: 0; // override padding to fit edge-to-edge layout
 }
 
+.wow-content--main-bg {
+  --background: url('/assets/bg/main background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+// 🐎 Mounts specific container
 .mounts-wrapper {
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid #CD650E;
@@ -20,6 +26,65 @@
   padding: 16px;
   box-shadow: 0 0 8px #00000066;
   text-align: center;
+  font-family: 'IM Fell English SC', serif;
+  margin: 12px;
+}
+
+// 🧰 Mount toolbar controls
+.toolbar-controls {
+  --background: #1a1a1a;
+  color: #EDE944;
+  padding: 8px;
+  border-top: 2px solid #CD650E;
+  border-bottom: 2px solid #CD650E;
+}
+
+// 🟡 Progress card style
+.progress-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #EDE944;
+  border: 1px solid #CD650E;
+  margin: 16px;
+}
+
+.progress-card ion-card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.progress-card ion-card-subtitle {
+  font-size: 0.95rem;
+  color: #FFDA70;
+}
+
+// 🧱 Mount entries
+.mount-list {
+  padding: 0 12px;
+}
+
+.mount-card {
+  background-color: #003B6F;
+  border: 1px solid #CD650E;
+  border-radius: 8px;
+  margin-top: 12px;
+  color: #EDE944;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.mount-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  border: 2px solid #CD650E;
+  background-color: #000;
+  padding: 4px;
+}
+
+.mount-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFCC00;
+  text-shadow: 1px 1px #000;
 }
 
 p {

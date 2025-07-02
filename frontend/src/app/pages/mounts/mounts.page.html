@@ -5,32 +5,34 @@
   avatar="assets/icons/profile.jpg">
 </app-character-header>
 
-<ion-content class="mounts-content">
-  <ion-card class="progress-card">
-    <ion-card-header>
-      <ion-card-title>Mounts</ion-card-title>
-      <ion-card-subtitle>Progress: 120/600</ion-card-subtitle>
-    </ion-card-header>
-  </ion-card>
+<ion-content class="wow-content wow-content--main-bg mounts-content" [fullscreen]="true">
+  <!-- 🟡 Progress Card -->
+<ion-card class="progress-card">
+  <ion-card-header>
+    <ion-card-title class="progress-title">Mounts</ion-card-title>
+    <ion-card-subtitle class="progress-subtitle">Progress: 120/600</ion-card-subtitle>
+  </ion-card-header>
+</ion-card>
 
-  <ion-toolbar color="dark" class="toolbar-controls">
+
+  <!-- 🧰 Filter Toolbar -->
+  <ion-toolbar class="toolbar-controls">
     <ion-buttons slot="start">
-      <ion-button>Value</ion-button>
+      <ion-button fill="outline" color="warning">Value</ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button>Filter</ion-button>
-      <ion-button>Sort</ion-button>
+      <ion-button fill="outline" color="warning">Filter</ion-button>
+      <ion-button fill="outline" color="warning">Sort</ion-button>
     </ion-buttons>
   </ion-toolbar>
 
-  <ion-list>
-    <ion-item *ngFor="let mount of mounts">
+  <!-- 🐎 Mount List -->
+  <ion-list class="mount-list">
+    <ion-item *ngFor="let mount of mounts" class="mount-card">
       <ion-avatar slot="start">
-        <img src="assets/icons/mount_icon.png" />
+        <img src="assets/icons/mount_icon.png" class="mount-icon" />
       </ion-avatar>
-      <ion-label class="mount-name">
-        {{ mount }}
-      </ion-label>
+      <ion-label class="mount-name">{{ mount }}</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
