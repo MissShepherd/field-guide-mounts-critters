@@ -22,7 +22,7 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [`
     .parchment-bg {
-      --background: url('/assets/images/parchment-bg.png') no-repeat center center / cover;
+      --background: url('/assets/bg/main background.png') no-repeat center center / cover;
     }
 
     .content-wrapper {

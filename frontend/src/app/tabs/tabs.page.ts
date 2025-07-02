@@ -11,6 +11,11 @@ import { CommonModule } from '@angular/common';
     <ion-tabs>
       <ion-tab-bar slot="bottom" class="wow-tab-bar">
 
+        <ion-tab-button tab="home" [routerLink]="['/tabs/home']">
+          <img src="assets/icons/home.png" class="tab-icon" />
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+
         <ion-tab-button tab="mounts" [routerLink]="['/tabs/mounts']">
           <img src="assets/icons/mount_icon.png" class="tab-icon" />
           <ion-label>Mounts</ion-label>
