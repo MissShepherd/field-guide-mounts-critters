@@ -6,29 +6,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-mounts',
   standalone: true,
   imports: [IonicModule, CommonModule],
-  template: `
-    <ion-header>
-      <ion-toolbar color="dark">
-        <ion-title>Mounts</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
-    <ion-content class="parchment-bg">
-      <div class="content-wrapper">
-        <h1>Mount Collection</h1>
-        <p>Display your mount list here</p>
-      </div>
-    </ion-content>
-  `,
-  styles: [`
-    .parchment-bg {
-      --background: url('/assets/bg/main background.png') no-repeat center center / cover;
-    }
-
-    .content-wrapper {
-      padding: 16px;
-      color: #000;
-    }
-  `]
+  templateUrl: './mounts.page.html',
+  styleUrls: ['./mounts.page.scss']
 })
 export class MountsPage {}

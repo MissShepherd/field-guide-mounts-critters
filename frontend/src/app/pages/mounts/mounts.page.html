@@ -1,27 +1,12 @@
-<!-- Mounts Header -->
-<div class="section-header">
-  <div class="section-title">Mounts</div>
-  <div class="section-sub">Progress: {{ collected }}/{{ total }}</div>
-</div>
+<ion-header>
+  <ion-toolbar class="wow-toolbar">
+    <ion-title>Mounts</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<!-- Filter/Search/Sort Row -->
-<div class="controls-row">
-  <ion-select placeholder="Value" class="control-item select"></ion-select>
-  <ion-searchbar class="control-item search"></ion-searchbar>
-  <ion-button class="control-item filter" fill="outline">
-    <ion-icon name="funnel-outline"></ion-icon>
-    Filter
-  </ion-button>
-  <ion-button class="control-item sort" fill="outline">
-    <ion-icon name="swap-vertical-outline"></ion-icon>
-    Sort
-  </ion-button>
-</div>
-
-<!-- Mount List -->
-<div class="mount-list">
-  <ion-card *ngFor="let mount of mounts" class="mount-card">
-    <img src="assets/icons/mount_icon.png" class="mount-icon" />
-    <div class="mount-name">{{ mount.name }}</div>
-  </ion-card>
-</div>
+<ion-content class="wow-content">
+  <div class="mounts-wrapper">
+    <p>Welcome to your mount collection!</p>
+    <!-- Mount list or cards will go here -->
+  </div>
+</ion-content>
