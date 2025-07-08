@@ -1,11 +1,100 @@
-.page-background {
-  background: url('/assets/img/main background.png') no-repeat center / cover;
+/* 🌄 Base Content */
+.wow-content {
+  --background: transparent;
+  background-color: transparent;
+  padding: 0;
+  height: 100%;
+  font-family: 'IM Fell English SC', serif;
 }
 
-.placeholder {
-  text-align: center;
-  margin-top: 40%;
+.wow-content--main-bg {
+  background: url('/assets/bg/main background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* 🟤 Toolbar */
+/* 🔘 Toolbar Button Styling (WoW Blue) */
+.toolbar-controls ion-button {
+  --background: #003B6F;
+  --color: #FFCC00;
+  --border-color: #CD650E;
+  --border-radius: 6px;
+  --box-shadow: none;
   font-family: 'IM Fell English SC', serif;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 12px;
+  margin-inline: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.toolbar-controls ion-button:hover {
+  --background: #004C8C;
+}
+
+/* Optional: force button text to center */
+.toolbar-controls ion-button::part(native) {
+  text-align: center;
+}
+
+
+/* 📈 Progress */
+.progress-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #EDE944;
+  border: 1px solid #CD650E;
+  margin: 16px;
+  font-family: 'IM Fell English SC', serif;
+}
+
+.progress-card ion-card-title {
   font-size: 1.4rem;
-  color: var(--color-gold);
+  font-weight: bold;
+}
+
+.progress-card ion-card-subtitle {
+  font-size: 0.95rem;
+  color: #FFDA70;
+}
+
+/* 🐎 Mount List */
+.mount-list {
+  padding: 0 12px;
+}
+
+.mount-card {
+  background-color: #003B6F;
+  border: 1px solid #CD650E;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 15px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  color: #EDE944;
+}
+
+.mount-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  border: 2px solid #CD650E;
+  background-color: #000;
+  padding: 4px;
+}
+
+.mount-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFCC00;
+  text-shadow: 1px 1px #000;
+  font-family: 'IM Fell English SC', serif;
+}
+
+/* 💬 Misc */
+p {
+  font-size: 18px;
 }
