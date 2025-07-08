@@ -6,7 +6,7 @@ import { BlizzardService } from './services/blizzard.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [IonicModule, RouterOutlet],
+  imports: [IonicModule],
   template: `
     <ion-app>
       <ion-router-outlet></ion-router-outlet>
