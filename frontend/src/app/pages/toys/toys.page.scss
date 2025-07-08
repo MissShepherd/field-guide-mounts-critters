@@ -126,5 +126,7 @@ ion-button {
 .sticky-top {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000; /* Higher than mount/pet/toy cards */
+  background: #2e2e2e; /* Must be set for sticky to render correctly */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional for depth */
 }
