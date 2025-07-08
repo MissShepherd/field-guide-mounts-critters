@@ -1,10 +1,10 @@
-/* 🌄 Base Content */
 .wow-content {
   --background: transparent;
   background-color: transparent;
+  font-family: 'IM Fell English SC', serif;
+  color: #000;
   padding: 0;
   height: 100%;
-  font-family: 'IM Fell English SC', serif;
 }
 
 .wow-content--main-bg {
@@ -12,89 +12,66 @@
   background-size: cover;
 }
 
-/* 🟤 Toolbar */
-/* 🔘 Toolbar Button Styling (WoW Blue) */
-.toolbar-controls ion-button {
-  --background: #003B6F;
-  --color: #FFCC00;
-  --border-color: #CD650E;
-  --border-radius: 6px;
-  --box-shadow: none;
-  font-family: 'IM Fell English SC', serif;
-  font-size: 0.95rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 8px 12px;
-  margin-inline: 4px;
-  border: 1px solid var(--border-color);
-}
-
-.toolbar-controls ion-button:hover {
-  --background: #004C8C;
-}
-
-/* Optional: force button text to center */
-.toolbar-controls ion-button::part(native) {
-  text-align: center;
-}
-
-
-/* 📈 Progress */
-.progress-card {
+.progress-container {
   background-color: rgba(0, 0, 0, 0.6);
-  color: #EDE944;
-  border: 1px solid #CD650E;
-  margin: 16px;
+  color: #FFCC00;
+  padding: 12px 16px;
+  margin: 12px;
+  border-radius: 6px;
   font-family: 'IM Fell English SC', serif;
+  border: 1px solid #CD650E;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+
+  .title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    color: #FFDA70;
+  }
 }
 
-.progress-card ion-card-title {
-  font-size: 1.4rem;
-  font-weight: bold;
+.toolbar-controls {
+  --background: #1a1a1a;
+  color: #EDE944;
+  border-top: 2px solid #CD650E;
+  border-bottom: 2px solid #CD650E;
+  padding: 0 8px;
 }
 
-.progress-card ion-card-subtitle {
-  font-size: 0.95rem;
-  color: #FFDA70;
-}
-
-/* 🐎 Mount List */
 .mount-list {
-  padding: 0 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .mount-card {
-  background-color: #003B6F;
-  border: 1px solid #CD650E;
-  border-radius: 8px;
-  margin-top: 10px;
-  padding: 15px 14px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-  color: #EDE944;
+  background-color: #003B6F;
+  color: #FFCC00;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #CD650E;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 .mount-icon {
   width: 48px;
   height: 48px;
   border-radius: 6px;
-  border: 2px solid #CD650E;
+  margin-right: 12px;
   background-color: #000;
+  border: 2px solid #CD650E;
   padding: 4px;
 }
 
 .mount-name {
-  font-size: 1rem;
   font-weight: bold;
-  color: #FFCC00;
+  font-size: 1rem;
   text-shadow: 1px 1px #000;
-  font-family: 'IM Fell English SC', serif;
-}
-
-/* 💬 Misc */
-p {
-  font-size: 18px;
 }

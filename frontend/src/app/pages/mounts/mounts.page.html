@@ -5,32 +5,34 @@
   avatar="assets/icons/profile.jpg">
 </app-character-header>
 
-<ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
-  <ion-card class="progress-card">
-    <ion-card-header>
-      <ion-card-title>Mounts</ion-card-title>
-      <ion-card-subtitle>Progress: {{ mountsCollected }}/{{ totalMounts }}</ion-card-subtitle>
-    </ion-card-header>
-  </ion-card>
+<ion-content class="wow-content wow-content--main-bg">
 
-  <ion-toolbar color="dark" class="toolbar-controls">
+  <!-- 🟡 Progress Container -->
+  <div class="progress-container">
+    <div class="title">Mounts</div>
+    <div class="subtitle">Progress: 120/600</div>
+  </div>
+
+  <!-- 🔍 Toolbar -->
+  <ion-toolbar class="toolbar-controls">
     <ion-buttons slot="start">
       <ion-button>Value</ion-button>
     </ion-buttons>
-    <ion-buttons slot="end">
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+      </ion-button>
       <ion-button>Filter</ion-button>
       <ion-button>Sort</ion-button>
     </ion-buttons>
   </ion-toolbar>
 
-  <ion-list class="mount-list">
-    <ion-item *ngFor="let mount of mounts" class="mount-card">
-      <ion-avatar slot="start">
-        <img src="assets/icons/mount_icon.png" class="mount-icon" />
-      </ion-avatar>
-      <ion-label class="mount-name">
-        {{ mount }}
-      </ion-label>
-    </ion-item>
-  </ion-list>
+  <!-- 🐎 Mount List -->
+  <div class="mount-list">
+    <div *ngFor="let mount of mounts" class="mount-card">
+      <img src="assets/icons/mount_icon.png" class="mount-icon" />
+      <span class="mount-name">{{ mount }}</span>
+    </div>
+  </div>
+
 </ion-content>
