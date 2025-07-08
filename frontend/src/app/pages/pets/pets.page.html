@@ -7,10 +7,10 @@
 
 <ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
   <!-- Progress -->
-  <div class="pets-progress-container">
-    <div class="progress-title">Pets</div>
-    <div class="progress-subtitle">Collected: 75/1500</div>
-  </div>
+<div class="pets-progress-container sticky-top">
+  <div class="progress-title">Pets</div>
+  <div class="progress-subtitle">Progress: 300/1200</div>
+</div>
 
   <!-- Toolbar -->
   <div class="pets-toolbar">
@@ -33,7 +33,7 @@
   <!-- List -->
   <div class="pet-list">
     <div class="pet-card" *ngFor="let pet of pets">
-      <img class="pet-icon" src="assets/icons/pet_icon.png" />
+      <img class="pet-icon" src="assets/icons/pet-standin.png" />
       <div class="pet-name">{{ pet }}</div>
     </div>
   </div>

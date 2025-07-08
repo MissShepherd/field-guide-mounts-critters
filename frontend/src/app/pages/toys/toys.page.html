@@ -6,10 +6,11 @@
 </app-character-header>
 
 <ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
-  <!-- Progress -->
-  <div class="toys-progress-container">
+
+  <!-- Sticky Progress Bar in Fixed Slot -->
+  <div class="toys-progress-container sticky-top" slot="fixed">
     <div class="progress-title">Toys</div>
-    <div class="progress-subtitle">Collected: 280/450</div>
+    <div class="progress-subtitle">Progress: 150/500</div>
   </div>
 
   <!-- Toolbar -->
@@ -30,11 +31,12 @@
     </div>
   </div>
 
-  <!-- List -->
+  <!-- Toy List -->
   <div class="toy-list">
     <div class="toy-card" *ngFor="let toy of toys">
-      <img class="toy-icon" src="assets/icons/toy_icon.png" />
+      <img class="toy-icon" src="assets/icons/toy-standin.png" />
       <div class="toy-name">{{ toy }}</div>
     </div>
   </div>
+
 </ion-content>
