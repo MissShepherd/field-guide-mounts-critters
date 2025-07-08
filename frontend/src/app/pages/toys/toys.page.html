@@ -6,14 +6,16 @@
 </app-character-header>
 
 <ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
-  <div class="mounts-progress-container">
+  <!-- Progress -->
+  <div class="toys-progress-container">
     <div class="progress-title">Toys</div>
-    <div class="progress-subtitle">Progress: 120/300</div>
+    <div class="progress-subtitle">Collected: 280/450</div>
   </div>
 
-  <div class="mounts-toolbar">
+  <!-- Toolbar -->
+  <div class="toys-toolbar">
     <div class="search-group">
-      <input type="text" placeholder="Search" />
+      <input type="text" placeholder="Search Toys" />
       <button><img src="assets/icons/search-icon.png" alt="search" /></button>
     </div>
     <div class="toolbar-buttons">
@@ -28,10 +30,11 @@
     </div>
   </div>
 
-  <div class="mount-list">
-    <div class="mount-card" *ngFor="let toy of toys">
-      <img class="mount-icon" src="assets/icons/toy_icon.png" />
-      <div class="mount-name">{{ toy }}</div>
+  <!-- List -->
+  <div class="toy-list">
+    <div class="toy-card" *ngFor="let toy of toys">
+      <img class="toy-icon" src="assets/icons/toy_icon.png" />
+      <div class="toy-name">{{ toy }}</div>
     </div>
   </div>
 </ion-content>

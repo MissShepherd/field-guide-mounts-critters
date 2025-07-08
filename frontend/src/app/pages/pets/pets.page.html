@@ -6,14 +6,16 @@
 </app-character-header>
 
 <ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
-  <div class="mounts-progress-container">
+  <!-- Progress -->
+  <div class="pets-progress-container">
     <div class="progress-title">Pets</div>
-    <div class="progress-subtitle">Progress: 75/1000</div>
+    <div class="progress-subtitle">Collected: 75/1500</div>
   </div>
 
-  <div class="mounts-toolbar">
+  <!-- Toolbar -->
+  <div class="pets-toolbar">
     <div class="search-group">
-      <input type="text" placeholder="Search" />
+      <input type="text" placeholder="Search Pets" />
       <button><img src="assets/icons/search-icon.png" alt="search" /></button>
     </div>
     <div class="toolbar-buttons">
@@ -28,10 +30,11 @@
     </div>
   </div>
 
-  <div class="mount-list">
-    <div class="mount-card" *ngFor="let pet of pets">
-      <img class="mount-icon" src="assets/icons/pet_icon.png" />
-      <div class="mount-name">{{ pet }}</div>
+  <!-- List -->
+  <div class="pet-list">
+    <div class="pet-card" *ngFor="let pet of pets">
+      <img class="pet-icon" src="assets/icons/pet_icon.png" />
+      <div class="pet-name">{{ pet }}</div>
     </div>
   </div>
 </ion-content>

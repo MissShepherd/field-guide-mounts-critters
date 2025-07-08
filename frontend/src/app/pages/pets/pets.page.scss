@@ -13,8 +13,8 @@
   background-size: cover;
 }
 
-/* 🟡 Header Progress */
-.mounts-progress-container {
+/* 🐾 Header Progress */
+.pets-progress-container {
   background: #2e2e2e;
   color: #FFCC00;
   padding: 12px;
@@ -33,7 +33,7 @@
 }
 
 /* 🔍 Toolbar */
-.mounts-toolbar {
+.pets-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,12 +90,12 @@ ion-button {
   font-family: 'IM Fell English SC', serif;
 }
 
-/* 🐎 Mount List */
-.mount-list {
+/* 🐾 Pet List */
+.pet-list {
   padding: 12px;
 }
 
-.mount-card {
+.pet-card {
   background-color: #003B6F;
   border-radius: 8px;
   padding: 10px;
@@ -105,7 +105,7 @@ ion-button {
   box-shadow: 0 2px 6px #00000066;
 }
 
-.mount-icon {
+.pet-icon {
   width: 48px;
   height: 48px;
   border: 2px solid #CD650E;
@@ -115,12 +115,13 @@ ion-button {
   padding: 4px;
 }
 
-.mount-name {
+.pet-name {
   color: #FFCC00;
   font-weight: bold;
   font-size: 1rem;
   text-shadow: 1px 1px #000;
 }
+
 /* 🔝 Sticky Header & Progress */
 .sticky-top {
   position: sticky;
