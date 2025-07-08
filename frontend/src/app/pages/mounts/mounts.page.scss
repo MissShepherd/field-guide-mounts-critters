@@ -1,5 +1,6 @@
 .wow-content {
   --background: transparent;
+  background: none;
   background-color: transparent;
   font-family: 'IM Fell English SC', serif;
   color: #000;
@@ -12,66 +13,117 @@
   background-size: cover;
 }
 
-.progress-container {
-  background-color: rgba(0, 0, 0, 0.6);
+/* 🟡 Header Progress */
+.mounts-progress-container {
+  background: #2e2e2e;
   color: #FFCC00;
-  padding: 12px 16px;
-  margin: 12px;
+  padding: 12px;
+  font-family: 'IM Fell English SC', serif;
+  border-bottom: 1px solid #CD650E;
+}
+
+.progress-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.progress-subtitle {
+  font-size: 0.85rem;
+  color: #EDE944;
+}
+
+/* 🔍 Toolbar */
+.mounts-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.search-group {
+  flex: 1;
+  display: flex;
+  border: 2px solid #CD650E;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #003B6F;
+}
+
+.search-group input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  color: #EDE944;
+  padding: 10px;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 1rem;
+}
+
+.search-group input::placeholder {
+  color: #EDE944;
+}
+
+.search-group button {
+  background: none;
+  border: none;
+  padding: 8px 10px;
+}
+
+.search-group button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* 🛠 Buttons */
+.toolbar-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+ion-button {
+  --background: #003B6F;
+  --color: #FFCC00;
+  border: 1px solid #CD650E;
   border-radius: 6px;
   font-family: 'IM Fell English SC', serif;
-  border: 1px solid #CD650E;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-
-  .title {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 4px;
-  }
-
-  .subtitle {
-    font-size: 0.9rem;
-    color: #FFDA70;
-  }
 }
 
-.toolbar-controls {
-  --background: #1a1a1a;
-  color: #EDE944;
-  border-top: 2px solid #CD650E;
-  border-bottom: 2px solid #CD650E;
-  padding: 0 8px;
-}
-
+/* 🐎 Mount List */
 .mount-list {
   padding: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .mount-card {
+  background-color: #003B6F;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
-  background-color: #003B6F;
-  color: #FFCC00;
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: 1px solid #CD650E;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 6px #00000066;
 }
 
 .mount-icon {
   width: 48px;
   height: 48px;
+  border: 2px solid #CD650E;
   border-radius: 6px;
   margin-right: 12px;
   background-color: #000;
-  border: 2px solid #CD650E;
   padding: 4px;
 }
 
 .mount-name {
+  color: #FFCC00;
   font-weight: bold;
   font-size: 1rem;
   text-shadow: 1px 1px #000;
+}
+/* 🔝 Sticky Header & Progress */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
