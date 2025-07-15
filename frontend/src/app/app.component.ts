@@ -6,12 +6,12 @@ import { BlizzardService } from './services/blizzard.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [IonicModule],
   template: `
     <ion-app>
       <ion-router-outlet></ion-router-outlet>
     </ion-app>
-  `
+  `,
+  imports: [IonicModule, RouterOutlet],
 })
 export class AppComponent {
   constructor(private blizzardService: BlizzardService) {}
