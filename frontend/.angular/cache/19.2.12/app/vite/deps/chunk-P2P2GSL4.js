@@ -44,7 +44,7 @@ import {
   Router,
   RouterLink,
   UrlSerializer
-} from "./chunk-ABRXWRBO.js";
+} from "./chunk-4SKBWLQY.js";
 import {
   Location,
   LocationStrategy,
@@ -10684,4 +10684,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=chunk-42RMSL6W.js.map
+//# sourceMappingURL=chunk-P2P2GSL4.js.map
