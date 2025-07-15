@@ -7,13 +7,12 @@
     avatar="assets/icons/profile.jpg">
   </app-character-header>
 
-  <!-- Mounts Progress Container -->
   <div class="mounts-progress-container">
     <div class="progress-title">Mounts</div>
     <div class="progress-subtitle">Progress: 120/600</div>
   </div>
 
-  <!-- Toolbar: Search + Filter + Sort -->
+  <div class="toolbar-container">
   <div class="mounts-toolbar">
     <div class="search-group">
       <input type="text" placeholder="Search Mounts" />
@@ -33,8 +32,8 @@
     </div>
   </div>
 </div>
+</div>
 
-<!-- 📜 Mount List Content -->
 <ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
   <div class="mount-list">
     <div class="mount-card" *ngFor="let mount of mounts">
