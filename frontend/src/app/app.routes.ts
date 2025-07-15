@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { TabsPage } from './tabs/tabs.page'; // <--- ✅ Hinzufügen
 
 export const routes: Routes = [
   {
@@ -8,33 +9,27 @@ export const routes: Routes = [
   },
   {
     path: 'tabs',
-    loadComponent: () =>
-      import('./tabs/tabs.page').then(m => m.TabsPage),
+    component: TabsPage,
     children: [
       {
         path: 'home',
-        loadComponent: () =>
-          import('./pages/home/home.page').then(m => m.HomePage),
+        loadComponent: () => import('./pages/home/home.page').then(m => m.HomePage),
       },
       {
         path: 'mounts',
-        loadComponent: () =>
-          import('./pages/mounts/mounts.page').then(m => m.MountsPage),
+        loadComponent: () => import('./pages/mounts/mounts.page').then(m => m.MountsPage),
       },
       {
         path: 'pets',
-        loadComponent: () =>
-          import('./pages/pets/pets.page').then(m => m.PetsPage),
+        loadComponent: () => import('./pages/pets/pets.page').then(m => m.PetsPage),
       },
       {
         path: 'toys',
-        loadComponent: () =>
-          import('./pages/toys/toys.page').then(m => m.ToysPage),
+        loadComponent: () => import('./pages/toys/toys.page').then(m => m.ToysPage),
       },
       {
         path: 'more',
-        loadComponent: () =>
-          import('./pages/more/more.page').then(m => m.MorePage),
+        loadComponent: () => import('./pages/more/more.page').then(m => m.MorePage),
       },
       {
         path: '',
