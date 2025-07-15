@@ -7,13 +7,12 @@
     avatar="assets/icons/profile.jpg">
   </app-character-header>
 
-  <!-- Progress -->
   <div class="pets-progress-container">
     <div class="progress-title">Pets</div>
     <div class="progress-subtitle">Progress: 300/1200</div>
   </div>
 
-  <!-- Toolbar -->
+   <div class="toolbar-container">
   <div class="pets-toolbar">
     <div class="search-group">
       <input type="text" placeholder="Search Pets" />
@@ -31,8 +30,7 @@
     </div>
   </div>
 </div>
-
-<!-- 🐾 Pet List Content -->
+</div>
 <ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
   <div class="pet-list">
     <div class="pet-card" *ngFor="let pet of pets">

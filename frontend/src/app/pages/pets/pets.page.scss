@@ -13,12 +13,20 @@
   background-size: cover;
 }
 
+/* 🔝 Sticky Block (Header + Progress + Toolbar) */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(46, 46, 46, 0.85); // unified semi-transparent dark
+  backdrop-filter: blur(2px); // optional visual polish
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 /* 🐾 Header Progress */
 .pets-progress-container {
-  background: #2e2e2e;
   color: #FFCC00;
   padding: 12px;
-  font-family: 'IM Fell English SC', serif;
   border-bottom: 1px solid #CD650E;
 }
 
@@ -38,8 +46,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  flex-wrap: wrap;
   gap: 8px;
+  flex-wrap: wrap;
+  background-color: rgba(46, 46, 46, 0.85);
+  border-bottom: 1px solid #CD650E;
 }
 
 .search-group {
@@ -120,11 +130,4 @@ ion-button {
   font-weight: bold;
   font-size: 1rem;
   text-shadow: 1px 1px #000;
-}
-
-/* 🔝 Sticky Header & Progress */
-.sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
