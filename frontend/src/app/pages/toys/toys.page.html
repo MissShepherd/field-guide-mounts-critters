@@ -1,38 +1,34 @@
 <!-- 🔝 Sticky Header, Progress & Toolbar -->
 <div class="sticky-top">
-  <app-character-header
-    name="Name"
-    classLevel="Class, Level"
-    icon="assets/icons/paw.png"
-    avatar="assets/icons/profile.jpg">
-  </app-character-header>
+  <app-character-header ...></app-character-header>
 
-  <!-- Progress -->
   <div class="toys-progress-container">
     <div class="progress-title">Toys</div>
     <div class="progress-subtitle">Progress: 150/500</div>
   </div>
 
-  <!-- Toolbar -->
-  <div class="toys-toolbar">
-    <div class="search-group">
-      <input type="text" placeholder="Search Toys" />
-      <button>
-        <img src="assets/icons/search-icon.png" alt="search" />
-      </button>
-    </div>
-    <div class="toolbar-buttons">
-      <ion-button class="filter-btn">
-        <ion-icon name="funnel-outline"></ion-icon>
-        Filter
-      </ion-button>
-      <ion-button class="sort-btn">
-        <ion-icon name="swap-vertical-outline"></ion-icon>
-        Sort
-      </ion-button>
+  <div class="toolbar-container">
+    <div class="toys-toolbar">
+      <div class="search-group">
+        <input type="text" placeholder="Search Toys" />
+        <button>
+          <img src="assets/icons/search-icon.png" alt="search" />
+        </button>
+      </div>
+      <div class="toolbar-buttons">
+        <ion-button class="filter-btn">
+          <ion-icon name="funnel-outline"></ion-icon>
+          Filter
+        </ion-button>
+        <ion-button class="sort-btn">
+          <ion-icon name="swap-vertical-outline"></ion-icon>
+          Sort
+        </ion-button>
+      </div>
     </div>
   </div>
 </div>
+
 
 <!-- 🧸 Toys List Content -->
 <ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">

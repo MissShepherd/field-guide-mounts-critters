@@ -32,12 +32,19 @@
   color: #EDE944;
 }
 
+/* 🟫 Semi-transparent toolbar wrapper */
+.toolbar-container {
+  background-color: rgba(46, 46, 46, 0.8); // semi-transparent dark gray
+  backdrop-filter: blur(1px);
+  padding: 8px 12px;
+  border-bottom: 1px solid #CD650E;
+}
+
 /* 🔍 Toolbar */
 .toys-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
   flex-wrap: wrap;
   gap: 8px;
 }
@@ -126,7 +133,7 @@ ion-button {
 .sticky-top {
   position: sticky;
   top: 0;
-  z-index: 1000; /* Higher than mount/pet/toy cards */
-  background: #2e2e2e; /* Must be set for sticky to render correctly */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional for depth */
+  z-index: 1000;
+  background: #2e2e2e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
