@@ -1,4 +1,4 @@
-<!-- 🔝 Sticky Header and Progress Container -->
+<!-- 🔝 Sticky Header, Progress & Toolbar -->
 <div class="sticky-top">
   <app-character-header
     name="Name"
@@ -12,9 +12,7 @@
     <div class="progress-title">Mounts</div>
     <div class="progress-subtitle">Progress: 120/600</div>
   </div>
-</div>
 
-<ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
   <!-- Toolbar: Search + Filter + Sort -->
   <div class="mounts-toolbar">
     <div class="search-group">
@@ -34,8 +32,10 @@
       </ion-button>
     </div>
   </div>
+</div>
 
-  <!-- Mount List -->
+<!-- 📜 Mount List Content -->
+<ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
   <div class="mount-list">
     <div class="mount-card" *ngFor="let mount of mounts">
       <img class="mount-icon" src="assets/icons/Mount-standin.png" />

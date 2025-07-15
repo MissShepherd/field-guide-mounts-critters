@@ -1,19 +1,18 @@
+<!-- 🔝 Sticky Header, Progress & Toolbar -->
 <div class="sticky-top">
-<app-character-header
-  name="Name"
-  classLevel="Class, Level"
-  icon="assets/icons/paw.png"
-  avatar="assets/icons/profile.jpg">
-</app-character-header>
+  <app-character-header
+    name="Name"
+    classLevel="Class, Level"
+    icon="assets/icons/paw.png"
+    avatar="assets/icons/profile.jpg">
+  </app-character-header>
 
   <!-- Progress -->
-<div class="pets-progress-container sticky-top">
-  <div class="progress-title">Pets</div>
-  <div class="progress-subtitle">Progress: 300/1200</div>
-</div>
-</div>
+  <div class="pets-progress-container">
+    <div class="progress-title">Pets</div>
+    <div class="progress-subtitle">Progress: 300/1200</div>
+  </div>
 
-<ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
   <!-- Toolbar -->
   <div class="pets-toolbar">
     <div class="search-group">
@@ -31,8 +30,10 @@
       </ion-button>
     </div>
   </div>
+</div>
 
-  <!-- List -->
+<!-- 🐾 Pet List Content -->
+<ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
   <div class="pet-list">
     <div class="pet-card" *ngFor="let pet of pets">
       <img class="pet-icon" src="assets/icons/pet-standin.png" />
