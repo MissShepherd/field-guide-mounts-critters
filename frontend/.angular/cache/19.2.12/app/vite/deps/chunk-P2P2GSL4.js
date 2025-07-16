@@ -1,11 +1,41 @@
 import {
+  LIFECYCLE_DID_ENTER,
+  LIFECYCLE_DID_LEAVE,
+  LIFECYCLE_WILL_ENTER,
+  LIFECYCLE_WILL_LEAVE,
+  LIFECYCLE_WILL_UNLOAD,
+  createAnimation
+} from "./chunk-I6Q7YG6M.js";
+import {
+  getMode,
+  setMode
+} from "./chunk-MGPHXSG2.js";
+import {
+  addEventListener,
+  componentOnReady,
+  focusVisibleElement,
+  getElementRoot,
+  removeEventListener
+} from "./chunk-L6BHBXTE.js";
+import {
+  BACKDROP_NO_SCROLL
+} from "./chunk-6HCD6MJG.js";
+import {
   MENU_BACK_BUTTON_PRIORITY,
   OVERLAY_BACK_BUTTON_PRIORITY,
   shouldUseCloseWatcher
 } from "./chunk-USATX7BD.js";
 import {
-  BACKDROP_NO_SCROLL
-} from "./chunk-6HCD6MJG.js";
+  doc
+} from "./chunk-CJ5MJUPJ.js";
+import {
+  config,
+  configFromSession,
+  configFromURL,
+  printIonError,
+  printIonWarning,
+  saveConfig
+} from "./chunk-ZWBDDU4U.js";
 import {
   ActivatedRoute,
   ChildrenOutletContexts,
@@ -14,15 +44,15 @@ import {
   Router,
   RouterLink,
   UrlSerializer
-} from "./chunk-TUGISCGC.js";
+} from "./chunk-4SKBWLQY.js";
 import {
   Location,
   LocationStrategy,
   getDOM
-} from "./chunk-G7LJ6HD5.js";
+} from "./chunk-2NCG5MPK.js";
 import {
   DOCUMENT
-} from "./chunk-M5VP2YLJ.js";
+} from "./chunk-Y4XM2DEG.js";
 import {
   ApplicationRef,
   Attribute,
@@ -95,36 +125,6 @@ import {
 import {
   __decorate
 } from "./chunk-7IZRYL2Z.js";
-import {
-  LIFECYCLE_DID_ENTER,
-  LIFECYCLE_DID_LEAVE,
-  LIFECYCLE_WILL_ENTER,
-  LIFECYCLE_WILL_LEAVE,
-  LIFECYCLE_WILL_UNLOAD,
-  createAnimation
-} from "./chunk-TETET2SC.js";
-import {
-  getMode,
-  setMode
-} from "./chunk-MGPHXSG2.js";
-import {
-  doc
-} from "./chunk-CJ5MJUPJ.js";
-import {
-  addEventListener,
-  componentOnReady,
-  focusVisibleElement,
-  getElementRoot,
-  removeEventListener
-} from "./chunk-L6BHBXTE.js";
-import {
-  config,
-  configFromSession,
-  configFromURL,
-  printIonError,
-  printIonWarning,
-  saveConfig
-} from "./chunk-ZWBDDU4U.js";
 import {
   __async,
   __objRest,
@@ -10684,4 +10684,4 @@ export {
    * (C) Ionic http://ionicframework.com - MIT License
    *)
 */
-//# sourceMappingURL=chunk-4ZV6G4EO.js.map
+//# sourceMappingURL=chunk-P2P2GSL4.js.map
