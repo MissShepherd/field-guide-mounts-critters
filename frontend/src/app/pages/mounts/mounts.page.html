@@ -1,3 +1,33 @@
-<ion-content class="page-background" [fullscreen]="true">
-  <div class="placeholder">Mounts Page 🐎</div>
+<ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
+  <div class="sticky-top">
+    <app-character-header
+      name="Name"
+      classLevel="Class, Level"
+      icon="assets/icons/paw.png"
+      avatar="assets/icons/profile.jpg">
+    </app-character-header>
+
+    <div class="mounts-progress-container">
+      <div class="progress-title">Mounts</div>
+      <div class="progress-subtitle">Progress: {{ mountsCollected }}/{{ totalMounts }}</div>
+    </div>
+
+    <div class="mounts-toolbar">
+      <div class="search-group">
+        <input type="text" placeholder="Search Mounts" />
+        <button><img src="assets/icons/search-icon.png" alt="search" /></button>
+      </div>
+      <div class="toolbar-buttons">
+        <ion-button><ion-icon name="funnel-outline"></ion-icon> Filter</ion-button>
+        <ion-button><ion-icon name="swap-vertical-outline"></ion-icon> Sort</ion-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mount-list">
+    <div class="mount-card" *ngFor="let mount of mounts">
+      <img class="mount-icon" src="assets/icons/Mount-standin.png" />
+      <div class="mount-name">{{ mount }}</div>
+    </div>
+  </div>
 </ion-content>
