@@ -1,19 +1,19 @@
 import {
+  withHttpTransferCache
+} from "./chunk-QWFNEGDE.js";
+import {
   CommonModule,
   DomAdapter,
   getDOM,
   setRootDomAdapter
-} from "./chunk-2NCG5MPK.js";
-import {
-  withHttpTransferCache
-} from "./chunk-FAXQQWXG.js";
+} from "./chunk-3U6LMBQW.js";
 import {
   DOCUMENT,
   PLATFORM_BROWSER_ID,
   XhrFactory,
   isPlatformServer,
   parseCookieValue
-} from "./chunk-Y4XM2DEG.js";
+} from "./chunk-FXRVF2FK.js";
 import {
   APP_ID,
   ApplicationModule,
@@ -2035,4 +2035,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-S62TGGSR.js.map
+//# sourceMappingURL=chunk-KBXXH46C.js.map
