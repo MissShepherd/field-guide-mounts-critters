@@ -1,3 +1,33 @@
-<ion-content class="page-background" [fullscreen]="true">
-  <div class="placeholder">Pets Page 🐾</div>
+<ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
+  <div class="sticky-top">
+    <app-character-header
+      name="Name"
+      classLevel="Class, Level"
+      icon="assets/icons/paw.png"
+      avatar="assets/icons/profile.jpg">
+    </app-character-header>
+
+    <div class="pets-progress-container">
+      <div class="progress-title">Pets</div>
+      <div class="progress-subtitle">Progress: {{ petsCollected }}/{{ totalPets }}</div>
+    </div>
+
+    <div class="pets-toolbar">
+      <div class="search-group">
+        <input type="text" placeholder="Search Pets" />
+        <button><img src="assets/icons/search-icon.png" alt="search" /></button>
+      </div>
+      <div class="toolbar-buttons">
+        <ion-button><ion-icon name="funnel-outline"></ion-icon> Filter</ion-button>
+        <ion-button><ion-icon name="swap-vertical-outline"></ion-icon> Sort</ion-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="pet-list">
+    <div class="pet-card" *ngFor="let pet of pets">
+      <img class="pet-icon" src="assets/icons/pet-standin.png" />
+      <div class="pet-name">{{ pet }}</div>
+    </div>
+  </div>
 </ion-content>
