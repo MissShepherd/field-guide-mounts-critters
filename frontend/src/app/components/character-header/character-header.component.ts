@@ -9,8 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./character-header.component.scss']
 })
 export class CharacterHeaderComponent {
-  @Input() name: string = '';
-  @Input() classLevel: string = '';
-  @Input() avatar: string = 'assets/icons/profile.jpg';
-  @Input() icon: string = 'assets/icons/paw.png';
+  @Input() name!: string;
+  @Input() classLevel!: string;
+  @Input() avatar!: string;
+  @Input() icon!: string;
 }
