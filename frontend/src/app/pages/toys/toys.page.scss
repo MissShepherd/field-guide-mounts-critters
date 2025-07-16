@@ -1,11 +1,44 @@
-.page-background {
-  background: url('/assets/img/main background.png') no-repeat center / cover;
+@import '../mounts/mounts.page.scss';
+
+.toys-progress-container {
+  background: #2e2e2e;
+  color: #FFCC00;
+  padding: 12px;
+  border-bottom: 1px solid #CD650E;
 }
 
-.placeholder {
-  text-align: center;
-  margin-top: 40%;
-  font-family: 'IM Fell English SC', serif;
-  font-size: 1.4rem;
-  color: var(--color-gold);
+.toys-toolbar {
+  @extend .mounts-toolbar;
+  background-color: rgba(46, 46, 46, 0.9);
+}
+
+.toy-list {
+  padding: 12px;
+}
+
+.toy-card {
+  background-color: #003B6F;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px #00000066;
+}
+
+.toy-icon {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #CD650E;
+  border-radius: 6px;
+  margin-right: 12px;
+  background-color: #000;
+  padding: 4px;
+}
+
+.toy-name {
+  color: #FFCC00;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 1px 1px #000;
 }
