@@ -1,34 +1,24 @@
-<div class="sticky-top">
-  <app-character-header
-    name="Name"
-    classLevel="Class, Level"
-    icon="assets/icons/paw.png"
-    avatar="assets/icons/profile.jpg">
-  </app-character-header>
+<app-character-header
+  name="Name"
+  classLevel="Class, Level"
+  icon="assets/icons/paw.png"
+  avatar="assets/icons/profile.jpg">
+</app-character-header>
 
-  <!-- Mounts Progress Container -->
+<div class="sticky-top">
   <div class="mounts-progress-container">
     <div class="progress-title">Mounts</div>
     <div class="progress-subtitle">Progress: 120/600</div>
   </div>
 
-  <!-- Sticky Search + Filter + Sort Toolbar -->
   <div class="mounts-toolbar">
     <div class="search-group">
       <input type="text" placeholder="Search Mounts" />
-      <button>
-        <img src="assets/icons/search-icon.png" alt="search" />
-      </button>
+      <button><img src="assets/icons/search-icon.png" alt="search" /></button>
     </div>
     <div class="toolbar-buttons">
-      <ion-button>
-        <ion-icon name="funnel-outline"></ion-icon>
-        Filter
-      </ion-button>
-      <ion-button>
-        <ion-icon name="swap-vertical-outline"></ion-icon>
-        Sort
-      </ion-button>
+      <ion-button><ion-icon name="funnel-outline"></ion-icon>Filter</ion-button>
+      <ion-button><ion-icon name="swap-vertical-outline"></ion-icon>Sort</ion-button>
     </div>
   </div>
 </div>

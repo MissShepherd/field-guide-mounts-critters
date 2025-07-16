@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
-import { CharacterHeaderComponent } from '../../components/character-header/character-header.component';
+import { CharacterHeaderComponent } from 'src/app/components/character-header/character-header.component';
 
 @Component({
   selector: 'app-mounts',

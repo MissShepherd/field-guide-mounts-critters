@@ -1,8 +1,9 @@
+@import '../../../theme/variables';
+
 .wow-content {
   --background: transparent;
   background: none;
   font-family: 'IM Fell English SC', serif;
-  color: #000;
   padding: 0;
   height: 100%;
 }
@@ -15,11 +16,10 @@
 .sticky-top {
   position: sticky;
   top: 0;
-  z-index: 999;
-  background-color: #2e2e2ecc;
-  backdrop-filter: blur(4px);
+  z-index: 100;
 }
 
+/* 🟡 Progress */
 .mounts-progress-container {
   background: #2e2e2e;
   color: #FFCC00;
@@ -31,12 +31,12 @@
   font-weight: bold;
   font-size: 1rem;
 }
-
 .progress-subtitle {
   font-size: 0.85rem;
   color: #EDE944;
 }
 
+/* 🔍 Toolbar */
 .mounts-toolbar {
   display: flex;
   justify-content: space-between;
@@ -44,7 +44,7 @@
   padding: 12px;
   flex-wrap: wrap;
   gap: 8px;
-  background-color: rgba(46, 46, 46, 0.9);
+  background: rgba(46, 46, 46, 0.85);
 }
 
 .search-group {
@@ -55,48 +55,38 @@
   overflow: hidden;
   background-color: #003B6F;
 }
-
 .search-group input {
   flex: 1;
   border: none;
   background: transparent;
   color: #EDE944;
   padding: 10px;
-  font-size: 1rem;
 }
-
-.search-group input::placeholder {
-  color: #EDE944;
-}
-
 .search-group button {
   background: none;
   border: none;
   padding: 8px 10px;
 }
-
-.search-group button img {
+.search-group img {
   width: 20px;
   height: 20px;
 }
 
+/* 🧰 Buttons */
 .toolbar-buttons {
   display: flex;
   gap: 8px;
 }
-
 ion-button {
   --background: #003B6F;
   --color: #FFCC00;
   border: 1px solid #CD650E;
-  border-radius: 6px;
-  font-family: 'IM Fell English SC', serif;
 }
 
+/* 🐎 Mounts */
 .mount-list {
   padding: 12px;
 }
-
 .mount-card {
   background-color: #003B6F;
   border-radius: 8px;
@@ -106,17 +96,15 @@ ion-button {
   align-items: center;
   box-shadow: 0 2px 6px #00000066;
 }
-
 .mount-icon {
   width: 48px;
   height: 48px;
   border: 2px solid #CD650E;
   border-radius: 6px;
   margin-right: 12px;
-  background-color: #000;
+  background: #000;
   padding: 4px;
 }
-
 .mount-name {
   color: #FFCC00;
   font-weight: bold;
