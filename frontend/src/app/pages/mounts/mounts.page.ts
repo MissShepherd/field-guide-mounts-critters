@@ -11,19 +11,36 @@ import { CharacterHeaderComponent } from '../../components/character-header/char
   styleUrls: ['./mounts.page.scss']
 })
 export class MountsPage {
-  mounts = [
-    'Ashes of Al\'ar',
-    'Invincible',
-    'Swift Spectral Tiger',
-    'Rivendare\'s Deathcharger',
-    'Heavenly Onyx Cloud Serpent',
-    'Mimiron\'s Head',
-    'Celestial Steed',
-    'Time-Lost Proto-Drake',
-    'Frostbrood Vanquisher',
-    'Lucid Nightmare'
-  ];
-
-  mountsCollected = 120;
-  totalMounts = 600;
+mounts = [
+  'Ashes of Al\'ar',
+  'Invincible',
+  'Swift Spectral Tiger',
+  'Rivendare\'s Deathcharger',
+  'Heavenly Onyx Cloud Serpent',
+  'Mimiron\'s Head',
+  'Celestial Steed',
+  'Time-Lost Proto-Drake',
+  'Armored Bloodwing',
+  'Obsidian Worldbreaker',
+  'Voidtalon of the Dark Star',
+  'Felfire Hawk',
+  'Ironhoof Destroyer',
+  'Abyss Worm',
+  'Glacial Tidestorm',
+  'Reins of the Long-Forgotten Hippogryph',
+  'Thundering Ruby Cloud Serpent',
+  'Mecha-Mogul Mk2',
+  'Pureblood Fire Hawk',
+  'Violet Spellwing',
+  'Felsteel Annihilator',
+  'Experiment 12-B',
+  'Smoldering Ember Wyrm',
+  'Ny’alotha Allseer',
+  'Sharkbait',
+  'War-Bred Tauralus',
+  'Swift Zulian Tiger',
+  'Clutch of Ji-Kun',
+  'Spectral Charger',
+  'Plagued Proto-Drake'
+];
 }
