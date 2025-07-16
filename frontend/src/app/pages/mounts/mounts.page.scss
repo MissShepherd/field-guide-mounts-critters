@@ -1,7 +1,6 @@
 .wow-content {
   --background: transparent;
   background: none;
-  background-color: transparent;
   font-family: 'IM Fell English SC', serif;
   color: #000;
   padding: 0;
@@ -11,17 +10,16 @@
 .wow-content--main-bg {
   background: url('/assets/bg/main background.png') no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
 }
 
-/* 🔝 Sticky Header & Progress */
 .sticky-top {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 999;
+  background-color: #2e2e2ecc;
+  backdrop-filter: blur(4px);
 }
 
-/* 🟡 Progress Section */
 .mounts-progress-container {
   background: #2e2e2e;
   color: #FFCC00;
@@ -39,16 +37,14 @@
   color: #EDE944;
 }
 
-/* 🔍 Toolbar Section */
 .mounts-toolbar {
-  background: rgba(46, 46, 46, 0.85);
-  padding: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 12px;
   flex-wrap: wrap;
   gap: 8px;
-  border-bottom: 1px solid #CD650E;
+  background-color: rgba(46, 46, 46, 0.9);
 }
 
 .search-group {
@@ -63,11 +59,10 @@
 .search-group input {
   flex: 1;
   border: none;
-  background-color: transparent;
+  background: transparent;
   color: #EDE944;
   padding: 10px;
   font-size: 1rem;
-  font-family: 'IM Fell English SC', serif;
 }
 
 .search-group input::placeholder {
@@ -85,7 +80,6 @@
   height: 20px;
 }
 
-/* 🛠 Toolbar Buttons */
 .toolbar-buttons {
   display: flex;
   gap: 8px;
@@ -99,7 +93,6 @@ ion-button {
   font-family: 'IM Fell English SC', serif;
 }
 
-/* 🐎 Mount List */
 .mount-list {
   padding: 12px;
 }
