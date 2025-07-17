@@ -1,9 +1,9 @@
-@import '../../../theme/variables';
-
 .wow-content {
   --background: transparent;
   background: none;
+  background-color: transparent;
   font-family: 'IM Fell English SC', serif;
+  color: #000;
   padding: 0;
   height: 100%;
 }
@@ -13,17 +13,37 @@
   background-size: cover;
 }
 
+/* Sticky */
 .sticky-top {
   position: sticky;
   top: 0;
   z-index: 100;
+  background-color: rgba(30, 30, 30, 0.8); // optional: avoid content overlap
+  backdrop-filter: blur(2px);
 }
 
-/* 🟡 Progress */
+/* ✅ Sticky combined wrapper */
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+  background-color: rgba(30, 30, 30, 0.85); // adjust if needed
+}
+
+
+ion-content {
+  --background: transparent;
+  background: none;
+  overflow-y: auto; // ✅ explicitly enable scroll
+}
+
+/* Header Progress */
 .mounts-progress-container {
   background: #2e2e2e;
   color: #FFCC00;
   padding: 12px;
+  font-family: 'IM Fell English SC', serif;
   border-bottom: 1px solid #CD650E;
 }
 
@@ -31,12 +51,13 @@
   font-weight: bold;
   font-size: 1rem;
 }
+
 .progress-subtitle {
   font-size: 0.85rem;
   color: #EDE944;
 }
 
-/* 🔍 Toolbar */
+/* Toolbar */
 .mounts-toolbar {
   display: flex;
   justify-content: space-between;
@@ -44,7 +65,7 @@
   padding: 12px;
   flex-wrap: wrap;
   gap: 8px;
-  background: rgba(46, 46, 46, 0.85);
+  background-color: rgba(46, 46, 46, 0.9);
 }
 
 .search-group {
@@ -55,38 +76,51 @@
   overflow: hidden;
   background-color: #003B6F;
 }
+
 .search-group input {
   flex: 1;
   border: none;
-  background: transparent;
+  background-color: transparent;
   color: #EDE944;
   padding: 10px;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 1rem;
 }
+
+.search-group input::placeholder {
+  color: #EDE944;
+}
+
 .search-group button {
   background: none;
   border: none;
   padding: 8px 10px;
 }
-.search-group img {
+
+.search-group button img {
   width: 20px;
   height: 20px;
 }
 
-/* 🧰 Buttons */
+/* Buttons */
 .toolbar-buttons {
   display: flex;
   gap: 8px;
 }
+
 ion-button {
   --background: #003B6F;
   --color: #FFCC00;
   border: 1px solid #CD650E;
+  border-radius: 6px;
+  font-family: 'IM Fell English SC', serif;
 }
 
-/* 🐎 Mounts */
+/* Mount List */
 .mount-list {
   padding: 12px;
 }
+
 .mount-card {
   background-color: #003B6F;
   border-radius: 8px;
@@ -96,15 +130,17 @@ ion-button {
   align-items: center;
   box-shadow: 0 2px 6px #00000066;
 }
+
 .mount-icon {
   width: 48px;
   height: 48px;
   border: 2px solid #CD650E;
   border-radius: 6px;
   margin-right: 12px;
-  background: #000;
+  background-color: #000;
   padding: 4px;
 }
+
 .mount-name {
   color: #FFCC00;
   font-weight: bold;

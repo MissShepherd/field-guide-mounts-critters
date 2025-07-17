@@ -1,33 +1,43 @@
-<app-character-header
-  name="Name"
-  classLevel="Class, Level"
-  icon="assets/icons/paw.png"
-  avatar="assets/icons/profile.jpg">
-</app-character-header>
-
-<div class="sticky-top">
-  <div class="mounts-progress-container">
-    <div class="progress-title">Mounts</div>
-    <div class="progress-subtitle">Progress: 120/600</div>
-  </div>
-
-  <div class="mounts-toolbar">
-    <div class="search-group">
-      <input type="text" placeholder="Search Mounts" />
-      <button><img src="assets/icons/search-icon.png" alt="search" /></button>
-    </div>
-    <div class="toolbar-buttons">
-      <ion-button><ion-icon name="funnel-outline"></ion-icon>Filter</ion-button>
-      <ion-button><ion-icon name="swap-vertical-outline"></ion-icon>Sort</ion-button>
-    </div>
-  </div>
-</div>
-
 <ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
+
+  <!-- 🔝 Sticky Header, Progress, and Toolbar (grouped!) -->
+  <div class="sticky-wrapper">
+    <app-character-header
+      name="Name"
+      classLevel="Class, Level"
+      icon="assets/icons/paw.png"
+      avatar="assets/icons/profile.jpg">
+    </app-character-header>
+
+    <div class="mounts-progress-container">
+      <div class="progress-title">Mounts</div>
+      <div class="progress-subtitle">Progress: 120/600</div>
+    </div>
+
+    <div class="mounts-toolbar">
+      <div class="search-group">
+        <input type="text" placeholder="Search Mounts" />
+        <button>
+          <img src="assets/icons/search-icon.png" alt="search" />
+        </button>
+      </div>
+      <div class="toolbar-buttons">
+        <ion-button>
+          <ion-icon name="funnel-outline"></ion-icon> Filter
+        </ion-button>
+        <ion-button>
+          <ion-icon name="swap-vertical-outline"></ion-icon> Sort
+        </ion-button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🐎 Mount List -->
   <div class="mount-list">
     <div class="mount-card" *ngFor="let mount of mounts">
       <img class="mount-icon" src="assets/icons/Mount-standin.png" />
       <div class="mount-name">{{ mount }}</div>
     </div>
   </div>
+
 </ion-content>
