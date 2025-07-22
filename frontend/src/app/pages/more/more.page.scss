@@ -1,0 +1,43 @@
+ion-content {
+  --background: transparent;
+  background: none;
+  background-color: transparent;
+}
+
+.wow-content--main-bg {
+  background: url('/assets/bg/main background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.more-section {
+  background-color: #003B6F;
+  border: 1px solid #CD650E;
+  border-radius: 10px;
+  color: #FFCC00;
+  margin: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #CD650E;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 1rem;
+  color: #FFCC00;
+}
+
+ion-item {
+  --background: transparent;
+  --color: #FFCC00;
+  font-family: 'IM Fell English SC', serif;
+  border-radius: 8px;
+  margin: 2px 0;
+}

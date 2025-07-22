@@ -1,0 +1,58 @@
+<app-character-header
+  name="Name"
+  classLevel="Class, Level"
+  icon="assets/icons/more_icon.png"
+  avatar="assets/icons/profile.jpg">
+</app-character-header>
+
+<ion-content class="wow-content wow-content--main-bg" [fullscreen]="true">
+  <!-- ⚙️ Settings Section -->
+  <ion-card class="more-section">
+    <ion-card-header>
+      <ion-card-title class="section-title">Settings</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="setting-row">
+        <span>Theme</span>
+        <ion-select placeholder="Dark" interface="popover">
+          <ion-select-option value="dark">Dark</ion-select-option>
+          <ion-select-option value="light">Light</ion-select-option>
+        </ion-select>
+      </div>
+      <div class="setting-row">
+        <span>Notifications</span>
+        <ion-toggle checked color="warning"></ion-toggle>
+      </div>
+      <div class="setting-row">
+        <span>Sync Data</span>
+        <ion-button size="small" color="warning" fill="outline">Sync Data</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- ℹ️ About Section -->
+  <ion-card class="more-section">
+    <ion-card-header>
+      <ion-card-title class="section-title">About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item button detail>About this App</ion-item>
+      <ion-item button detail>Disclaimer (Blizzard API)</ion-item>
+      <ion-item button detail>Privacy Policy</ion-item>
+      <ion-item button detail>Terms of Use</ion-item>
+      <ion-item lines="none">Version: 1.0.0</ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- 🛠️ Support Section -->
+  <ion-card class="more-section">
+    <ion-card-header>
+      <ion-card-title class="section-title">Support</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item button detail>FAQ</ion-item>
+      <ion-item button detail>Report an Issue</ion-item>
+      <ion-item button detail>Contact Us</ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
